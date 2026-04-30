@@ -14,7 +14,7 @@
   "negPct": "47.7",
   "neuPct": "10.2",
 
-  "cpSummary": "Customer profile based on 304 multilingual reviews (DE / ES / IT / FR / EN / CA). The most common buyer is a <strong>woman aged 35–60</strong> seeking <strong>weight management or bloating relief</strong>, taking the supplement <strong>at home in the evening</strong>, with the dominant goal being <strong>flatter abdomen + better digestion</strong>. Negative reviewers heavily over-index on customers who expected weight-loss effects but got only a laxative response — or worse, severe side effects.",
+  "cpSummary": "Customer profile based on <strong>304 reviews scraped from amazon.de's product page</strong>. The brand (CNC / QSTA) is Spanish-led, so Amazon EU's cross-marketplace pooling pulls heavy ES/IT/FR/EN reviews alongside German ones — the file is genuinely multilingual. The most common buyer is a <strong>woman aged 35–60</strong> seeking <strong>weight management or bloating relief</strong>, taking the supplement <strong>at home in the evening</strong>, dominant goal <strong>flatter abdomen + better digestion</strong>. Negative reviewers heavily over-index on customers who expected weight-loss but got only a laxative response — or worse, severe side effects.",
 
   "cpWho": {
     "labels": ["Women — weight mgmt", "Chronic digestion issues", "Menopausal women", "Health-conscious dieters", "Men", "Athletes / active"],

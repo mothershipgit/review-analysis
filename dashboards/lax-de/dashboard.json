@@ -14,7 +14,7 @@
   "negPct": "43.6",
   "neuPct": "9.8",
 
-  "cpSummary": "Customer profile based on 326 multilingual reviews on Amazon DE (DE / EN / IT / FR / ES / AR mixed). The most common buyer is an <strong>adult dealing with chronic or episodic constipation</strong>, often <strong>medication-related or post-travel</strong>, who specifically wants a <strong>natural alternative to harsh chemical laxatives</strong> like Laxoberal or Movicol. Compared to Detox DE, the satisfaction split is more favourable (~47% positive) because the product's promise (bowel movement) is more concrete and verifiable than Detox's vague 'cleanse' claims.",
+  "cpSummary": "Customer profile based on <strong>326 reviews on amazon.de</strong> — composed of a <strong>263-review multilingual cross-marketplace pool</strong> (shared with Lax FR, originally written across DE/ES/IT/FR/EN) plus <strong>63 German-language reviews unique to amazon.de</strong>. The most common buyer wants a <strong>natural alternative to harsh chemical laxatives</strong> like Laxoberal or Movicol, often dealing with chronic or medication-induced constipation. The DE-only segment over-indexes on family-purchase-for-elderly and on medication-induced cases. Compared to Detox DE, satisfaction is more favourable (~47% positive) — the product's promise (bowel movement) is more concrete and verifiable than Detox's vague 'cleanse' claim.",
 
   "cpWho": {
     "labels": ["Chronic constipation sufferers", "Medication-induced constipation", "Travelers / vacationers", "Elderly (often via family)", "IBS / digestive disorder", "First-time laxative users"],

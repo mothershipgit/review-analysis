@@ -14,7 +14,7 @@
   "negPct": "42.8",
   "neuPct": "9.5",
 
-  "cpSummary": "Customer profile based on 327 reviews on Amazon FR (heavy FR-language skew, plus EN/ES/IT/DE cross-marketplace pooling). Same product as Lax DE — same themes, same overall sentiment shape — but the <strong>French market over-indexes on travel-constipation and post-bypass / post-surgical use cases</strong>, and customers more often invoke <strong>'natural plant-based' framing</strong> (vs DE's 'no chemical Keule' framing). Compared to Lax DE, FR shows slightly higher positive ratio (47.7% vs 46.6%) and slightly more vocal complaints about strength ('pas assez puissant').",
+  "cpSummary": "Customer profile based on <strong>327 reviews on amazon.fr</strong> — composed of the <strong>same 263-review multilingual cross-marketplace pool as Lax DE</strong>, plus <strong>64 French-language reviews unique to amazon.fr</strong>. The shared pool dominates the analysis; the FR-only segment skews toward <strong>travel-constipation and post-bypass / post-surgical use cases</strong>, and French customers more often invoke <strong>'natural plant-based' framing</strong>. Compared to Lax DE, FR shows slightly higher positive ratio (47.7% vs 46.6%) and slightly more vocal complaints about strength ('pas assez puissant').",
 
   "cpWho": {
     "labels": ["Chronic constipation sufferers", "Medication-induced constipation", "Travelers / vacationers", "Post-surgery (bypass etc.)", "IBS / colopathie", "First-time laxative users"],
