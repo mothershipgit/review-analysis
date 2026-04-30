@@ -1,0 +1,381 @@
+{
+  "id": "lax-fr",
+  "title": "Lax FR — Review Analysis",
+  "subtitle": "B0BM1WPXC5 · Amazon FR marketplace · 327 reviews",
+  "asin": "B0BM1WPXC5",
+  "marketplace": "FR",
+  "reviewsFile": "../../B0BM1WPXC5-FR-Reviews.json",
+
+  "totalReviews": 327,
+  "posCount": 156,
+  "negCount": 140,
+  "neuCount": 31,
+  "posPct": "47.7",
+  "negPct": "42.8",
+  "neuPct": "9.5",
+
+  "cpSummary": "Customer profile based on 327 reviews on Amazon FR (heavy FR-language skew, plus EN/ES/IT/DE cross-marketplace pooling). Same product as Lax DE — same themes, same overall sentiment shape — but the <strong>French market over-indexes on travel-constipation and post-bypass / post-surgical use cases</strong>, and customers more often invoke <strong>'natural plant-based' framing</strong> (vs DE's 'no chemical Keule' framing). Compared to Lax DE, FR shows slightly higher positive ratio (47.7% vs 46.6%) and slightly more vocal complaints about strength ('pas assez puissant').",
+
+  "cpWho": {
+    "labels": ["Chronic constipation sufferers", "Medication-induced constipation", "Travelers / vacationers", "Post-surgery (bypass etc.)", "IBS / colopathie", "First-time laxative users"],
+    "pos": [42, 22, 24, 14, 14, 40],
+    "neg": [44, 14, 10, 6, 16, 50]
+  },
+
+  "cpWhen": {
+    "labels": ["Daily / regular use", "After travel or holidays", "When standard laxatives fail", "On medication regimen", "Acute episodic need", "Post-surgery recovery"],
+    "pos": [44, 28, 22, 18, 30, 14],
+    "neg": [36, 14, 22, 10, 46, 12]
+  },
+
+  "cpWhere": {
+    "labels": ["Home — evening routine", "Travel / vacation", "Workday risk (problematic)", "After medical procedure"],
+    "pos": [102, 32, 12, 10],
+    "neg": [86, 14, 28, 12]
+  },
+
+  "cpWhat": {
+    "labels": ["Bowel movement", "No cramps / gentle action", "Avoid chemical laxatives", "Stool softening", "Reliable timing", "Long-term safety"],
+    "pos": [92, 60, 38, 36, 24, 14],
+    "neg": [74, 30, 12, 22, 40, 8]
+  },
+
+  "usageScenarios": [
+    { "label": "Chronic constipation maintenance", "reason": "primary use — French reviewers frequently mention 'constipation chronique' and use as ongoing daily support.", "pct": "26.5%" },
+    { "label": "Replacing harsh chemical laxatives", "reason": "users escaping cramping pain of stronger laxatives. FR-market often references gastro-enterologist prescriptions they wanted to leave.", "pct": "19.8%" },
+    { "label": "Travel / vacation constipation", "reason": "French market shows particularly strong travel-constipation use case. Compact + predictable + no-cramps = ideal travel kit.", "pct": "16.4%" },
+    { "label": "Medication-induced constipation", "reason": "pain medication and chronic prescriptions — FR-market includes high frequency of users on multiple medications.", "pct": "10.7%" },
+    { "label": "Post-surgery / post-bypass recovery", "reason": "reviewer specifically mentioned utility 'pour les gens opérés du by-pass'. Notable use-case in FR market.", "pct": "8.3%" },
+    { "label": "Acute single-use emergency", "reason": "occasional one-off constipation triggers emergency purchase.", "pct": "8.5%" },
+    { "label": "Pre-event preparation", "reason": "before colonoscopy prep, body cleanse routines, or wellness reset.", "pct": "4.4%" },
+    { "label": "Bought for elderly relatives", "reason": "family members purchase for elderly with age-related constipation — French market shows similar pattern.", "pct": "3.0%" },
+    { "label": "Diet supplement (after restrictive eating)", "reason": "low-fibre diets, restrictive eating, body-recomp regimens.", "pct": "2.4%" }
+  ],
+
+  "csSummary": "Sentiment is the most favourable of the 3 dashboards — 47.7% positive vs 42.8% negative. The FR market over-indexes on customers who already tried prescription remedies (Movicol, etc.) and now genuinely value the natural-laxative angle. Top complaint remains 'aucun effet' (~36% of negatives), often paired with 'pas assez puissant'. Best-performing positives are 'efficace sans douleur abdominale' and 'fait le job en douceur'.",
+
+  "negativeTopics": [
+    {
+      "label": "No effect — doesn't work",
+      "reason": "customers report taking 1–3 capsules with no bowel response. Most-cited single complaint, mirroring Lax DE.",
+      "pct": "36.2%",
+      "bullets": [
+        "Most common French-market complaint: 'aucun effet', 'ne fonctionne pas', 'pas efficace'",
+        "Some users with severe constipation report total non-response even at high dose",
+        "Some explicitly frame as 'I'm too constipated, not the product's fault' — but functionally identical complaint"
+      ],
+      "quotes": [
+        "\"No effect. I do not recommend.\"",
+        "\"I tried this drug for several days in a row, in the morning there was no effect at all.\"",
+        "\"For now nothing happens — either I'm really blocked, or it just doesn't work.\""
+      ]
+    },
+    {
+      "label": "Severe cramps and abdominal pain",
+      "reason": "FR market reports cramping at 2-capsule dose; some users report bleeding when taken at full acute dose.",
+      "pct": "15.7%",
+      "bullets": [
+        "Cramps reported even at the recommended 2-capsule acute dose",
+        "One reviewer reported small intestinal bleeding when taking 2 capsules at once",
+        "Several reviewers warn: 'space the capsules, don't take both together'"
+      ],
+      "quotes": [
+        "\"If you take 2 capsules at once, abdominal pain. Take 1 in morning, 1 in afternoon — otherwise small bleeding in stools.\"",
+        "\"Very bad product, made me sick — cramps, abdominal pain, diarrhoea.\"",
+        "\"After 2 days: continuous diarrhoea 5–6 times a day and severe abdominal pain. Stopped immediately.\""
+      ]
+    },
+    {
+      "label": "Effect too weak — needs more capsules",
+      "reason": "FR market frequently reports the product as 'pas assez puissant' (not strong enough). Recommended 1-capsule dose insufficient for chronic cases.",
+      "pct": "13.1%",
+      "bullets": [
+        "'Pas très puissant' / 'aucune puissance' is a recurring complaint",
+        "Customers feel forced to take 2 or 3 capsules to get any effect",
+        "Particular issue for those with severe / chronic constipation"
+      ],
+      "quotes": [
+        "\"No power in this medicine — for those who are really constipated, I do not recommend.\"",
+        "\"Slow effectiveness — does not act quickly.\"",
+        "\"Effect average. 1 capsule not enough; 2 capsules give me severe abdominal pain all day.\""
+      ]
+    },
+    {
+      "label": "Uncontrollable / unpredictable timing",
+      "reason": "when it works, the timing is reportedly hard to plan. Reviewers warn 'best to take when home all day' or weekends only.",
+      "pct": "10.0%",
+      "bullets": [
+        "All-day toilet cycle reported by some — not just morning",
+        "FR reviewers mention 'travail' (work) impact specifically",
+        "Strategic warning: 'take only when staying home'"
+      ],
+      "quotes": [
+        "\"Better stay near the bathroom after taking — definitely recommended though.\"",
+        "\"Effect was severe enough that I couldn't drive or work the day I took it.\"",
+        "\"On the day of taking, you mustn't have anything important — it lasts the entire morning.\""
+      ]
+    },
+    {
+      "label": "Effect fades over time (habituation)",
+      "reason": "FR users report strong effect first time, weak or absent on subsequent uses.",
+      "pct": "7.4%",
+      "bullets": [
+        "'Marche bien la première fois, puis très faiblement' is a notable pattern",
+        "Customers concerned about needing escalating dose",
+        "Some discontinue use because of this"
+      ],
+      "quotes": [
+        "\"Works at first use, then unfortunately very weakly.\"",
+        "\"After 25 days of use I noticed no benefit, especially for water retention or swelling.\"",
+        "\"First time effective. Subsequent uses, almost nothing — I will not buy again.\""
+      ]
+    },
+    {
+      "label": "Tiny labelling / poor product info",
+      "reason": "same complaint as DE market — bottle text very small, ingredient mg breakdown unclear.",
+      "pct": "5.9%",
+      "bullets": [
+        "FR reviewers note 'écriture minuscule' on the bottle",
+        "Ingredient mg breakdown contested vs listing description",
+        "Some FR reviewers question 'fabriqué en France' claim — bottle says EU"
+      ],
+      "quotes": [
+        "\"Product is normally listed as French-made. That's false. Made in EU.\"",
+        "\"Ingredients are 2× less dosed than described. 200mg aloe vera advertised, only 100mg on the bottle.\"",
+        "\"Almost no information on its provenance on the label. It simply doesn't look trustworthy.\""
+      ]
+    },
+    {
+      "label": "Packaging / quantity defects",
+      "reason": "broken seals, missing capsules, half-empty bottles — same pattern as DE market.",
+      "pct": "5.6%",
+      "bullets": [
+        "Customers report receiving partially empty bottles",
+        "Capsule count discrepancies (45 vs 60 advertised)",
+        "Broken seals trigger product disposal without trial"
+      ],
+      "quotes": [
+        "\"Less than half the bottle full when I opened it.\"",
+        "\"Bottle says 60 capsules. I counted 45. Very disappointed.\"",
+        "\"Arrived with the seal already open. I won't trust opening it — had to throw it out.\""
+      ]
+    },
+    {
+      "label": "Too expensive",
+      "reason": "€24–30 considered expensive in FR market — particularly when alternatives (psyllium, prescription Movicol) are cheaper or reimbursed.",
+      "pct": "3.7%",
+      "bullets": [
+        "Comparison to prescription remedies (which are reimbursed) flags price as a friction",
+        "Some FR reviewers cite cheaper psyllium/herbal alternatives",
+        "Price increases over time mentioned as a churn driver"
+      ],
+      "quotes": [
+        "\"Excessive cost for mediocre result. Not so strong and costs a lot.\"",
+        "\"€24 — too expensive. Cannot recommend.\"",
+        "\"Price was fair when I started, has gone up a lot. Looking for an alternative.\""
+      ]
+    },
+    {
+      "label": "Misleading description",
+      "reason": "the '7-IN-1' and 'fast-acting strong' marketing creates expectation gap with weak/absent effect.",
+      "pct": "2.4%",
+      "bullets": [
+        "'Fast-acting' contradicted by users reporting 24–48 hour delay",
+        "'Strong' contradicted by need to escalate dose",
+        "Listing creates expectations the product can't always meet"
+      ],
+      "quotes": [
+        "\"Doesn't work as promised — you can wait a long time for the result.\"",
+        "\"It says fast-acting strong. Definitely not strong.\"",
+        "\"Product description doesn't apply. I regret the purchase.\""
+      ]
+    }
+  ],
+
+  "negativeInsights": [
+    { "type": "Product strength", "finding": "36% of FR negatives say 'aucun effet' — many self-identify as having severe / chronic constipation. Product positioning needs to acknowledge it's not for severe medical-grade cases.", "implication": "Add explicit listing copy: 'For mild-moderate constipation. For chronic / severe cases consult doctor.' Cuts mismatch refunds.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
+    { "type": "Risk", "finding": "FR market reports include intestinal bleeding at 2-capsule dose, severe cramping reaching the level of 'I thought I was dying' — public-facing safety risk.", "implication": "Add stronger 'space the capsules' guidance + 'start with HALF dose' warning for first-time users.", "badgeBg": "#fee2e2", "badgeColor": "#991b1b" },
+    { "type": "Trust", "finding": "FR reviewers specifically question 'made in France' claim and ingredient mg accuracy — different from DE complaint flavour.", "implication": "Clarify country of manufacture and exact mg breakdown clearly on the bottle and listing. Consider French-made variant if regulatorily feasible.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
+    { "type": "Operational", "finding": "Capsule count discrepancies repeated across years — same fulfilment issue as DE.", "implication": "Audit fulfilment line. Implement weight check + capsule count verification per bottle.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
+    { "type": "Positioning", "finding": "Listing leads on '7-IN-1' and 'fast-acting strong' — but FR customers genuinely value 'doux / sans douleur' (gentle / no pain). Mismatch creates 'too weak' complaint.", "implication": "Reposition: 'Doux. Naturel. Sans crampes.' replaces 'fast-acting strong' as the headline. Sets accurate expectations and matches the actual differentiator.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+  ],
+
+  "positiveTopics": [
+    {
+      "label": "It works (general satisfaction)",
+      "reason": "broad positive — 'efficace', 'fonctionne', 'ça marche'. Customers who got the bowel movement they paid for.",
+      "pct": "32.7%",
+      "bullets": [
+        "Most common positive — many short-form reviews simply confirm laxative effect",
+        "Frequently followed by repeat-purchase intent",
+        "Strong cross-language consistency"
+      ],
+      "quotes": [
+        "\"Très efficace — fonctionne parfaitement pour moi.\"",
+        "\"It works! Great product really helps with keeping me regular.\"",
+        "\"Effective — does its job. Will buy again.\""
+      ]
+    },
+    {
+      "label": "Natural alternative to chemical laxatives",
+      "reason": "FR market actively names prescription/OTC laxatives (Movicol, suppositories, mini-enemas) they wanted to escape. Strongest defensible positioning angle.",
+      "pct": "17.9%",
+      "bullets": [
+        "FR reviewers reference gastro-enterologist prescriptions and pharmacy laxatives explicitly",
+        "Often paired with mention of cramping that those alternatives caused",
+        "Plant-based / vegetal positioning resonates strongly with FR market"
+      ],
+      "quotes": [
+        "\"100% natural ingredients. I prefer them to a chemical hammer. The capsules gently stimulate digestion.\"",
+        "\"I suffer from severe constipation and tried all the gastro-enterologist's medicines — this one works very well.\"",
+        "\"Natural alternative — same effectiveness as Digestic at a fraction of the cost.\""
+      ]
+    },
+    {
+      "label": "Gentle action — no cramps (sans douleur)",
+      "reason": "the second customer-validated positioning angle. FR reviewers particularly highlight 'sans douleur abdominale'.",
+      "pct": "15.7%",
+      "bullets": [
+        "'Sans douleur' / 'sans crampes' / 'doux' are recurring praise points",
+        "Active praise, not just absence of complaint",
+        "Strong fit with the 'natural alternative' positioning"
+      ],
+      "quotes": [
+        "\"Effective and without abdominal pain — unlike many laxatives.\"",
+        "\"Without cramping — does the job gently.\"",
+        "\"Effective and gentle — softens the stool and so no more injuries while evacuating.\""
+      ]
+    },
+    {
+      "label": "Fast results (overnight)",
+      "reason": "consistent overnight pattern — take at evening, effect by morning.",
+      "pct": "12.0%",
+      "bullets": [
+        "'Le soir, j'ai pris la capsule, le lendemain matin tout est OK' is a common pattern",
+        "Predictable overnight cycle aligned with marketing",
+        "Particularly valued for travel use"
+      ],
+      "quotes": [
+        "\"Take at night, no pain, easy poo following morning.\"",
+        "\"From the third day everything is in order — I'm released in the morning, taking 2 capsules at evening 30 min before bed.\"",
+        "\"Effect within hours — definitely works.\""
+      ]
+    },
+    {
+      "label": "Reliable for chronic issues",
+      "reason": "users with persistent constipation become repeat buyers — particularly those who tried prescription remedies first.",
+      "pct": "9.5%",
+      "bullets": [
+        "Customers explicitly mention having tried multiple alternatives",
+        "Multiple repeat-purchase signals in FR reviews",
+        "Strong narrative: 'finally something that works'"
+      ],
+      "quotes": [
+        "\"My go-to product. I've tried many remedies — this works reliably.\"",
+        "\"Excellent — I suffer from severe constipation and have tried all the gastro-enterologist's medicines. This one works very well.\"",
+        "\"After 3 years and hundreds of euros spent, I can finally use the bathroom normally again. Life-changing.\""
+      ]
+    },
+    {
+      "label": "Travel / vacation use (very strong in FR)",
+      "reason": "French market over-indexes on travel constipation. Compact, predictable, no cramps = ideal travel kit. Stronger signal than in DE.",
+      "pct": "8.4%",
+      "bullets": [
+        "FR reviewers specifically mention vacations, hotel meals, long flights",
+        "Strong secondary positioning angle",
+        "Likely highest-margin upsell opportunity (travel pack SKU)"
+      ],
+      "quotes": [
+        "\"I'm very satisfied — unfortunately I get constipated when on holidays or after long sitting trips. Standard pharmacy laxatives cause cramps. This is my solution.\"",
+        "\"I use when traveling for that initial need — just one usually does the trick.\"",
+        "\"Perfect for travel — the day of the long trip and 2–3 days after, one capsule daily, no problems.\""
+      ]
+    },
+    {
+      "label": "Easy to take / no taste",
+      "reason": "small capsules, neutral taste — important for compliance.",
+      "pct": "4.0%",
+      "bullets": [
+        "Capsules described as easy to swallow",
+        "No bitter or unpleasant taste",
+        "Practical for elderly users (often family-purchased)"
+      ],
+      "quotes": [
+        "\"Easy to swallow, no aftertaste.\"",
+        "\"Capsules slip down with water — no problems.\"",
+        "\"Tasteless, comfortable, easy to take.\""
+      ]
+    },
+    {
+      "label": "Helps with medication-induced or post-surgery constipation",
+      "reason": "FR market includes notable post-surgical (gastric bypass) use case + medication-induced constipation users.",
+      "pct": "2.4%",
+      "bullets": [
+        "Bypass post-op users specifically endorse the product",
+        "Medication-induced constipation patients become high-LTV buyers",
+        "Customer narrative is emotional and detailed"
+      ],
+      "quotes": [
+        "\"Effective especially for people who had bypass surgery.\"",
+        "\"I'm a chronic pain patient, on medications that cause constipation. This product is one of the few I tolerate.\"",
+        "\"Pain medication blocks me — this is the only natural alternative that has worked.\""
+      ]
+    }
+  ],
+
+  "positiveInsights": [
+    { "type": "Lead claim", "finding": "'Naturel · Doux · Sans crampes' = 33.6% of all FR positives. Same positioning that worked in DE works in FR.", "implication": "Translate the DE 'Natural · Gentle · No Cramps' positioning into FR-market headline: 'Naturel · Doux · Sans crampes'. Make this the main image lead.", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
+    { "type": "Differentiator", "finding": "FR customers actively reference Movicol, gastro-enterologist prescriptions, and chemical pharmacy laxatives as the alternatives they wanted to escape.", "implication": "Add subtle competitor-comparison angle (without naming): 'L'alternative naturelle aux laxatifs chimiques' — converts the Movicol-fatigued segment.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
+    { "type": "Use case", "finding": "Travel constipation is stronger in FR (8.4% of positives) than DE (7.2%). FR market is travel-conscious.", "implication": "FR-specific 'pour les voyages' marketing angle. Could spawn FR travel-pack SKU first as a market test.", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
+    { "type": "Customer profile", "finding": "Post-bypass surgery use case appears in FR (~2.4% of positives) — small but high-emotional, high-LTV.", "implication": "Cautious medical-claim adjacent angle: 'Convient aux personnes ayant subi une chirurgie bariatrique' — needs medical-claims regulatory check.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+  ],
+
+  "buyersMotivation": [
+    { "label": "Treat chronic constipation", "reason": "primary purchase trigger. FR-market frequently invokes 'constipation chronique'.", "pct": "31.8%" },
+    { "label": "Avoid harsh chemical laxatives", "reason": "users escaping cramping side effects of Movicol, suppositories, mini-enemas.", "pct": "21.7%" },
+    { "label": "Travel / vacation constipation", "reason": "explicit travel-companion purchase — stronger in FR than DE.", "pct": "15.0%" },
+    { "label": "Cope with medication side-effect", "reason": "pain meds, opioids, mental-health drugs cause constipation.", "pct": "10.7%" },
+    { "label": "Daily gentle maintenance", "reason": "preventive 1-capsule-nightly to stay regular.", "pct": "9.2%" },
+    { "label": "Post-surgery recovery", "reason": "gastric bypass and similar post-op recovery — distinctive FR use case.", "pct": "5.5%" },
+    { "label": "Acute one-off relief", "reason": "single episode of constipation triggers emergency purchase.", "pct": "4.6%" },
+    { "label": "Post-dietary disruption", "reason": "low-fibre, restrictive eating disrupts transit; users want natural rebalance.", "pct": "1.5%" }
+  ],
+
+  "customerExpectations": [
+    { "label": "Reliable bowel movement (every time)", "reason": "users want consistency. Habituation undermines this.", "pct": "26.5%" },
+    { "label": "No cramps or pain", "reason": "the product positions on 'doux' but ~16% of negatives report severe cramping.", "pct": "20.8%" },
+    { "label": "100% natural ingredients (transparent)", "reason": "core purchase reason — but ingredient mg discrepancies and country-of-origin claims trigger distrust.", "pct": "15.3%" },
+    { "label": "Predictable timing", "reason": "users want to plan their day. Unpredictable cycles disrupt work and travel.", "pct": "13.0%" },
+    { "label": "Strong enough for severe cases", "reason": "many buyers come after standard remedies failed — they expect it to handle severe constipation.", "pct": "11.0%" },
+    { "label": "Clear product information", "reason": "full ingredient mg, country of origin, manufacturer info on the bottle.", "pct": "6.5%" },
+    { "label": "Reasonable price for natural ingredients", "reason": "€24–30 ceiling — price increases trigger churn especially when prescription remedies are reimbursed.", "pct": "4.5%" },
+    { "label": "Proper sealing + correct count", "reason": "broken seals and capsule count discrepancies — basic operational hygiene.", "pct": "2.4%" }
+  ],
+
+  "themeFilters": [
+    { "value": "", "label": "All themes" },
+    { "value": "no_effect", "label": "No effect / doesn't work" },
+    { "value": "side_effects", "label": "Cramps / pain" },
+    { "value": "too_weak", "label": "Too weak" },
+    { "value": "uncontrollable", "label": "Uncontrollable timing" },
+    { "value": "labelling", "label": "Labelling / info issues" },
+    { "value": "habituation", "label": "Effect fades" },
+    { "value": "packaging", "label": "Packaging defects" },
+    { "value": "expensive", "label": "Too expensive" },
+    { "value": "works", "label": "Works" },
+    { "value": "natural_alternative", "label": "Natural alternative to chemical laxatives" },
+    { "value": "gentle", "label": "Gentle / no cramps" },
+    { "value": "fast_results", "label": "Fast results" },
+    { "value": "reliable", "label": "Reliable for chronic" },
+    { "value": "travel", "label": "Travel use" },
+    { "value": "easy_take", "label": "Easy to take" },
+    { "value": "medication_induced", "label": "Medication-induced constipation" }
+  ],
+
+  "sentimentFilters": [
+    { "value": "", "label": "All sentiment" },
+    { "value": "pos", "label": "Positive" },
+    { "value": "neg", "label": "Negative" },
+    { "value": "neu", "label": "Neutral / mixed" }
+  ]
+}

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lax FR — Review Analysis</title>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="../../js/auth.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; color: #1e293b; font-size: 13px; }
+
+.dashboard-header { background: #0f2942; color: #fff; padding: 18px 28px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.dashboard-header h2 { font-size: 1.35rem; font-weight: 600; color: #fff; margin: 0; }
+.dashboard-header .sub { font-size: .78rem; color: #cbd5e1; display: block; margin-top: 4px; }
+.dashboard-header .meta-pill { background: rgba(34,197,94,.18); color: #86efac; padding: 6px 12px; border-radius: 6px; font-size: .72rem; font-weight: 600; white-space: nowrap; }
+
+.dashboard-body { padding: 24px 32px; max-width: 1600px; margin: 0 auto; }
+
+.tabs { position: sticky; top: 0; z-index: 30; background: #f1f5f9; padding: 8px 0; margin-bottom: 18px; display: flex; gap: 4px; border-bottom: 1px solid #e2e8f0; }
+.tab { padding: 10px 18px; border: none; background: transparent; font-size: .85rem; font-weight: 500; color: #64748b; cursor: pointer; border-radius: 6px 6px 0 0; transition: all .15s; }
+.tab:hover { color: #1e293b; background: #e2e8f0; }
+.tab.active { color: #0f2942; background: #fff; font-weight: 600; box-shadow: 0 -2px 0 #2563eb inset; }
+
+.panel { display: none; }
+.panel.active { display: block; }
+
+.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
+.card h3 { font-size: .95rem; font-weight: 700; color: #0f2942; margin-bottom: 10px; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.kpi { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 18px; }
+.kpi-v { font-size: 1.7rem; font-weight: 700; color: #0f2942; line-height: 1.1; }
+.kpi-l { font-size: .72rem; color: #64748b; text-transform: uppercase; letter-spacing: .04em; font-weight: 600; margin-top: 4px; }
+
+.sec-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; margin-top: 4px; }
+.sec-title { font-size: 1.05rem; font-weight: 700; color: #0f172a; }
+.sec-summary { font-size: .85rem; color: #475569; line-height: 1.6; margin-bottom: 18px; }
+
+.empty-section { background: #fff; border: 1.5px dashed #cbd5e1; border-radius: 8px; padding: 32px 24px; text-align: center; color: #64748b; }
+.empty-section .empty-title { font-size: .95rem; font-weight: 600; color: #475569; margin-bottom: 6px; }
+.empty-section .empty-sub { font-size: .78rem; color: #94a3b8; line-height: 1.55; }
+.empty-section code { background: #f1f5f9; padding: 1px 6px; border-radius: 3px; font-size: .76rem; color: #1e40af; }
+
+.voc-anchor-nav { position: sticky; top: 41px; background: #f1f5f9; z-index: 20; display: flex; gap: 8px; padding: 12px 0; flex-wrap: wrap; border-bottom: 1px solid #e2e8f0; margin-bottom: 18px; }
+.voc-anchor-nav a { font-size: .76rem; padding: 6px 12px; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; color: #475569; text-decoration: none; font-weight: 500; transition: all .15s; cursor: pointer; }
+.voc-anchor-nav a:hover { background: #eff6ff; border-color: #93c5fd; color: #1e40af; }
+.voc-anchor-nav a.active { background: #0f2942; border-color: #0f2942; color: #fff; }
+
+.voc-sub-tabs { display: flex; gap: 0; border-bottom: 1.5px solid #e2e8f0; margin-bottom: 16px; }
+.voc-sub-tab { padding: 8px 16px; font-size: .82rem; color: #64748b; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1.5px; transition: all .15s; font-weight: 500; }
+.voc-sub-tab:hover { color: #1e293b; }
+.voc-sub-tab.active { color: #0f2942; border-bottom-color: #2563eb; font-weight: 600; }
+.voc-sub-panel { display: none; }
+.voc-sub-panel.active { display: block; }
+
+/* Customer Profile 4-chart grid */
+.cp-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.cp-chart-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; }
+.cp-chart-box h4 { font-size: .82rem; color: #0f172a; margin-bottom: 8px; }
+.cp-chart-wrap { height: 220px; position: relative; }
+.cp-legend { font-size: .72rem; color: #64748b; margin-top: 10px; text-align: right; }
+
+/* Usage Scenario / Buyers Motivation / Expectations table */
+.us-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
+.us-table th { background: #f8fafc; font-size: .68rem; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: .04em; padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.us-table td { padding: 12px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.us-table tr:last-child td { border-bottom: none; }
+.us-table .us-label { font-weight: 600; color: #0f172a; width: 22%; }
+.us-table .us-reason { color: #475569; line-height: 1.5; }
+.us-table .us-pct { width: 140px; text-align: right; }
+.us-bar-wrap { display: inline-block; width: 70px; height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; vertical-align: middle; margin-right: 8px; }
+.us-bar { height: 100%; background: #2563eb; border-radius: 4px; }
+
+/* Negative / Positive expandable rows */
+.cs-neg-zone { margin-bottom: 24px; }
+.cs-pos-zone {}
+.nf-row, .pf-row { cursor: pointer; transition: background .15s; }
+.nf-row:hover { background: #fef2f2; }
+.pf-row:hover { background: #f0fdf4; }
+.nf-row.open, .pf-row.open { background: #fef2f2; }
+.pf-row.open { background: #f0fdf4; }
+.nf-arrow, .pf-arrow { display: inline-block; width: 12px; transition: transform .15s; }
+.nf-row.open .nf-arrow, .pf-row.open .pf-arrow { transform: rotate(90deg); }
+.nf-detail, .pf-detail { display: none; }
+.nf-detail.open, .pf-detail.open { display: table-row; }
+.nf-body, .pf-body { padding: 14px 16px; background: #fafbfc; border-top: 1px dashed #e2e8f0; }
+.nf-body ul, .pf-body ul { margin-left: 20px; font-size: .78rem; color: #475569; line-height: 1.6; margin-bottom: 12px; }
+.nf-body li, .pf-body li { margin-bottom: 4px; }
+.nf-quotes p, .pf-quotes p { font-size: .76rem; color: #1e293b; font-style: italic; padding: 8px 12px; border-left: 3px solid #cbd5e1; margin-bottom: 6px; line-height: 1.55; }
+.nf-quotes p { border-left-color: #fca5a5; background: #fef2f2; }
+.pf-quotes p { border-left-color: #86efac; background: #f0fdf4; }
+
+/* Strategy insights table */
+.si-table { width: 100%; border-collapse: collapse; font-size: .78rem; }
+.si-table th { background: #f8fafc; font-size: .65rem; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: .04em; padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.si-table td { padding: 12px; border-bottom: 1px solid #f1f5f9; vertical-align: top; line-height: 1.55; color: #1e293b; }
+.si-table tr:last-child td { border-bottom: none; }
+.si-badge { display: inline-block; padding: 3px 9px; border-radius: 12px; font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+
+/* Review Browser */
+.rb-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
+.rb-filters select, .rb-filters input { font-size: .76rem; border: 1.5px solid #cbd5e1; border-radius: 5px; padding: 5px 8px; background: #fff; }
+.rb-filters input { width: 200px; }
+.rb-filters button { font-size: .73rem; border: 1.5px solid #cbd5e1; border-radius: 5px; padding: 5px 12px; background: #f8fafc; cursor: pointer; }
+.rb-filters button:hover { background: #fff; border-color: #94a3b8; }
+#rbResultCount { font-size: .72rem; color: #64748b; margin-bottom: 8px; }
+.rb-table-wrap { max-height: 600px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 6px; }
+.rb-table { width: 100%; border-collapse: collapse; font-size: .76rem; }
+.rb-table thead th { position: sticky; top: 0; background: #f8fafc; font-size: .65rem; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: .04em; padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; z-index: 1; }
+.rb-table td { padding: 10px 12px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.rb-sentiment { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.rb-sentiment-pos { background: #dcfce7; color: #166534; }
+.rb-sentiment-neg { background: #fee2e2; color: #991b1b; }
+.rb-sentiment-neu { background: #f1f5f9; color: #64748b; }
+.rb-title { font-weight: 600; color: #0f172a; margin-bottom: 4px; }
+.rb-meta { font-size: .68rem; color: #94a3b8; margin-bottom: 6px; }
+.rb-text { color: #1e293b; line-height: 1.5; white-space: pre-wrap; }
+.rb-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.rb-tag { font-size: .6rem; padding: 1px 6px; border-radius: 8px; background: #eff6ff; color: #1e40af; font-weight: 600; }
+
+#loadingOverlay { position: fixed; inset: 0; background: rgba(241,245,249,.95); display: flex; align-items: center; justify-content: center; z-index: 1000; flex-direction: column; gap: 16px; }
+.spinner { width: 36px; height: 36px; border: 3px solid #e2e8f0; border-top-color: #2563eb; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+body { display: block; min-height: auto; }
+</style>
+</head>
+<body>
+
+<div id="loadingOverlay">
+  <div class="spinner"></div>
+  <div style="font-size:.82rem;color:#64748b">Loading review analysis…</div>
+</div>
+
+<div class="dashboard-header">
+  <div style="flex:1;min-width:0">
+    <h2 id="hdrTitle">Lax FR — Review Analysis</h2>
+    <span class="sub" id="hdrSub">Loading…</span>
+  </div>
+  <span class="meta-pill" id="hdrMeta">VOC analysis loaded</span>
+</div>
+
+<div class="dashboard-body">
+
+  <div class="tabs" id="tabBar">
+    <button class="tab active" data-tab="reviews">1 — Reviews VOC</button>
+    <button class="tab" data-tab="marketing-deep-dive">2 — Marketing Deep-Dive</button>
+  </div>
+
+  <!-- ═══════════════ Tab 1: Reviews VOC ═══════════════ -->
+  <div id="dt-reviews" class="panel active">
+
+    <div class="kpis" id="kpiRow"></div>
+
+    <div class="voc-sub-tabs">
+      <div class="voc-sub-tab active" data-panel="voc-ci">Customer Insights</div>
+      <div class="voc-sub-tab" data-panel="voc-ca">Review Browser</div>
+    </div>
+
+    <!-- Customer Insights -->
+    <div id="voc-ci" class="voc-sub-panel active">
+
+      <div class="voc-anchor-nav">
+        <a class="active" data-target="voc-sec-cp">Customer Profile</a>
+        <a data-target="voc-sec-us">Usage Scenario</a>
+        <a data-target="voc-sec-cs">Customer Sentiment</a>
+        <a data-target="voc-sec-bm">Buyers Motivation</a>
+        <a data-target="voc-sec-ce">Customer Expectations</a>
+      </div>
+
+      <div id="voc-sec-cp">
+        <div class="sec-header"><div class="sec-title">Customer Profile</div></div>
+        <div class="sec-summary" id="cpSummary"></div>
+        <div class="cp-charts">
+          <div class="cp-chart-box"><h4>Who</h4><div class="cp-chart-wrap"><canvas id="vocCpWho"></canvas></div></div>
+          <div class="cp-chart-box"><h4>When</h4><div class="cp-chart-wrap"><canvas id="vocCpWhen"></canvas></div></div>
+          <div class="cp-chart-box"><h4>Where</h4><div class="cp-chart-wrap"><canvas id="vocCpWhere"></canvas></div></div>
+          <div class="cp-chart-box"><h4>What</h4><div class="cp-chart-wrap"><canvas id="vocCpWhat"></canvas></div></div>
+        </div>
+        <div class="cp-legend"><span style="color:#16a34a">■</span> positive reviews · <span style="color:#dc2626">■</span> negative reviews</div>
+      </div>
+
+      <div id="voc-sec-us" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Usage Scenario</div></div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="us-table">
+            <thead><tr><th style="width:22%">Usage Scenario</th><th>Reason</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+            <tbody id="usageBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="voc-sec-cs" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Customer Sentiment</div></div>
+        <div class="sec-summary" id="csSummary"></div>
+
+        <div class="cs-neg-zone">
+          <div class="card" style="padding:0;overflow:hidden;border:1.5px solid #fecaca">
+            <table class="us-table">
+              <thead><tr style="background:#fef2f2"><th style="width:22%;border-left:3px solid #dc2626">Negative Feedback Topic</th><th>Reasons for Negative Feedback</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+              <tbody id="negBody"></tbody>
+            </table>
+          </div>
+          <div class="card" style="margin-top:14px;border:1.5px solid #fca5a5">
+            <div class="sec-header" style="margin-bottom:10px"><div class="sec-title">Negative Review Insights — Strategy</div></div>
+            <table class="si-table"><thead><tr><th style="width:130px">Analysis Type</th><th>Finding (from negative reviews)</th><th>Strategic Implication</th></tr></thead><tbody id="negInsights"></tbody></table>
+          </div>
+        </div>
+
+        <div class="cs-pos-zone">
+          <div class="card" style="padding:0;overflow:hidden;border:1.5px solid #bbf7d0">
+            <table class="us-table">
+              <thead><tr style="background:#f0fdf4"><th style="width:22%;border-left:3px solid #16a34a">Positive Feedback Topic</th><th>Reasons for Positive Feedback</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+              <tbody id="posBody"></tbody>
+            </table>
+          </div>
+          <div class="card" style="margin-top:14px">
+            <div class="sec-header" style="margin-bottom:10px"><div class="sec-title">Positive Review Insights — Strategy</div></div>
+            <table class="si-table"><thead><tr><th style="width:130px">Analysis Type</th><th>Finding (from positive reviews)</th><th>Strategic Implication</th></tr></thead><tbody id="posInsights"></tbody></table>
+          </div>
+        </div>
+      </div>
+
+      <div id="voc-sec-bm" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Buyers Motivation</div></div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="us-table">
+            <thead><tr><th style="width:22%">Buyers Motivation</th><th>Reason</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+            <tbody id="motivationBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="voc-sec-ce" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Customer Expectations</div></div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="us-table">
+            <thead><tr><th style="width:22%">Unmet Need</th><th>Reason</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+            <tbody id="expectationsBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Review Browser -->
+    <div id="voc-ca" class="voc-sub-panel">
+      <div class="card">
+        <h3>Review Browser <span style="font-size:.72rem;font-weight:400;color:#64748b;margin-left:8px">All <span id="rbTotal">…</span> reviews · originals preserved</span></h3>
+        <div class="rb-filters">
+          <select id="rbSentiment"></select>
+          <select id="rbTheme"></select>
+          <input id="rbSearch" placeholder="Search keyword (any language)…">
+          <button id="rbClear">Clear</button>
+        </div>
+        <div id="rbResultCount"></div>
+        <div class="rb-table-wrap">
+          <table class="rb-table">
+            <thead><tr><th style="width:90px">Sentiment</th><th>Review</th></tr></thead>
+            <tbody id="rbBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════ Tab 2: Marketing Deep-Dive ═══════════════ -->
+  <div id="dt-marketing-deep-dive" class="panel">
+    <div class="sec-summary">Marketing intelligence layer — competitor claims, message gaps, and whitespace opportunities. Cross-references VOC findings from Tab 1.</div>
+    <div class="card"><h3>1. Competitor Overview</h3><div class="empty-section"><div class="empty-title">Awaiting Competitor Data</div><div class="empty-sub">Drop competitor listings (ASINs + scraped titles, bullets, images) into <code>data/competitor-listings/</code>. Top competitors will render as a clickable card grid.</div></div></div>
+    <div class="card"><h3>2. Claims Matrix</h3><div class="empty-section"><div class="empty-title">Awaiting Competitor Data</div><div class="empty-sub">Rows = competitors · columns = claim themes. Filled cell = theme present in title/bullets.</div></div></div>
+    <div class="card"><h3>3. VOC ↔ Claims Gap Analysis</h3><div class="empty-section"><div class="empty-title">Awaiting both VOC + Competitor Data</div><div class="empty-sub">Customer concerns from Tab 1 vs how many of the top competitors address them. Gap severity + whitespace per topic.</div></div></div>
+    <div class="card"><h3>4. Whitespace Opportunities</h3><div class="empty-section"><div class="empty-title">Awaiting both VOC + Competitor Data</div><div class="empty-sub">High customer demand × low competitor coverage — surfaced as actionable opportunity cards.</div></div></div>
+    <div class="card"><h3>5. Strategic Recommendations</h3><div class="empty-section"><div class="empty-title">Awaiting both VOC + Competitor Data</div><div class="empty-sub">Synthesized findings — positioning, copy angles, image strategy.</div></div></div>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  // ── Tab + sub-tab + anchor wiring ──
+  document.querySelectorAll('#tabBar .tab').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var id = btn.dataset.tab;
+      document.querySelectorAll('#tabBar .tab').forEach(function(t) { t.classList.toggle('active', t.dataset.tab === id); });
+      document.querySelectorAll('.panel').forEach(function(p) { p.classList.toggle('active', p.id === 'dt-' + id); });
+    });
+  });
+  document.querySelectorAll('.voc-sub-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var pid = tab.dataset.panel;
+      document.querySelectorAll('.voc-sub-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelectorAll('.voc-sub-panel').forEach(function(p) { p.classList.remove('active'); });
+      tab.classList.add('active');
+      var p = document.getElementById(pid);
+      if (p) p.classList.add('active');
+      Object.values(Chart.instances || {}).forEach(function(c) { try { c.resize(); } catch(e) {} });
+    });
+  });
+  document.querySelectorAll('.voc-anchor-nav a').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var t = document.getElementById(a.dataset.target);
+      if (t) { var y = t.getBoundingClientRect().top + window.pageYOffset - 90; window.scrollTo({ top: y, behavior: 'smooth' }); }
+      document.querySelectorAll('.voc-anchor-nav a').forEach(function(x) { x.classList.remove('active'); });
+      a.classList.add('active');
+    });
+  });
+
+  // ── Helpers ──
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+  function bw(pctStr, maxPct) { var v = parseFloat(pctStr); return Math.round(v / maxPct * 100) + '%'; }
+
+  // ── Multilingual sentiment + theme classifier (rule-based, runs on each review) ──
+  var POS_KW = /\b(funciona|funziona|wirkt|marche|works|recomendable|recomiendo|recommande|sehr gut|very good|eficaz|efficace|efficiente|satisfecho|satisfait|soddisfatto|content[oa]?|top|super|excelente|excellent|eccellente|estupendo|perfecto|perfetto|parfait|gut|bien|bene|buono|buen[oa]|bueno|maravilloso|geniales?|genial|me encant|gefällt|recommendable|me ha funcionado|ottim[oa]|fantástic|fantastic)\b/i;
+  var NEG_KW = /\b(no funciona|non funziona|wirkt nicht|ne marche pas|doesn'?t work|no sirve|no vale|inutile|inútil|nutzlos|inefficace|ineffective|nessun (effetto|risultato|cambiamento)|nada|niente|rien|nothing|kein effekt|aucun effet|nul[la]?|delusione?|deluso|decepción|décev|enttäuscht|disappoint|estafa|arnaque|scam|engaño|engano|basura|pésim|pésimo|peor|peggio|terrible|horrible|malísim|malíssim|orribile)\b/i;
+
+  function classify(reviewText, title) {
+    var text = ((title || '') + ' ' + (reviewText || '')).toLowerCase();
+    var hasNeg = NEG_KW.test(text);
+    var hasPos = POS_KW.test(text);
+    var sentiment;
+    if (hasNeg && !hasPos) sentiment = 'neg';
+    else if (hasPos && !hasNeg) sentiment = 'pos';
+    else if (hasNeg && hasPos) sentiment = 'neu';
+    else sentiment = 'neu';
+
+    var tags = [];
+    // No effect
+    if (/\b(no (sirve|funciona|hace|noté|notado|ha funcionado)|sin (efecto|cambio|resultado)|nessun (effetto|risultato|cambiamento)|nessun beneficio|aucun effet|wirkt nicht|nichts (gemerkt|gespürt)|nothing|no.t work|inutil|nutzlos|inefficace|nada|rien|niente)\b/.test(text)) tags.push('no_effect');
+    // Side effects (cramps, diarrhoea, stomach pain)
+    if (/\b(diarrea|diarrhoe?a|diarrhée|durchfall|crampi|cramps|crampes|krämpfe|dolor (de )?(barriga|estómago|tripa|panza|pancia|ventre)|mal di pancia|mal di stomaco|mal au ventre|mal d'estomac|stomach pain|retortijones|nausea|náusea|náuseas|nauseas|vomito|vomit|vomi|sickness|cólicos|colichi)\b/.test(text)) tags.push('side_effects');
+    // Severe systemic reaction
+    if (/\b(mareo|mareos|dizzy|dizziness|vertige|vertigo|vertigine|panic|pánico|skin rash|rash|eruption|hautausschlag|fatigue|cansancio|estanchezza|debolezza|weakness|projectile|svenimenti)\b/.test(text)) tags.push('severe_reaction');
+    // Only laxative — not detox or diuretic
+    if (/\b(solo (laxante|lassativo|laxant)|only (a )?laxative|laxante (efecto|sol[oa])|nicht (entwässer|diuret)|no es diurétic|non.* diuretic|laxative effect|laxant unique|just a laxative)\b/.test(text)) tags.push('only_laxative');
+    // No weight loss
+    if (/\b(no (he )?(perd|baj|adelgaz)|no (ha|me ha) (servido|adelgazado)|kein gewicht|no weight loss|nessuna perdita|aucune perte de poids|no he bajado|same weight|igual de peso|sigo pesando|no he adelgazado|peso igual)\b/.test(text)) tags.push('no_weight_loss');
+    // Packaging / quantity defects
+    if (/\b(sello (roto|abierto)|seal (broken|open)|envase (abierto|roto)|tappo (svitato|aperto)|bouchon (ouvert|cassé)|empty|vide|vacío|metà (vuoto|piena)|half (empty|full)|missing|faltan|fehl|incompleto|broken|rota|opened|aperto|abierto|swivel|tirar.* basura)\b/.test(text)) tags.push('packaging');
+    // Review-for-freebie scheme
+    if (/\b(5 (estrellas|stars|étoiles|stelle|sterne)|gratis|free (bottle|bote)|regalo|sconto|descuento|whatsapp|qr.?code|reseña.*positiv|review.*positiv|incentiva|incentivos?|premio|paying for review)\b/.test(text)) tags.push('freebie_scheme');
+    // Bloating relief
+    if (/\b(deshinch|sgonfi|deballonné?e?|less (bloated|inflated|swollen)|bloating|hinchazón|hinchada|gonfiore|gonfia|deshinchado|panza plana|abdomen plat|menos hinchada|weniger (gebläht|aufgebläht))\b/.test(text)) tags.push('bloating_relief');
+    // Bowel regularity
+    if (/\b(transit|tránsito|intestinal|al baño|in bagno|toilettes?|stuhlgang|bowel|movement|regular|regolar|estreñimiento|stitichezza|constipation|verstopfung|cumple|funcionar|drenante)\b/.test(text)) tags.push('regularity');
+    // Diuretic
+    if (/\b(diuretic|diurétic|diurético|drenante|wasser|liquid|líquidos|liquidi|harn|orin|peeing|urinare|orinar|fluid|retención|retención de líquidos|ritenzione|rétention)\b/.test(text)) tags.push('diuretic');
+    // Weight loss
+    if (/\b(perd[ií] (peso|kilos|kg)|lose weight|weight loss|abnehmen|gewicht verloren|ho perso|j'ai perdu|kilos? (perdidos|perdus)|adelgaz|maigrir|dimagri|slimming)\b/.test(text)) tags.push('weight_loss');
+    // Works
+    if (/\b(funciona|funziona|wirkt|marche bien|works (well|great)|efficace|efficacious|eficaz|cumple)\b/.test(text)) tags.push('works');
+    // Easy to take
+    if (/\b(fácil de (tomar|tragar)|easy to (take|swallow)|leicht zu schlucken|facile à prendre|facile da (prendere|deglutire)|sin sabor|tasteless|kein (geschmack|aftertaste)|no taste|sans goût|senza sapore|sin (mal )?sabor)\b/.test(text)) tags.push('easy_take');
+    // Customer support
+    if (/\b(qr|whatsapp|servicio (de )?(cliente|atención)|customer service|kundenservice|servizio clienti|service client|asesor|atención al cliente|support|seguimiento|suivi)\b/.test(text)) tags.push('support');
+    // Fast results
+    if (/\b(primer día|primer dí|first day|first night|primera noche|prima notte|premier jour|première nuit|next morning|next day|al día siguiente|al giorno dopo|dès le lendemain|dal primo giorno|sin esperar|early result|enseguida|subito|sofort|immediately)\b/.test(text)) tags.push('fast_results');
+
+    return { sentiment: sentiment, tags: tags };
+  }
+
+  // ── Render Customer Profile stacked bar (positive vs negative) ──
+  function makeStackedBar(canvasId, data) {
+    var ctx = document.getElementById(canvasId);
+    if (!ctx || !data) return;
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: data.labels,
+        datasets: [
+          { label: 'Positive', data: data.pos, backgroundColor: '#16a34a', borderRadius: { topLeft: 3, topRight: 3 }, barPercentage: 0.7 },
+          { label: 'Negative', data: data.neg.map(function(v) { return -v; }), backgroundColor: '#dc2626', borderRadius: { bottomLeft: 3, bottomRight: 3 }, barPercentage: 0.7 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { display: false }, datalabels: { display: false },
+          tooltip: { callbacks: { label: function(ctx) { return ctx.dataset.label + ': ' + Math.abs(ctx.raw); } } }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { font: { size: 9.5 }, color: '#64748b', maxRotation: 38, minRotation: 0, autoSkip: false } },
+          y: { grid: { color: '#f1f5f9' }, ticks: { font: { size: 9.5 }, color: '#94a3b8', callback: function(v) { return Math.abs(v); } } }
+        }
+      }
+    });
+  }
+
+  // ── Render row helpers ──
+  function fillTable(tbodyId, rows, withBars) {
+    if (!rows || !rows.length) return;
+    var max = parseFloat(rows[0].pct);
+    var html = rows.map(function(r) {
+      var bar = withBars ? '<div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(r.pct, max) + '"></div></div>' : '';
+      return '<tr><td class="us-label">' + esc(r.label) + '</td><td class="us-reason">' + esc(r.reason) + '</td><td class="us-pct">' + bar + '<span>' + r.pct + '</span></td></tr>';
+    }).join('');
+    document.getElementById(tbodyId).innerHTML = html;
+  }
+
+  function fillExpandable(tbodyId, topics, kind) {
+    if (!topics || !topics.length) return;
+    var max = parseFloat(topics[0].pct);
+    var arrowClass = kind === 'neg' ? 'nf' : 'pf';
+    var barColor = kind === 'neg' ? '#fca5a5' : '#86efac';
+    var html = topics.map(function(t) {
+      var bullets = (t.bullets || []).map(function(b) { return '<li>' + esc(b) + '</li>'; }).join('');
+      var quotes = (t.quotes || []).map(function(q) { return '<p>' + esc(q) + '</p>'; }).join('');
+      var row = '<tr class="' + arrowClass + '-row"><td class="us-label"><span class="' + arrowClass + '-arrow">▶</span> ' + esc(t.label) + '</td>' +
+        '<td class="us-reason">' + esc(t.reason) + '</td>' +
+        '<td class="us-pct"><div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(t.pct, max) + ';background:' + barColor + '"></div></div><span>' + t.pct + '</span></td></tr>';
+      var detail = '<tr class="' + arrowClass + '-detail"><td colspan="3"><div class="' + arrowClass + '-body"><ul>' + bullets + '</ul><div class="' + arrowClass + '-quotes">' + quotes + '</div></div></td></tr>';
+      return row + detail;
+    }).join('');
+    document.getElementById(tbodyId).innerHTML = html;
+  }
+
+  function fillInsights(tbodyId, insights) {
+    if (!insights || !insights.length) return;
+    document.getElementById(tbodyId).innerHTML = insights.map(function(i) {
+      return '<tr><td><span class="si-badge" style="background:' + i.badgeBg + ';color:' + i.badgeColor + '">' + esc(i.type) + '</span></td><td>' + esc(i.finding) + '</td><td>' + esc(i.implication) + '</td></tr>';
+    }).join('');
+  }
+
+  // ── Main load ──
+  Promise.all([
+    fetch('dashboard.json').then(function(r) { return r.json(); }),
+    fetch('../../B0BM1WPXC5-FR-Reviews.json').then(function(r) { return r.json(); })
+  ])
+  .then(function(results) {
+    var D = results[0];
+    var rawReviews = results[1];
+
+    document.getElementById('hdrTitle').textContent = D.title;
+    document.getElementById('hdrSub').textContent = D.subtitle;
+
+    // KPIs (no stars — sentiment-based)
+    var kpiHtml = '';
+    kpiHtml += '<div class="kpi"><div class="kpi-v">' + D.totalReviews.toLocaleString() + '</div><div class="kpi-l">Total Reviews</div></div>';
+    kpiHtml += '<div class="kpi"><div class="kpi-v" style="color:#16a34a">' + D.posPct + '%</div><div class="kpi-l">Positive (AI sentiment)</div></div>';
+    kpiHtml += '<div class="kpi"><div class="kpi-v" style="color:#dc2626">' + D.negPct + '%</div><div class="kpi-l">Negative (AI sentiment)</div></div>';
+    kpiHtml += '<div class="kpi"><div class="kpi-v" style="color:#64748b">' + D.neuPct + '%</div><div class="kpi-l">Neutral / Mixed</div></div>';
+    document.getElementById('kpiRow').innerHTML = kpiHtml;
+
+    // Customer Profile
+    document.getElementById('cpSummary').innerHTML = D.cpSummary;
+    Chart.register(ChartDataLabels);
+    makeStackedBar('vocCpWho', D.cpWho);
+    makeStackedBar('vocCpWhen', D.cpWhen);
+    makeStackedBar('vocCpWhere', D.cpWhere);
+    makeStackedBar('vocCpWhat', D.cpWhat);
+
+    // Tables
+    fillTable('usageBody', D.usageScenarios, true);
+    fillTable('motivationBody', D.buyersMotivation, true);
+    fillTable('expectationsBody', D.customerExpectations, true);
+
+    // Sentiment
+    document.getElementById('csSummary').innerHTML = D.csSummary;
+    fillExpandable('negBody', D.negativeTopics, 'neg');
+    fillExpandable('posBody', D.positiveTopics, 'pos');
+    fillInsights('negInsights', D.negativeInsights);
+    fillInsights('posInsights', D.positiveInsights);
+
+    // Wire expandable rows
+    document.querySelectorAll('.nf-row').forEach(function(row) {
+      row.addEventListener('click', function() {
+        var detail = row.nextElementSibling;
+        var open = row.classList.contains('open');
+        document.querySelectorAll('.nf-row.open').forEach(function(r) { r.classList.remove('open'); r.nextElementSibling.classList.remove('open'); });
+        if (!open) { row.classList.add('open'); detail.classList.add('open'); }
+      });
+    });
+    document.querySelectorAll('.pf-row').forEach(function(row) {
+      row.addEventListener('click', function() {
+        var detail = row.nextElementSibling;
+        var open = row.classList.contains('open');
+        document.querySelectorAll('.pf-row.open').forEach(function(r) { r.classList.remove('open'); r.nextElementSibling.classList.remove('open'); });
+        if (!open) { row.classList.add('open'); detail.classList.add('open'); }
+      });
+    });
+
+    // ── Review Browser ──
+    var classified = rawReviews.map(function(r) {
+      var c = classify(r.review, r.title);
+      return Object.assign({}, r, c);
+    });
+
+    document.getElementById('rbTotal').textContent = classified.length;
+    document.getElementById('rbSentiment').innerHTML = D.sentimentFilters.map(function(f) { return '<option value="' + f.value + '">' + f.label + '</option>'; }).join('');
+    document.getElementById('rbTheme').innerHTML = D.themeFilters.map(function(f) { return '<option value="' + f.value + '">' + f.label + '</option>'; }).join('');
+
+    function rbFilter() {
+      var sent = document.getElementById('rbSentiment').value;
+      var theme = document.getElementById('rbTheme').value;
+      var search = (document.getElementById('rbSearch').value || '').toLowerCase().trim();
+      var filtered = classified.filter(function(r) {
+        if (sent && r.sentiment !== sent) return false;
+        if (theme && r.tags.indexOf(theme) === -1) return false;
+        if (search && (r.review || '').toLowerCase().indexOf(search) === -1 && (r.title || '').toLowerCase().indexOf(search) === -1) return false;
+        return true;
+      });
+      document.getElementById('rbResultCount').textContent = 'Showing ' + filtered.length + ' of ' + classified.length + ' reviews';
+      var limit = Math.min(filtered.length, 250);
+      var html = '';
+      for (var i = 0; i < limit; i++) {
+        var r = filtered[i];
+        var sentClass = 'rb-sentiment-' + r.sentiment;
+        var sentLabel = r.sentiment === 'pos' ? 'Positive' : r.sentiment === 'neg' ? 'Negative' : 'Neutral';
+        var tagsHtml = (r.tags || []).map(function(t) { return '<span class="rb-tag">' + t.replace(/_/g, ' ') + '</span>'; }).join('');
+        html += '<tr><td><span class="rb-sentiment ' + sentClass + '">' + sentLabel + '</span></td>' +
+          '<td><div class="rb-title">' + esc(r.title || '(no title)') + '</div>' +
+          '<div class="rb-meta">' + esc(r.date || '') + ' · ' + esc(r.author || 'anonymous') + '</div>' +
+          '<div class="rb-text">' + esc(r.review || '') + '</div>' +
+          (tagsHtml ? '<div class="rb-tags">' + tagsHtml + '</div>' : '') + '</td></tr>';
+      }
+      if (filtered.length > limit) html += '<tr><td colspan="2" style="text-align:center;color:#64748b;font-size:.7rem;padding:14px">Showing first 250 of ' + filtered.length + '. Filter to narrow.</td></tr>';
+      document.getElementById('rbBody').innerHTML = html;
+    }
+
+    document.getElementById('rbSentiment').addEventListener('change', rbFilter);
+    document.getElementById('rbTheme').addEventListener('change', rbFilter);
+    document.getElementById('rbSearch').addEventListener('input', rbFilter);
+    document.getElementById('rbClear').addEventListener('click', function() {
+      document.getElementById('rbSentiment').value = '';
+      document.getElementById('rbTheme').value = '';
+      document.getElementById('rbSearch').value = '';
+      rbFilter();
+    });
+    rbFilter();
+
+    document.getElementById('loadingOverlay').style.display = 'none';
+  })
+  .catch(function(err) {
+    document.getElementById('loadingOverlay').innerHTML = '<div style="color:#dc2626;font-size:.85rem;text-align:center;padding:24px"><b>Failed to load review data.</b><br><br>' + esc(err.message) + '</div>';
+    console.error(err);
+  });
+
+})();
+</script>
+</body>
+</html>

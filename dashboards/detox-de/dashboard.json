@@ -1,0 +1,590 @@
+{
+  "id": "detox-de",
+  "title": "Detox DE — Review Analysis",
+  "subtitle": "B0B6GHYP1V · Amazon DE marketplace · 304 reviews",
+  "asin": "B0B6GHYP1V",
+  "marketplace": "DE",
+  "reviewsFile": "../../B0B6GHYP1V-DE-Reviews.json",
+
+  "totalReviews": 304,
+  "posCount": 128,
+  "negCount": 145,
+  "neuCount": 31,
+  "posPct": "42.1",
+  "negPct": "47.7",
+  "neuPct": "10.2",
+
+  "cpSummary": "Customer profile based on 304 multilingual reviews (DE / ES / IT / FR / EN / CA). The most common buyer is a <strong>woman aged 35–60</strong> seeking <strong>weight management or bloating relief</strong>, taking the supplement <strong>at home in the evening</strong>, with the dominant goal being <strong>flatter abdomen + better digestion</strong>. Negative reviewers heavily over-index on customers who expected weight-loss effects but got only a laxative response — or worse, severe side effects.",
+
+  "cpWho": {
+    "labels": ["Women — weight mgmt", "Chronic digestion issues", "Menopausal women", "Health-conscious dieters", "Men", "Athletes / active"],
+    "pos": [38, 22, 14, 28, 14, 12],
+    "neg": [56, 32, 16, 22, 14, 5]
+  },
+
+  "cpWhen": {
+    "labels": ["Daily routine", "Post-holiday cleanse", "Pre-vacation slimming", "During menopause", "First-time detox trial", "After medication-caused constipation"],
+    "pos": [42, 24, 18, 14, 22, 8],
+    "neg": [38, 28, 16, 14, 38, 11]
+  },
+
+  "cpWhere": {
+    "labels": ["Home — evening routine", "During diet + exercise plan", "Travel / work day (problematic)", "After medical issue"],
+    "pos": [78, 36, 6, 8],
+    "neg": [98, 30, 8, 9]
+  },
+
+  "cpWhat": {
+    "labels": ["Weight loss", "Bloating relief", "Bowel regularity", "Diuretic / fluid loss", "Detox / liver cleanse", "More energy / sleep"],
+    "pos": [28, 44, 38, 22, 18, 10],
+    "neg": [62, 32, 30, 28, 14, 5]
+  },
+
+  "usageScenarios": [
+    { "label": "Bloating relief / abdominal flatness", "reason": "primary use case — customers describe feeling 'inflated' or 'as if pregnant' and want a flatter stomach.", "pct": "23.4%" },
+    { "label": "Weight-loss aid (with diet)", "reason": "customers explicitly pair the supplement with calorie restriction or exercise, expecting the product to amplify diet results.", "pct": "18.1%" },
+    { "label": "Bowel regularity / treating constipation", "reason": "users with sluggish transit or chronic constipation seek a daily nudge — many report meds or diet caused the issue.", "pct": "15.5%" },
+    { "label": "Fluid retention (legs, ankles, abdomen)", "reason": "diuretic positioning attracts users with swelling, especially women in summer or pre-menstrual.", "pct": "12.8%" },
+    { "label": "Post-holiday / seasonal cleanse", "reason": "purchases spike after summer, holidays, or 'periods of excess' — users frame it as a reset.", "pct": "10.5%" },
+    { "label": "Menopause weight management", "reason": "perimenopausal and menopausal women specifically mention hormonal weight gain and difficulty losing.", "pct": "8.2%" },
+    { "label": "Liver / colon detox", "reason": "buyers attracted by the 'liver, colon, intestine' claim — see it as deeper than a laxative.", "pct": "6.6%" },
+    { "label": "Pre-vacation / event slimming", "reason": "short-term cosmetic goal: deflate before swimsuit, wedding, etc.", "pct": "3.0%" },
+    { "label": "Replacing chemical laxatives", "reason": "customers tired of harsh OTC laxatives ('Laxoberal') seek a 'natural' alternative.", "pct": "1.9%" }
+  ],
+
+  "csSummary": "Sentiment is sharply polarised. Positive reviewers consistently report bloating reduction and bowel transit improvement within 2–7 days. Negative reviewers split into two camps: 'no effect at all' (~32% of negative reviews) and 'severe side effects forced me to stop' (~24% of negative reviews) — the latter is unusually high for a supplement and is the strategic flashpoint.",
+
+  "negativeTopics": [
+    {
+      "label": "No effect at all",
+      "reason": "customers complete the recommended 15-day intensive + maintenance cycle and report zero observable change in weight, bloating, or transit.",
+      "pct": "32.4%",
+      "bullets": [
+        "Most-cited single complaint — about 1 in 3 negative reviewers",
+        "Customers say they followed instructions exactly and felt 'nothing'",
+        "Often paired with comments about wasted money / felt scammed"
+      ],
+      "quotes": [
+        "\"Doesn't work for absolutely anything. The worst I've ever tried. No words.\"",
+        "\"I've taken it for 3 weeks, I feel nothing. Not less bloated, not anything. Money wasted.\"",
+        "\"Took the entire bottle, no effect on weight, no diuretic effect, nothing. A total scam.\""
+      ]
+    },
+    {
+      "label": "Severe stomach side effects",
+      "reason": "violent diarrhoea, cramping, abdominal pain — many customers stop after 1–3 doses; some report being unable to leave home or work.",
+      "pct": "24.1%",
+      "bullets": [
+        "Diarrhoea is described as continuous, projectile, or 'explosive'",
+        "Cramps are reported as severe enough to require medical care in some cases",
+        "Dropping from 2 capsules to 1 only partially mitigates — many quit entirely"
+      ],
+      "quotes": [
+        "\"Extreme reaction. Took two nights × 2 tablets — horrible tummy pain, projectile sickness, constant diarrhoea. Cannot eat or drink. Will not continue.\"",
+        "\"After two days of taking it: continuous diarrhoea 5–6 times a day and severe abdominal pain. I do not recommend this product.\"",
+        "\"From the very first dose, severe cramps and diarrhoea. Had to stop immediately — stay away.\""
+      ]
+    },
+    {
+      "label": "Only a laxative — not a detox or diuretic",
+      "reason": "customers feel mis-sold. They expected fluid drainage, weight loss, or 'detox' effects; got only a bowel-movement effect.",
+      "pct": "13.8%",
+      "bullets": [
+        "Customers explicitly distinguish 'goes to bathroom more' from 'detox' or 'diuretic'",
+        "Many feel the marketing oversold ingredients (fennel, charcoal, aloe vera, probiotics)",
+        "Reviewers warn future buyers: 'don't buy if you want to lose weight'"
+      ],
+      "quotes": [
+        "\"It is DETOX yes, but not a powerful slimmer. Don't believe the misleading advertising.\"",
+        "\"I bought it for the diuretic effect — the only effect this has is laxative every morning. Zero fluid elimination.\"",
+        "\"Neither detox, nor draining, nor slimming — this product does nothing of what it claims.\""
+      ]
+    },
+    {
+      "label": "Severe systemic adverse reactions",
+      "reason": "beyond GI side effects: nausea, dizziness, vertigo, panic attacks, skin rashes, fatigue. Several customers report being unable to drive or work.",
+      "pct": "9.7%",
+      "bullets": [
+        "Higher-stakes than typical supplement complaints — risk to safety",
+        "Symptoms include vomiting, vertigo, balance loss, skin rash, anxiety/panic",
+        "Customers frequently mention they had to stop driving or working"
+      ],
+      "quotes": [
+        "\"Started feeling dizzy after 10 days — had to stop driving. Sensation of vertigo and imbalance was enormous. Anxiety and panic.\"",
+        "\"Skin rash all over my body for several days, only stopped when I stopped taking the pills.\"",
+        "\"Nausea, dizziness, fatigue. Days of feeling unwell. Not worth the risk.\""
+      ]
+    },
+    {
+      "label": "No weight loss",
+      "reason": "primary purchase trigger for many buyers; product is positioned via 'belly slimming' imagery but most customers see no scale movement.",
+      "pct": "8.3%",
+      "bullets": [
+        "Customers maintaining diet + exercise still report zero weight reduction",
+        "Some accept the product 'isn't a slimmer' but feel mis-sold",
+        "Particularly painful for menopausal users who came specifically for weight help"
+      ],
+      "quotes": [
+        "\"After 20 days, taking it morning and evening — I haven't lost a single gram of weight.\"",
+        "\"Doing diet and exercise daily, no help with weight loss. Zero. Will not buy again.\"",
+        "\"I bought it because of menopause weight gain. After a month: nothing. Disappointing.\""
+      ]
+    },
+    {
+      "label": "Packaging / quantity defects",
+      "reason": "broken seals, half-empty bottles, missing capsules, opened on arrival — customers feel cheated regardless of whether they tried the product.",
+      "pct": "6.9%",
+      "bullets": [
+        "Multiple reports of bottles arriving partially empty or with broken safety seal",
+        "Missing capsules (some report 45 instead of advertised 60)",
+        "Triggers safety concerns — customers throw out the product unopened"
+      ],
+      "quotes": [
+        "\"Less than half the bottle full when I opened it — and that's with the seal intact!\"",
+        "\"Bottle says 60 capsules. I counted 45. With the recommended dosage I should have a full bottle. Very disappointed.\"",
+        "\"Arrived with the safety seal broken. Couldn't return. I had to throw it out — terrible.\""
+      ]
+    },
+    {
+      "label": "Aggressive review-for-freebie scheme",
+      "reason": "customers report being offered a free second bottle in exchange for a 5-star review — many cite this as the reason they distrust the high overall rating.",
+      "pct": "3.4%",
+      "bullets": [
+        "Brand reportedly contacts buyers via WhatsApp / QR code",
+        "Customers report pressure to leave 5-star review within days of receipt",
+        "Some leave 1-star reviews specifically to call out this practice"
+      ],
+      "quotes": [
+        "\"They send a free bottle if you give 5 stars. That's why this product has 9-out-of-10 ratings on some sites — it's a scam.\"",
+        "\"Post-sales team has lots of urgency for you to write the review at 2 days. After 1 month I noticed nothing — my real opinion is very different.\"",
+        "\"Suspicious that all positive reviews exist because of the freebie scheme. A bit of ethics, please.\""
+      ]
+    },
+    {
+      "label": "Price not justified by results",
+      "reason": "€20–25 per bottle considered expensive when paired with no effect or with cheaper alternatives (probiotics + activated charcoal sold separately).",
+      "pct": "1.4%",
+      "bullets": [
+        "Customers compare ingredient mix to cheaper individual supplements",
+        "DIY alternatives (probiotic + charcoal) cited as half the price",
+        "Particularly painful when no effect is felt — feels like double loss"
+      ],
+      "quotes": [
+        "\"Expensive product for what it delivers — just an improvement in transit and gas. I get the same with probiotics + activated charcoal at half the price.\"",
+        "\"€21.58 for nothing. Money thrown away.\"",
+        "\"Not worth €25 — this is just fennel and charcoal in a fancy bottle.\""
+      ]
+    }
+  ],
+
+  "negativeInsights": [
+    { "type": "Risk", "finding": "Adverse-reaction reports include vertigo, panic attacks, skin rash, projectile vomiting — beyond ordinary GI sensitivity.", "implication": "Reformulate or add stronger 'consult doctor if on medication / IBS / hypothyroid' warning. Current label is insufficient.", "badgeBg": "#fee2e2", "badgeColor": "#991b1b" },
+    { "type": "Mis-positioning", "finding": "32% of negative reviewers say 'no effect' — but most of them expected weight loss specifically.", "implication": "Reposition AWAY from weight-loss imagery. Lead on bloating + transit (the actual repeat-claim positives). Reduces purchase mismatch.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
+    { "type": "Trust", "finding": "Review-for-freebie scheme is independently called out by 3–4% of negative reviewers and is poisoning the rating's credibility.", "implication": "End the practice. Rating quality > rating volume — Amazon will eventually penalise inauthentic reviews and the product page collapses.", "badgeBg": "#fee2e2", "badgeColor": "#991b1b" },
+    { "type": "Operational", "finding": "Packaging defects (broken seal, missing capsules, half-empty bottles) appear across multiple years — suggests fulfilment / sealing process issue, not random.", "implication": "Audit fulfilment/sealing. Fix is cheap; lost reviews are not.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
+    { "type": "Communication", "finding": "Customers feel 'detox' = weight loss + diuretic, but the formulation acts primarily as a laxative.", "implication": "Re-write A+ content + main image bullets to lead with 'Bowel regularity + bloating relief' — set realistic expectations to convert no-effect 1★ into satisfied 4★.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+  ],
+
+  "positiveTopics": [
+    {
+      "label": "It works (general satisfaction)",
+      "reason": "broad-stroke positive: 'funciona', 'wirkt', 'marche', 'funziona' — customers who feel the product delivered what they hoped.",
+      "pct": "28.1%",
+      "bullets": [
+        "Most common positive — many short reviews just say 'works' / 'good product'",
+        "Frequently followed by repeat-purchase intent",
+        "Strong cross-language consistency (DE/ES/IT/FR all use the same satisfaction shorthand)"
+      ],
+      "quotes": [
+        "\"Excellent — works really well. Recommended.\"",
+        "\"Very good. Does what it says. Will buy again.\"",
+        "\"Effective product. I'm on my second cure.\""
+      ]
+    },
+    {
+      "label": "Bloating relief / flatter stomach",
+      "reason": "the most repeatedly-named tangible benefit — customers feel less inflated within days, often visible to themselves and others.",
+      "pct": "21.7%",
+      "bullets": [
+        "Effect typically reported within 3–7 days",
+        "Customers describe abdomen visibly less swollen, sometimes 'no longer looks pregnant'",
+        "Bigger effect for users with chronic abdominal bloating"
+      ],
+      "quotes": [
+        "\"From the third day my abdomen was no longer inflated. Not pregnant but it looked like it before. Now flat.\"",
+        "\"I feel less swollen since I started — it's the only thing I changed in my routine.\"",
+        "\"Abdomen visibly smaller, less puffiness. Exactly what I was looking for after summer.\""
+      ]
+    },
+    {
+      "label": "Improved bowel regularity",
+      "reason": "constipation sufferers and people on medications causing slow transit report consistent next-day bowel movements without harsh laxative experience.",
+      "pct": "16.8%",
+      "bullets": [
+        "Especially valued by customers on chronic medications (mental health, hypothyroid)",
+        "Compared favourably to harsher OTC laxatives like Laxoberal",
+        "Some users adjust to 1 capsule (vs recommended 2) for gentler effect — works at lower dose"
+      ],
+      "quotes": [
+        "\"Natural alternative to laxatives. Works perfectly — no diarrhoea, normal 1–2× movement and that's it. I'd buy again any time.\"",
+        "\"My lazy intestine is now regulated thanks to this product.\"",
+        "\"Took it at night — by morning, on the throne. Does the job.\""
+      ]
+    },
+    {
+      "label": "Diuretic / fluid loss effect",
+      "reason": "users with leg swelling, water retention, or pre-menstrual puffiness report increased urination and visible reduction in fluid retention.",
+      "pct": "11.5%",
+      "bullets": [
+        "Visible especially in mornings — customers report needing to urinate more",
+        "Particularly valued by women retaining water in legs/ankles",
+        "Some users specifically endorse 'as a diuretic' even when not for weight loss"
+      ],
+      "quotes": [
+        "\"Excellent diuretic. I'd buy again for this reason alone — even if it's not a slimmer.\"",
+        "\"In the morning I urinate more and my weight stays in check. Helpful.\"",
+        "\"Lighter legs, less puffy ankles after a week. Diuretic effect is real for me.\""
+      ]
+    },
+    {
+      "label": "Weight loss (combined with diet)",
+      "reason": "users who pair the product with diet + exercise report 2–6 kg loss over 2–4 weeks — typically credit diet as the main driver but feel the product 'amplifies' results.",
+      "pct": "9.4%",
+      "bullets": [
+        "Always paired with diet + exercise — never claimed as standalone weight-loss",
+        "Reported losses range from 0.5 kg/week to dramatic (one user reported 18 kg over months)",
+        "Customers often emphasize 'with healthy eating' caveat"
+      ],
+      "quotes": [
+        "\"Lost 3 kg in 20 days — with diet of course. Lots of bathroom trips, more energy, less inflammation. Very happy.\"",
+        "\"Lost 6 kg quickly — was sceptical at first, then noticed clothes fitting differently. Now 18 kg total.\"",
+        "\"Down 2 kg in 2 months on diet. Helps but not a miracle — works alongside good eating.\""
+      ]
+    },
+    {
+      "label": "Easy to take / no taste",
+      "reason": "small capsules, neutral taste, no aftertaste — practical day-to-day adherence factor that supports continued use.",
+      "pct": "5.9%",
+      "bullets": [
+        "Capsules described as 'small' and 'easy to swallow'",
+        "Tasteless = no compliance friction",
+        "No reflux or aftertaste reported"
+      ],
+      "quotes": [
+        "\"Tasteless, comfortable, easy to take.\"",
+        "\"Capsules are a normal size, no aftertaste, easy to swallow with water.\"",
+        "\"No bad taste even if a capsule opens in your stomach. Practical.\""
+      ]
+    },
+    {
+      "label": "Customer service + QR-code support",
+      "reason": "post-purchase support via WhatsApp / QR code is consistently praised as responsive — even by some critical reviewers.",
+      "pct": "4.2%",
+      "bullets": [
+        "QR code on packaging directs to detailed instructions + support",
+        "Personalised guidance via WhatsApp valued especially by older buyers",
+        "Some critical reviewers still praise the support team"
+      ],
+      "quotes": [
+        "\"Excellent customer service / user design. QR code takes you to interactive product usage. Best support I've seen.\"",
+        "\"Personalised follow-up service is very performant. They explain how to take the supplement and stay available.\"",
+        "\"Customer service is fantastic — that alone justifies part of the price.\""
+      ]
+    },
+    {
+      "label": "Fast results",
+      "reason": "subset of users (notably those with chronic constipation) report visible effects from day 1–3.",
+      "pct": "2.4%",
+      "bullets": [
+        "Typically reported by customers with prior digestive issues",
+        "Often: take at night → effect by morning",
+        "Strong compliance signal — fast result drives completion of cycle"
+      ],
+      "quotes": [
+        "\"From the first night already saw results.\"",
+        "\"Took it at night, woke up and immediately saw the effect.\"",
+        "\"Within 2 days I felt less bloated. Great.\""
+      ]
+    }
+  ],
+
+  "positiveInsights": [
+    { "type": "Lead claim", "finding": "Bloating relief + transit regularity together account for 38.5% of all positive comments — bigger than any single weight-loss claim.", "implication": "Make 'less bloated, regular transit' the primary main image + A+ headline. Demote weight-loss imagery to secondary.", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
+    { "type": "Differentiator", "finding": "'Natural alternative to harsh laxatives' is a strong, defensible message — multiple users explicitly compare to Laxoberal favourably.", "implication": "Add competitor-comparison angle on listing: 'Without the harshness of chemical laxatives.' This converts a different buyer segment.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
+    { "type": "Social proof", "finding": "QR-code support is mentioned positively across DE/FR/ES/IT — true cross-market differentiator that competitors are unlikely to match.", "implication": "Prominently feature 'Includes free personalised support' on main image and bullets. Easy to verify, hard to copy.", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
+    { "type": "Customer profile", "finding": "Highest satisfaction is among customers with chronic digestive issues using it as a maintenance product — not first-time short-term users.", "implication": "Subscribe & Save program. Repeat purchase rate among chronic-issue segment will be the sustainable revenue driver.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+  ],
+
+  "buyersMotivation": [
+    { "label": "Lose weight", "reason": "primary purchase trigger — customers explicitly buy expecting scale movement, often after holidays or for menopause weight gain.", "pct": "31.2%" },
+    { "label": "Reduce bloating / flatten abdomen", "reason": "cosmetic and comfort goal — feeling 'inflated' or 'pregnant-looking' is a common expressed driver.", "pct": "23.7%" },
+    { "label": "Improve digestion / regularity", "reason": "chronic constipation, sluggish transit, post-medication effects.", "pct": "18.4%" },
+    { "label": "Reduce fluid retention", "reason": "diuretic positioning — leg/ankle swelling, summer water retention.", "pct": "11.6%" },
+    { "label": "General detox / cleanse", "reason": "broad 'reset the body' goal — often after periods of excess (holidays, summer).", "pct": "8.5%" },
+    { "label": "Find natural alternative to harsh laxatives", "reason": "users who've tried OTC laxatives (Laxoberal) and want gentler option.", "pct": "4.1%" },
+    { "label": "Boost energy / better sleep", "reason": "secondary motivation — some customers expect overall vitality lift.", "pct": "2.5%" }
+  ],
+
+  "customerExpectations": [
+    { "label": "Real scale-moving weight loss", "reason": "the largest gap — customers expect ≥ 2–3 kg loss from supplement alone, but it requires diet + exercise and even then is modest.", "pct": "29.4%" },
+    { "label": "Diuretic effect (not just laxative)", "reason": "marketed as draining fluids, but for many customers only the bowel-movement effect appears.", "pct": "18.7%" },
+    { "label": "No diarrhoea or cramps", "reason": "expected gentle, predictable action. Got: violent diarrhoea, severe cramps, projectile vomiting in worst cases.", "pct": "16.3%" },
+    { "label": "Predictable timing (no all-day toilet)", "reason": "users want to plan workdays / travel — but report uncontrollable bathroom urgency from morning until midday.", "pct": "9.8%" },
+    { "label": "Transparent ingredient labelling", "reason": "users object to 'proprietary blend' wording — they want exact mg per ingredient, country of manufacture.", "pct": "8.5%" },
+    { "label": "Authentic reviews (no freebie scheme)", "reason": "customers feel the rating is inflated. Want to trust ratings without suspecting incentivised reviews.", "pct": "6.9%" },
+    { "label": "Proper sealing / full bottle", "reason": "expected an unopened, full bottle. Repeated reports of broken seal or short fill undermine basic trust.", "pct": "6.4%" },
+    { "label": "Honest customer support (not pushy for reviews)", "reason": "support team praised by some, but others report aggressive 'leave 5-star review' contact within 2 days of purchase.", "pct": "4.0%" }
+  ],
+
+  "themeFilters": [
+    { "value": "", "label": "All themes" },
+    { "value": "no_effect", "label": "No effect" },
+    { "value": "side_effects", "label": "Side effects (cramps, diarrhoea)" },
+    { "value": "severe_reaction", "label": "Severe systemic reaction" },
+    { "value": "only_laxative", "label": "Only laxative — not detox" },
+    { "value": "no_weight_loss", "label": "No weight loss" },
+    { "value": "packaging", "label": "Packaging defects" },
+    { "value": "freebie_scheme", "label": "Review-for-freebie scheme" },
+    { "value": "works", "label": "Works (general)" },
+    { "value": "bloating_relief", "label": "Bloating relief" },
+    { "value": "regularity", "label": "Bowel regularity" },
+    { "value": "diuretic", "label": "Diuretic effect" },
+    { "value": "weight_loss", "label": "Weight loss (with diet)" },
+    { "value": "easy_take", "label": "Easy to take" },
+    { "value": "support", "label": "Customer service / QR support" },
+    { "value": "fast_results", "label": "Fast results" }
+  ],
+
+  "sentimentFilters": [
+    { "value": "", "label": "All sentiment" },
+    { "value": "pos", "label": "Positive" },
+    { "value": "neg", "label": "Negative" },
+    { "value": "neu", "label": "Neutral / mixed" }
+  ],
+
+  "marketingDeepDive": {
+    "marketplace": "Amazon DE",
+    "totalCompetitors": 9,
+    "currency": "€",
+    "intro": "Marketing intelligence across <b>9 top competitors</b> on <b>Amazon DE</b>. Listings pulled live from SP-API Catalog. Claims tagged across 15 themes and cross-referenced with VOC findings from Tab 1.",
+
+    "userProduct": {
+      "asin": "B0B6GHYP1V",
+      "brand": "QSTA",
+      "title": "CNC DETOX – 100 Mrd. KBE Probiotika aus 9 Stämmen + Aloe Vera + Aktivkohle + Fenchelextrakt – 60 Weichkapseln",
+      "price": 22.99,
+      "bsr": 51947,
+      "nicheBsr": 167,
+      "niche": "Präparate zur Entgiftung & Detox-Kur",
+      "size": "60 Kapseln",
+      "image": "https://m.media-amazon.com/images/I/71OlU8iK4mL.jpg",
+      "themes": ["multi_strain_probiotic", "high_cfu", "gut_flora", "natural_plant", "vegan", "evening_formula"]
+    },
+
+    "competitors": [
+      {
+        "asin": "B0FZD5N1QQ",
+        "brand": "Kijimea",
+        "title": "Kijimea® K53 Advance – Darmbakterien hochdosiert | 53 Bakterienstämme | mit Biotin | >500 Mrd. KBE/Monat | laktosefrei | glutenfrei",
+        "price": 19.99,
+        "bsr": 14,
+        "nicheBsr": 1,
+        "niche": "Probiotika Lactobacillus",
+        "size": "14 Kapseln",
+        "image": "https://m.media-amazon.com/images/I/71i+F3MG7TL.jpg",
+        "themes": ["multi_strain_probiotic", "high_cfu", "gastro_resistant", "gut_flora", "lab_tested", "clinical_studies", "gluten_lactose_free"],
+        "highlight": "Strongest probiotic claim (53 strains, The Lancet studies, premium aluminium blister)"
+      },
+      {
+        "asin": "B06XXGNMHB",
+        "brand": "Nature Love",
+        "title": "Nature Love Probiona Kulturen Komplex – 20 Bakterienstämme – 300 Mrd. KBE/g – 180 Kapseln, magensaftresistent, vegan",
+        "price": 29.99,
+        "bsr": 151,
+        "nicheBsr": 2,
+        "niche": "Probiotika Lactobacillus",
+        "size": "180 Kapseln",
+        "image": "https://m.media-amazon.com/images/I/71lsmQuAOTL.jpg",
+        "themes": ["multi_strain_probiotic", "high_cfu", "gastro_resistant", "gut_flora", "natural_plant", "vegan", "gluten_lactose_free", "made_in_de_eu", "lab_tested", "without_additives"],
+        "highlight": "Volume leader. Bullets focus on 'Klasse statt Masse' — strain quality over quantity"
+      },
+      {
+        "asin": "B09WR2PN95",
+        "brand": "NATURTREU",
+        "title": "NATURTREU Florazauber Kulturen Komplex magensaftresistent & vegan – 23 Bakterienstämme ohne Inulin",
+        "price": 23.99,
+        "bsr": 232,
+        "nicheBsr": 5,
+        "niche": "Probiotika Lactobacillus",
+        "size": "60 Kapseln",
+        "image": "https://m.media-amazon.com/images/I/71C2aSkhSoL.jpg",
+        "themes": ["multi_strain_probiotic", "high_cfu", "gastro_resistant", "gut_flora", "b_vitamins", "natural_plant", "vegan", "gluten_lactose_free", "made_in_de_eu", "lab_tested"],
+        "highlight": "'Acacia fiber instead of inulin' positions for fructose-intolerance buyers — niche differentiator"
+      },
+      {
+        "asin": "B0B9N6BRWR",
+        "brand": "NATURTREU",
+        "title": "NATURTREU Stoffwechsel Kapseln – L-Carnitin + Grüner Tee + Forskohlii + Cholin + Spargel + Bittermelone + Garcinia + Chrom",
+        "price": 25.99,
+        "bsr": 585,
+        "nicheBsr": 1,
+        "niche": "Garcinia Cambogia",
+        "size": "120 Kapseln",
+        "image": "https://m.media-amazon.com/images/I/71p5SHuJqEL.jpg",
+        "themes": ["weight_metabolism", "natural_plant", "vegan", "made_in_de_eu", "lab_tested", "without_additives"],
+        "highlight": "Owns metabolism / weight angle — only competitor explicitly claiming weight loss"
+      },
+      {
+        "asin": "B00NGRAOMS",
+        "brand": "ZeolithMED",
+        "title": "Zeolith MED Detox-Pulver 400g, Medizinprodukt, Apothekenqualität, Entgiftung von Schwermetallen",
+        "price": 28.8,
+        "bsr": 842,
+        "nicheBsr": 3,
+        "niche": "Präparate zur Entgiftung & Detox-Kur",
+        "size": "400g Pulver",
+        "image": "https://m.media-amazon.com/images/I/61L6BpGNuiL.jpg",
+        "themes": ["heavy_metal_detox", "liver_detox", "natural_plant", "vegan", "gluten_lactose_free", "made_in_de_eu", "medical_device", "lab_tested", "without_additives"],
+        "highlight": "Direct shelf-neighbour. Owns 'Schwermetalle' (heavy metals) — and is a certified Medizinprodukt"
+      },
+      {
+        "asin": "B00NAWE7Z4",
+        "brand": "ZeolithMED",
+        "title": "Zeolith MED Detox-Pulver 200g, Medizinprodukt, Apothekenqualität, Entgiftung von Schwermetallen",
+        "price": 18.8,
+        "bsr": 936,
+        "nicheBsr": 3,
+        "niche": "Präparate zur Entgiftung & Detox-Kur",
+        "size": "200g Pulver",
+        "image": "https://m.media-amazon.com/images/I/613YXmx1GhL.jpg",
+        "themes": ["heavy_metal_detox", "liver_detox", "natural_plant", "vegan", "gluten_lactose_free", "made_in_de_eu", "medical_device", "lab_tested", "without_additives"],
+        "highlight": "Smaller pack of B00NGRAOMS — entry-price variant of the same brand"
+      },
+      {
+        "asin": "B0BJW69WC3",
+        "brand": "natural elements",
+        "title": "natural elements Bio Brennnessel – 180 Kapseln – 10:1 Brennnesselblattextrakt – vegan, hochdosiert",
+        "price": 23.99,
+        "bsr": 1453,
+        "nicheBsr": 4,
+        "niche": "Brennessel (Pflanzliches Ergänzungsmittel)",
+        "size": "180 Kapseln",
+        "image": "https://m.media-amazon.com/images/I/71yd+vuxxxL.jpg",
+        "themes": ["diuretic", "natural_plant", "vegan", "made_in_de_eu", "lab_tested", "without_additives", "organic"],
+        "highlight": "Single-ingredient nettle; closest 'diuretic' angle in the set but only 1/9 claims this"
+      },
+      {
+        "asin": "B0CNYJH367",
+        "brand": "NaturElan",
+        "title": "Probio PLUS Kulturen Komplex – 180 Kapseln mit 30 Bakterienstämmen, 20 Mrd. KBE/Tagesdosis, Magensaftresistent",
+        "price": 18.98,
+        "bsr": 1796,
+        "nicheBsr": 18,
+        "niche": "Probiotika Lactobacillus",
+        "size": "180 Kapseln",
+        "image": "https://m.media-amazon.com/images/I/61jO6ZeAmgL.jpg",
+        "themes": ["multi_strain_probiotic", "high_cfu", "gastro_resistant", "gut_flora", "b_vitamins", "natural_plant", "vegan", "gluten_lactose_free", "made_in_de_eu", "without_additives"],
+        "highlight": "Lowest-price probiotic in the set. Acacia fiber + B-vitamins, similar pitch to NATURTREU Florazauber"
+      },
+      {
+        "asin": "B0FQVQQ7BZ",
+        "brand": "Oildem",
+        "title": "Oildem Bio Schwarzkümmelöl Kapseln vegan (ungefiltert)",
+        "price": 29.99,
+        "bsr": null,
+        "nicheBsr": null,
+        "niche": "Pflanzliches Öl",
+        "size": "Kapseln",
+        "image": "https://m.media-amazon.com/images/I/71CJ9iEKufL.jpg",
+        "themes": ["natural_plant", "vegan", "made_in_de_eu", "lab_tested", "without_additives", "organic"],
+        "highlight": "Adjacent (black seed oil) — represents the 'natural wellness' shelf customer cross-shops"
+      }
+    ],
+
+    "claimsMatrix": {
+      "themes": [
+        { "value": "multi_strain_probiotic", "label": "Multi-strain probiotic" },
+        { "value": "high_cfu", "label": "High CFU" },
+        { "value": "gastro_resistant", "label": "Gastro-resistant" },
+        { "value": "gut_flora", "label": "Gut flora" },
+        { "value": "liver_detox", "label": "Liver detox" },
+        { "value": "heavy_metal_detox", "label": "Heavy metal detox" },
+        { "value": "bloating_relief", "label": "Bloating relief" },
+        { "value": "regularity", "label": "Regularity" },
+        { "value": "diuretic", "label": "Diuretic" },
+        { "value": "weight_metabolism", "label": "Weight / metabolism" },
+        { "value": "natural_plant", "label": "Natural / plant" },
+        { "value": "vegan", "label": "Vegan" },
+        { "value": "made_in_de_eu", "label": "Made in DE/EU" },
+        { "value": "lab_tested", "label": "Lab tested" },
+        { "value": "medical_device", "label": "Medical device" }
+      ],
+      "rows": [
+        { "asin": "B0B6GHYP1V", "brand": "QSTA (CNC DETOX)", "isUser": true, "cells": [1,1,0,1,0,0,0,0,0,0,1,1,0,0,0] },
+        { "asin": "B0FZD5N1QQ", "brand": "Kijimea",         "cells": [1,1,1,1,0,0,0,0,0,0,0,0,0,1,0] },
+        { "asin": "B06XXGNMHB", "brand": "Nature Love",     "cells": [1,1,1,1,0,0,0,0,0,0,1,1,1,1,0] },
+        { "asin": "B09WR2PN95", "brand": "NATURTREU Flora", "cells": [1,1,1,1,0,0,0,0,0,0,1,1,1,1,0] },
+        { "asin": "B0B9N6BRWR", "brand": "NATURTREU Stoff", "cells": [0,0,0,0,0,0,0,0,0,1,1,1,1,1,0] },
+        { "asin": "B00NGRAOMS", "brand": "ZeolithMED 400g", "cells": [0,0,0,0,1,1,0,0,0,0,1,1,1,1,1] },
+        { "asin": "B00NAWE7Z4", "brand": "ZeolithMED 200g", "cells": [0,0,0,0,1,1,0,0,0,0,1,1,1,1,1] },
+        { "asin": "B0BJW69WC3", "brand": "natural elements","cells": [0,0,0,0,0,0,0,0,1,0,1,1,1,1,0] },
+        { "asin": "B0CNYJH367", "brand": "NaturElan",       "cells": [1,1,1,1,0,0,0,0,0,0,1,1,1,0,0] },
+        { "asin": "B0FQVQQ7BZ", "brand": "Oildem",          "cells": [0,0,0,0,0,0,0,0,0,0,1,1,1,1,0] }
+      ]
+    },
+
+    "claimsSummary": [
+      { "label": "Natural / plant",          "count": 8, "pct": "89%", "topBrands": ["Nature Love", "NATURTREU", "ZeolithMED", "natural elements", "Oildem"] },
+      { "label": "Vegan",                    "count": 8, "pct": "89%", "topBrands": ["Nature Love", "NATURTREU", "ZeolithMED", "natural elements", "Oildem"] },
+      { "label": "Made in DE/EU",            "count": 8, "pct": "89%", "topBrands": ["Nature Love", "NATURTREU", "ZeolithMED", "natural elements"] },
+      { "label": "Lab tested",               "count": 8, "pct": "89%", "topBrands": ["Nature Love", "NATURTREU", "natural elements", "Kijimea"] },
+      { "label": "Multi-strain probiotic",   "count": 4, "pct": "44%", "topBrands": ["Kijimea", "Nature Love", "NATURTREU Flora", "NaturElan"] },
+      { "label": "High CFU",                 "count": 4, "pct": "44%", "topBrands": ["Kijimea", "Nature Love", "NATURTREU Flora", "NaturElan"] },
+      { "label": "Gastro-resistant",         "count": 4, "pct": "44%", "topBrands": ["Kijimea", "Nature Love", "NATURTREU Flora", "NaturElan"] },
+      { "label": "Gut flora",                "count": 4, "pct": "44%", "topBrands": ["Kijimea", "Nature Love", "NATURTREU Flora", "NaturElan"] },
+      { "label": "Liver detox",              "count": 2, "pct": "22%", "topBrands": ["ZeolithMED 400g", "ZeolithMED 200g"] },
+      { "label": "Heavy metal detox",        "count": 2, "pct": "22%", "topBrands": ["ZeolithMED 400g", "ZeolithMED 200g"] },
+      { "label": "Medical device cert",      "count": 2, "pct": "22%", "topBrands": ["ZeolithMED 400g", "ZeolithMED 200g"] },
+      { "label": "Diuretic",                 "count": 1, "pct": "11%", "topBrands": ["natural elements (Brennnessel)"] },
+      { "label": "Weight / metabolism",      "count": 1, "pct": "11%", "topBrands": ["NATURTREU Stoffwechsel"] },
+      { "label": "Bloating relief",          "count": 0, "pct": "0%",  "topBrands": ["—"] },
+      { "label": "Regularity",               "count": 0, "pct": "0%",  "topBrands": ["—"] }
+    ],
+
+    "vocGap": [
+      { "vocTopic": "Bloating relief",                      "customerConcernPct": "21.7% positive",  "addressedByCount": 0, "addressedByBrands": ["—"],                                  "gapSeverity": "HIGH",   "whitespace": "Zero competitors lead with bloating. This is your strongest single lead-claim opportunity." },
+      { "vocTopic": "Improved bowel regularity",            "customerConcernPct": "16.8% positive",  "addressedByCount": 0, "addressedByBrands": ["—"],                                  "gapSeverity": "HIGH",   "whitespace": "Probiotics are claimed; transit / regularity is not. Bridge the two: 'Probiotika für täglichen Stuhlgang'." },
+      { "vocTopic": "Natural alternative to chem laxatives","customerConcernPct": "spontaneous mention", "addressedByCount": 0, "addressedByBrands": ["—"],                              "gapSeverity": "HIGH",   "whitespace": "VOC reviewers spontaneously name Laxoberal/Movicol. None of 9 competitors position vs chemical laxatives." },
+      { "vocTopic": "No effect / doesn't work",             "customerConcernPct": "32.4% negative",  "addressedByCount": 4, "addressedByBrands": ["Kijimea (clinical)", "Nature Love (lab)", "NATURTREU", "ZeolithMED (Medizinprodukt)"], "gapSeverity": "MEDIUM", "whitespace": "Competitors lean on lab/clinical proof. CNC Detox could add 'studienbasiert' or third-party verification." },
+      { "vocTopic": "Severe side effects",                  "customerConcernPct": "24.1% negative",  "addressedByCount": 0, "addressedByBrands": ["—"],                                  "gapSeverity": "MEDIUM", "whitespace": "No competitor leads with 'gentle / no cramps'. Strong angle if reformulation can support it." },
+      { "vocTopic": "Diuretic / fluid loss",                "customerConcernPct": "11.5% positive",  "addressedByCount": 1, "addressedByBrands": ["natural elements (Brennnessel)"],     "gapSeverity": "LOW",    "whitespace": "Limited competitor coverage. CNC could add a secondary diuretic claim if formulation supports." },
+      { "vocTopic": "Weight loss",                          "customerConcernPct": "31.2% motivation","addressedByCount": 1, "addressedByBrands": ["NATURTREU Stoffwechsel"],             "gapSeverity": "LOW",    "whitespace": "Crowded space — and VOC shows your weight-loss promise mismatches reality. Demote, don't lead." },
+      { "vocTopic": "Heavy metal detox",                    "customerConcernPct": "n/a (not in VOC)","addressedByCount": 2, "addressedByBrands": ["ZeolithMED 400g", "ZeolithMED 200g"], "gapSeverity": "LOW",    "whitespace": "ZeolithMED owns this; activated charcoal in CNC could claim adjunct support — but watch medical-device regulatory line." }
+    ],
+
+    "whitespaceOpportunities": [
+      { "opportunity": "🏆 'Endlich weniger Blähungen' — own bloating relief", "rationale": "Bloating relief is your #2 positive VOC theme (22% of positives) but ZERO of 9 competitors lead with it. This is the single highest-leverage repositioning available.", "evidence": "VOC: 21.7% of positive reviews mention bloating relief. Claims matrix: 0/9 competitors claim it." },
+      { "opportunity": "Probiotic + Detox crossover positioning", "rationale": "4 competitors are pure probiotics, 2 are pure heavy-metal detox. CNC Detox is the only product that combines probiotics + detox + activated charcoal + aloe + fennel. Lead with this synthesis.", "evidence": "Matrix: no other competitor has both 'gut flora' AND 'liver/heavy metal detox' columns filled." },
+      { "opportunity": "'Natural alternative to chemical laxatives'", "rationale": "VOC reviewers spontaneously compare to Laxoberal, Movicol, magnesium citrate. None of 9 competitors take this positioning. Easy ownership of a real customer narrative.", "evidence": "Reviews repeatedly cite 'früher hatte ich laxoberal' — strong customer-validated framing." },
+      { "opportunity": "'Sanft & ohne Krämpfe' (Gentle / no cramps) angle", "rationale": "24% of negative reviews report cramping; 0 of 9 competitors lead with gentleness. Pre-empts the negative review pattern and creates differentiation.", "evidence": "Negative VOC #2 (cramps/pain 16-24%). Saturation: 0% competitor coverage of 'gentle' messaging." },
+      { "opportunity": "Daily transit / morning regularity", "rationale": "16.8% of positives mention bowel regularity; 0/9 competitors claim it explicitly. Probiotic claims exist, transit claims don't.", "evidence": "VOC: 'transit', 'regularity', 'tránsito' across DE/ES/IT positives. Matrix: 0/9 'regularity' coverage." }
+    ],
+
+    "saturation": [
+      { "label": "Vegan",                  "saturationPct": "89%", "advice": "Demote to a small badge. Saying 'vegan' as a primary claim no longer differentiates — 8 of 9 competitors do." },
+      { "label": "Lab-tested",             "saturationPct": "89%", "advice": "Same — saturated. Move to trust-row, not main image." },
+      { "label": "Made in DE / EU",        "saturationPct": "89%", "advice": "Almost everyone claims it; 'in Deutschland produziert' is now table stakes." },
+      { "label": "Natural / plant-based",  "saturationPct": "89%", "advice": "Saturated. Replace lead with the actual benefit ('weniger Blähungen') rather than the input ('natürlich')." },
+      { "label": "Multi-strain probiotic count", "saturationPct": "44% (within probiotic sub-niche)", "advice": "Inside the probiotic shelf, strain count is an arms race (CNC has 9, Kijimea has 53). Don't compete on this metric — pivot to outcome (transit / bloating)." }
+    ],
+
+    "strategicRecommendations": [
+      { "type": "Reposition main image", "finding": "0/9 competitors claim 'bloating relief' — your strongest VOC positive (22%) is wholly unowned in the competitive set.", "implication": "Replace the current 'CNC DETOX – 100 Mrd. KBE Probiotika...' headline with 'Weniger Blähungen — Probiotika + Aktivkohle + Aloe Vera'. Bloating-led, ingredient-supported.", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
+      { "type": "Bridge probiotic ↔ detox", "finding": "CNC Detox is the only product in the set with both gut-flora claims AND detox claims. Listing copy doesn't articulate this synthesis.", "implication": "Add a clear 'Probiotika & Detox in einer Kapsel' angle to bullet 1. None of the 4 probiotic competitors will be able to copy this because they don't have the activated-charcoal + aloe formulation.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
+      { "type": "Address gentleness", "finding": "24% of negative reviews report severe cramps. 0/9 competitors lead with 'sanft / no cramps'.", "implication": "Add 'Sanft – ohne Bauchkrämpfe' as a secondary bullet. Pre-empts the most common negative review and differentiates simultaneously. Caveat: only do this if formulation actually supports gentle delivery (some VOC reviewers report severe cramps even at low dose).", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
+      { "type": "Demote weight-loss imagery", "finding": "31% of buyers come expecting weight loss but VOC shows the product doesn't deliver scale movement. Only 1 competitor (NATURTREU Stoffwechsel) explicitly claims it — and they have the L-Carnitin/Garcinia formulation that supports the claim.", "implication": "Remove 'slimming' visual cues from main image. Reposition as digestive comfort + cleanse — converts the right buyer, reduces the 'no weight loss' negative review pattern.", "badgeBg": "#fee2e2", "badgeColor": "#991b1b" },
+      { "type": "Stop saturated claims", "finding": "'Vegan', 'natural', 'lab-tested', 'made in DE/EU' are each in 89% of competitor listings. Your bullets currently lead on similar generic claims.", "implication": "Move these to a trust-row badge cluster. Use the freed primary real estate for outcome claims (bloating, regularity, gentleness).", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
+      { "type": "Watch ZeolithMED's medical-device flank", "finding": "ZeolithMED owns 'Medizinprodukt' and 'Schwermetalle' in the direct Detox-Kur niche. They're 2 of the top 3 in your niche by BSR.", "implication": "Don't try to claim heavy-metal detox without medical-device certification — regulatory risk. Instead, lead on probiotic + bloating (where they're absent) and let them have their flank.", "badgeBg": "#fee2e2", "badgeColor": "#991b1b" }
+    ]
+  }
+}

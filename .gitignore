@@ -1,0 +1,24 @@
+# Excel lock files
+~$*.xlsx
+~$*
+
+# Excel exports (we use the JSON instead)
+*.xlsx
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Env / secrets
+.env
+.env.local
+*.key
+*.pem

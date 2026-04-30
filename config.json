@@ -1,0 +1,25 @@
+{
+  "dashboards": [
+    {
+      "id": "detox-de",
+      "title": "Detox DE",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "lax-de",
+      "title": "Lax DE",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "lax-fr",
+      "title": "Lax FR",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    }
+  ]
+}
