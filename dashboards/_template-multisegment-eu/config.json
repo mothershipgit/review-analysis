@@ -1,8 +1,0 @@
-{
-  "name": "Multi-Segment EU Dashboard Template",
-  "type": "standalone",
-  "marketplace": "EU",
-  "isTemplate": true,
-  "templateOf": "eu-lice-treatment-analysis",
-  "created": "2026-04-26"
-}
