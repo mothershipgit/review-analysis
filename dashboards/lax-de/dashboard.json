@@ -5,7 +5,6 @@
   "asin": "B0BM1WPXC5",
   "marketplace": "DE",
   "reviewsFile": "../../B0BM1WPXC5-DE-Reviews.json",
-
   "totalReviews": 326,
   "posCount": 152,
   "negCount": 142,
@@ -13,47 +12,153 @@
   "posPct": "46.6",
   "negPct": "43.6",
   "neuPct": "9.8",
-
   "cpSummary": "Customer profile based on <strong>326 reviews on amazon.de</strong> — composed of a <strong>263-review multilingual cross-marketplace pool</strong> (shared with Lax FR, originally written across DE/ES/IT/FR/EN) plus <strong>63 German-language reviews unique to amazon.de</strong>. The most common buyer wants a <strong>natural alternative to harsh chemical laxatives</strong> like Laxoberal or Movicol, often dealing with chronic or medication-induced constipation. The DE-only segment over-indexes on family-purchase-for-elderly and on medication-induced cases. Compared to Detox DE, satisfaction is more favourable (~47% positive) — the product's promise (bowel movement) is more concrete and verifiable than Detox's vague 'cleanse' claim.",
-
   "cpWho": {
-    "labels": ["Chronic constipation sufferers", "Medication-induced constipation", "Travelers / vacationers", "Elderly (often via family)", "IBS / digestive disorder", "First-time laxative users"],
-    "pos": [44, 28, 18, 14, 12, 36],
-    "neg": [38, 16, 12, 8, 14, 54]
+    "labels": [
+      "Chronic constipation sufferers",
+      "Medication-induced constipation",
+      "Travelers / vacationers",
+      "Elderly (often via family)",
+      "IBS / digestive disorder",
+      "First-time laxative users"
+    ],
+    "pos": [
+      44,
+      28,
+      18,
+      14,
+      12,
+      36
+    ],
+    "neg": [
+      38,
+      16,
+      12,
+      8,
+      14,
+      54
+    ]
   },
-
   "cpWhen": {
-    "labels": ["Daily / regular use", "After travel or holidays", "When standard laxatives fail", "On medication regimen", "Acute episodic need", "Maintenance after diet change"],
-    "pos": [48, 22, 26, 20, 24, 12],
-    "neg": [38, 16, 18, 12, 44, 14]
+    "labels": [
+      "Daily / regular use",
+      "After travel or holidays",
+      "When standard laxatives fail",
+      "On medication regimen",
+      "Acute episodic need",
+      "Maintenance after diet change"
+    ],
+    "pos": [
+      48,
+      22,
+      26,
+      20,
+      24,
+      12
+    ],
+    "neg": [
+      38,
+      16,
+      18,
+      12,
+      44,
+      14
+    ]
   },
-
   "cpWhere": {
-    "labels": ["Home — evening routine", "Travel / hotel use", "Workday risk (problematic)", "After medical procedure"],
-    "pos": [98, 28, 14, 12],
-    "neg": [88, 18, 24, 12]
+    "labels": [
+      "Home — evening routine",
+      "Travel / hotel use",
+      "Workday risk (problematic)",
+      "After medical procedure"
+    ],
+    "pos": [
+      98,
+      28,
+      14,
+      12
+    ],
+    "neg": [
+      88,
+      18,
+      24,
+      12
+    ]
   },
-
   "cpWhat": {
-    "labels": ["Bowel movement", "No cramps / gentle action", "Avoid chemical laxatives", "Stool softening", "Reliable timing", "Long-term safety"],
-    "pos": [88, 56, 42, 32, 22, 14],
-    "neg": [76, 32, 14, 22, 38, 8]
+    "labels": [
+      "Bowel movement",
+      "No cramps / gentle action",
+      "Avoid chemical laxatives",
+      "Stool softening",
+      "Reliable timing",
+      "Long-term safety"
+    ],
+    "pos": [
+      88,
+      56,
+      42,
+      32,
+      22,
+      14
+    ],
+    "neg": [
+      76,
+      32,
+      14,
+      22,
+      38,
+      8
+    ]
   },
-
   "usageScenarios": [
-    { "label": "Chronic constipation maintenance", "reason": "primary use — customers with persistent slow transit take 1 capsule nightly as ongoing support to avoid constipation cycles.", "pct": "27.8%" },
-    { "label": "Replacing harsh chemical laxatives", "reason": "users who tried Laxoberal, Movicol, Magnesium-Citrat or similar OTC laxatives and want a gentler natural alternative.", "pct": "20.4%" },
-    { "label": "Travel / vacation constipation", "reason": "long flights, sitting, irregular schedules and unfamiliar foods trigger constipation — customers buy specifically as a travel companion.", "pct": "13.7%" },
-    { "label": "Medication-induced constipation", "reason": "pain medication, opioids, mental-health medication, or hypothyroid drugs cause constipation as a side effect — users seek a coping tool.", "pct": "11.2%" },
-    { "label": "Acute single-use emergency", "reason": "occasional one-off constipation triggers emergency purchase — users take 2 capsules acute dose.", "pct": "9.5%" },
-    { "label": "Post-surgery recovery", "reason": "post-operative bowel recovery (especially gastric bypass) — needs gentle stool softening without straining.", "pct": "6.8%" },
-    { "label": "Pre-event preparation", "reason": "before colonoscopy prep, body cleanse routines, or wellness reset.", "pct": "4.5%" },
-    { "label": "Bought for elderly relatives", "reason": "family members purchase for parents/grandparents experiencing age-related constipation — gentleness is critical.", "pct": "3.7%" },
-    { "label": "Diet supplement (after restrictive eating)", "reason": "low-fibre diets, protein shakes, keto — users who restrict food types suffer transit issues and seek natural support.", "pct": "2.4%" }
+    {
+      "label": "Chronic constipation maintenance",
+      "reason": "primary use — customers with persistent slow transit take 1 capsule nightly as ongoing support to avoid constipation cycles.",
+      "pct": "27.8%"
+    },
+    {
+      "label": "Replacing harsh chemical laxatives",
+      "reason": "users who tried Laxoberal, Movicol, Magnesium-Citrat or similar OTC laxatives and want a gentler natural alternative.",
+      "pct": "20.4%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "long flights, sitting, irregular schedules and unfamiliar foods trigger constipation — customers buy specifically as a travel companion.",
+      "pct": "13.7%"
+    },
+    {
+      "label": "Medication-induced constipation",
+      "reason": "pain medication, opioids, mental-health medication, or hypothyroid drugs cause constipation as a side effect — users seek a coping tool.",
+      "pct": "11.2%"
+    },
+    {
+      "label": "Acute single-use emergency",
+      "reason": "occasional one-off constipation triggers emergency purchase — users take 2 capsules acute dose.",
+      "pct": "9.5%"
+    },
+    {
+      "label": "Post-surgery recovery",
+      "reason": "post-operative bowel recovery (especially gastric bypass) — needs gentle stool softening without straining.",
+      "pct": "6.8%"
+    },
+    {
+      "label": "Pre-event preparation",
+      "reason": "before colonoscopy prep, body cleanse routines, or wellness reset.",
+      "pct": "4.5%"
+    },
+    {
+      "label": "Bought for elderly relatives",
+      "reason": "family members purchase for parents/grandparents experiencing age-related constipation — gentleness is critical.",
+      "pct": "3.7%"
+    },
+    {
+      "label": "Diet supplement (after restrictive eating)",
+      "reason": "low-fibre diets, protein shakes, keto — users who restrict food types suffer transit issues and seek natural support.",
+      "pct": "2.4%"
+    }
   ],
-
   "csSummary": "Sentiment is more favourable than Detox DE — 46.6% positive vs Detox's 42.1%. The product's promise (bowel movement) is more verifiable so fewer customers feel mis-sold. Negative reviews dominated by 'no effect' (~36% of negatives) and 'too weak / not strong enough'. Positive reviews praise 'natural alternative to chemical laxatives' and 'gentle without cramps' — both genuine differentiators. Severe adverse reactions exist but are less prevalent than Detox.",
-
   "negativeTopics": [
     {
       "label": "No effect — doesn't work",
@@ -191,15 +296,43 @@
       ]
     }
   ],
-
   "negativeInsights": [
-    { "type": "Product strength", "finding": "36% of negative reviewers say 'no effect' — many of them have severe / chronic constipation. The product appears under-dosed for that segment.", "implication": "Add explicit guidance: 'For severe chronic constipation, consult doctor. For mild-moderate, start with 1 capsule.' Lead with mild-moderate users — don't over-promise to severe-case buyers.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
-    { "type": "Risk", "finding": "Severe cramping reports at recommended dose (16% of negatives) include the 'what death must feel like' review — public-facing safety risk.", "implication": "Add stronger 'start with HALF capsule if first time' warning. Consider lower-dose SKU variant for sensitive users.", "badgeBg": "#fee2e2", "badgeColor": "#991b1b" },
-    { "type": "Communication", "finding": "Tiny labelling complaints (7% of negatives) and 'product info is minimal' are creating distrust — important for an oral supplement.", "implication": "Redesign label: bigger font, full ingredient mg breakdown on bottle (not QR-only), country of manufacture clearly stated.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
-    { "type": "Operational", "finding": "Multiple capsule-count discrepancy reports (5–6% of negatives) — a fillment/sealing process issue is likely.", "implication": "Audit fulfilment line. Implement weight check + capsule count verification per bottle. Cheap fix; lost reviews are not.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
-    { "type": "Positioning", "finding": "Listing leads on '7-IN-1' and 'fast-acting strong' — but actual customer-affirmed value is 'gentle / no cramps' and 'natural alternative to Laxoberal'. Mismatch creates the 'too weak' complaint.", "implication": "Reposition main image and headline: 'Gentle natural laxative — no cramps, no chemicals' replaces 'fast-acting strong'. Sets accurate expectations and converts a different (better-fit) buyer.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+    {
+      "type": "Product strength",
+      "finding": "36% of negative reviewers say 'no effect' — many of them have severe / chronic constipation. The product appears under-dosed for that segment.",
+      "implication": "Add explicit guidance: 'For severe chronic constipation, consult doctor. For mild-moderate, start with 1 capsule.' Lead with mild-moderate users — don't over-promise to severe-case buyers.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Risk",
+      "finding": "Severe cramping reports at recommended dose (16% of negatives) include the 'what death must feel like' review — public-facing safety risk.",
+      "implication": "Add stronger 'start with HALF capsule if first time' warning. Consider lower-dose SKU variant for sensitive users.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Communication",
+      "finding": "Tiny labelling complaints (7% of negatives) and 'product info is minimal' are creating distrust — important for an oral supplement.",
+      "implication": "Redesign label: bigger font, full ingredient mg breakdown on bottle (not QR-only), country of manufacture clearly stated.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Operational",
+      "finding": "Multiple capsule-count discrepancy reports (5–6% of negatives) — a fillment/sealing process issue is likely.",
+      "implication": "Audit fulfilment line. Implement weight check + capsule count verification per bottle. Cheap fix; lost reviews are not.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Positioning",
+      "finding": "Listing leads on '7-IN-1' and 'fast-acting strong' — but actual customer-affirmed value is 'gentle / no cramps' and 'natural alternative to Laxoberal'. Mismatch creates the 'too weak' complaint.",
+      "implication": "Reposition main image and headline: 'Gentle natural laxative — no cramps, no chemicals' replaces 'fast-acting strong'. Sets accurate expectations and converts a different (better-fit) buyer.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
   ],
-
   "positiveTopics": [
     {
       "label": "It works (general satisfaction)",
@@ -322,59 +455,797 @@
       ]
     }
   ],
-
   "positiveInsights": [
-    { "type": "Lead claim", "finding": "'Natural alternative to chemical laxatives' + 'gentle, no cramps' = 33% of all positive comments. This is a clean, defensible positioning angle.", "implication": "Make 'Natural · Gentle · No Cramps' the primary main image headline. Demote '7-IN-1' and 'fast-acting strong' (which trigger over-promise complaints).", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
-    { "type": "Differentiator", "finding": "Customers spontaneously compare favourably to Laxoberal, Movicol, magnesium citrate, suppositories — each by name.", "implication": "Add competitor-comparison angle (without naming them): 'Without the harsh side effects of chemical laxatives.' Converts the 'I'm tired of Laxoberal' segment that already exists in market.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
-    { "type": "Customer profile", "finding": "Highest LTV segment is medication-induced constipation patients — chronic, repeat buyers, emotionally invested.", "implication": "Subscribe & Save program targeted at this segment. Marketing copy that acknowledges the medication-constipation reality (still subtle — needs medical-claim caution).", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
-    { "type": "Use case", "finding": "Travel constipation appears as a distinct purchase trigger (~7% of positives). Compact bottle + predictable overnight effect makes it a good travel companion.", "implication": "Add a 'travel-friendly' badge or sub-positioning. Could spawn a smaller 'travel pack' SKU (15 capsules) at lower entry price.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+    {
+      "type": "Lead claim",
+      "finding": "'Natural alternative to chemical laxatives' + 'gentle, no cramps' = 33% of all positive comments. This is a clean, defensible positioning angle.",
+      "implication": "Make 'Natural · Gentle · No Cramps' the primary main image headline. Demote '7-IN-1' and 'fast-acting strong' (which trigger over-promise complaints).",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "Customers spontaneously compare favourably to Laxoberal, Movicol, magnesium citrate, suppositories — each by name.",
+      "implication": "Add competitor-comparison angle (without naming them): 'Without the harsh side effects of chemical laxatives.' Converts the 'I'm tired of Laxoberal' segment that already exists in market.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "Highest LTV segment is medication-induced constipation patients — chronic, repeat buyers, emotionally invested.",
+      "implication": "Subscribe & Save program targeted at this segment. Marketing copy that acknowledges the medication-constipation reality (still subtle — needs medical-claim caution).",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Use case",
+      "finding": "Travel constipation appears as a distinct purchase trigger (~7% of positives). Compact bottle + predictable overnight effect makes it a good travel companion.",
+      "implication": "Add a 'travel-friendly' badge or sub-positioning. Could spawn a smaller 'travel pack' SKU (15 capsules) at lower entry price.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
   ],
-
   "buyersMotivation": [
-    { "label": "Treat chronic constipation", "reason": "primary purchase trigger — persistent slow transit, often paired with frustration over previous remedies.", "pct": "32.4%" },
-    { "label": "Avoid harsh chemical laxatives", "reason": "users actively seeking to escape cramping side effects of Laxoberal, Movicol, or suppositories.", "pct": "21.3%" },
-    { "label": "Travel / vacation constipation", "reason": "long flights, hotel meals, schedule disruption → predictable constipation that returning to normal won't fix in a day.", "pct": "13.5%" },
-    { "label": "Cope with medication side-effect", "reason": "pain meds, opioids, mental-health drugs, hypothyroid medication all cause constipation — users want a coping tool that won't interact.", "pct": "10.4%" },
-    { "label": "Daily gentle maintenance", "reason": "preventive use — 1 capsule nightly to keep regular without acute episodes.", "pct": "9.7%" },
-    { "label": "Post-dietary disruption", "reason": "low-fibre diet, protein shakes, keto, restrictive eating disrupts transit; users want natural rebalance.", "pct": "7.5%" },
-    { "label": "Acute one-off relief", "reason": "single episode of constipation triggers emergency purchase.", "pct": "5.2%" }
+    {
+      "label": "Treat chronic constipation",
+      "reason": "primary purchase trigger — persistent slow transit, often paired with frustration over previous remedies.",
+      "pct": "32.4%"
+    },
+    {
+      "label": "Avoid harsh chemical laxatives",
+      "reason": "users actively seeking to escape cramping side effects of Laxoberal, Movicol, or suppositories.",
+      "pct": "21.3%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "long flights, hotel meals, schedule disruption → predictable constipation that returning to normal won't fix in a day.",
+      "pct": "13.5%"
+    },
+    {
+      "label": "Cope with medication side-effect",
+      "reason": "pain meds, opioids, mental-health drugs, hypothyroid medication all cause constipation — users want a coping tool that won't interact.",
+      "pct": "10.4%"
+    },
+    {
+      "label": "Daily gentle maintenance",
+      "reason": "preventive use — 1 capsule nightly to keep regular without acute episodes.",
+      "pct": "9.7%"
+    },
+    {
+      "label": "Post-dietary disruption",
+      "reason": "low-fibre diet, protein shakes, keto, restrictive eating disrupts transit; users want natural rebalance.",
+      "pct": "7.5%"
+    },
+    {
+      "label": "Acute one-off relief",
+      "reason": "single episode of constipation triggers emergency purchase.",
+      "pct": "5.2%"
+    }
   ],
-
   "customerExpectations": [
-    { "label": "Reliable bowel movement (every time)", "reason": "users want consistency — works first time AND fifth time. Habituation undermines this.", "pct": "27.8%" },
-    { "label": "No cramps or pain", "reason": "the product positions on 'gentle' but ~16% of negatives report severe cramping. Gap between expectation and outcome.", "pct": "20.1%" },
-    { "label": "100% natural ingredients (transparent)", "reason": "core purchase reason — but tiny labelling and 'proprietary blend' language triggers distrust.", "pct": "14.5%" },
-    { "label": "Predictable timing", "reason": "users want to plan the bathroom around their schedule. Unpredictable all-day cycles disrupt work and travel.", "pct": "12.7%" },
-    { "label": "Strong enough for severe cases", "reason": "many buyers come to the product after standard remedies failed — they expect it to handle severe constipation. Often it doesn't.", "pct": "10.4%" },
-    { "label": "Clear, full-size product information", "reason": "users want full ingredient mg, country of origin, manufacturer info on the bottle (not just QR code).", "pct": "6.5%" },
-    { "label": "Reasonable price for natural ingredients", "reason": "€24–30 is the upper acceptable range; price increases trigger churn.", "pct": "5.0%" },
-    { "label": "Proper sealing + correct count", "reason": "broken seals and capsule count discrepancies repeatedly reported. Basic operational hygiene.", "pct": "3.0%" }
+    {
+      "label": "Reliable bowel movement (every time)",
+      "reason": "users want consistency — works first time AND fifth time. Habituation undermines this.",
+      "pct": "27.8%"
+    },
+    {
+      "label": "No cramps or pain",
+      "reason": "the product positions on 'gentle' but ~16% of negatives report severe cramping. Gap between expectation and outcome.",
+      "pct": "20.1%"
+    },
+    {
+      "label": "100% natural ingredients (transparent)",
+      "reason": "core purchase reason — but tiny labelling and 'proprietary blend' language triggers distrust.",
+      "pct": "14.5%"
+    },
+    {
+      "label": "Predictable timing",
+      "reason": "users want to plan the bathroom around their schedule. Unpredictable all-day cycles disrupt work and travel.",
+      "pct": "12.7%"
+    },
+    {
+      "label": "Strong enough for severe cases",
+      "reason": "many buyers come to the product after standard remedies failed — they expect it to handle severe constipation. Often it doesn't.",
+      "pct": "10.4%"
+    },
+    {
+      "label": "Clear, full-size product information",
+      "reason": "users want full ingredient mg, country of origin, manufacturer info on the bottle (not just QR code).",
+      "pct": "6.5%"
+    },
+    {
+      "label": "Reasonable price for natural ingredients",
+      "reason": "€24–30 is the upper acceptable range; price increases trigger churn.",
+      "pct": "5.0%"
+    },
+    {
+      "label": "Proper sealing + correct count",
+      "reason": "broken seals and capsule count discrepancies repeatedly reported. Basic operational hygiene.",
+      "pct": "3.0%"
+    }
   ],
-
   "themeFilters": [
-    { "value": "", "label": "All themes" },
-    { "value": "no_effect", "label": "No effect / doesn't work" },
-    { "value": "side_effects", "label": "Cramps / pain" },
-    { "value": "too_weak", "label": "Too weak" },
-    { "value": "uncontrollable", "label": "Uncontrollable timing" },
-    { "value": "labelling", "label": "Labelling / info issues" },
-    { "value": "habituation", "label": "Effect fades" },
-    { "value": "packaging", "label": "Packaging defects" },
-    { "value": "expensive", "label": "Too expensive" },
-    { "value": "works", "label": "Works" },
-    { "value": "natural_alternative", "label": "Natural alternative to chemical laxatives" },
-    { "value": "gentle", "label": "Gentle / no cramps" },
-    { "value": "fast_results", "label": "Fast results" },
-    { "value": "reliable", "label": "Reliable for chronic" },
-    { "value": "travel", "label": "Travel use" },
-    { "value": "easy_take", "label": "Easy to take" },
-    { "value": "medication_induced", "label": "Medication-induced constipation" }
+    {
+      "value": "",
+      "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect / doesn't work"
+    },
+    {
+      "value": "side_effects",
+      "label": "Cramps / pain"
+    },
+    {
+      "value": "too_weak",
+      "label": "Too weak"
+    },
+    {
+      "value": "uncontrollable",
+      "label": "Uncontrollable timing"
+    },
+    {
+      "value": "labelling",
+      "label": "Labelling / info issues"
+    },
+    {
+      "value": "habituation",
+      "label": "Effect fades"
+    },
+    {
+      "value": "packaging",
+      "label": "Packaging defects"
+    },
+    {
+      "value": "expensive",
+      "label": "Too expensive"
+    },
+    {
+      "value": "works",
+      "label": "Works"
+    },
+    {
+      "value": "natural_alternative",
+      "label": "Natural alternative to chemical laxatives"
+    },
+    {
+      "value": "gentle",
+      "label": "Gentle / no cramps"
+    },
+    {
+      "value": "fast_results",
+      "label": "Fast results"
+    },
+    {
+      "value": "reliable",
+      "label": "Reliable for chronic"
+    },
+    {
+      "value": "travel",
+      "label": "Travel use"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to take"
+    },
+    {
+      "value": "medication_induced",
+      "label": "Medication-induced constipation"
+    }
   ],
-
   "sentimentFilters": [
-    { "value": "", "label": "All sentiment" },
-    { "value": "pos", "label": "Positive" },
-    { "value": "neg", "label": "Negative" },
-    { "value": "neu", "label": "Neutral / mixed" }
-  ]
+    {
+      "value": "",
+      "label": "All sentiment"
+    },
+    {
+      "value": "pos",
+      "label": "Positive"
+    },
+    {
+      "value": "neg",
+      "label": "Negative"
+    },
+    {
+      "value": "neu",
+      "label": "Neutral / mixed"
+    }
+  ],
+  "marketingDeepDive": {
+    "marketplace": "Amazon DE",
+    "totalCompetitors": 5,
+    "currency": "€",
+    "intro": "Lax DE's top-5 competitor set is striking: only 2/5 are actual laxatives (Dulcolax, Macrogol — both chemical pharmacy products). The other 3 (Simeticon, Lefax, sanotact) are bloating/gas-relief products that show up because shoppers cross-search 'constipation + bloating'. LAX+ is the ONLY natural multi-ingredient herbal laxative in the set — exactly what VOC says customers want.",
+    "userProduct": {
+      "asin": "B0BM1WPXC5",
+      "brand": "QSTA / DigestCare",
+      "title": "LAX+ — 7-in-1 natural laxative (Papaya, Senna, Aloe, Plantago, Arraclan, Cardamom, Fennel)",
+      "price": "€23.57",
+      "bsr": 3967,
+      "nicheBsr": 1,
+      "niche": "Aloe Vera",
+      "size": "60 Kapseln",
+      "image": "https://m.media-amazon.com/images/I/814E9TIRp2L.jpg",
+      "themes": [
+        "natural_alternative",
+        "multi_ingredient_herbal",
+        "stool_softener",
+        "laxative_action",
+        "bloating_relief",
+        "vegan",
+        "no_chemicals",
+        "rescue_dose"
+      ]
+    },
+    "competitors": [
+      {
+        "asin": "B0BHZVMCK2",
+        "brand": "STADA",
+        "title": "SIMETICON STADA 280mg — Medizinprodukt für gasbedingte Beschwerden",
+        "price": "€8.97",
+        "bsr": 1341,
+        "nicheBsr": 2,
+        "niche": "Verdauungsenzyme",
+        "size": "32 Weichkapseln",
+        "image": "https://m.media-amazon.com/images/I/61qwgwNIoUL.jpg",
+        "themes": [
+          "bloating_relief",
+          "anti_gas",
+          "medical_device",
+          "pharmacy_brand",
+          "pregnant_safe"
+        ],
+        "highlight": "Anti-foam medical device for gas. NOT a laxative — but ranks for related searches. Pharmacy heritage (125 years STADA)."
+      },
+      {
+        "asin": "B0BW46THVV",
+        "brand": "Dulcolax",
+        "title": "DulcoLax Dragées — Bisacodyl, planbar über Nacht (140 Stück)",
+        "price": "(apothekenpflichtig)",
+        "bsr": 173371,
+        "nicheBsr": 460,
+        "niche": "Verdauungsstörungen",
+        "size": "100+40 Stück",
+        "image": "https://m.media-amazon.com/images/I/61xxOJ50iQL.jpg",
+        "themes": [
+          "chemical_laxative",
+          "pharmacy_only",
+          "constipation_relief",
+          "fast_acting",
+          "kids_pregnant_safe",
+          "pharmacist_recommended"
+        ],
+        "highlight": "The benchmark chemical laxative. Bisacodyl, 6-12hr action. Pharmacy-only — limits Amazon visibility."
+      },
+      {
+        "asin": "B00QPJ3OBW",
+        "brand": "LEFAX",
+        "title": "Lefax intens — starke Blähungen & Völlegefühl (Bayer)",
+        "price": "€13.22",
+        "bsr": 752,
+        "nicheBsr": 5,
+        "niche": "Verdauungsstörungen",
+        "size": "50 Kapseln",
+        "image": "https://m.media-amazon.com/images/I/61fiMhuz6DL.jpg",
+        "themes": [
+          "bloating_relief",
+          "anti_gas",
+          "fast_acting",
+          "pregnant_diabetic_safe",
+          "pharmacy_brand",
+          "no_sugar"
+        ],
+        "highlight": "Bayer's gas-relief brand. NOT a laxative. Strong shelf-presence and trust. Cross-sells on bloating searches."
+      },
+      {
+        "asin": "B07PXNDMMS",
+        "brand": "1A PHARMA",
+        "title": "Macrogol 1A Pharma — Pulver bei chronischer Verstopfung (100 Beutel)",
+        "price": "€29.87",
+        "bsr": 202206,
+        "nicheBsr": 1516,
+        "niche": "Laborchemikalien",
+        "size": "100 Beutel",
+        "image": "https://m.media-amazon.com/images/I/719CMmS3gqL.jpg",
+        "themes": [
+          "chemical_laxative",
+          "pharmacy_only",
+          "chronic_constipation",
+          "gentle_action",
+          "electrolytes",
+          "powder_format"
+        ],
+        "highlight": "Macrogol 3350 + electrolytes. Doctor-prescribed go-to for chronic. Pharmacy-only, sachet format. Mis-categorized in Industrial."
+      },
+      {
+        "asin": "B07PTKTLMJ",
+        "brand": "sanotact",
+        "title": "VerdauungsHilfe Kapseln — 5-fach Enzymkomplex bei Blähbauch",
+        "price": "€7.99",
+        "bsr": 8653,
+        "nicheBsr": 41,
+        "niche": "Verdauungsenzyme",
+        "size": "40 Stück",
+        "image": "https://m.media-amazon.com/images/I/710gIMpRibL.jpg",
+        "themes": [
+          "digestive_enzymes",
+          "bloating_relief",
+          "lactose_gluten_free",
+          "made_in_de_eu",
+          "calcium_niacin"
+        ],
+        "highlight": "Digestive enzymes (amylase, lactase, lipase, protease, cellulase). NOT a laxative — addresses pre-meal indigestion."
+      }
+    ],
+    "claimsMatrix": {
+      "themes": [
+        {
+          "value": "natural_alternative",
+          "label": "Natural alternative"
+        },
+        {
+          "value": "multi_ingredient_herbal",
+          "label": "Multi-herb formula"
+        },
+        {
+          "value": "chemical_laxative",
+          "label": "Chemical laxative"
+        },
+        {
+          "value": "stool_softener",
+          "label": "Stool softener"
+        },
+        {
+          "value": "laxative_action",
+          "label": "Laxative action"
+        },
+        {
+          "value": "bloating_relief",
+          "label": "Bloating / gas relief"
+        },
+        {
+          "value": "constipation_relief",
+          "label": "Constipation relief"
+        },
+        {
+          "value": "fast_acting",
+          "label": "Fast acting"
+        },
+        {
+          "value": "gentle_action",
+          "label": "Gentle / no habituation"
+        },
+        {
+          "value": "pharmacy_brand",
+          "label": "Pharmacy brand / OTC"
+        },
+        {
+          "value": "pregnant_safe",
+          "label": "Pregnancy / kids safe"
+        },
+        {
+          "value": "vegan",
+          "label": "Vegan"
+        },
+        {
+          "value": "made_in_de_eu",
+          "label": "Made in DE/EU"
+        },
+        {
+          "value": "rescue_preventive",
+          "label": "Rescue + preventive dose"
+        },
+        {
+          "value": "qr_support",
+          "label": "QR / customer support"
+        }
+      ],
+      "rows": [
+        {
+          "asin": "B0BM1WPXC5",
+          "brand": "LAX+ (you)",
+          "isUser": true,
+          "cells": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "asin": "B0BHZVMCK2",
+          "brand": "STADA",
+          "cells": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B0BW46THVV",
+          "brand": "Dulcolax",
+          "cells": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B00QPJ3OBW",
+          "brand": "LEFAX",
+          "cells": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B07PXNDMMS",
+          "brand": "1A PHARMA",
+          "cells": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B07PTKTLMJ",
+          "brand": "sanotact",
+          "cells": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "claimsSummary": [
+      {
+        "label": "Pharmacy brand / OTC",
+        "count": 4,
+        "pct": "80",
+        "topBrands": [
+          "STADA",
+          "Dulcolax",
+          "LEFAX",
+          "1A PHARMA"
+        ]
+      },
+      {
+        "label": "Bloating / gas relief",
+        "count": 3,
+        "pct": "60",
+        "topBrands": [
+          "STADA",
+          "LEFAX",
+          "sanotact"
+        ]
+      },
+      {
+        "label": "Made in DE/EU",
+        "count": 3,
+        "pct": "60",
+        "topBrands": [
+          "STADA",
+          "LEFAX",
+          "sanotact"
+        ]
+      },
+      {
+        "label": "Pregnancy / kids safe",
+        "count": 3,
+        "pct": "60",
+        "topBrands": [
+          "STADA",
+          "Dulcolax",
+          "LEFAX"
+        ]
+      },
+      {
+        "label": "Constipation relief",
+        "count": 2,
+        "pct": "40",
+        "topBrands": [
+          "Dulcolax",
+          "1A PHARMA"
+        ]
+      },
+      {
+        "label": "Chemical laxative",
+        "count": 2,
+        "pct": "40",
+        "topBrands": [
+          "Dulcolax",
+          "1A PHARMA"
+        ]
+      },
+      {
+        "label": "Laxative action",
+        "count": 2,
+        "pct": "40",
+        "topBrands": [
+          "Dulcolax",
+          "1A PHARMA"
+        ]
+      },
+      {
+        "label": "Fast acting",
+        "count": 2,
+        "pct": "40",
+        "topBrands": [
+          "Dulcolax",
+          "LEFAX"
+        ]
+      },
+      {
+        "label": "Gentle / no habituation",
+        "count": 1,
+        "pct": "20",
+        "topBrands": [
+          "1A PHARMA"
+        ]
+      },
+      {
+        "label": "Natural alternative",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "Multi-herb formula",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "Stool softener",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "Vegan",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "Rescue + preventive dose",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "QR / customer support",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      }
+    ],
+    "vocGap": [
+      {
+        "vocTopic": "Natural alternative to chemical laxatives",
+        "customerConcernPct": 28,
+        "addressedByCount": 0,
+        "addressedByBrands": [],
+        "gapSeverity": "HIGH",
+        "whitespace": "BIGGEST gap. The strongest positive in VOC and 0/5 competitors claim it. LAX+ is alone here — own this lane."
+      },
+      {
+        "vocTopic": "Constipation relief",
+        "customerConcernPct": 35,
+        "addressedByCount": 2,
+        "addressedByBrands": [
+          "Dulcolax",
+          "1A PHARMA"
+        ],
+        "gapSeverity": "LOW",
+        "whitespace": "Both competitors are chemical pharmacy products — LAX+ wins on the 'natural' axis."
+      },
+      {
+        "vocTopic": "Stool softening",
+        "customerConcernPct": 14,
+        "addressedByCount": 0,
+        "addressedByBrands": [],
+        "gapSeverity": "HIGH",
+        "whitespace": "Specific mechanism claim — 0/5 competitors lead with it. Reviews praise this in LAX+."
+      },
+      {
+        "vocTopic": "Travel constipation use case",
+        "customerConcernPct": 8,
+        "addressedByCount": 0,
+        "addressedByBrands": [],
+        "gapSeverity": "MEDIUM",
+        "whitespace": "Use-case whitespace. Add 'travel kit' or compact-pack messaging."
+      },
+      {
+        "vocTopic": "Medication-induced constipation",
+        "customerConcernPct": 11,
+        "addressedByCount": 1,
+        "addressedByBrands": [
+          "Dulcolax"
+        ],
+        "gapSeverity": "MEDIUM",
+        "whitespace": "Lax DE over-indexes here vs FR. Only Dulcolax claims it. LAX+ can claim 'gentle natural option for opioid/iron-induced constipation'."
+      },
+      {
+        "vocTopic": "Bloating + gas relief",
+        "customerConcernPct": 18,
+        "addressedByCount": 3,
+        "addressedByBrands": [
+          "STADA",
+          "LEFAX",
+          "sanotact"
+        ],
+        "gapSeverity": "LOW",
+        "whitespace": "Crowded — but LAX+ is the only product addressing constipation AND bloating in one capsule."
+      },
+      {
+        "vocTopic": "No habituation / safe for daily use",
+        "customerConcernPct": 12,
+        "addressedByCount": 1,
+        "addressedByBrands": [
+          "1A PHARMA"
+        ],
+        "gapSeverity": "HIGH",
+        "whitespace": "Only Macrogol claims this. LAX+ herbal blend can credibly claim 'no habituation' — important for chronic users."
+      },
+      {
+        "vocTopic": "Operational issues (count, seal)",
+        "customerConcernPct": 7,
+        "addressedByCount": 0,
+        "addressedByBrands": [],
+        "gapSeverity": "LOW",
+        "whitespace": "QC issue — fix at packaging level, not positioning."
+      }
+    ],
+    "whitespaceOpportunities": [
+      {
+        "opportunity": "Own 'natural alternative to chemical laxatives'",
+        "rationale": "0/5 competitors claim it. The strongest positive in customer reviews. LAX+ is alone here.",
+        "evidence": "28% of positive VOC mentions; 0/5 competitor coverage. Customers literally name Laxoberal/Movicol/magnesium citrate as what they're switching FROM."
+      },
+      {
+        "opportunity": "Lead with 'Stool softener + transit support'",
+        "rationale": "0/5 competitors lead with stool softening; 7 ingredients in LAX+ contribute to this mechanism.",
+        "evidence": "Reviews specifically praise 'soft stool, no cramps' — lock this into A+ content."
+      },
+      {
+        "opportunity": "Claim 'Daily preventive use, no habituation'",
+        "rationale": "1/5 competitors (Macrogol) claims this — and they're a chemical product. LAX+ has stronger right to claim this for an herbal blend.",
+        "evidence": "Differentiator vs Senna-based herbals which DO cause habituation. LAX+'s 7-ingredient blend reduces dependency on senna alone."
+      },
+      {
+        "opportunity": "Constipation + bloating combo positioning",
+        "rationale": "The only product in the set addressing BOTH. Bloating-relief category is crowded but no one combines it with active constipation relief.",
+        "evidence": "1 product (LAX+) covers both VOC clusters; competitors cover only one."
+      }
+    ],
+    "saturation": [
+      {
+        "label": "Pharmacy brand / pregnancy-safe positioning",
+        "saturationPct": 80,
+        "advice": "4/5 lean on this. Don't try to compete on pharmacy heritage — own 'expert formulator' angle instead (20-yr constipation expertise + QR support)."
+      },
+      {
+        "label": "Bloating / gas relief",
+        "saturationPct": 60,
+        "advice": "3/5 claim it. Mention LAX+ also helps but don't lead with it."
+      },
+      {
+        "label": "Made in DE/EU",
+        "saturationPct": 60,
+        "advice": "Mostly pharmacy brands. LAX+ is ES-made (QSTA Labs Barcelona) — don't fight on this dimension; lean on 'European herbal tradition'."
+      }
+    ],
+    "strategicRecommendations": [
+      {
+        "type": "Lead claim",
+        "finding": "Strongest VOC positive ('natural alternative to chemical laxatives') has 0/5 competitor coverage in DE.",
+        "implication": "Rewrite headline: 'The natural alternative to Bisacodyl, Macrogol & Magnesium Citrate'. Name competitors implicitly via use-case.",
+        "badgeBg": "#dcfce7",
+        "badgeColor": "#166534"
+      },
+      {
+        "type": "Differentiator",
+        "finding": "LAX+ is the ONLY natural multi-herb laxative in the DE top-5. Competitors are 2 chemical pharmacy products + 3 bloating/enzyme products.",
+        "implication": "Lean hard into 'multi-herb' as a differentiator vs single-mechanism chemicals. Show all 7 ingredients with traditional-use rationale.",
+        "badgeBg": "#dbeafe",
+        "badgeColor": "#1e40af"
+      },
+      {
+        "type": "Use case",
+        "finding": "Lax DE over-indexes on medication-induced constipation and elderly purchasers (relative to FR).",
+        "implication": "Add a 'For when chemical laxatives feel too harsh' message + senior-friendly icon. Increases right-fit purchase.",
+        "badgeBg": "#dbeafe",
+        "badgeColor": "#1e40af"
+      },
+      {
+        "type": "Risk",
+        "finding": "Senna content limits the 'no habituation' claim if used daily long-term.",
+        "implication": "Be honest in copy: rescue dose for active constipation, preventive dose for occasional support — not for indefinite daily use. Avoid Macrogol's compliance trap.",
+        "badgeBg": "#fef3c7",
+        "badgeColor": "#92400e"
+      },
+      {
+        "type": "Pricing",
+        "finding": "LAX+ at €23.57 is mid-range. Cheaper than Macrogol (€29.87), more expensive than Dulcolax/STADA/LEFAX.",
+        "implication": "Bundle the QR-coded support service as a value-add to justify the premium over chemical OTCs.",
+        "badgeBg": "#dcfce7",
+        "badgeColor": "#166534"
+      }
+    ]
+  }
 }

@@ -5,7 +5,6 @@
   "asin": "B0BM1WPXC5",
   "marketplace": "FR",
   "reviewsFile": "../../B0BM1WPXC5-FR-Reviews.json",
-
   "totalReviews": 327,
   "posCount": 156,
   "negCount": 140,
@@ -13,47 +12,153 @@
   "posPct": "47.7",
   "negPct": "42.8",
   "neuPct": "9.5",
-
   "cpSummary": "Customer profile based on <strong>327 reviews on amazon.fr</strong> — composed of the <strong>same 263-review multilingual cross-marketplace pool as Lax DE</strong>, plus <strong>64 French-language reviews unique to amazon.fr</strong>. The shared pool dominates the analysis; the FR-only segment skews toward <strong>travel-constipation and post-bypass / post-surgical use cases</strong>, and French customers more often invoke <strong>'natural plant-based' framing</strong>. Compared to Lax DE, FR shows slightly higher positive ratio (47.7% vs 46.6%) and slightly more vocal complaints about strength ('pas assez puissant').",
-
   "cpWho": {
-    "labels": ["Chronic constipation sufferers", "Medication-induced constipation", "Travelers / vacationers", "Post-surgery (bypass etc.)", "IBS / colopathie", "First-time laxative users"],
-    "pos": [42, 22, 24, 14, 14, 40],
-    "neg": [44, 14, 10, 6, 16, 50]
+    "labels": [
+      "Chronic constipation sufferers",
+      "Medication-induced constipation",
+      "Travelers / vacationers",
+      "Post-surgery (bypass etc.)",
+      "IBS / colopathie",
+      "First-time laxative users"
+    ],
+    "pos": [
+      42,
+      22,
+      24,
+      14,
+      14,
+      40
+    ],
+    "neg": [
+      44,
+      14,
+      10,
+      6,
+      16,
+      50
+    ]
   },
-
   "cpWhen": {
-    "labels": ["Daily / regular use", "After travel or holidays", "When standard laxatives fail", "On medication regimen", "Acute episodic need", "Post-surgery recovery"],
-    "pos": [44, 28, 22, 18, 30, 14],
-    "neg": [36, 14, 22, 10, 46, 12]
+    "labels": [
+      "Daily / regular use",
+      "After travel or holidays",
+      "When standard laxatives fail",
+      "On medication regimen",
+      "Acute episodic need",
+      "Post-surgery recovery"
+    ],
+    "pos": [
+      44,
+      28,
+      22,
+      18,
+      30,
+      14
+    ],
+    "neg": [
+      36,
+      14,
+      22,
+      10,
+      46,
+      12
+    ]
   },
-
   "cpWhere": {
-    "labels": ["Home — evening routine", "Travel / vacation", "Workday risk (problematic)", "After medical procedure"],
-    "pos": [102, 32, 12, 10],
-    "neg": [86, 14, 28, 12]
+    "labels": [
+      "Home — evening routine",
+      "Travel / vacation",
+      "Workday risk (problematic)",
+      "After medical procedure"
+    ],
+    "pos": [
+      102,
+      32,
+      12,
+      10
+    ],
+    "neg": [
+      86,
+      14,
+      28,
+      12
+    ]
   },
-
   "cpWhat": {
-    "labels": ["Bowel movement", "No cramps / gentle action", "Avoid chemical laxatives", "Stool softening", "Reliable timing", "Long-term safety"],
-    "pos": [92, 60, 38, 36, 24, 14],
-    "neg": [74, 30, 12, 22, 40, 8]
+    "labels": [
+      "Bowel movement",
+      "No cramps / gentle action",
+      "Avoid chemical laxatives",
+      "Stool softening",
+      "Reliable timing",
+      "Long-term safety"
+    ],
+    "pos": [
+      92,
+      60,
+      38,
+      36,
+      24,
+      14
+    ],
+    "neg": [
+      74,
+      30,
+      12,
+      22,
+      40,
+      8
+    ]
   },
-
   "usageScenarios": [
-    { "label": "Chronic constipation maintenance", "reason": "primary use — French reviewers frequently mention 'constipation chronique' and use as ongoing daily support.", "pct": "26.5%" },
-    { "label": "Replacing harsh chemical laxatives", "reason": "users escaping cramping pain of stronger laxatives. FR-market often references gastro-enterologist prescriptions they wanted to leave.", "pct": "19.8%" },
-    { "label": "Travel / vacation constipation", "reason": "French market shows particularly strong travel-constipation use case. Compact + predictable + no-cramps = ideal travel kit.", "pct": "16.4%" },
-    { "label": "Medication-induced constipation", "reason": "pain medication and chronic prescriptions — FR-market includes high frequency of users on multiple medications.", "pct": "10.7%" },
-    { "label": "Post-surgery / post-bypass recovery", "reason": "reviewer specifically mentioned utility 'pour les gens opérés du by-pass'. Notable use-case in FR market.", "pct": "8.3%" },
-    { "label": "Acute single-use emergency", "reason": "occasional one-off constipation triggers emergency purchase.", "pct": "8.5%" },
-    { "label": "Pre-event preparation", "reason": "before colonoscopy prep, body cleanse routines, or wellness reset.", "pct": "4.4%" },
-    { "label": "Bought for elderly relatives", "reason": "family members purchase for elderly with age-related constipation — French market shows similar pattern.", "pct": "3.0%" },
-    { "label": "Diet supplement (after restrictive eating)", "reason": "low-fibre diets, restrictive eating, body-recomp regimens.", "pct": "2.4%" }
+    {
+      "label": "Chronic constipation maintenance",
+      "reason": "primary use — French reviewers frequently mention 'constipation chronique' and use as ongoing daily support.",
+      "pct": "26.5%"
+    },
+    {
+      "label": "Replacing harsh chemical laxatives",
+      "reason": "users escaping cramping pain of stronger laxatives. FR-market often references gastro-enterologist prescriptions they wanted to leave.",
+      "pct": "19.8%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "French market shows particularly strong travel-constipation use case. Compact + predictable + no-cramps = ideal travel kit.",
+      "pct": "16.4%"
+    },
+    {
+      "label": "Medication-induced constipation",
+      "reason": "pain medication and chronic prescriptions — FR-market includes high frequency of users on multiple medications.",
+      "pct": "10.7%"
+    },
+    {
+      "label": "Post-surgery / post-bypass recovery",
+      "reason": "reviewer specifically mentioned utility 'pour les gens opérés du by-pass'. Notable use-case in FR market.",
+      "pct": "8.3%"
+    },
+    {
+      "label": "Acute single-use emergency",
+      "reason": "occasional one-off constipation triggers emergency purchase.",
+      "pct": "8.5%"
+    },
+    {
+      "label": "Pre-event preparation",
+      "reason": "before colonoscopy prep, body cleanse routines, or wellness reset.",
+      "pct": "4.4%"
+    },
+    {
+      "label": "Bought for elderly relatives",
+      "reason": "family members purchase for elderly with age-related constipation — French market shows similar pattern.",
+      "pct": "3.0%"
+    },
+    {
+      "label": "Diet supplement (after restrictive eating)",
+      "reason": "low-fibre diets, restrictive eating, body-recomp regimens.",
+      "pct": "2.4%"
+    }
   ],
-
   "csSummary": "Sentiment is the most favourable of the 3 dashboards — 47.7% positive vs 42.8% negative. The FR market over-indexes on customers who already tried prescription remedies (Movicol, etc.) and now genuinely value the natural-laxative angle. Top complaint remains 'aucun effet' (~36% of negatives), often paired with 'pas assez puissant'. Best-performing positives are 'efficace sans douleur abdominale' and 'fait le job en douceur'.",
-
   "negativeTopics": [
     {
       "label": "No effect — doesn't work",
@@ -191,15 +296,43 @@
       ]
     }
   ],
-
   "negativeInsights": [
-    { "type": "Product strength", "finding": "36% of FR negatives say 'aucun effet' — many self-identify as having severe / chronic constipation. Product positioning needs to acknowledge it's not for severe medical-grade cases.", "implication": "Add explicit listing copy: 'For mild-moderate constipation. For chronic / severe cases consult doctor.' Cuts mismatch refunds.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
-    { "type": "Risk", "finding": "FR market reports include intestinal bleeding at 2-capsule dose, severe cramping reaching the level of 'I thought I was dying' — public-facing safety risk.", "implication": "Add stronger 'space the capsules' guidance + 'start with HALF dose' warning for first-time users.", "badgeBg": "#fee2e2", "badgeColor": "#991b1b" },
-    { "type": "Trust", "finding": "FR reviewers specifically question 'made in France' claim and ingredient mg accuracy — different from DE complaint flavour.", "implication": "Clarify country of manufacture and exact mg breakdown clearly on the bottle and listing. Consider French-made variant if regulatorily feasible.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
-    { "type": "Operational", "finding": "Capsule count discrepancies repeated across years — same fulfilment issue as DE.", "implication": "Audit fulfilment line. Implement weight check + capsule count verification per bottle.", "badgeBg": "#fef3c7", "badgeColor": "#92400e" },
-    { "type": "Positioning", "finding": "Listing leads on '7-IN-1' and 'fast-acting strong' — but FR customers genuinely value 'doux / sans douleur' (gentle / no pain). Mismatch creates 'too weak' complaint.", "implication": "Reposition: 'Doux. Naturel. Sans crampes.' replaces 'fast-acting strong' as the headline. Sets accurate expectations and matches the actual differentiator.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+    {
+      "type": "Product strength",
+      "finding": "36% of FR negatives say 'aucun effet' — many self-identify as having severe / chronic constipation. Product positioning needs to acknowledge it's not for severe medical-grade cases.",
+      "implication": "Add explicit listing copy: 'For mild-moderate constipation. For chronic / severe cases consult doctor.' Cuts mismatch refunds.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Risk",
+      "finding": "FR market reports include intestinal bleeding at 2-capsule dose, severe cramping reaching the level of 'I thought I was dying' — public-facing safety risk.",
+      "implication": "Add stronger 'space the capsules' guidance + 'start with HALF dose' warning for first-time users.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Trust",
+      "finding": "FR reviewers specifically question 'made in France' claim and ingredient mg accuracy — different from DE complaint flavour.",
+      "implication": "Clarify country of manufacture and exact mg breakdown clearly on the bottle and listing. Consider French-made variant if regulatorily feasible.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Operational",
+      "finding": "Capsule count discrepancies repeated across years — same fulfilment issue as DE.",
+      "implication": "Audit fulfilment line. Implement weight check + capsule count verification per bottle.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Positioning",
+      "finding": "Listing leads on '7-IN-1' and 'fast-acting strong' — but FR customers genuinely value 'doux / sans douleur' (gentle / no pain). Mismatch creates 'too weak' complaint.",
+      "implication": "Reposition: 'Doux. Naturel. Sans crampes.' replaces 'fast-acting strong' as the headline. Sets accurate expectations and matches the actual differentiator.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
   ],
-
   "positiveTopics": [
     {
       "label": "It works (general satisfaction)",
@@ -322,60 +455,828 @@
       ]
     }
   ],
-
   "positiveInsights": [
-    { "type": "Lead claim", "finding": "'Naturel · Doux · Sans crampes' = 33.6% of all FR positives. Same positioning that worked in DE works in FR.", "implication": "Translate the DE 'Natural · Gentle · No Cramps' positioning into FR-market headline: 'Naturel · Doux · Sans crampes'. Make this the main image lead.", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
-    { "type": "Differentiator", "finding": "FR customers actively reference Movicol, gastro-enterologist prescriptions, and chemical pharmacy laxatives as the alternatives they wanted to escape.", "implication": "Add subtle competitor-comparison angle (without naming): 'L'alternative naturelle aux laxatifs chimiques' — converts the Movicol-fatigued segment.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" },
-    { "type": "Use case", "finding": "Travel constipation is stronger in FR (8.4% of positives) than DE (7.2%). FR market is travel-conscious.", "implication": "FR-specific 'pour les voyages' marketing angle. Could spawn FR travel-pack SKU first as a market test.", "badgeBg": "#dcfce7", "badgeColor": "#166534" },
-    { "type": "Customer profile", "finding": "Post-bypass surgery use case appears in FR (~2.4% of positives) — small but high-emotional, high-LTV.", "implication": "Cautious medical-claim adjacent angle: 'Convient aux personnes ayant subi une chirurgie bariatrique' — needs medical-claims regulatory check.", "badgeBg": "#dbeafe", "badgeColor": "#1e40af" }
+    {
+      "type": "Lead claim",
+      "finding": "'Naturel · Doux · Sans crampes' = 33.6% of all FR positives. Same positioning that worked in DE works in FR.",
+      "implication": "Translate the DE 'Natural · Gentle · No Cramps' positioning into FR-market headline: 'Naturel · Doux · Sans crampes'. Make this the main image lead.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "FR customers actively reference Movicol, gastro-enterologist prescriptions, and chemical pharmacy laxatives as the alternatives they wanted to escape.",
+      "implication": "Add subtle competitor-comparison angle (without naming): 'L'alternative naturelle aux laxatifs chimiques' — converts the Movicol-fatigued segment.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Use case",
+      "finding": "Travel constipation is stronger in FR (8.4% of positives) than DE (7.2%). FR market is travel-conscious.",
+      "implication": "FR-specific 'pour les voyages' marketing angle. Could spawn FR travel-pack SKU first as a market test.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "Post-bypass surgery use case appears in FR (~2.4% of positives) — small but high-emotional, high-LTV.",
+      "implication": "Cautious medical-claim adjacent angle: 'Convient aux personnes ayant subi une chirurgie bariatrique' — needs medical-claims regulatory check.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
   ],
-
   "buyersMotivation": [
-    { "label": "Treat chronic constipation", "reason": "primary purchase trigger. FR-market frequently invokes 'constipation chronique'.", "pct": "31.8%" },
-    { "label": "Avoid harsh chemical laxatives", "reason": "users escaping cramping side effects of Movicol, suppositories, mini-enemas.", "pct": "21.7%" },
-    { "label": "Travel / vacation constipation", "reason": "explicit travel-companion purchase — stronger in FR than DE.", "pct": "15.0%" },
-    { "label": "Cope with medication side-effect", "reason": "pain meds, opioids, mental-health drugs cause constipation.", "pct": "10.7%" },
-    { "label": "Daily gentle maintenance", "reason": "preventive 1-capsule-nightly to stay regular.", "pct": "9.2%" },
-    { "label": "Post-surgery recovery", "reason": "gastric bypass and similar post-op recovery — distinctive FR use case.", "pct": "5.5%" },
-    { "label": "Acute one-off relief", "reason": "single episode of constipation triggers emergency purchase.", "pct": "4.6%" },
-    { "label": "Post-dietary disruption", "reason": "low-fibre, restrictive eating disrupts transit; users want natural rebalance.", "pct": "1.5%" }
+    {
+      "label": "Treat chronic constipation",
+      "reason": "primary purchase trigger. FR-market frequently invokes 'constipation chronique'.",
+      "pct": "31.8%"
+    },
+    {
+      "label": "Avoid harsh chemical laxatives",
+      "reason": "users escaping cramping side effects of Movicol, suppositories, mini-enemas.",
+      "pct": "21.7%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "explicit travel-companion purchase — stronger in FR than DE.",
+      "pct": "15.0%"
+    },
+    {
+      "label": "Cope with medication side-effect",
+      "reason": "pain meds, opioids, mental-health drugs cause constipation.",
+      "pct": "10.7%"
+    },
+    {
+      "label": "Daily gentle maintenance",
+      "reason": "preventive 1-capsule-nightly to stay regular.",
+      "pct": "9.2%"
+    },
+    {
+      "label": "Post-surgery recovery",
+      "reason": "gastric bypass and similar post-op recovery — distinctive FR use case.",
+      "pct": "5.5%"
+    },
+    {
+      "label": "Acute one-off relief",
+      "reason": "single episode of constipation triggers emergency purchase.",
+      "pct": "4.6%"
+    },
+    {
+      "label": "Post-dietary disruption",
+      "reason": "low-fibre, restrictive eating disrupts transit; users want natural rebalance.",
+      "pct": "1.5%"
+    }
   ],
-
   "customerExpectations": [
-    { "label": "Reliable bowel movement (every time)", "reason": "users want consistency. Habituation undermines this.", "pct": "26.5%" },
-    { "label": "No cramps or pain", "reason": "the product positions on 'doux' but ~16% of negatives report severe cramping.", "pct": "20.8%" },
-    { "label": "100% natural ingredients (transparent)", "reason": "core purchase reason — but ingredient mg discrepancies and country-of-origin claims trigger distrust.", "pct": "15.3%" },
-    { "label": "Predictable timing", "reason": "users want to plan their day. Unpredictable cycles disrupt work and travel.", "pct": "13.0%" },
-    { "label": "Strong enough for severe cases", "reason": "many buyers come after standard remedies failed — they expect it to handle severe constipation.", "pct": "11.0%" },
-    { "label": "Clear product information", "reason": "full ingredient mg, country of origin, manufacturer info on the bottle.", "pct": "6.5%" },
-    { "label": "Reasonable price for natural ingredients", "reason": "€24–30 ceiling — price increases trigger churn especially when prescription remedies are reimbursed.", "pct": "4.5%" },
-    { "label": "Proper sealing + correct count", "reason": "broken seals and capsule count discrepancies — basic operational hygiene.", "pct": "2.4%" }
+    {
+      "label": "Reliable bowel movement (every time)",
+      "reason": "users want consistency. Habituation undermines this.",
+      "pct": "26.5%"
+    },
+    {
+      "label": "No cramps or pain",
+      "reason": "the product positions on 'doux' but ~16% of negatives report severe cramping.",
+      "pct": "20.8%"
+    },
+    {
+      "label": "100% natural ingredients (transparent)",
+      "reason": "core purchase reason — but ingredient mg discrepancies and country-of-origin claims trigger distrust.",
+      "pct": "15.3%"
+    },
+    {
+      "label": "Predictable timing",
+      "reason": "users want to plan their day. Unpredictable cycles disrupt work and travel.",
+      "pct": "13.0%"
+    },
+    {
+      "label": "Strong enough for severe cases",
+      "reason": "many buyers come after standard remedies failed — they expect it to handle severe constipation.",
+      "pct": "11.0%"
+    },
+    {
+      "label": "Clear product information",
+      "reason": "full ingredient mg, country of origin, manufacturer info on the bottle.",
+      "pct": "6.5%"
+    },
+    {
+      "label": "Reasonable price for natural ingredients",
+      "reason": "€24–30 ceiling — price increases trigger churn especially when prescription remedies are reimbursed.",
+      "pct": "4.5%"
+    },
+    {
+      "label": "Proper sealing + correct count",
+      "reason": "broken seals and capsule count discrepancies — basic operational hygiene.",
+      "pct": "2.4%"
+    }
   ],
-
   "themeFilters": [
-    { "value": "", "label": "All themes" },
-    { "value": "no_effect", "label": "No effect / doesn't work" },
-    { "value": "side_effects", "label": "Cramps / pain" },
-    { "value": "too_weak", "label": "Too weak" },
-    { "value": "uncontrollable", "label": "Uncontrollable timing" },
-    { "value": "labelling", "label": "Labelling / info issues" },
-    { "value": "habituation", "label": "Effect fades" },
-    { "value": "packaging", "label": "Packaging defects" },
-    { "value": "expensive", "label": "Too expensive" },
-    { "value": "works", "label": "Works" },
-    { "value": "natural_alternative", "label": "Natural alternative to chemical laxatives" },
-    { "value": "gentle", "label": "Gentle / no cramps" },
-    { "value": "fast_results", "label": "Fast results" },
-    { "value": "reliable", "label": "Reliable for chronic" },
-    { "value": "travel", "label": "Travel use" },
-    { "value": "easy_take", "label": "Easy to take" },
-    { "value": "medication_induced", "label": "Medication-induced constipation" }
+    {
+      "value": "",
+      "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect / doesn't work"
+    },
+    {
+      "value": "side_effects",
+      "label": "Cramps / pain"
+    },
+    {
+      "value": "too_weak",
+      "label": "Too weak"
+    },
+    {
+      "value": "uncontrollable",
+      "label": "Uncontrollable timing"
+    },
+    {
+      "value": "labelling",
+      "label": "Labelling / info issues"
+    },
+    {
+      "value": "habituation",
+      "label": "Effect fades"
+    },
+    {
+      "value": "packaging",
+      "label": "Packaging defects"
+    },
+    {
+      "value": "expensive",
+      "label": "Too expensive"
+    },
+    {
+      "value": "works",
+      "label": "Works"
+    },
+    {
+      "value": "natural_alternative",
+      "label": "Natural alternative to chemical laxatives"
+    },
+    {
+      "value": "gentle",
+      "label": "Gentle / no cramps"
+    },
+    {
+      "value": "fast_results",
+      "label": "Fast results"
+    },
+    {
+      "value": "reliable",
+      "label": "Reliable for chronic"
+    },
+    {
+      "value": "travel",
+      "label": "Travel use"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to take"
+    },
+    {
+      "value": "medication_induced",
+      "label": "Medication-induced constipation"
+    }
   ],
-
   "sentimentFilters": [
-    { "value": "", "label": "All sentiment" },
-    { "value": "pos", "label": "Positive" },
-    { "value": "neg", "label": "Negative" },
-    { "value": "neu", "label": "Neutral / mixed" }
-  ]
+    {
+      "value": "",
+      "label": "All sentiment"
+    },
+    {
+      "value": "pos",
+      "label": "Positive"
+    },
+    {
+      "value": "neg",
+      "label": "Negative"
+    },
+    {
+      "value": "neu",
+      "label": "Neutral / mixed"
+    }
+  ],
+  "marketingDeepDive": {
+    "marketplace": "Amazon FR",
+    "totalCompetitors": 5,
+    "currency": "€",
+    "intro": "The FR market is dramatically different from DE: ALL 5 top competitors are natural/herbal products. The 'natural alternative to chemical laxatives' angle that's a clean whitespace in DE is saturated here. LAX+ must differentiate via formulation depth (7 ingredients vs 1-4) + capsule convenience + customer support, not via 'natural'.",
+    "userProduct": {
+      "asin": "B0BM1WPXC5",
+      "brand": "QSTA / DigestCare",
+      "title": "LAX+ — Laxatif puissant 7-en-1 (Papaye, Séné, Aloe, Plantain, Arraclan, Cardamome, Fenouil)",
+      "price": "€24.99",
+      "bsr": 2551,
+      "nicheBsr": 7,
+      "niche": "Enzymes",
+      "size": "60 gélules",
+      "image": "https://m.media-amazon.com/images/I/814E9TIRp2L.jpg",
+      "themes": [
+        "multi_ingredient_herbal",
+        "natural_alternative",
+        "stool_softener",
+        "laxative_action",
+        "bloating_relief",
+        "vegan",
+        "rescue_preventive",
+        "qr_support",
+        "papain_concentrated"
+      ]
+    },
+    "competitors": [
+      {
+        "asin": "B002BB33G4",
+        "brand": "GAYELORD HAUSER",
+        "title": "Carrés Transit Figues et Fibres — 12 carrés source de fibres",
+        "price": "€6.21",
+        "bsr": 116,
+        "nicheBsr": 1,
+        "niche": "Fibre alimentaire",
+        "size": "12 carrés / 120g",
+        "image": "https://m.media-amazon.com/images/I/81RVhLbQzOL.jpg",
+        "themes": [
+          "dietary_fiber",
+          "natural_alternative",
+          "fig_rhubarb",
+          "edible_format",
+          "heritage_brand"
+        ],
+        "highlight": "Old-school chewable fiber bars (figs + rhubarb). Very low price point. Category #1. Limited mechanism — fiber only."
+      },
+      {
+        "asin": "B07PGR79LM",
+        "brand": "Ortis",
+        "title": "Fruits & Fibres Forte 24 Comprimés — rhubarbe action 8h",
+        "price": "€9.91",
+        "bsr": 483,
+        "nicheBsr": 2,
+        "niche": "Fibre alimentaire",
+        "size": "24 comprimés",
+        "image": "https://m.media-amazon.com/images/I/71NyXXCC7AL.jpg",
+        "themes": [
+          "natural_alternative",
+          "rhubarb_based",
+          "fast_acting",
+          "no_habituation",
+          "vegetarian",
+          "made_in_be",
+          "heritage_brand"
+        ],
+        "highlight": "Belgian family co (60+ yrs). Rhubarb-led. Strong 'no habituation' messaging. Compressed-tablet format."
+      },
+      {
+        "asin": "B0CSK7RV8M",
+        "brand": "Santarome Bio",
+        "title": "Transit Flash 5 Days — Psyllium, Mauve, Bourgeons, Gingembre — Bio Made in France",
+        "price": "€6.43",
+        "bsr": 425,
+        "nicheBsr": 17,
+        "niche": "Psyllium",
+        "size": "15 comprimés (5 day cure)",
+        "image": "https://m.media-amazon.com/images/I/61USTnmH6QL.jpg",
+        "themes": [
+          "natural_alternative",
+          "multi_ingredient_herbal",
+          "bio_organic",
+          "vegan",
+          "made_in_fr",
+          "psyllium_based",
+          "5_day_cure",
+          "heritage_brand"
+        ],
+        "highlight": "Bio + Made in France + multi-herb. Closest to LAX+ on formulation depth (4 herbs vs 7). 5-day flash cure positioning."
+      },
+      {
+        "asin": "B0D474GHRR",
+        "brand": "Natural Sprint",
+        "title": "30 Comprimés Constipation — Aloe, Séné, Propolis, Frangula, Rhubarbe, Verveine, Cannelle, Clous de girofle — Made in Italy",
+        "price": "€7.00",
+        "bsr": 849,
+        "nicheBsr": 56,
+        "niche": "Compléments à base de plantes",
+        "size": "30 comprimés",
+        "image": "https://m.media-amazon.com/images/I/41HzSgjfMsL.jpg",
+        "themes": [
+          "natural_alternative",
+          "multi_ingredient_herbal",
+          "stool_softener",
+          "made_in_it",
+          "100_percent_active"
+        ],
+        "highlight": "DIRECT competitor on formulation depth — 8 herbs vs LAX+'s 7. Cheaper. Made in Italy. Less polished branding/listing."
+      },
+      {
+        "asin": "B0BVRNKKNM",
+        "brand": "Tazarin LTD",
+        "title": "100g Feuilles de Séné Entières — Tisane Detox",
+        "price": "€6.95",
+        "bsr": 584,
+        "nicheBsr": 9,
+        "niche": "Infusions",
+        "size": "100g loose leaves",
+        "image": "https://m.media-amazon.com/images/I/71YCnsq7JIL.jpg",
+        "themes": [
+          "natural_alternative",
+          "single_ingredient",
+          "tea_format",
+          "purgative",
+          "traditional_use"
+        ],
+        "highlight": "Pure senna leaves for tea. Single-ingredient. Loose-leaf grocery format (cross-pooled into Infusions). Lowest barrier to entry."
+      }
+    ],
+    "claimsMatrix": {
+      "themes": [
+        {
+          "value": "natural_alternative",
+          "label": "Natural alternative"
+        },
+        {
+          "value": "multi_ingredient_herbal",
+          "label": "Multi-herb formula (4+ ingredients)"
+        },
+        {
+          "value": "stool_softener",
+          "label": "Stool softener"
+        },
+        {
+          "value": "laxative_action",
+          "label": "Laxative action"
+        },
+        {
+          "value": "bloating_relief",
+          "label": "Bloating relief"
+        },
+        {
+          "value": "fast_acting",
+          "label": "Fast acting (under 12h)"
+        },
+        {
+          "value": "no_habituation",
+          "label": "No habituation"
+        },
+        {
+          "value": "rescue_preventive",
+          "label": "Rescue + preventive dose"
+        },
+        {
+          "value": "vegan",
+          "label": "Vegan"
+        },
+        {
+          "value": "bio_organic",
+          "label": "Bio / organic certified"
+        },
+        {
+          "value": "made_in_fr",
+          "label": "Made in France"
+        },
+        {
+          "value": "made_in_eu",
+          "label": "Made in EU (other)"
+        },
+        {
+          "value": "capsule_format",
+          "label": "Capsule format"
+        },
+        {
+          "value": "papain_concentrated",
+          "label": "Papain / digestive enzyme"
+        },
+        {
+          "value": "qr_support",
+          "label": "QR / customer support"
+        }
+      ],
+      "rows": [
+        {
+          "asin": "B0BM1WPXC5",
+          "brand": "LAX+ (you)",
+          "isUser": true,
+          "cells": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "asin": "B002BB33G4",
+          "brand": "Gayelord Hauser",
+          "cells": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B07PGR79LM",
+          "brand": "Ortis",
+          "cells": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B0CSK7RV8M",
+          "brand": "Santarome Bio",
+          "cells": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B0D474GHRR",
+          "brand": "Natural Sprint",
+          "cells": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "asin": "B0BVRNKKNM",
+          "brand": "Tazarin Séné",
+          "cells": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "claimsSummary": [
+      {
+        "label": "Natural alternative",
+        "count": 5,
+        "pct": "100",
+        "topBrands": [
+          "Gayelord Hauser",
+          "Ortis",
+          "Santarome",
+          "Natural Sprint",
+          "Tazarin"
+        ]
+      },
+      {
+        "label": "Laxative action",
+        "count": 5,
+        "pct": "100",
+        "topBrands": [
+          "Gayelord Hauser",
+          "Ortis",
+          "Santarome",
+          "Natural Sprint",
+          "Tazarin"
+        ]
+      },
+      {
+        "label": "Multi-herb formula",
+        "count": 2,
+        "pct": "40",
+        "topBrands": [
+          "Santarome",
+          "Natural Sprint"
+        ]
+      },
+      {
+        "label": "Fast acting",
+        "count": 2,
+        "pct": "40",
+        "topBrands": [
+          "Ortis",
+          "Santarome"
+        ]
+      },
+      {
+        "label": "Made in EU (other)",
+        "count": 2,
+        "pct": "40",
+        "topBrands": [
+          "Ortis",
+          "Natural Sprint"
+        ]
+      },
+      {
+        "label": "Stool softener",
+        "count": 1,
+        "pct": "20",
+        "topBrands": [
+          "Natural Sprint"
+        ]
+      },
+      {
+        "label": "Bloating relief",
+        "count": 1,
+        "pct": "20",
+        "topBrands": [
+          "Ortis"
+        ]
+      },
+      {
+        "label": "No habituation",
+        "count": 1,
+        "pct": "20",
+        "topBrands": [
+          "Ortis"
+        ]
+      },
+      {
+        "label": "Vegan",
+        "count": 1,
+        "pct": "20",
+        "topBrands": [
+          "Santarome"
+        ]
+      },
+      {
+        "label": "Bio / organic certified",
+        "count": 1,
+        "pct": "20",
+        "topBrands": [
+          "Santarome"
+        ]
+      },
+      {
+        "label": "Made in France",
+        "count": 1,
+        "pct": "20",
+        "topBrands": [
+          "Santarome"
+        ]
+      },
+      {
+        "label": "Capsule format",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "Papain / digestive enzyme",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "Rescue + preventive dose",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      },
+      {
+        "label": "QR / customer support",
+        "count": 0,
+        "pct": "0",
+        "topBrands": []
+      }
+    ],
+    "vocGap": [
+      {
+        "vocTopic": "Natural alternative to chemical laxatives",
+        "customerConcernPct": 30,
+        "addressedByCount": 5,
+        "addressedByBrands": [
+          "Gayelord Hauser",
+          "Ortis",
+          "Santarome",
+          "Natural Sprint",
+          "Tazarin"
+        ],
+        "gapSeverity": "LOW",
+        "whitespace": "SATURATED in FR (vs HIGH in DE). Don't lead here — everyone claims it. Differentiate on formulation depth + format."
+      },
+      {
+        "vocTopic": "Stool softening",
+        "customerConcernPct": 16,
+        "addressedByCount": 1,
+        "addressedByBrands": [
+          "Natural Sprint"
+        ],
+        "gapSeverity": "HIGH",
+        "whitespace": "Only Natural Sprint claims this. LAX+ delivers via plantago + papaya. Specific mechanism claim is open."
+      },
+      {
+        "vocTopic": "Travel constipation use case",
+        "customerConcernPct": 12,
+        "addressedByCount": 0,
+        "addressedByBrands": [],
+        "gapSeverity": "HIGH",
+        "whitespace": "Lax FR over-indexes on travel — and 0/5 competitors target this. Capsule format wins vs tea/bars/tablets for travel."
+      },
+      {
+        "vocTopic": "Post-bypass surgery / weight loss surgery recovery",
+        "customerConcernPct": 7,
+        "addressedByCount": 0,
+        "addressedByBrands": [],
+        "gapSeverity": "MEDIUM",
+        "whitespace": "FR-specific use case. Specific mention in reviews — niche but uncovered."
+      },
+      {
+        "vocTopic": "Bloating relief",
+        "customerConcernPct": 14,
+        "addressedByCount": 1,
+        "addressedByBrands": [
+          "Ortis"
+        ],
+        "gapSeverity": "HIGH",
+        "whitespace": "Mostly open. LAX+ has cardamom + fennel for bloating — articulate this."
+      },
+      {
+        "vocTopic": "Constipation chronique / irrégulière",
+        "customerConcernPct": 30,
+        "addressedByCount": 5,
+        "addressedByBrands": [
+          "all"
+        ],
+        "gapSeverity": "LOW",
+        "whitespace": "Saturated. Dual-dose (rescue + preventive) is your differentiator within this saturated space."
+      },
+      {
+        "vocTopic": "Fast acting (under 12h)",
+        "customerConcernPct": 22,
+        "addressedByCount": 2,
+        "addressedByBrands": [
+          "Ortis",
+          "Santarome"
+        ],
+        "gapSeverity": "MEDIUM",
+        "whitespace": "Half the field. LAX+ also delivers this (8h via Arraclan). Match competitors with explicit timing claim."
+      },
+      {
+        "vocTopic": "Capsule format convenience",
+        "customerConcernPct": 18,
+        "addressedByCount": 0,
+        "addressedByBrands": [],
+        "gapSeverity": "HIGH",
+        "whitespace": "Competitor formats: bars, tablets, tea. 0/5 sell capsules. LAX+'s capsule = travel-friendly + tasteless + portion-controlled."
+      }
+    ],
+    "whitespaceOpportunities": [
+      {
+        "opportunity": "Own 'travel constipation' use case",
+        "rationale": "Lax FR reviews over-index on travel. 0/5 competitors target this. LAX+'s capsule format is THE travel-ready format vs everyone else's bars/tea/tablets.",
+        "evidence": "12% of FR positives mention travel; 0/5 competitor coverage; LAX+ format is uniquely portable."
+      },
+      {
+        "opportunity": "Lead with 'capsule convenience' vs tea/bars/tablets",
+        "rationale": "All 5 competitors use other formats. Capsule = no taste, exact dose, easy to carry. Differentiator the FR market is missing.",
+        "evidence": "Format competitive landscape: 1 tea, 1 fiber bar, 3 tablets, 0 capsules besides LAX+."
+      },
+      {
+        "opportunity": "7-ingredient depth as 'expert formulation'",
+        "rationale": "Only Natural Sprint matches on depth (8 herbs). Santarome has 4. Others are 1-2 ingredients. Position LAX+ as the most-complete natural blend.",
+        "evidence": "Formulation count: LAX+ 7, Natural Sprint 8 (cheaper but unbranded), Santarome 4, others 1-2."
+      },
+      {
+        "opportunity": "Post-bariatric surgery niche claim",
+        "rationale": "FR-specific mention in reviews; 0/5 competitors target this small-but-loyal segment.",
+        "evidence": "Mentioned by ~7% of FR positives; underserved niche with strong purchase intent."
+      },
+      {
+        "opportunity": "Dual-dose (rescue + preventive) framing",
+        "rationale": "Solves the 'when do I take this?' problem competitors leave ambiguous. 0/5 use this framing.",
+        "evidence": "Built into LAX+ packaging but not foregrounded — 0/5 competitor adoption."
+      }
+    ],
+    "saturation": [
+      {
+        "label": "Natural alternative",
+        "saturationPct": 100,
+        "advice": "Everyone claims it. Mention but don't lead. Lead with format/depth/use-case instead."
+      },
+      {
+        "label": "Laxative action",
+        "saturationPct": 100,
+        "advice": "Table stakes. Don't waste headline on it."
+      },
+      {
+        "label": "Fast acting (under 12h)",
+        "saturationPct": 40,
+        "advice": "Half the field. Match with explicit '8h' timing claim from Arraclan."
+      },
+      {
+        "label": "Made in EU (FR/IT/BE)",
+        "saturationPct": 60,
+        "advice": "Common. LAX+ is ES-made — pivot to 'European herbal tradition' or 'expert formulation' rather than country-of-origin."
+      }
+    ],
+    "strategicRecommendations": [
+      {
+        "type": "Lead claim",
+        "finding": "FR is saturated on 'natural alternative' (5/5 competitors claim it). The DE-winning angle doesn't work here.",
+        "implication": "Re-anchor FR positioning on 'travel-ready capsule format + 7-ingredient depth'. Localize the listing differently from DE.",
+        "badgeBg": "#dcfce7",
+        "badgeColor": "#166534"
+      },
+      {
+        "type": "Differentiator",
+        "finding": "0/5 FR competitors offer capsule format. All use bars, tablets, or loose-leaf tea.",
+        "implication": "Lead the FR listing image carousel with 'capsule = travel = tasteless = exact dose'. The format itself is the differentiator.",
+        "badgeBg": "#dbeafe",
+        "badgeColor": "#1e40af"
+      },
+      {
+        "type": "Use case",
+        "finding": "Lax FR over-indexes on travel constipation and post-bariatric surgery — both uncovered by competitors.",
+        "implication": "Add a use-case section: 'For travel, post-surgery, and irregular routines'. Direct mention will capture under-served searchers.",
+        "badgeBg": "#dbeafe",
+        "badgeColor": "#1e40af"
+      },
+      {
+        "type": "Risk — direct competitor",
+        "finding": "Natural Sprint matches LAX+ on multi-herb depth (8 vs 7 ingredients) and undercuts on price (€7.00 vs €24.99).",
+        "implication": "Justify the price gap via brand professionalism + QR support service + formulation purity (Natural Sprint listing is unpolished). Avoid pure herb-count comparison.",
+        "badgeBg": "#fee2e2",
+        "badgeColor": "#991b1b"
+      },
+      {
+        "type": "Pricing",
+        "finding": "LAX+ at €24.99 is the most expensive in the FR top-5 (next: Ortis €9.91). 2.5x average competitor price.",
+        "implication": "Higher price needs hard justification. Lean on QR support, premium ingredient grade, and 9.8/10 results claim. Otherwise vulnerable to natural alternatives at €7-10.",
+        "badgeBg": "#fef3c7",
+        "badgeColor": "#92400e"
+      },
+      {
+        "type": "Localization",
+        "finding": "FR market structure is fundamentally different from DE — different competitors, different saturation map.",
+        "implication": "Maintain separate FR listing copy. Don't translate DE copy verbatim. The lead claim should differ.",
+        "badgeBg": "#dbeafe",
+        "badgeColor": "#1e40af"
+      }
+    ]
+  }
 }

@@ -34,6 +34,7 @@ Per-product Amazon review analysis dashboards in a sidebar-navigated hub. Each p
 | Per-product standalone | `dashboards/{id}/index.html` (self-contained, fetches its own data) |
 | Per-product analysis data | `dashboards/{id}/dashboard.json` (VOC + Marketing Deep-Dive) |
 | Source review data | root `{ASIN}-{MARKET}-Reviews.json` (one per dashboard, format: `[{title, date, author, review}]`) |
+| Competitor master list | `data/DETOX + LAX TOP COMPETITORS.xlsx` (top-5 per market per product family — gitignored) |
 
 Each standalone fetches **two** files at load:
 1. Its own `dashboard.json` (VOC + MDD analysis: themes, customer profile, quotes, insights, competitor data)
@@ -41,13 +42,13 @@ Each standalone fetches **two** files at load:
 
 The standalone runs a multilingual sentiment + theme classifier in JS at load time on each raw review (rule-based regex covering DE/ES/IT/FR/EN). No pre-tagging required.
 
-## Products (live as of 2026-04-30)
+## Products (live as of 2026-05-06)
 
 | ID | Title | ASIN | Market | Reviews | Pos / Neg / Neu | VOC | MDD |
 |----|-------|------|--------|---------|-----------------|-----|-----|
-| `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (9 competitors) |
-| `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ⏸ (waiting for ASINs) |
-| `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ⏸ (waiting for ASINs) |
+| `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (5 competitors, curated) |
+| `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ✅ (5 competitors) |
+| `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ✅ (5 competitors) |
 
 ### Lax DE vs Lax FR — file overlap structure
 
@@ -132,12 +133,30 @@ The Spanish-led brand (CNC / QSTA Labs) means Amazon EU's cross-marketplace pool
 
 ## SP-API workflow for Marketing Deep-Dive
 
-Competitor data is fetched live via the `mcp__amazon-sp-api` MCP server:
+### Source of competitor ASINs
+
+`data/DETOX + LAX TOP COMPETITORS.xlsx` is the single source of truth. Maintained manually by the user, **gitignored**, read locally with `openpyxl`. Layout:
+
+```
+DETOX block:
+  Row 0 header: DETOX | Competitor 1..5
+  Rows 1-5:    one row per market (ES, DE, IT, FR, UK) with 5 ASINs
+
+(blank separator row)
+
+LAX block:
+  Row 7 header: LAX | Competitor 1..5
+  Rows 8-12:   one row per market
+```
+
+The user will append new product-family blocks (separator + header + 5 market rows) as new dashboards are added. **Read this file first** when populating any MDD — only ask the user for ASINs if the relevant block is missing.
+
+### Live SP-API lookups
 
 - `mcp__amazon-sp-api__get_listing_by_asin` — full attributes (title, brand, bullets, images, BSR, niche category) per ASIN. Marketplace param: `DE` / `FR` / `IT` / `ES` / `UK` / `US`.
 - `mcp__amazon-sp-api__get_competitive_pricing` — batched (up to 20 ASINs per call) for price + offer count.
 
-**Caveat:** ASINs not listed on the requested marketplace return `not found in marketplace(s)` errors. Many EU competitor ASINs are listed on `ES` or `FR` only and visible on `DE` only via cross-marketplace pooling — they won't return data when querying DE. For Detox DE, 4/12 of the original list returned data on DE; the user provided a corrected list of 10 DE-listed ASINs and 9/10 returned data.
+**Caveat:** ASINs not listed on the requested marketplace return `not found in marketplace(s)` errors. Many EU competitor ASINs are listed on `ES` or `FR` only and visible on `DE` only via cross-marketplace pooling — they won't return data when querying DE. For Detox DE, 4/12 of an early list returned data on DE; the corrected list of 10 DE-listed ASINs returned 9/10. The xlsx is curated to avoid this — ASINs there should match the marketplace listed.
 
 ## Strategic findings (cross-product)
 
@@ -147,8 +166,11 @@ Competitor data is fetched live via the `mcp__amazon-sp-api` MCP server:
 4. **Lax FR over-indexes on travel-constipation and post-bypass surgery use cases.** Lax DE over-indexes on medication-induced constipation and elderly-relative purchases. Localise messaging.
 5. **Operational issues are repeated across all 3 products** — capsule count discrepancies, broken seals, half-empty bottles, tiny labelling.
 6. **Review-for-freebie scheme is publicly called out** by 3-4% of Detox DE negatives. Risk to long-term rating credibility.
-7. **Bloating relief + Regularity are unowned in the Detox DE competitive set.** 0/9 competitors lead with these — it's a clean whitespace lead-claim opportunity (highest-leverage finding from the Detox DE MDD).
-8. **Detox DE sits at the probiotic ↔ detox intersection.** 4 competitors are pure probiotics, 2 are pure heavy-metal detox. CNC Detox is the only product combining both. Listing copy doesn't articulate this synthesis.
+7. **Bloating relief + Regularity are unowned in the Detox DE competitive set.** 0/5 curated competitors lead with these — clean whitespace lead-claim opportunity (highest-leverage finding from the Detox DE MDD).
+8. **Detox DE sits at the probiotic ↔ detox intersection.** 4/5 competitors are pure probiotics (Kijimea, Nature Love, OMNi BiOTiC, NATURTREU); 1/5 is pure liver-detox (natural elements). CNC Detox is the only product combining both.
+9. **Lax DE: the 'natural alternative' angle is wide-open.** 0/5 DE competitors claim it. The DE top-5 splits into 2 chemical pharmacy laxatives (Dulcolax/Macrogol) + 3 bloating/enzyme products (STADA/LEFAX/sanotact). LAX+ is the only natural multi-herb laxative in the set.
+10. **Lax FR is the inverse: 'natural alternative' is saturated (5/5 claim it).** Don't translate DE copy. Differentiate via capsule format (0/5 competitors offer it — they sell bars/tablets/tea) + 7-ingredient formulation depth + travel-ready use case.
+11. **Natural Sprint (FR competitor B0D474GHRR) is the closest direct threat to LAX+.** 8 herbs vs LAX+'s 7, made in Italy, undercuts price (€7 vs €25). Differentiate on professional branding + QR support service.
 
 ## Workflow patterns
 
@@ -159,7 +181,7 @@ Use the `review-analysis` skill (Action 1). Inputs: ASIN, marketplace, product n
 Re-run the analysis when the source JSON is updated. Skill reads the new reviews, re-synthesises themes / customer profile / quotes, overwrites `dashboard.json`. The HTML doesn't need to change.
 
 ### Populate the Marketing Deep-Dive tab
-1. User provides 8–12 competitor ASINs from the same marketplace.
+1. Read competitor ASINs from `data/DETOX + LAX TOP COMPETITORS.xlsx` (top-5 per market per product family). Only ask the user if the block is missing.
 2. Use SP-API (`get_listing_by_asin` + `get_competitive_pricing`) to fetch live data.
 3. Tag each competitor's claims across ~15 themes (multi-strain probiotic, bloating relief, gentle, weight loss, natural, made in DE/EU, lab tested, etc.).
 4. Build the `marketingDeepDive` block in `dashboard.json` with: competitor cards, claims matrix (incl. user product), claim-frequency bars, VOC↔claims gap table, whitespace cards, saturation cards, strategic recommendations.
@@ -181,6 +203,7 @@ python -m http.server 8765
 ## Known issues
 
 - **Excel lock files (`~$*.xlsx`)** appear when the user has a review xlsx open. They block `rm` until Excel is closed. Excluded from git via `.gitignore`.
+- **Competitor xlsx is gitignored.** `data/DETOX + LAX TOP COMPETITORS.xlsx` stays local — read with `openpyxl`, never commit.
 - **Sentiment classifier is rule-based regex.** Multilingual but not perfect — long mixed reviews (some pos + some neg phrases) default to `neutral`. Good enough for the Browser filter; the analytical sections use AI-synthesised counts, not the regex output.
 - **SP-API marketplace mismatch.** ASINs listed only on a different EU marketplace (e.g. ES) return errors when querying DE — even though Amazon shows the product on DE via cross-pooling.
 
