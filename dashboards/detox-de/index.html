@@ -495,7 +495,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
   function renderMDD(M) {
     var root = document.getElementById('mdd-root');
     if (!root) return;
-    var fmt = function(n) { return (M.currency || '€') + Number(n || 0).toFixed(2); };
+    var fmt = function(n) { if (n == null || n === '') return '—'; if (typeof n === 'string') return n; return (M.currency || '€') + Number(n).toFixed(2); };
     var h = '';
 
     h += '<p class="sec-summary" style="margin-bottom:24px">' + M.intro + '</p>';
