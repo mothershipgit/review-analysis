@@ -548,8 +548,8 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
     M.claimsSummary.forEach(function(s) {
       h += '<div class="mdd-bar-row">';
       h += '  <div class="mdd-bar-row-label">' + esc(s.label) + '</div>';
-      h += '  <div class="mdd-bar-track"><div class="mdd-bar-fill" style="width:' + s.pct + '"></div></div>';
-      h += '  <div class="mdd-bar-row-count"><b>' + s.count + '</b> · ' + s.pct + '</div>';
+      h += '  <div class="mdd-bar-track"><div class="mdd-bar-fill" style="width:' + s.pct + '%"></div></div>';
+      h += '  <div class="mdd-bar-row-count"><b>' + s.count + '</b> · ' + s.pct + '%</div>';
       h += '</div>';
       h += '<div class="mdd-brands">Brands: ' + s.topBrands.map(esc).join(' · ') + '</div>';
     });
@@ -557,7 +557,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
 
     // Section 3: VOC ↔ Claims Gap Analysis
     h += '<div class="mdd-section">';
-    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">3. VOC ↔ Claims Gap Analysis</div><div class="mdd-sec-sub">Customer concerns from Tab 1 reviews × how many of the 9 competitors address them</div></div>';
+    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">3. VOC ↔ Claims Gap Analysis</div><div class="mdd-sec-sub">Customer concerns from Tab 1 reviews × how many of the ' + M.totalCompetitors + ' competitors address them</div></div>';
     h += '<table class="mdd-gap"><thead><tr>';
     h += '<th style="width:22%">VOC Topic</th><th style="width:14%">Customer signal</th><th style="width:18%">Addressed by</th><th style="width:10%">Severity</th><th>Whitespace</th>';
     h += '</tr></thead><tbody>';
@@ -591,7 +591,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
     h += '<div class="mdd-ws-grid">';
     M.saturation.forEach(function(s) {
       h += '<div class="mdd-ws-card">';
-      h += '  <h4>' + esc(s.label) + ' <span style="float:right;color:#dc2626;font-size:.78rem">' + s.saturationPct + '</span></h4>';
+      h += '  <h4>' + esc(s.label) + ' <span style="float:right;color:#dc2626;font-size:.78rem">' + s.saturationPct + '%</span></h4>';
       h += '  <div class="mdd-ws-rationale">' + esc(s.advice) + '</div>';
       h += '</div>';
     });
