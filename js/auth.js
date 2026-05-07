@@ -30,7 +30,8 @@
     'natasha@themothership.ai', 'natasha.heneghan@themothership.ai',
     'leticia@themothership.ai', 'leticia.rivero@themothership.ai',
     'francesco@themothership.ai', 'francesco.diana@themothership.ai',
-    'hello@themothership.ai', 'amazon@themothership.ai'
+    'hello@themothership.ai', 'amazon@themothership.ai',
+    'arush.pathak@themothership.ai'
   ];
 
   // Hide page until auth resolved (prevents flash of un-authed content)
