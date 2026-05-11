@@ -72,7 +72,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .us-table .us-label { font-weight: 600; color: #0f172a; width: 22%; }
 .us-table .us-reason { color: #475569; line-height: 1.5; }
 .us-table .us-pct { width: 140px; text-align: right; }
-.us-bar-wrap { display: inline-block; width: 70px; height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; vertical-align: middle; margin-right: 8px; }
+.us-bar-wrap { display: inline-block; width: 110px; height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; vertical-align: middle; margin-right: 8px; }
 .us-bar { height: 100%; background: #2563eb; border-radius: 4px; }
 
 /* Negative / Positive expandable rows */
@@ -378,7 +378,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
 
   // ── Helpers ──
   function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
-  function bw(pctStr, maxPct) { var v = parseFloat(pctStr); return Math.round(v / maxPct * 100) + '%'; }
+  function bw(pctStr) { var v = parseFloat(pctStr); return (isNaN(v) ? 0 : v) + '%'; }
 
   // ── Multilingual sentiment + theme classifier (rule-based, runs on each review) ──
   var POS_KW = /\b(funciona|funziona|wirkt|marche|works|recomendable|recomiendo|recommande|sehr gut|very good|eficaz|efficace|efficiente|satisfecho|satisfait|soddisfatto|content[oa]?|top|super|excelente|excellent|eccellente|estupendo|perfecto|perfetto|parfait|gut|bien|bene|buono|buen[oa]|bueno|maravilloso|geniales?|genial|me encant|gefällt|recommendable|me ha funcionado|ottim[oa]|fantástic|fantastic)\b/i;
@@ -461,7 +461,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
     if (!rows || !rows.length) return;
     var max = parseFloat(rows[0].pct);
     var html = rows.map(function(r) {
-      var bar = withBars ? '<div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(r.pct, max) + '"></div></div>' : '';
+      var bar = withBars ? '<div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(r.pct) + '"></div></div>' : '';
       return '<tr><td class="us-label">' + esc(r.label) + '</td><td class="us-reason">' + esc(r.reason) + '</td><td class="us-pct">' + bar + '<span>' + r.pct + '</span></td></tr>';
     }).join('');
     document.getElementById(tbodyId).innerHTML = html;
@@ -477,7 +477,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
       var quotes = (t.quotes || []).map(function(q) { return '<p>' + esc(q) + '</p>'; }).join('');
       var row = '<tr class="' + arrowClass + '-row"><td class="us-label"><span class="' + arrowClass + '-arrow">▶</span> ' + esc(t.label) + '</td>' +
         '<td class="us-reason">' + esc(t.reason) + '</td>' +
-        '<td class="us-pct"><div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(t.pct, max) + ';background:' + barColor + '"></div></div><span>' + t.pct + '</span></td></tr>';
+        '<td class="us-pct"><div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(t.pct) + ';background:' + barColor + '"></div></div><span>' + t.pct + '</span></td></tr>';
       var detail = '<tr class="' + arrowClass + '-detail"><td colspan="3"><div class="' + arrowClass + '-body"><ul>' + bullets + '</ul><div class="' + arrowClass + '-quotes">' + quotes + '</div></div></td></tr>';
       return row + detail;
     }).join('');
