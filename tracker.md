@@ -17,7 +17,7 @@
 
 ## In Progress
 
-- [ ] **Build 5 Menositol dashboards (UK/DE/FR/ES/IT)** — scheduled 2026-05-12. Same pattern as Inositol scaffolding: 5 folders under `dashboards/menositol-{market}/`, stub JSONs, register in `config.json` under `detailed` group, add to CLAUDE.md Products table. Blocked on: reviews JSON files + ASIN(s) from user. Once reviews land, run VOC analysis per market (Action 2 of `review-analysis` skill).
+- [ ] **Build 5 Menositol dashboards (UK/DE/FR/ES/IT)** @2026-05-12 #reviews-analysis #→action — Same pattern as Inositol scaffolding: 5 folders under `dashboards/menositol-{market}/`, stub JSONs, register in `config.json` under `detailed` group, add to CLAUDE.md Products table. Blocked on: reviews JSON files + ASIN(s) from user. Once reviews land, run VOC analysis per market (Action 2 of `review-analysis` skill).
 
 ---
 
