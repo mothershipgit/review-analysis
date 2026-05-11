@@ -10,8 +10,8 @@
 |--------|-------|
 | **In Progress** | 1 |
 | **Pending Decisions** | 0 |
-| **Backlog** | 2 |
-| **Recently Completed** | 5 |
+| **Backlog** | 3 |
+| **Recently Completed** | 6 |
 
 ---
 
@@ -29,7 +29,8 @@
 
 ## Backlog
 
-- [ ] **Activate 5 Inositol Caps dashboards** — scaffolded 2026-05-11, awaiting reviews JSON files. When user drops `INOSITOL-{MARKET}-Reviews.json` (or real-ASIN-named files) at project root, run VOC for each market, then populate MDD using top-5 competitors from `data/DETOX + LAX TOP COMPETITORS.xlsx` (needs new INOSITOL block from user).
+- [ ] **Populate Marketing Deep-Dive for 5 Inositol dashboards** @TBD #reviews-analysis — VOC done 2026-05-11. Blocked on: user to add INOSITOL block (top-5 competitors per market) to `data/DETOX + LAX TOP COMPETITORS.xlsx`. Once xlsx updated, run Action 3 (SP-API + MDD synthesis) for all 5 markets.
+- [ ] **Provide ASINs for 5 Inositol dashboards** @TBD #reviews-analysis — all 5 dashboard.json files have `asin: "TBD"`. User to supply real ASINs per market, then rename `INOSITOL-{MARKET}-Reviews.json` files to `{ASIN}-{MARKET}-Reviews.json` and update fetch URLs in HTML.
 - [ ] **Refresh data/DETOX + LAX TOP COMPETITORS.xlsx** — user to append product-family blocks for Inositol + Menositol (top-5 per market per family). Required before any of the 10 new dashboards can populate their Marketing Deep-Dive tab.
 
 ---
@@ -38,6 +39,7 @@
 
 | Date | Item |
 |------|------|
+| 2026-05-11 | **VOC analysis complete for all 5 Inositol Caps dashboards (UK/DE/FR/ES/IT)** — 1,902 reviews total. Sentiment: UK 63/26/11, DE 60/30/10, FR 52/37/10, ES 51/36/13, IT 65/26/9. Universal finding: silent reformulation (40:1→100:1 ratio, folate→folic acid) caught in all 5 markets independently — brand-wide trust crisis. |
 | 2026-05-11 | Scaffold 5 Inositol Caps dashboards (UK/DE/FR/ES/IT) — folders, stub JSONs, registered in hub, CLAUDE.md table updated. Commit `20269c5`. |
 | 2026-05-11 | Fix MDD renderer — clone full template to Lax DE/FR (they were missing `renderMDD()` entirely), fix bar-width bug (missing `%` suffix), fix price NaN rendering, dynamic competitor count in headers. Commits `ac3dbea`, `21575c6`. |
 | 2026-05-11 | Document `data/DETOX + LAX TOP COMPETITORS.xlsx` as canonical competitor source in CLAUDE.md + SKILL.md. Workflow updated: read xlsx before asking user for ASINs. |

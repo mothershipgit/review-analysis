@@ -49,13 +49,15 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (5 competitors, curated) |
 | `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ✅ (5 competitors) |
-| `inositol-uk` | Inositol Caps UK | TBD | UK | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
-| `inositol-de` | Inositol Caps DE | TBD | DE | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
-| `inositol-fr` | Inositol Caps FR | TBD | FR | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
-| `inositol-es` | Inositol Caps ES | TBD | ES | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
-| `inositol-it` | Inositol Caps IT | TBD | IT | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
+| `inositol-uk` | Inositol Caps UK | TBD | UK | 363 | 63% / 26% / 11% | ✅ | ⏸ |
+| `inositol-de` | Inositol Caps DE | TBD | DE | 367 | 60% / 30% / 10% | ✅ | ⏸ |
+| `inositol-fr` | Inositol Caps FR | TBD | FR | 341 | 52% / 37% / 10% | ✅ | ⏸ |
+| `inositol-es` | Inositol Caps ES | TBD | ES | 455 | 51% / 36% / 13% | ✅ | ⏸ |
+| `inositol-it` | Inositol Caps IT | TBD | IT | 376 | 65% / 26% / 9% | ✅ | ⏸ |
 
-**Inositol scaffold:** the 5 inositol-* dashboards are stubs. Their `index.html` fetch URLs use placeholder `INOSITOL-{MARKET}-Reviews.json` filenames at the project root. To activate any of them: drop the reviews JSON at the project root with the matching filename (or tell Claude the real ASIN and the placeholder will be swapped), then run `review-analysis` VOC refresh (Action 2). Add the competitor block for that family to `data/DETOX + LAX TOP COMPETITORS.xlsx` (rename the file or add a new INOSITOL block) before the MDD step.
+**Inositol VOC complete (2026-05-11):** All 5 markets analyzed. ASINs still TBD — user to provide. Reviews JSONs at project root with placeholder name `INOSITOL-{MARKET}-Reviews.json`. Once ASINs known, rename files + update fetch URLs in HTML.
+
+**Inositol language profile:** All 5 files are heavily multilingual (cross-marketplace pooling from a Spanish-origin brand). Native-language share is typically 25-55% with heavy ES/IT/FR cross-pool. Even the UK file is only ~13% English — ~71% comes from ES/IT/FR cross-pool. Frame language in cpSummary honestly per market.
 
 ### Lax DE vs Lax FR — file overlap structure
 
@@ -178,6 +180,10 @@ The user will append new product-family blocks (separator + header + 5 market ro
 9. **Lax DE: the 'natural alternative' angle is wide-open.** 0/5 DE competitors claim it. The DE top-5 splits into 2 chemical pharmacy laxatives (Dulcolax/Macrogol) + 3 bloating/enzyme products (STADA/LEFAX/sanotact). LAX+ is the only natural multi-herb laxative in the set.
 10. **Lax FR is the inverse: 'natural alternative' is saturated (5/5 claim it).** Don't translate DE copy. Differentiate via capsule format (0/5 competitors offer it — they sell bars/tablets/tea) + 7-ingredient formulation depth + travel-ready use case.
 11. **Natural Sprint (FR competitor B0D474GHRR) is the closest direct threat to LAX+.** 8 herbs vs LAX+'s 7, made in Italy, undercuts price (€7 vs €25). Differentiate on professional branding + QR support service.
+12. **Inositol — silent reformulation is a brand-wide trust crisis (all 5 markets independently flag it).** Long-time buyers + MTHFR-aware customers caught two changes: D-chiro reduced from ~100mg→40mg (40:1 ratio broken, sometimes to 100:1), AND methylfolate replaced with folic acid. Spans UK/DE/FR/ES/IT — not a market-specific quirk. They're actively warning others ("Reddit threads", "not what I bought before"). Highest-leverage fix: either restore the original spec or transparently re-launch as "Reformulated" with clinical rationale.
+13. **Inositol — cycle regulation + hormonal acne are the true repeat-purchase drivers (35-45% of positives across all 5 markets).** Current listing leads with "4100mg 9-in-1" — too generic, hides the emotional outcome. Lead instead with "Restore your cycle + clear hormonal acne". Bigger than fertility, bigger than insulin resistance, bigger than value.
+14. **Inositol — "6 capsules = 4100mg daily" labeling is a cascading 1-star generator (~18% of negatives across markets).** Customers expect per-capsule dose, feel deceived, bottle lasts 30 days, value collapses. Copy fix, not product fix — disclose daily-dose math up front in the listing headline.
+15. **Inositol — the QR-code WhatsApp dosing support is praised across all 5 markets as a real differentiator.** Currently buried in listing copy. Promote to top-3 bullet.
 
 ## Workflow patterns
 

@@ -1,50 +1,714 @@
 {
   "id": "inositol-es",
   "title": "Inositol Caps ES — Review Analysis",
-  "subtitle": "Awaiting VOC analysis — drop the reviews JSON to populate",
+  "subtitle": "TBD · Amazon ES marketplace · 455 reviews",
   "asin": "TBD",
   "marketplace": "ES",
   "reviewsFile": "../../INOSITOL-ES-Reviews.json",
-  "totalReviews": 0,
-  "posCount": 0,
-  "negCount": 0,
-  "neuCount": 0,
-  "posPct": "—",
-  "negPct": "—",
-  "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Run the review-analysis VOC refresh once the source reviews JSON is dropped at the project root.",
+  "totalReviews": 455,
+  "posCount": 233,
+  "negCount": 164,
+  "neuCount": 58,
+  "posPct": "51.2",
+  "negPct": "36.0",
+  "neuPct": "12.7",
+  "cpSummary": "Customer profile based on <strong>455 reviews scraped from amazon.es's product page</strong>. The brand is Spanish-led (Rola Brand Barcelona / influencer-launched), so Amazon EU's cross-marketplace pooling pulls heavy <strong>IT/FR/DE/EN reviews alongside Spanish ones</strong> — roughly 55% Spanish, 25% Italian, 10% French, 6% German, 4% English/Portuguese. The dominant buyer is a <strong>woman aged 20-40 with PCOS/SOP</strong> seeking <strong>cycle regulation, fertility support, hormonal acne control, or insulin sensitivity</strong>. Most users came after stopping hormonal contraceptives or after a gynaecologist recommendation. Negative reviewers cluster around a recent <strong>formula change (40:1 ratio broken to 100:1)</strong>, powder format solidifying, and lab/manufacturer opacity.",
   "cpWho": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Women — PCOS/SOP",
+      "Trying-to-conceive / fertility",
+      "Hormonal acne sufferers",
+      "Post-pill cycle recovery",
+      "Insulin resistance / weight",
+      "Perimenopausal women"
+    ],
+    "pos": [
+      88,
+      42,
+      36,
+      32,
+      20,
+      15
+    ],
+    "neg": [
+      72,
+      24,
+      28,
+      18,
+      12,
+      10
+    ]
   },
   "cpWhen": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Daily long-term routine (3-12 mo)",
+      "After stopping contraceptive pill",
+      "After gynaecologist recommendation",
+      "Trying-to-conceive cycle",
+      "First time trying inositol",
+      "Switched from another brand"
+    ],
+    "pos": [
+      96,
+      48,
+      36,
+      32,
+      22,
+      28
+    ],
+    "neg": [
+      62,
+      26,
+      14,
+      22,
+      28,
+      52
+    ]
   },
   "cpWhere": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Home — morning + evening dose",
+      "Whole-cycle treatment plan",
+      "Combined with diet / fasting / exercise",
+      "Combined with other supplements"
+    ],
+    "pos": [
+      142,
+      62,
+      40,
+      36
+    ],
+    "neg": [
+      102,
+      32,
+      18,
+      24
+    ]
   },
   "cpWhat": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Regulate cycle (PCOS/SOP)",
+      "Hormonal acne / skin",
+      "Fertility / pregnancy",
+      "PMS pain / mood / energy",
+      "Insulin sensitivity / weight",
+      "Hair / hirsutism"
+    ],
+    "pos": [
+      102,
+      62,
+      44,
+      48,
+      28,
+      22
+    ],
+    "neg": [
+      82,
+      42,
+      24,
+      18,
+      14,
+      12
+    ]
   },
-  "usageScenarios": [],
-  "csSummary": "Pending — awaiting VOC analysis.",
-  "negativeTopics": [],
-  "negativeInsights": [],
-  "positiveTopics": [],
-  "positiveInsights": [],
-  "buyersMotivation": [],
-  "customerExpectations": [],
+  "usageScenarios": [
+    {
+      "label": "Daily PCOS/SOP cycle regulation",
+      "reason": "primary use case — women diagnosed with polycystic ovary syndrome take it long-term to restore regular menstrual cycles. Many came after dropping hormonal contraceptives.",
+      "pct": "26.4%"
+    },
+    {
+      "label": "Hormonal acne / skin clearing",
+      "reason": "users with chin or back hormonal acne report taking it specifically to clear breakouts tied to ovulation or pre-menstrual phase. Often paired with retinol or Vit C topicals.",
+      "pct": "16.2%"
+    },
+    {
+      "label": "Fertility / trying-to-conceive",
+      "reason": "couples actively trying to conceive — often after months/years of failure — take it for ovulation regularity and egg quality. Multiple reviews report pregnancy within 2-3 months.",
+      "pct": "12.8%"
+    },
+    {
+      "label": "PMS pain / mood / energy support",
+      "reason": "users with painful periods, severe PMS mood swings, fatigue, or brain fog report taking it to smooth the cycle and stabilise mood.",
+      "pct": "11.5%"
+    },
+    {
+      "label": "Insulin resistance / weight management",
+      "reason": "metformin-intolerant users and lean-PCOS women take it as a metformin alternative to improve insulin sensitivity and reduce sugar cravings.",
+      "pct": "9.2%"
+    },
+    {
+      "label": "Post-pill cycle recovery",
+      "reason": "women who stopped hormonal contraceptives after 5-15 years use it to help cycles return and avoid amenorrhea.",
+      "pct": "8.4%"
+    },
+    {
+      "label": "Hirsutism / hair loss control",
+      "reason": "facial hair, scalp hair loss linked to elevated androgens. Some users report visible reduction within 3 months.",
+      "pct": "5.8%"
+    },
+    {
+      "label": "Perimenopause / menopause support",
+      "reason": "women 40-55 take it for hot flashes, sleep disturbance, mood stability during hormonal transition.",
+      "pct": "4.6%"
+    },
+    {
+      "label": "General hormonal balance (no diagnosis)",
+      "reason": "users without a formal PCOS diagnosis but with hormonal symptoms (irregular cycle, sugar cravings) take it as a preventive supplement.",
+      "pct": "3.4%"
+    },
+    {
+      "label": "Bloating / digestion support",
+      "reason": "smaller segment reporting reduced abdominal bloating as a side benefit — not the primary marketing claim.",
+      "pct": "1.7%"
+    }
+  ],
+  "csSummary": "Sentiment is moderately positive — 51% positive vs 36% negative — but the negative camp clusters around two strategic flashpoints: a <strong>formula change that broke the 40:1 myo:D-chiro ratio</strong> (called out by multi-year repeat buyers across DE, IT, ES, FR) and the <strong>powder format solidifying into rock</strong> within weeks of opening. Positive reviewers describe genuinely life-changing outcomes — restored cycles after years of amenorrhea, pregnancies after years of trying, acne clearing — and credit the brand's QR-code personalised dosing support specifically.",
+  "negativeTopics": [
+    {
+      "label": "No effect / didn't regulate cycle",
+      "reason": "users completed 1-6 months of treatment and report no change in cycle regularity, hormones, acne, or PCOS symptoms. Most painful for users who came specifically for cycle regulation.",
+      "pct": "18.4%",
+      "bullets": [
+        "Most-cited single complaint — about 1 in 5 negative reviewers",
+        "Often paired with comments comparing to pharmacy alternatives (Italfarmaco, Lamberts, Ovusitol)",
+        "Many tried for 3-12 months before giving up — feels like wasted time, not just money"
+      ],
+      "quotes": [
+        "\"After 3 weeks I feel absolutely nothing. Not less bloated, nothing. Money wasted.\"",
+        "\"After 10 months of continuous use at 2-4g/day, my cycle has not regulated compared to a year ago. I'm switching brands.\"",
+        "\"I have PCOS and wanted to avoid the pharmacy price — but I have to go back. Cycle regularity didn't return, PCOS side effects haven't diminished.\""
+      ]
+    },
+    {
+      "label": "Formula change — 40:1 ratio broken",
+      "reason": "long-term repeat buyers report the brand silently changed the myo:D-chiro inositol ratio from the clinically-validated 40:1 (4000:100mg) to 100:1 (4060:40mg). Some also report folato 5-MTHF being replaced with cheaper folic acid. No customer notification.",
+      "pct": "15.7%",
+      "bullets": [
+        "Repeated across DE, IT, ES reviews — multi-year buyers caught the change on label",
+        "Folate switched from active 5-MTHF to folic acid — critical for users with MTHFR gene mutation",
+        "Customers explicitly state the 40:1 ratio is what they paid for and what the science supports",
+        "Brand silence on the change is the trust-killer — not the change itself"
+      ],
+      "quotes": [
+        "\"Bought for the 40:1 ratio of Myo-inositol to D-Chiro-inositol but that ratio has been modified — the quantity of D-chiro-inositol is now lower, the 40:1 ratio is no longer respected.\"",
+        "\"Contains not 40:1 inositol but 100:1! The ratio needed for PCOS treatment is no longer there.\"",
+        "\"The formula has changed — twice now I'm receiving a version with folic acid instead of folate. I can't take it, I have MTHFR polymorphism. Contacted the company, still waiting for a return.\""
+      ]
+    },
+    {
+      "label": "Side effects — GI, headache, mood, acne",
+      "reason": "users report nausea, diarrhea, cramps, severe headaches, dizziness, vertigo, mood drop, and acne breakouts within days of starting. Many quit within 1-2 weeks. Some link symptoms to over-dosed selenium/chromium/folate.",
+      "pct": "14.6%",
+      "bullets": [
+        "GI symptoms (nausea, diarrhea, cramps) most common — affects ~6% of negatives alone",
+        "Severe headaches and dizziness reported by users on full 6-capsule dose",
+        "Mood drop / anxiety reported as recurring after each dose for some users",
+        "Paradoxical acne breakouts (vs intended skin-clearing effect) reported repeatedly",
+        "Hair loss reported by a smaller subset — opposite of intended effect"
+      ],
+      "quotes": [
+        "\"From day one: nausea, dizziness, headache. Plus a painful cystic acne breakout and the most painful period I've ever had. Nothing of this happened with my old brand.\"",
+        "\"Within 2 days: continuous diarrhoea 5-6× a day and severe abdominal pain. Do not recommend.\"",
+        "\"Every time I take it I get an emotional crash — I've taken it 6-7 times and it always happens. With my old brand (Acnesitol) the opposite, mood improved.\"",
+        "\"Big side effects: headaches, nausea, vertigo, intense fatigue. Had to stop the cure after barely 10 days. Symptoms cleared once I stopped.\""
+      ]
+    },
+    {
+      "label": "Powder solidifies into rock",
+      "reason": "specific to the powder format — the powder hardens into an unscoopable brick within weeks of opening, sometimes before opening. Multiple users report this across 3+ orders. Linked to non-airtight packaging and humidity ingress.",
+      "pct": "10.3%",
+      "bullets": [
+        "Affects the powder format specifically — not the capsules",
+        "Customers report it on first opening or after 2-6 weeks of storage",
+        "Workarounds (shake jar, dissolve in liquid) fail when fully crystallised",
+        "Repeat across UK, IT, FR, DE, AE — clearly a packaging/format defect, not regional",
+        "Several users switched permanently back to capsules because of this"
+      ],
+      "quotes": [
+        "\"Came rock solid like a puck — the seal had broken.\"",
+        "\"The powder dries out completely. Came that way to me — clearly the packaging was not airtight and air got to the powder. Product unusable.\"",
+        "\"At half the jar the powder hardens and forms balls — almost impossible to use unless you dissolve it in liquid. I've tried other powders and this is the only one this has happened with.\"",
+        "\"3rd jar this has happened to and I've been taking it for years. Take the capsule version or switch brand — otherwise you waste your money.\""
+      ]
+    },
+    {
+      "label": "Packaging defects — broken seal, half-empty",
+      "reason": "broken safety seals, half-empty jars, packages arriving opened, small holes punched in inner foil. Users report being unable to return on subscription orders. Triggers contamination fears.",
+      "pct": "8.7%",
+      "bullets": [
+        "Broken safety seal reported repeatedly across all marketplaces",
+        "Half-empty or 'less than half full' bottles for the powder format",
+        "Subscription orders affected multiple times in a row",
+        "Most users refuse to use the product even after getting a refund — trust gone"
+      ],
+      "quotes": [
+        "\"Ordered this product twice — returned the first because the package was open and the seal was broken. Second time arrived in the same state. I'm returning it too. I haven't even tried the product because it's not safe.\"",
+        "\"The bottle is less than half full when I opened it — and with the seal intact!\"",
+        "\"€33.88 and I got half a product. I'd rather not eat this, it's not a new product. Better to buy at the pharmacy. People please be careful!!\"",
+        "\"Subscription order — twice the inner seal arrived open which made the powder compact like a stone, impossible to dose or use.\""
+      ]
+    },
+    {
+      "label": "Lab opacity / influencer brand suspicion",
+      "reason": "users searched for manufacturer info and found none — no lab on the label, no health registry number, brand traces back to an influencer with low engagement. Customer service refused to disclose manufacturer 'in case you're competition'. Distributor 'Rola Brand Barcelona' only.",
+      "pct": "8.5%",
+      "bullets": [
+        "Label shows distributor (Rola Brand Barcelona) but no manufacturing lab",
+        "Customer service explicitly refused to disclose manufacturer name",
+        "Conflict between 'Made in Spain' claim on listing and 'Made in Estonia' on jar",
+        "Brand traces back to an influencer (PCOSNowMama) — feels unprofessional",
+        "WhatsApp support number is Miami Florida, not Spanish"
+      ],
+      "quotes": [
+        "\"I contacted the seller — the WhatsApp number is from Miami Florida. When I asked where the product is made, they said they couldn't tell me 'in case I was competition'. Label only says distributed by Rola Brand Barcelona. Nothing about manufacturer. Very shady.\"",
+        "\"Says it's made in Spain but the jar says manufactured in Estonia. Tiny print on ingredients. No sanitary registry number.\"",
+        "\"The product seems to be from an influencer who had PCOS — no proper laboratory. With your health, you don't play around. I switched brand.\"",
+        "\"No information about the lab. Just that it was made by an influencer. The label looks like it was made in PowerPoint. Doesn't feel professional.\""
+      ]
+    },
+    {
+      "label": "Dosing & capsule size — 6 caps/day inconvenient",
+      "reason": "to reach the marketed 4000mg, users must take 6 large capsules per day (3 morning + 3 evening). Many find this impractical for daily compliance — especially while travelling or at work. Misleading on listing where '4100mg' implies per-capsule.",
+      "pct": "7.4%",
+      "bullets": [
+        "6 capsules/day is required for the 4g therapeutic dose — feels excessive",
+        "Capsules described as 'large' — hard to swallow for some",
+        "Customers feel misled — the headline '4100mg' is per daily dose, not per capsule",
+        "Jar duration shrinks: 30 days at full dose vs 60+ for many alternatives",
+        "Reduces daily compliance — users skip doses → reduces efficacy → bad reviews"
+      ],
+      "quotes": [
+        "\"Misleading advertising — to reach the normal dose you have to take 3 or 6 capsules per day, this isn't said in the ad. Plus the bottle composition differs from what's advertised — the 40:1 ratio isn't met.\"",
+        "\"Don't get fooled — 4000mg is the equivalent of six capsules, so the product is not highly dosed per capsule.\"",
+        "\"6 capsules a day is really inconvenient, especially since they're a bit larger than average and swallowing them is unpleasant. Going back to powder.\"",
+        "\"The 4000mg dose requires 6 pills — 180 pills = 1 month. Financially better for them, but expensive for me. Capsules feel like plastic in your mouth.\""
+      ]
+    },
+    {
+      "label": "Aggressive review-for-freebie scheme",
+      "reason": "QR code on jar leads to WhatsApp where customer service offers a free second jar for a 5-star review with photo. Multiple users report being pressured to leave 5 stars before they'd seen any effect — and being increpated when they left 4 stars.",
+      "pct": "5.4%",
+      "bullets": [
+        "Brand reportedly contacts via WhatsApp / QR with 2x1 freebie offer",
+        "Pressure to leave 5-star review within days of receipt",
+        "Some users specifically leave 1-star reviews calling out the scheme",
+        "Customers feel the high rating is artificially inflated",
+        "Reduces trust in all positive reviews — poisons the whole rating"
+      ],
+      "quotes": [
+        "\"They offer a 2x1 if you leave a review. I gave them 4 stars saying I'd update if effects were good. When I sent the screenshot for the freebie I was reproached for not leaving 5. Pressured. Blocked them.\"",
+        "\"The jar has a QR code saying 'scan for a free jar'. Scan it and a WhatsApp chat opens where customer service promises a free jar in exchange for a positive review with attached photos. Isn't this illegal?\"",
+        "\"Bought based on positive reviews and immediately regretted it. Then I understood — they're paid reviews via the freebie scheme. With your health, you don't play.\""
+      ]
+    },
+    {
+      "label": "Folate vs folic acid — MTHFR users affected",
+      "reason": "users with the MTHFR gene mutation (common — ~40% of population have a variant) need the active 5-MTHF folate form. The brand reportedly silently switched some batches to inactive folic acid, breaking the value proposition for the MTHFR-sensitive segment. Vitamin B12 and B6 also reportedly not in active forms.",
+      "pct": "5.2%",
+      "bullets": [
+        "5-MTHF (calcium L-methylfolate) is the active form for MTHFR mutation carriers",
+        "Some batches now contain folic acid — fundamentally different for absorption",
+        "B12 not as methylcobalamin, B6 not as P-5-P — same issue for MTHFR users",
+        "Users with MTHFR mutation specifically chose this product for the active folate",
+        "Folic acid at high doses can mask B12 deficiency long-term — safety concern"
+      ],
+      "quotes": [
+        "\"Product not conforming to description! Does not contain methylfolate but folic acid. For me with the MTHFR mutation this supplement is unusable. And the inositol/D-chiro ratio is no longer 40:1.\"",
+        "\"Folate present is not in active form — it's folic acid, so not assimilable if you have the MTHFR gene mutation (fairly common but often not known). Return initiated.\"",
+        "\"Description said 400ug folate — a moderate safe daily dose. The actual label says 920ug folate, more than double. High folate doses can mask B12 deficiencies and have long-term effects. Unacceptable.\""
+      ]
+    },
+    {
+      "label": "Price not justified by results",
+      "reason": "€25-30 per jar at 6-cap/day = ~€30/month is considered expensive when paired with no effect or with the perception that pharmacy alternatives (Ovusitol, Italfarmaco sachets) are 1/3 the price and 'controlled by AEMPS'. Subscription price increases also called out.",
+      "pct": "5.8%",
+      "bullets": [
+        "Pharmacy sachet alternatives reported at 1/3 the price",
+        "Subscription price increases reported (e.g. 179 → 279 AED on Amazon UAE)",
+        "When paired with 'no effect' — feels like a double loss",
+        "Per-kg pricing for the powder makes pure myo-inositol look 3x cheaper"
+      ],
+      "quotes": [
+        "\"For €30/month with no real results, not worth it. Pharmacy alternative is 1/3 the price, sachets not capsules, and you only take 1 a day.\"",
+        "\"Loved the product but the price increased from 179 to 279 AED. The seller seems to have artificially raised the price. No longer worth it.\"",
+        "\"For the price, the jar isn't even airtight and after a week the powder starts forming clumps from humidity. Move along.\""
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Trust crisis",
+      "finding": "Formula change (40:1 → 100:1 myo:D-chiro, folato → folic acid) was made silently and is independently called out by long-term repeat buyers across DE, IT, ES, FR — the science-literate segment that originally drove the brand's reputation.",
+      "implication": "Restore the 40:1 ratio and active 5-MTHF folate immediately, or communicate the reformulation transparently with clinical rationale. The current silence is destroying the loyal repeat-buyer cohort and the premium-price justification.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Risk",
+      "finding": "Adverse-reaction reports cluster around headaches, dizziness, mood drop, GI symptoms, and paradoxical acne. Some users link symptoms to over-dosed selenium/chromium when taking 2 scoops/day.",
+      "implication": "Audit micronutrient dosages against EFSA upper limits at full 4000mg inositol dose. Add a 'start at 1 scoop, build up' protocol on the listing. Reduce or remove manganese (no PCOS evidence base per a published review).",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Operational",
+      "finding": "Powder solidifies into rock within 2-6 weeks for ~10% of negative reviewers. Cause is non-airtight packaging + humidity ingress, repeated across UK, IT, FR, DE, AE.",
+      "implication": "Switch to airtight packaging with desiccant sachet (silica gel + clear instructions). Cheap fix. Alternative: discontinue the powder format and lean into capsules — capsule reviews are much less defect-prone.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Transparency",
+      "finding": "Customers cannot find manufacturer info, lab name, or sanitary registry on the jar — and customer service explicitly refuses to disclose the manufacturer. Conflicting 'Made in Spain' vs 'Made in Estonia' labelling.",
+      "implication": "Publish the manufacturing partner, lab certifications (ISO, GMP, BVL), and AEMPS/equivalent sanitary registry number on listing and label. The legitimacy gap is the entry point competitors will exploit.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Trust",
+      "finding": "Review-for-freebie scheme (2x1 for 5-star review with photo) is independently called out by 5%+ of negative reviewers and is poisoning the rating's credibility — especially among the science-literate PCOS community.",
+      "implication": "End the practice. Inositol customers are unusually research-driven — they spot incentivised reviews quickly and broadcast the finding. Rating quality > rating volume; Amazon will eventually penalise.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "Cycle regulated after years of irregularity",
+      "reason": "the most repeated tangible benefit — PCOS/SOP women, post-pill amenorrhea cases, and irregular-cycle users report returning to 28-30 day cycles within 1-3 months. Often life-changing after years of failed treatments.",
+      "pct": "23.8%",
+      "bullets": [
+        "Effect typically reported within 1-3 months of consistent use",
+        "Especially valued by post-pill cycle-recovery users (5-15 yrs on hormonal contraceptives)",
+        "Reduces or eliminates ovulation pain and premenstrual cramps for many",
+        "Some users report longest-ever amenorrhea (6 months+) breaking within weeks"
+      ],
+      "quotes": [
+        "\"I had cycles of 80 days, sometimes 6 months without a period. Since taking inositol my cycles are 35-30 days. It's a miracle.\"",
+        "\"I had PCOS, my doctor wanted to put me on hormonal therapy. I refused, researched, and tried this. After 3 months — my period came regular, painless, normal flow. I'm not letting go of this product.\"",
+        "\"In 2 weeks of 6 caps/day my period came back after months of nothing. I'm shocked. Recommended for anyone with PCOS who wants to regulate naturally.\"",
+        "\"Three months in, my cycle went from 37 to 33 to 29 days. By far the most consistent change I've seen in years.\""
+      ]
+    },
+    {
+      "label": "Hormonal acne / skin cleared",
+      "reason": "users with chin / back / cystic hormonal acne report visible reduction within 2-12 weeks. Many had failed antibiotics, isotretinoin (Dercutane), and prescription topicals before this. Strong skin-quality reports beyond pure acne reduction.",
+      "pct": "16.5%",
+      "bullets": [
+        "Most-improved skin within 4-12 weeks for users with chronic hormonal acne",
+        "Many had failed isotretinoin (Dercutane), antibiotics, prescription topicals before",
+        "Reduces both breakout frequency and severity — not a magic clear, but visible",
+        "Mid-cycle acne (ovulation) is the easiest pattern to break"
+      ],
+      "quotes": [
+        "\"After 10 years fighting hormonal acne on my chin — antibiotics, creams, doctor visits — this is the only thing that worked. After 3 months my skin cleared.\"",
+        "\"Cystic acne on my back and face that nothing fixed for years — almost completely gone after this product. Life-changing.\"",
+        "\"From the first week of taking it I have not had a single new breakout on my face. PCOS + acne pattern broken.\"",
+        "\"My skin is better than ever. Pregnancy planning, acne gone, I'm in love with this product.\""
+      ]
+    },
+    {
+      "label": "Fertility / pregnancy success",
+      "reason": "couples actively trying to conceive — often after 1-10 years of failure — report pregnancy within 1-4 months of starting. Many supplement alongside L-arginine, omega-3, CoQ10. Especially valued by women refusing IVF.",
+      "pct": "12.4%",
+      "bullets": [
+        "Multiple users report pregnancy within 1-3 months",
+        "Couples after 5-10 years of trying — pregnancy after starting this protocol",
+        "Often paired with omega-3 / CoQ10 / L-arginine — supplement stack approach",
+        "Especially valued as IVF avoidance strategy",
+        "Reviewers explicitly attribute the conception to this product"
+      ],
+      "quotes": [
+        "\"After 5 years trying — by month 3 of taking this I was pregnant. It changed my life. (I'm the husband writing this!)\"",
+        "\"I bought this in May, by July I was pregnant — after a year and a half off the pill with irregular periods. It works.\"",
+        "\"After almost 10 years searching for my baby — with this supplement I succeeded. 8 months pregnant now. 100% recommended.\"",
+        "\"Two months in, pregnant. Was sceptical. I supplement alongside L-arginine, omega-3, CoQ10 and probiotics — but this is what made the difference for me.\""
+      ]
+    },
+    {
+      "label": "QR-code support / personalised dosing",
+      "reason": "personalised dose recommendation via QR-code chat / WhatsApp — users report immediate, helpful answers from real specialists. Specifically valued by first-time inositol users and by older buyers who appreciate the guided onboarding.",
+      "pct": "11.7%",
+      "bullets": [
+        "Personalised dose based on user profile (PCOS / fertility / acne / etc.)",
+        "Fast response time even on weekends",
+        "Often mentioned alongside positive efficacy reports",
+        "Differentiator vs pharmacy alternatives that come with just a leaflet",
+        "Same QR also pushes the freebie scheme — so positive + negative tied to same channel"
+      ],
+      "quotes": [
+        "\"The QR code on the jar opens a chat where they recommend personalised dosing based on your case. I contacted on a Sunday and got an immediate reply. Best customer service I've seen for a supplement.\"",
+        "\"Wonderful customer service — they personalise the dose, answer all questions, available via WhatsApp.\"",
+        "\"What I liked most is the QR code → chat → personalised guidance. Excellent service. Worth part of the price alone.\"",
+        "\"Excellent service post-sale via QR. They explain how to take it and stay available throughout.\""
+      ]
+    },
+    {
+      "label": "40:1 ratio + complete 9-in-1 formulation",
+      "reason": "science-literate buyers (often citing studies) specifically chose this product for the clinically-validated 40:1 myo:D-chiro ratio and the inclusion of vitamins D3, B6, B12, folate, zinc, chromium, selenium, manganese — a single supplement instead of 5-6 separate ones.",
+      "pct": "10.2%",
+      "bullets": [
+        "40:1 ratio explicitly named as the purchase trigger",
+        "All-in-one formulation replaces 5-6 separate supplements",
+        "Active 5-MTHF folate (not folic acid) is the science-literate differentiator",
+        "Chromium picolinate, zinc, selenium specifically named for PCOS / blood sugar",
+        "Vegan and free from common allergens — additional purchase trigger"
+      ],
+      "quotes": [
+        "\"I chose this for the 40:1 ratio of myo to D-chiro — clinically validated, hard to find. Plus folato 5-MTHF, chromium, zinc, B6, B12, D3, selenium — basically replaces 5 supplements with one. Solid science.\"",
+        "\"Higher concentration of inositol than any other product I found. Plus all the additional vitamins and minerals — very complete.\"",
+        "\"Other brands sell myo and D-chiro separately at 1400mg per cap and they're less effective. This combines both in the validated ratio and adds the cofactors.\"",
+        "\"Many useful ingredients in one product — saves me from taking multiple capsules.\""
+      ]
+    },
+    {
+      "label": "PMS / mood / energy improvement",
+      "reason": "users report reduced PMS pain, less severe mood swings, better energy and sleep, fewer sugar cravings. Effect often felt within 2-4 weeks, even before cycle regulation fully kicks in.",
+      "pct": "9.8%",
+      "bullets": [
+        "Sugar craving reduction is the most-reported early benefit (1-2 weeks)",
+        "Mood stabilisation within 4 weeks for many users",
+        "Energy and sleep improvement reported even by non-PCOS users",
+        "PMS symptom severity reduced — less back pain, less breast tenderness",
+        "Anxiety reduction reported by a smaller subset"
+      ],
+      "quotes": [
+        "\"Less swollen, fewer cravings between meals, sleeping better. After 2 weeks of taking it.\"",
+        "\"PMS feels almost gone — no more headaches, no more weight swings, no more massive cravings for binge food. First time in years.\"",
+        "\"After 3 weeks: less period bleeding, less cramping. Mood swings stabilised after 1 month — I feel alive again after 8 years of medical struggle.\"",
+        "\"Sugar cravings disappeared. I used to crave chocolate constantly — that's gone, plus I've saved a fortune on chocolate.\""
+      ]
+    },
+    {
+      "label": "Easy to swallow / neutral taste",
+      "reason": "capsule version: neutral taste, no aftertaste, easy daily compliance. Powder version: pleasant sweet taste like icing sugar, dissolves in water/juice/yoghurt.",
+      "pct": "7.8%",
+      "bullets": [
+        "Capsules described as 'tasteless' and 'easy to swallow'",
+        "Powder format: light sweetness, no chemical aftertaste",
+        "Helps daily compliance — especially over 3-6 month treatment cycles",
+        "Compatible with morning/evening routine (with meals)"
+      ],
+      "quotes": [
+        "\"Tasteless, easy to swallow even when taking 3 at once.\"",
+        "\"The capsules are easy to swallow with water — neutral taste. Comfortable for long-term daily use.\"",
+        "\"Slightly sweet, no off-flavour — easy to stir into water or yogurt every morning.\""
+      ]
+    },
+    {
+      "label": "Insulin sensitivity / weight + cravings",
+      "reason": "users with insulin resistance — including metformin-intolerant users — report reduced sugar cravings, modest weight loss (paired with diet/exercise/fasting), and improved bloating. Some explicitly cite it as a metformin alternative.",
+      "pct": "4.8%",
+      "bullets": [
+        "Sugar cravings reduction is the fastest-reported effect (1-2 weeks)",
+        "Modest weight loss when paired with diet + exercise + sometimes intermittent fasting",
+        "Specifically valued by metformin-intolerant lean-PCOS users",
+        "Reduces abdominal bloating as a secondary benefit",
+        "Hirsutism reduction reported by a smaller subset (5%)"
+      ],
+      "quotes": [
+        "\"I have insulin resistance — metformin didn't work for me. With inositol + intermittent fasting I lost 9 kg in 3 months without dieting and my hirsutism is gone.\"",
+        "\"Years trying to lose weight, metformin didn't help. 3 weeks on this supplement + moderate exercise + normal eating: 6 kg down. I feel like myself again.\"",
+        "\"Sugar cravings down to nothing. My hair has stopped falling. Mood stable. Periods came back. PCOS turned around.\""
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim",
+      "finding": "Cycle regulation (24%) + Hormonal acne clearing (17%) together account for 41% of positive comments — bigger than any single fertility or wellness claim. These two are the brand's true repeat-purchase drivers.",
+      "implication": "Make 'Restore your cycle + clear hormonal acne' the primary main-image + A+ headline. Demote the broader 'hormonal balance' language — it's vague and overlaps with every competitor.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "QR-code personalised dosing support is praised by 12% of positive reviewers — a true cross-market differentiator that pharmacy alternatives (Ovusitol, Italfarmaco) don't offer. Also valued by science-literate buyers who appreciate the 40:1 ratio + 9-in-1 formulation story.",
+      "implication": "Prominently feature 'Includes free PCOS specialist consultation via WhatsApp / QR' on main image and bullet 1. Pair with 'Clinically validated 40:1 ratio'. Easy to verify, hard for pharmacy SKUs to copy.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "Highest satisfaction is among (a) post-pill cycle recovery women, (b) PCOS/SOP women avoiding hormonal therapy, (c) trying-to-conceive couples after months of failure. Repeat-purchase rate is heavily driven by the chronic-condition segment using it 6-24 months.",
+      "implication": "Build a Subscribe & Save flow with 3-month bundle pricing. Add a fertility-specific landing page with TTC testimonials and pregnancy outcomes (with disclaimers). The chronic-condition LTV is the sustainable revenue driver.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Social proof",
+      "finding": "Multiple users explicitly compare favourably to pharmacy alternatives (Ovusitol, Italfarmaco, Lamberts, Acnesitol) — citing better composition (40:1 ratio + active folate + cofactors), more convenient capsule format, and personalised support.",
+      "implication": "Add a competitor-comparison table to A+ content: 'Why this beats your pharmacy sachet' — ratio, folate form, cofactors, support, price-per-month. Most pharmacy competitors don't articulate this; clean whitespace.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    }
+  ],
+  "buyersMotivation": [
+    {
+      "label": "Regulate cycle (PCOS / SOP / amenorrhea)",
+      "reason": "primary purchase trigger — women diagnosed with PCOS or experiencing irregular cycles post-pill specifically seek inositol for cycle restoration.",
+      "pct": "32.4%"
+    },
+    {
+      "label": "Clear hormonal acne",
+      "reason": "chin/back/cystic acne tied to hormonal cycle — users who failed antibiotics, isotretinoin, prescription topicals try inositol as an upstream hormonal lever.",
+      "pct": "17.5%"
+    },
+    {
+      "label": "Fertility / improve conception odds",
+      "reason": "trying-to-conceive couples after months/years of failure — looking for ovulation regularity and egg quality support, often as IVF avoidance.",
+      "pct": "13.2%"
+    },
+    {
+      "label": "Smooth PMS / pain / mood / energy",
+      "reason": "users with severe premenstrual symptoms (mood, cramps, fatigue, brain fog) seek a daily smoothing supplement.",
+      "pct": "11.8%"
+    },
+    {
+      "label": "Improve insulin sensitivity / lose weight",
+      "reason": "PCOS-associated insulin resistance — metformin alternative or complement. Often paired with low-carb diet, intermittent fasting.",
+      "pct": "8.6%"
+    },
+    {
+      "label": "Stop / replace hormonal contraceptives",
+      "reason": "users dropping the pill after 5-15 years seek a natural alternative to manage cycle and skin without re-introducing hormones.",
+      "pct": "7.4%"
+    },
+    {
+      "label": "Reduce hirsutism / hair loss",
+      "reason": "androgen-mediated symptoms — facial hair, scalp hair loss tied to PCOS. Users want a systemic upstream solution.",
+      "pct": "5.2%"
+    },
+    {
+      "label": "General hormonal balance / wellness",
+      "reason": "users without formal diagnosis but with hormonal symptoms — sugar cravings, mood, fatigue — use it as a wellness supplement.",
+      "pct": "3.9%"
+    }
+  ],
+  "customerExpectations": [
+    {
+      "label": "Cycle regulates within 1-3 months",
+      "reason": "the dominant expectation — users expect their period to come back, become predictable, or shorten to a normal 28-30 day cycle. The largest gap when expectation isn't met (top negative).",
+      "pct": "26.8%"
+    },
+    {
+      "label": "Acne / skin clears within 2-3 months",
+      "reason": "users who tried this specifically for hormonal acne expect visible improvement within one full cycle. Frustration high when acne paradoxically worsens (reported by ~4% of negatives).",
+      "pct": "14.2%"
+    },
+    {
+      "label": "Active 5-MTHF folate (not folic acid)",
+      "reason": "science-literate buyers and MTHFR-mutation carriers specifically chose this for the active folate form. Folic acid is unacceptable — fundamentally different in absorption and safety profile.",
+      "pct": "11.5%"
+    },
+    {
+      "label": "Real 40:1 myo:D-chiro ratio",
+      "reason": "this is the clinically-validated ratio. Users explicitly cite the studies. The recent reformulation to 100:1 broke the trust contract for the brand's most loyal repeat-buyer cohort.",
+      "pct": "10.8%"
+    },
+    {
+      "label": "No side effects (GI, mood, headache, acne)",
+      "reason": "expected a clean, well-tolerated supplement. Got: nausea, diarrhoea, headaches, mood drop, paradoxical acne in ~15% of negative cases.",
+      "pct": "9.4%"
+    },
+    {
+      "label": "Powder stays usable (no rock-solidification)",
+      "reason": "users on the powder format expect the powder to remain scoopable for the duration of the jar. Reality: 10%+ of powder buyers report rock-solidification within weeks.",
+      "pct": "8.6%"
+    },
+    {
+      "label": "Transparent lab / manufacturer info",
+      "reason": "users want manufacturer name, sanitary registry number, ISO/GMP certification on the label. Current 'distributed by Rola Brand Barcelona' is insufficient — no manufacturer disclosed.",
+      "pct": "7.2%"
+    },
+    {
+      "label": "Authentic reviews (no freebie scheme)",
+      "reason": "customers want to trust the rating without suspecting incentivised reviews. The 2x1-for-5-stars scheme erodes trust in every positive review.",
+      "pct": "6.8%"
+    },
+    {
+      "label": "Fewer capsules per day / smaller capsules",
+      "reason": "6 large capsules per day is inconvenient. Users want a more concentrated format or smaller capsules at the same daily dose.",
+      "pct": "4.7%"
+    }
+  ],
   "themeFilters": [
     {
       "value": "",
       "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect / cycle didn't regulate"
+    },
+    {
+      "value": "formula_change",
+      "label": "Formula change (40:1 ratio broken)"
+    },
+    {
+      "value": "side_effects",
+      "label": "Side effects (GI, headache, mood, acne)"
+    },
+    {
+      "value": "powder_hardens",
+      "label": "Powder solidifies into rock"
+    },
+    {
+      "value": "packaging",
+      "label": "Packaging defects (seal, half-empty)"
+    },
+    {
+      "value": "lab_opacity",
+      "label": "Lab opacity / influencer brand"
+    },
+    {
+      "value": "dosing_size",
+      "label": "Dosing — 6 caps/day / size"
+    },
+    {
+      "value": "freebie_scheme",
+      "label": "Review-for-freebie scheme"
+    },
+    {
+      "value": "folate_mthfr",
+      "label": "Folate vs folic acid / MTHFR"
+    },
+    {
+      "value": "price",
+      "label": "Price not justified"
+    },
+    {
+      "value": "cycle_regulated",
+      "label": "Cycle regulated"
+    },
+    {
+      "value": "acne_cleared",
+      "label": "Hormonal acne cleared"
+    },
+    {
+      "value": "fertility",
+      "label": "Fertility / pregnancy"
+    },
+    {
+      "value": "support",
+      "label": "QR-code / customer service"
+    },
+    {
+      "value": "ratio_formula",
+      "label": "40:1 ratio + 9-in-1 formulation"
+    },
+    {
+      "value": "pms_mood_energy",
+      "label": "PMS / mood / energy"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to swallow / taste"
+    },
+    {
+      "value": "insulin_weight",
+      "label": "Insulin sensitivity / weight"
     }
   ],
   "sentimentFilters": [
@@ -62,7 +726,7 @@
     },
     {
       "value": "neu",
-      "label": "Neutral"
+      "label": "Neutral / mixed"
     }
   ]
 }
