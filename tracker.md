@@ -48,7 +48,8 @@
 
 ## Conventions
 
-- Aggregator skanuje `## In Progress` + `## Pending Decisions`. Format: `- [ ] Tytuł — szczegóły`.
+- Aggregator skanuje `## In Progress` + `## Pending Decisions`. Format: `- [ ] **Tytuł** @YYYY-MM-DD #reviews-analysis — szczegóły`.
+- **`@YYYY-MM-DD` jest WYMAGANE** na każdym tasku. Bez tego markera Dataview w daily note NIE wyłapie taska. Use `@today` only for same-day tasks; otherwise the literal target date.
 - **Done items** przenosisz z In Progress → Recently Completed z datą. Po 10 - usuwasz najstarsze.
 
 ---
