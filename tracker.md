@@ -17,7 +17,7 @@
 
 ## In Progress
 
-- [ ] **Build 5 Menos dashboards (UK/DE/FR/ES/IT)** — scheduled 2026-05-12. Same pattern as Inositol scaffolding: 5 folders under `dashboards/menos-{market}/`, stub JSONs, register in `config.json` under `detailed` group, add to CLAUDE.md Products table. Blocked on: reviews JSON files + ASIN(s) from user. Once reviews land, run VOC analysis per market (Action 2 of `review-analysis` skill).
+- [ ] **Build 5 Menositol dashboards (UK/DE/FR/ES/IT)** — scheduled 2026-05-12. Same pattern as Inositol scaffolding: 5 folders under `dashboards/menositol-{market}/`, stub JSONs, register in `config.json` under `detailed` group, add to CLAUDE.md Products table. Blocked on: reviews JSON files + ASIN(s) from user. Once reviews land, run VOC analysis per market (Action 2 of `review-analysis` skill).
 
 ---
 
@@ -30,7 +30,7 @@
 ## Backlog
 
 - [ ] **Activate 5 Inositol Caps dashboards** — scaffolded 2026-05-11, awaiting reviews JSON files. When user drops `INOSITOL-{MARKET}-Reviews.json` (or real-ASIN-named files) at project root, run VOC for each market, then populate MDD using top-5 competitors from `data/DETOX + LAX TOP COMPETITORS.xlsx` (needs new INOSITOL block from user).
-- [ ] **Refresh data/DETOX + LAX TOP COMPETITORS.xlsx** — user to append product-family blocks for Inositol + Menos (top-5 per market per family). Required before any of the 10 new dashboards can populate their Marketing Deep-Dive tab.
+- [ ] **Refresh data/DETOX + LAX TOP COMPETITORS.xlsx** — user to append product-family blocks for Inositol + Menositol (top-5 per market per family). Required before any of the 10 new dashboards can populate their Marketing Deep-Dive tab.
 
 ---
 
