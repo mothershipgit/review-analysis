@@ -20,6 +20,41 @@
       "group": "detailed",
       "template": "standalone",
       "file": "index.html"
+    },
+    {
+      "id": "inositol-uk",
+      "title": "Inositol Caps UK",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "inositol-de",
+      "title": "Inositol Caps DE",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "inositol-fr",
+      "title": "Inositol Caps FR",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "inositol-es",
+      "title": "Inositol Caps ES",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "inositol-it",
+      "title": "Inositol Caps IT",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
     }
   ]
 }

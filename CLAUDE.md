@@ -49,6 +49,13 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (5 competitors, curated) |
 | `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ✅ (5 competitors) |
+| `inositol-uk` | Inositol Caps UK | TBD | UK | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
+| `inositol-de` | Inositol Caps DE | TBD | DE | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
+| `inositol-fr` | Inositol Caps FR | TBD | FR | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
+| `inositol-es` | Inositol Caps ES | TBD | ES | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
+| `inositol-it` | Inositol Caps IT | TBD | IT | — | — | ⏸ Scaffolded, awaiting reviews JSON | ⏸ |
+
+**Inositol scaffold:** the 5 inositol-* dashboards are stubs. Their `index.html` fetch URLs use placeholder `INOSITOL-{MARKET}-Reviews.json` filenames at the project root. To activate any of them: drop the reviews JSON at the project root with the matching filename (or tell Claude the real ASIN and the placeholder will be swapped), then run `review-analysis` VOC refresh (Action 2). Add the competitor block for that family to `data/DETOX + LAX TOP COMPETITORS.xlsx` (rename the file or add a new INOSITOL block) before the MDD step.
 
 ### Lax DE vs Lax FR — file overlap structure
 

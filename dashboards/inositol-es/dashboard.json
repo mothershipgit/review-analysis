@@ -1,0 +1,68 @@
+{
+  "id": "inositol-es",
+  "title": "Inositol Caps ES — Review Analysis",
+  "subtitle": "Awaiting VOC analysis — drop the reviews JSON to populate",
+  "asin": "TBD",
+  "marketplace": "ES",
+  "reviewsFile": "../../INOSITOL-ES-Reviews.json",
+  "totalReviews": 0,
+  "posCount": 0,
+  "negCount": 0,
+  "neuCount": 0,
+  "posPct": "—",
+  "negPct": "—",
+  "neuPct": "—",
+  "cpSummary": "<strong>Pending.</strong> Run the review-analysis VOC refresh once the source reviews JSON is dropped at the project root.",
+  "cpWho": {
+    "labels": [],
+    "pos": [],
+    "neg": []
+  },
+  "cpWhen": {
+    "labels": [],
+    "pos": [],
+    "neg": []
+  },
+  "cpWhere": {
+    "labels": [],
+    "pos": [],
+    "neg": []
+  },
+  "cpWhat": {
+    "labels": [],
+    "pos": [],
+    "neg": []
+  },
+  "usageScenarios": [],
+  "csSummary": "Pending — awaiting VOC analysis.",
+  "negativeTopics": [],
+  "negativeInsights": [],
+  "positiveTopics": [],
+  "positiveInsights": [],
+  "buyersMotivation": [],
+  "customerExpectations": [],
+  "themeFilters": [
+    {
+      "value": "",
+      "label": "All themes"
+    }
+  ],
+  "sentimentFilters": [
+    {
+      "value": "",
+      "label": "All sentiment"
+    },
+    {
+      "value": "pos",
+      "label": "Positive"
+    },
+    {
+      "value": "neg",
+      "label": "Negative"
+    },
+    {
+      "value": "neu",
+      "label": "Neutral"
+    }
+  ]
+}
