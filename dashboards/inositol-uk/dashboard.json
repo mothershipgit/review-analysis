@@ -4,7 +4,7 @@
   "subtitle": "TBD · Amazon UK marketplace · 363 reviews",
   "asin": "TBD",
   "marketplace": "UK",
-  "reviewsFile": "../../INOSITOL-UK-Reviews.json",
+  "reviewsFile": "../../reviews/INOSITOL-UK-Reviews.json",
   "totalReviews": 363,
   "posCount": 229,
   "negCount": 95,

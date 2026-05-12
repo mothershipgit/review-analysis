@@ -33,12 +33,12 @@ Per-product Amazon review analysis dashboards in a sidebar-navigated hub. Each p
 | Sidebar registry | root `config.json` — one entry per product |
 | Per-product standalone | `dashboards/{id}/index.html` (self-contained, fetches its own data) |
 | Per-product analysis data | `dashboards/{id}/dashboard.json` (VOC + Marketing Deep-Dive) |
-| Source review data | root `{ASIN}-{MARKET}-Reviews.json` (one per dashboard, format: `[{title, date, author, review}]`) |
+| Source review data | `reviews/{ASIN}-{MARKET}-Reviews.json` (one per dashboard, format: `[{title, date, author, review}]`) |
 | Competitor master list | `data/DETOX + LAX TOP COMPETITORS.xlsx` (top-5 per market per product family — gitignored) |
 
 Each standalone fetches **two** files at load:
 1. Its own `dashboard.json` (VOC + MDD analysis: themes, customer profile, quotes, insights, competitor data)
-2. The source reviews JSON at `../../{ASIN}-{MARKET}-Reviews.json` (raw reviews for the Browser tab)
+2. The source reviews JSON at `../../reviews/{ASIN}-{MARKET}-Reviews.json` (raw reviews for the Browser tab)
 
 The standalone runs a multilingual sentiment + theme classifier in JS at load time on each raw review (rule-based regex covering DE/ES/IT/FR/EN). No pre-tagging required.
 
@@ -54,6 +54,15 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `inositol-fr` | Inositol Caps FR | TBD | FR | 341 | 52% / 37% / 10% | ✅ | ⏸ |
 | `inositol-es` | Inositol Caps ES | TBD | ES | 455 | 51% / 36% / 13% | ✅ | ⏸ |
 | `inositol-it` | Inositol Caps IT | TBD | IT | 376 | 65% / 26% / 9% | ✅ | ⏸ |
+| `menositol-uk` | Menositol UK | TBD | UK | 261 | 60% / 27% / 12% | ✅ | ⏸ |
+| `menositol-de` | Menositol DE | TBD | DE | 218 | 57% / 32% / 11% | ✅ | ⏸ |
+| `menositol-fr` | Menositol FR | TBD | FR | 136 | 45% / 42% / 13% | ✅ | ⏸ |
+| `menositol-es` | Menositol ES | TBD | ES | 252 | 69% / 20% / 11% | ✅ | ⏸ |
+| `menositol-it` | Menositol IT | TBD | IT | 230 | 69% / 24% / 7% | ✅ | ⏸ |
+
+**Menositol VOC complete (2026-05-12):** All 5 markets analyzed (1,097 reviews total). Sentiment: UK 60/27/12, DE 57/32/11, FR 45/42/13, ES 69/20/11, IT 69/24/7. ASINs still TBD — user to provide.
+
+**Menositol language profile:** Same multilingual cross-pool pattern as Inositol — Spanish-led brand, so even UK file is only ~12-14% native English (~38-40% ES, ~22-24% IT, ~15-17% FR). ES is the home market (~70% native ES) and shows highest positive skew. FR is the most polarised market (44.9 pos / 41.9 neg — closest split of all 5 EU markets).
 
 **Inositol VOC complete (2026-05-11):** All 5 markets analyzed. ASINs still TBD — user to provide. Reviews JSONs at project root with placeholder name `INOSITOL-{MARKET}-Reviews.json`. Once ASINs known, rename files + update fetch URLs in HTML.
 
@@ -82,7 +91,7 @@ The Spanish-led brand (CNC / QSTA Labs) means Amazon EU's cross-marketplace pool
 - Dashboard IDs: `kebab-case`, match folder names.
 - Sidebar entries grouped under `"detailed"` in `config.json` (the only group used by this project).
 - Standalone HTML is self-contained — no external CSS/JS imports except CDN-hosted Chart.js, Firebase SDK, and `../../js/auth.js`.
-- ASIN review JSON files live at the project root (not inside per-dashboard folders) — the standalone fetches them via `../../`.
+- ASIN review JSON files live in the `reviews/` folder at project root (not inside per-dashboard folders) — the standalone fetches them via `../../reviews/`. **Refactored 2026-05-12** from previous flat-root layout.
 
 ## dashboard.json schema
 
@@ -184,6 +193,14 @@ The user will append new product-family blocks (separator + header + 5 market ro
 13. **Inositol — cycle regulation + hormonal acne are the true repeat-purchase drivers (35-45% of positives across all 5 markets).** Current listing leads with "4100mg 9-in-1" — too generic, hides the emotional outcome. Lead instead with "Restore your cycle + clear hormonal acne". Bigger than fertility, bigger than insulin resistance, bigger than value.
 14. **Inositol — "6 capsules = 4100mg daily" labeling is a cascading 1-star generator (~18% of negatives across markets).** Customers expect per-capsule dose, feel deceived, bottle lasts 30 days, value collapses. Copy fix, not product fix — disclose daily-dose math up front in the listing headline.
 15. **Inositol — the QR-code WhatsApp dosing support is praised across all 5 markets as a real differentiator.** Currently buried in listing copy. Promote to top-3 bullet.
+16. **Menositol — hot flushes + night sweats relief is the #1 positive driver in all 5 markets (28-36% of positives) AND the #1 unfulfilled expectation in all 5 (31-38% of negatives).** Product polarises sharply on the same outcome. The brand cannot lead with anything else without rebuilding the formula — but it can manage expectations (4-12 week curve) and offer an honoured 90-day refund to convert lukewarm one-bottle buyers.
+17. **Menositol — capsule count shortage (59/58 vs labelled 60) is documented across all 5 markets including by 2-year subscribers.** Same operational defect as Inositol — brand-wide fill-line / QC issue at the contract manufacturer. Highest-leverage cleanup: fix the line + over-fill to 62.
+18. **Menositol — review-for-freebie scheme exposed publicly in IT, ES, DE, FR.** Same pattern as Inositol — credibility decay risk + Amazon TOS exposure. Phase out coupon-for-review now.
+19. **Menositol — '100% money-back guarantee on empty bottle' is called fraud/escroquerie across FR/IT/ES.** WhatsApp goes silent on refund requests. Either honour the guarantee or remove the claim — biggest single trust hit on the listing.
+20. **Menositol — PCOS / hormonal-acne off-label use is a real second TAM (5-8% across all 5 markets).** Younger women (30-40) drawn by myo + D-chiro inositol content write the longest, most emotional 5-star reviews. Consider sister-SKU or split-listing — they're winning these buyers by accident.
+21. **Menositol — FR is the outlier market (45 pos / 42 neg — closest split).** The other 4 markets are 57-69% positive. FR is more polarised, more sensitive to price, and the only market where "no effect" almost equals "real effect" in volume. Treat FR copy / pricing differently — likely needs a comparison vs Ménophytea + Sérélys built into the listing.
+22. **Menositol — wrong-time-of-day dosing is fixable copy-only insight.** ~9-10% of negatives report insomnia because they take it in the evening. Vitamin C + ginseng + ashwagandha are stimulating. Single label change ('morning and lunch — avoid evening dosing') defuses these reviews and converts them into "good for daytime energy" praise.
+23. **Menositol — silhouette/weight-loss messaging contradicts the data.** Several reviewers report weight gain on the product. The listing should reposition silhouette as "menopausal bloating relief" rather than weight loss — sets achievable expectations and removes a recurring 1-star generator.
 
 ## Workflow patterns
 

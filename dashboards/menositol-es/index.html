@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Detox DE — Review Analysis</title>
+<title>Menositol ES — Review Analysis</title>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
 <script src="../../js/auth.js"></script>
@@ -206,7 +206,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
 
 <div class="dashboard-header">
   <div style="flex:1;min-width:0">
-    <h2 id="hdrTitle">Detox DE — Review Analysis</h2>
+    <h2 id="hdrTitle">Menositol ES — Review Analysis</h2>
     <span class="sub" id="hdrSub">Loading…</span>
   </div>
   <span class="meta-pill" id="hdrMeta">VOC analysis loaded</span>
@@ -617,7 +617,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
   // ── Main load ──
   Promise.all([
     fetch('dashboard.json').then(function(r) { return r.json(); }),
-    fetch('../../reviews/B0B6GHYP1V-DE-Reviews.json').then(function(r) { return r.json(); })
+    fetch('../../reviews/MENOSITOL-ES-Reviews.json').then(function(r) { return r.json(); })
   ])
   .then(function(results) {
     var D = results[0];

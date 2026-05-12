@@ -617,7 +617,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
   // ── Main load ──
   Promise.all([
     fetch('dashboard.json').then(function(r) { return r.json(); }),
-    fetch('../../INOSITOL-ES-Reviews.json').then(function(r) { return r.json(); })
+    fetch('../../reviews/INOSITOL-ES-Reviews.json').then(function(r) { return r.json(); })
   ])
   .then(function(results) {
     var D = results[0];

@@ -4,7 +4,7 @@
   "subtitle": "TBD · Amazon IT marketplace · 376 reviews",
   "asin": "TBD",
   "marketplace": "IT",
-  "reviewsFile": "../../INOSITOL-IT-Reviews.json",
+  "reviewsFile": "../../reviews/INOSITOL-IT-Reviews.json",
   "totalReviews": 376,
   "posCount": 245,
   "negCount": 98,

@@ -1,0 +1,474 @@
+{
+  "id": "menositol-it",
+  "title": "Menositol IT — Review Analysis",
+  "subtitle": "TBD · Amazon IT marketplace · 230 reviews",
+  "asin": "TBD",
+  "marketplace": "IT",
+  "reviewsFile": "../../reviews/MENOSITOL-IT-Reviews.json",
+  "totalReviews": 230,
+  "posCount": 158,
+  "negCount": 55,
+  "neuCount": 17,
+  "posPct": "68.7",
+  "negPct": "23.9",
+  "neuPct": "7.4",
+  "cpSummary": "The buyer is overwhelmingly a <strong>woman aged 45-60</strong> in <strong>perimenopause or active menopause</strong>, often unable or unwilling to use HRT (hormone replacement therapy) for medical or personal reasons. She has typically <strong>already tried 1-3 other supplements</strong> (Estromineral, Ymea, Promensil, Manhaé, Cimicifuga) and is searching for a <strong>natural, hormone-free, all-in-one</strong> formula. A meaningful minority are <strong>husbands/sons buying for wives or mothers</strong>, and a separate sub-segment uses the product off-label for <strong>PCOS, hormonal acne or cycle regulation</strong> rather than menopause. The primary trigger is <strong>vampate / hot flushes + night sweats + insomnia</strong>; the primary reservation is the <strong>price</strong> and the <strong>3-month wait</strong> to judge effect. IT and ES are the two highest-sentiment markets (both 68.7% positive). Native Italian content is ~46%; ~27% Spanish cross-pool, ~11% French, ~10% English, ~6% German.",
+  "cpWho": {
+    "labels": ["Woman in active menopause (45-60)", "Woman in perimenopause (40-50)", "Husband/son buying for wife/mother", "HRT-avoiders (medical or personal)", "PCOS / hormonal-acne off-label users", "Long-time supplement subscribers"],
+    "pos": [62, 38, 22, 18, 10, 8],
+    "neg": [24, 12, 6, 4, 3, 6]
+  },
+  "cpWhen": {
+    "labels": ["Sudden hot flushes / vampate", "Night sweats waking them up", "Insomnia & poor sleep", "Mood swings / irritability", "Weight gain & bloating", "Failed previous supplement"],
+    "pos": [78, 42, 35, 22, 18, 14],
+    "neg": [22, 10, 8, 5, 7, 3]
+  },
+  "cpWhere": {
+    "labels": ["At home daily (morning routine)", "Bedtime / pre-sleep", "Workplace (anti-flush during the day)", "Travel / on-the-go"],
+    "pos": [88, 42, 20, 8],
+    "neg": [30, 14, 8, 3]
+  },
+  "cpWhat": {
+    "labels": ["Reduce vampate/hot-flush frequency", "Better sleep, fewer night sweats", "Mood stabilisation", "Weight & bloating control", "Avoid hormones (natural route)", "All-in-one convenience"],
+    "pos": [82, 48, 28, 22, 28, 22],
+    "neg": [28, 12, 8, 10, 4, 5]
+  },
+  "usageScenarios": [
+    { "label": "Daily preventive use against hot flushes", "reason": "Most reviewers take 2 capsules per day specifically to cut vampate frequency and intensity.", "pct": "26%" },
+    { "label": "Night sweat & sleep rescue", "reason": "Taken evening or split AM/PM to stop waking up drenched and to sleep through the night.", "pct": "16%" },
+    { "label": "Hormone-free alternative when HRT is contraindicated", "reason": "Patients with cancer history, hypertension or other contraindications use it as their only option.", "pct": "13%" },
+    { "label": "Trial after another supplement failed", "reason": "Switchers from Estromineral, Ymea, Manhaé, Promensil, Cimicifuga looking for stronger or cheaper alternative.", "pct": "11%" },
+    { "label": "Mood & energy stabilisation in perimenopause", "reason": "Used to reduce irritability, brain fog and fatigue during the transition years.", "pct": "9%" },
+    { "label": "PCOS / cycle regulation (off-label)", "reason": "Younger women use myo+D-chiro inositol content for hormonal acne, irregular cycles, fertility support.", "pct": "8%" },
+    { "label": "Gift purchase for wife/mother", "reason": "Husbands or adult children buy the bottle for a family member and report her feedback.", "pct": "7%" },
+    { "label": "Subscription / long-term maintenance", "reason": "Long-time users on Amazon subscribe-and-save who report years of continuous use.", "pct": "5%" },
+    { "label": "Joint pain & physical symptom relief", "reason": "Used to address the muscular and joint aches that come with the hormonal drop.", "pct": "3%" },
+    { "label": "Weight / bloating control during menopause", "reason": "Used specifically to manage the menopause-related weight gain and water retention.", "pct": "2%" }
+  ],
+  "csSummary": "Negative reviews cluster around <strong>'no effect after 1-2 months'</strong> (the single biggest theme), <strong>side effects</strong> (gastric burning, insomnia, constipation, weight gain, mood worsening), <strong>price too high vs result</strong>, and a recurring brand-specific complaint: <strong>'59 capsules instead of 60' shorted bottles</strong>. A smaller but reputationally important cluster calls out <strong>QR-code/WhatsApp support that goes silent</strong> when a refund is requested, and a few flag the <strong>review-for-coupon scheme</strong> that may be inflating the listing's positive ratings.",
+  "negativeTopics": [
+    {
+      "label": "No effect after 1-2 months of consistent use",
+      "reason": "The largest negative theme: women take 1-2 full bottles, follow the dosage exactly, and see no reduction in hot flushes, night sweats or sleep problems. Many feel they have wasted ~€25-€50 and the brand's 'wait 3 months' message reads as a stalling tactic.",
+      "pct": "31%",
+      "bullets": [
+        "Multiple users report finishing 1-3 full bottles with zero change in vampate frequency",
+        "Some say symptoms returned 'with a vengeance' after switching from another supplement",
+        "The '1-3 months patience' message is perceived as a delay tactic to push more bottles",
+        "Bottles are €25-€30 each so trial cost is substantial before any verdict",
+        "Effect is highly individual — 'each body is a world' is the common rationalisation"
+      ],
+      "quotes": [
+        "\"I have been taking it for almost two months and the menopause symptoms I hoped would decrease have remained identical, no effect whatsoever.\"",
+        "\"I took 6 weeks but had to admit defeat and go back to my original supplements — gained weight and many symptoms returned with a vengeance.\"",
+        "\"After 1 month, nothing at all, I still have hot flushes and night sweats, I do not recommend it.\""
+      ]
+    },
+    {
+      "label": "Side effects: stomach, gut, intestinal",
+      "reason": "A consistent cluster of users report gastric burning, gastritis-like pain, nausea, severe constipation, or even rectal bleeding. The 9-in-1 formula makes it impossible to isolate which ingredient is the trigger, so the only option is to stop the product entirely.",
+      "pct": "13%",
+      "bullets": [
+        "Gastric burning and gastritis symptoms even when taken with food",
+        "Severe constipation that forced discontinuation within days",
+        "Nausea, abdominal pain, and bowel disturbances",
+        "One UK review reports rectal bleeding starting after 21 days of use",
+        "Too many ingredients in one capsule to know which one is causing the reaction"
+      ],
+      "quotes": [
+        "\"I tried several times to take this supplement on a full stomach, but every time I had severe stomach discomfort, real gastritis symptoms — I had to stop. With so many ingredients I cannot figure out which one bothers me.\"",
+        "\"I had to stop after four days of one pill and the fifth day two — it caused tremendous constipation. I will consult my doctor.\"",
+        "\"Three days ago I started bleeding from the rectum during bowel movements. I had no intestinal problems before. I am 100% sure these capsules harmed me.\""
+      ]
+    },
+    {
+      "label": "Insomnia & nervousness instead of relief",
+      "reason": "A paradoxical effect cluster: a non-trivial number of women report that the supplement gives them insomnia, night-waking, anxiety or daytime nervousness — the opposite of the marketed benefit. Several blame the vitamin C content or the inositol stimulation.",
+      "pct": "9%",
+      "bullets": [
+        "Wakes them up in the middle of the night, cannot fall back asleep",
+        "Took away appetite AND sleep, nervousness all day long",
+        "Daytime daze / 'floating' feeling 5h after taking the capsule",
+        "Anxiety and sugar cravings appeared after starting the product",
+        "Customers warn each other 'don't take in the evening' to avoid sleeplessness"
+      ],
+      "quotes": [
+        "\"What a shame, I believed it would work but for several days I could hardly sleep — I wake up in the middle of the night and cannot fall asleep again.\"",
+        "\"I had to stop. It had completely taken away my appetite and sleep. Nervousness all day long.\"",
+        "\"I followed the advice but at 3 a.m. I was still not sleeping — there is vitamin C in these capsules. I strongly advise against taking one in the evening.\""
+      ]
+    },
+    {
+      "label": "Price too high vs result / value",
+      "reason": "Even among users who saw partial benefit, the €25-€30 price for a 1-month supply (2 capsules/day) is repeatedly flagged as excessive — especially when 3 months is needed to judge effect and the brand is positioned as a 'cheaper alternative' to pharmacy products that doesn't always feel cheaper.",
+      "pct": "11%",
+      "bullets": [
+        "€24-€30 per 60-capsule bottle = ~€1 per day for a multi-month treatment",
+        "3-month minimum treatment locks the buyer into ~€75-€90 before evaluation",
+        "Users compare price unfavourably to Cimicifuga, Estromineral and pharmacy alternatives",
+        "Subscription buyers eventually quit specifically due to long-term cost",
+        "Some say the ingredient quantity per capsule does not justify the price"
+      ],
+      "quotes": [
+        "\"I didn't enjoy it and the price is too high for the pills there are — I prefer other brands.\"",
+        "\"The price is really high compared to other products I have used. If I have to give it up, it will only be because of the very high price.\"",
+        "\"I found a much cheaper Cimicifuga from STADA — same effect with one tablet in the morning.\""
+      ]
+    },
+    {
+      "label": "Bottle shortages: 59/58 capsules instead of 60",
+      "reason": "A specific, repeatable operational complaint: bottles arriving with 58 or 59 capsules instead of the 60 stated on the label, sometimes across multiple subscription deliveries. Customer service via email reportedly does not resolve it.",
+      "pct": "6%",
+      "bullets": [
+        "Subscription buyers receive 58-59 capsules per bottle 'most of the time'",
+        "Email to the laboratory goes unanswered or unresolved",
+        "Customer feels misled and stops re-ordering",
+        "Issue appears across multiple deliveries — not a one-off",
+        "Has been reported across 2+ years of subscription on at least one account"
+      ],
+      "quotes": [
+        "\"I've been a subscriber for about 2 years and most bottles come with 59 capsules instead of 60 — curious, isn't it?\"",
+        "\"Several bottles I receive have 59 or 58 capsules. I emailed the lab and got no resolution. A shame — I'll try another product because I don't like being fooled.\"",
+        "\"I just bought it again but the white cap arrived without a tamper-evident seal. I contacted the website and still have no reply. I don't know whether to take it.\""
+      ]
+    },
+    {
+      "label": "Weight gain, bloating, water retention",
+      "reason": "Several reviewers report the opposite of the marketed 'silhouette / weight control' claim: they gained 1-2 kg, became more bloated, or experienced water retention while on the supplement.",
+      "pct": "7%",
+      "bullets": [
+        "Gained 1-2 kg within a month of starting",
+        "Felt 'inflated like a balloon' while taking the capsules",
+        "Switched specifically for weight management and got the exact opposite",
+        "Symptoms reversed only after stopping the product",
+        "Contradicts the listing's 'control your silhouette' claim"
+      ],
+      "quotes": [
+        "\"No benefit at all, I actually gained 2 kg — I do not recommend the product.\"",
+        "\"Almost a month of use. No benefit. As a bonus, I gained another kilo. Money down the drain.\"",
+        "\"I switched to this hoping it would help with weight management — it did the exact opposite. Gained weight, irregular bleeding, mood swings, night sweats all back.\""
+      ]
+    },
+    {
+      "label": "Mood worsening: irritability, anxiety, depression",
+      "reason": "A subset of reviewers report worse mood, anxiety, mareos (dizziness), loss of concentration or general malaise after starting — including women who specifically came to the product for mood stabilisation.",
+      "pct": "6%",
+      "bullets": [
+        "Increased irritability, no energy, no desire to smile or do anything",
+        "Dizziness (mareos) that wasn't present before starting",
+        "Anxiety, sugar cravings, and emotional volatility",
+        "Loss of concentration reported as a side effect",
+        "Symptoms only resolved after stopping the product"
+      ],
+      "quotes": [
+        "\"It left me extremely irritable, with no energy and no will to smile or do anything. It harmed me, and even took away my concentration.\"",
+        "\"Not only did it not help, but my tiredness increased and dizziness was added — I didn't have it before. The QR chat doesn't really help.\"",
+        "\"The month I felt worst — money very badly spent.\""
+      ]
+    },
+    {
+      "label": "QR-code WhatsApp support fails on refund",
+      "reason": "The marketed '100% money-back guarantee via QR code' is called out as misleading: when customers actually try to claim a refund after an empty bottle, the chatbot tells them to be patient for 1-3 months, and the WhatsApp human response stops coming.",
+      "pct": "5%",
+      "bullets": [
+        "WhatsApp support is responsive at sign-up but goes silent on refund requests",
+        "The QR code chat returns canned scripts ('be patient, 1-3 months')",
+        "Some report no human reply after 2 weeks of messages",
+        "Several reviewers explicitly call this 'fraud' or 'misleading advertising'",
+        "Italian, French and Spanish reviewers all hit the same wall"
+      ],
+      "quotes": [
+        "\"I bought it trusting the 100% refund-on-empty-bottle promise. I scanned the QR but it just says be patient 1-3 months. I sent a WhatsApp two weeks ago — still no answer. This is fraud.\"",
+        "\"When I went to the WhatsApp QR site, the answers are clearly prepared and handled by a computer.\"",
+        "\"The chat from the QR really doesn't help — it tells you fatigue is normal and then leaves you without a reply, worse than before.\""
+      ]
+    },
+    {
+      "label": "Capsule size, packaging & product integrity",
+      "reason": "A persistent operational cluster: capsules described as 'gigantic', bottles arriving with broken capsules or loose powder, missing tamper seals, labels too small to read, faded/damaged packaging.",
+      "pct": "8%",
+      "bullets": [
+        "Capsules called 'truly gigantic' — hard to swallow especially for older users",
+        "Bottle arrived with powder loose inside — broken capsules",
+        "Tamper-evident seal missing on the white cap on repeat orders",
+        "Print on the label is tiny and white-on-light, hard to read",
+        "Some bottles arrive worn or with packaging damage"
+      ],
+      "quotes": [
+        "\"I don't know if the product works because I just got it, but the capsules are truly gigantic! Please make them smaller.\"",
+        "\"The bottle was full of powder inside, I assume some capsules broke. Won't be able to judge effectiveness yet.\"",
+        "\"The print on the packaging is tiny and the QR code didn't even work when I scanned it — a missed opportunity, they should redesign the label.\""
+      ]
+    },
+    {
+      "label": "Skin & hormonal side effects (acne, breast pain)",
+      "reason": "A smaller but specific cluster reports adverse hormonal responses: new-onset acne, breast tenderness, irregular bleeding, exacerbated facial breakouts in women who had no acne history.",
+      "pct": "4%",
+      "bullets": [
+        "Acne breakouts in women who never had acne",
+        "Breast pain and tenderness",
+        "Irregular vaginal bleeding while on the supplement",
+        "Itchy skin and aches/pains worsened",
+        "Effects only resolved after discontinuation"
+      ],
+      "quotes": [
+        "\"If you suffer from constipation it gets worse, and if you have pimples it gives you acne — boils I have never had.\"",
+        "\"Many symptoms returned with a vengeance, including breast pain, irregular bleeding, mood swings, night sweats, itchy skin and aches.\"",
+        "\"Mood worsened, dizziness, the QR chat says 'this is normal' and then ghosts you.\""
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Safety flag",
+      "finding": "Roughly 13% of negatives report substantive GI side effects (gastritis-like burning, severe constipation, rectal bleeding) and another ~9% report paradoxical insomnia/anxiety — both higher than expected for a 'natural' supplement.",
+      "implication": "The 9-in-1 formula prevents customers from isolating the trigger ingredient, so they discontinue entirely and warn others. Consider listing per-ingredient dosages prominently and add a clearer contraindication panel.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Operational issue",
+      "finding": "Repeated reports of 58-59 capsules in 60-capsule bottles across the IT, ES and FR pools — including from a 2-year subscription buyer. Tamper seals are also reported missing on repeat orders.",
+      "implication": "This is the same operational complaint that appeared in the Inositol analyses. Likely a fill-line / QC issue at the contract manufacturer. Direct fix at production + a no-questions-asked top-up policy would protect the rating.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Trust risk",
+      "finding": "The '100% refund on empty bottle' promise is publicly called 'fraud' / 'escroquerie' by multiple buyers in IT, ES and FR after WhatsApp support stopped replying to refund requests.",
+      "implication": "This is reputational poison long-term — the same QR-code service praised in positives is the one customers say fails on refunds. Either honour the guarantee or remove the promise from the listing.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Positioning mismatch",
+      "finding": "A meaningful portion of buyers expect weight loss / silhouette control, but the product instead causes weight gain or bloating for them. The 'control your silhouette' claim is the most contradicted promise after 'no effect on flushes'.",
+      "implication": "Reposition silhouette control as a secondary/long-term benefit, lead with hot flushes + night sweats + sleep. Avoid setting weight-loss expectations the formula cannot reliably deliver.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Review-scheme exposure",
+      "finding": "At least one Italian reviewer explicitly states that many positive reviews are driven by a free-bottle-for-positive-review coupon scheme — same pattern flagged in the Inositol analyses across all 5 markets.",
+      "implication": "Public exposure of incentivised reviews erodes the credibility of the listing's positive count over time. Risk of Amazon TOS action if scaled. Shift incentives to verified subscription discounts rather than review-conditional coupons.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "Hot flushes dramatically reduced or eliminated",
+      "reason": "The single largest positive theme: women report a marked drop in vampate frequency and intensity within 2-4 weeks, often after years of failed alternatives. For many this is life-changing — they can work, sleep and socialise normally again.",
+      "pct": "28%",
+      "bullets": [
+        "Hot flushes reduced or eliminated within 2-4 weeks for most positive reviewers",
+        "Effect verified by re-emergence of symptoms after stopping the product",
+        "Works even at higher ambient temperatures (summer reviews confirm)",
+        "Several call it the 'best supplement I have tried' after 3+ failed alternatives",
+        "Repeat-purchase signal is very strong — many on bottle 3-5+"
+      ],
+      "quotes": [
+        "\"Excellent product for controlling hot flushes and sleep. It worked for me — after finishing the first bottle I waited to buy the second and within days the flushes and sleep problems returned.\"",
+        "\"I have tried Manhaé and Ymea but this Inositol brand surprised me, far more effective. After the 3-month cure all symptoms gone — welcome menopause with quality of life!\"",
+        "\"After 2 weeks the hot flushes were already reduced and after a month they completely disappeared — I recommend without doubt.\""
+      ]
+    },
+    {
+      "label": "Better sleep & fewer night sweats",
+      "reason": "Second-strongest positive cluster: women report sleeping through the night, no longer waking up drenched in sweat, and feeling rested in the morning. Often paired with reduced daytime fatigue.",
+      "pct": "18%",
+      "bullets": [
+        "Sleep through the night without waking up sweaty",
+        "Fall asleep faster — insomnia of weeks/months resolved",
+        "Wake up rested and with more energy in the morning",
+        "Reduced sweat-drenched sheets within days for some",
+        "Pairs with the hot-flush relief for a full night-time turnaround"
+      ],
+      "quotes": [
+        "\"I had insomnia, intense night sweats and the feared hot flushes. I'm on my third bottle — the flushes are gone, I sleep much better and night sweats have almost disappeared.\"",
+        "\"I no longer wake up at night drowned in sweat from menopause hot flushes.\"",
+        "\"The night sweats stopped from the very next night I started, with 2 tablets a day. I still have a few hot flushes but much milder.\""
+      ]
+    },
+    {
+      "label": "Mood, energy & well-being improvement",
+      "reason": "A consistent third theme: women describe their irritability, brain fog and energy levels improving on the product. Husbands and family members confirm it from the outside ('my husband finds me less aggressive').",
+      "pct": "12%",
+      "bullets": [
+        "Mood swings reduced — family members notice the change",
+        "More energy, less daytime fatigue",
+        "Brain fog and concentration issues lifted",
+        "Calmer, happier, more stable mood reported",
+        "Often described as 'feeling like myself again'"
+      ],
+      "quotes": [
+        "\"Within a couple of days I could feel my mood lifting significantly — I'm no longer permanently snappy. Sleep is improving and I have more concentration at work.\"",
+        "\"My husband finds me less aggressive (mood swings). I conclude the product has a beneficial action on me.\"",
+        "\"It has lifted my mood, energy, well-being and helped considerably — I feel better, calmer and happier.\""
+      ]
+    },
+    {
+      "label": "All-in-one natural formula (vs HRT, vs single-ingredient)",
+      "reason": "The 19-ingredient (now 9-in-1) natural formulation is consistently praised as a key purchase reason: customers actively want a single capsule that replaces 3-4 separate supplements, and many cannot or will not use HRT.",
+      "pct": "12%",
+      "bullets": [
+        "'All in one' — replaces 3-4 separate supplements (inositol + iron + vitamins + adaptogens)",
+        "Hormone-free positioning is critical for HRT-avoiders",
+        "Vegan certification matters to a clearly identified sub-segment",
+        "Composition described as 'complete' and 'thoughtfully formulated'",
+        "Customers list ingredients in detail in reviews — they read the label closely"
+      ],
+      "quotes": [
+        "\"Excellent composition — having both Myo and D-Chiro inositol in a single product, plus replacing the thyroid supplement my wife already takes, saves time and money.\"",
+        "\"I couldn't find another similar all-in-one supplement. Here Myo and D-chiro inositol combine with Ashwagandha, Ginkgo, Ginseng, Maca, B vitamins, vitamin C and D, zinc and iron.\"",
+        "\"I chose this one because it has no hormones, plus maca, iron and different vitamins — everything clearly shown on the bottle.\""
+      ]
+    },
+    {
+      "label": "QR-code WhatsApp customer service",
+      "reason": "When it works for non-refund questions, the WhatsApp support via QR code is repeatedly singled out as a genuine differentiator — fast replies, even on weekends, with personalised dosing advice.",
+      "pct": "8%",
+      "bullets": [
+        "WhatsApp chat answers questions about dosage in minutes",
+        "Available on weekends — Saturday replies confirmed",
+        "Provides personalised guidance (start with 1 capsule for 4 days, then 2)",
+        "Friendly, helpful tone — unusual for supplement brands",
+        "Customers explicitly mention it as a reason to buy"
+      ],
+      "quotes": [
+        "\"Fast WhatsApp customer service, even on Saturday.\"",
+        "\"By scanning the QR code on the package, you reach customer service that answers any question and explains how to take the supplement.\"",
+        "\"The customer service via WhatsApp was rapid and available.\""
+      ]
+    },
+    {
+      "label": "PCOS / cycle regulation & hormonal acne (off-label win)",
+      "reason": "A clear secondary use-case that the listing doesn't even target: younger women using the myo + D-chiro inositol content to regulate cycles, manage hormonal acne and support PCOS. Several call it 'life-changing'.",
+      "pct": "8%",
+      "bullets": [
+        "Cycles became regular at 28 days after years of amenorrhea",
+        "Hormonal acne reduced significantly",
+        "Less painful menstruation, fewer cramps",
+        "Used as an alternative to oral contraceptives",
+        "Inositol content praised even by non-menopausal users"
+      ],
+      "quotes": [
+        "\"I have PCOS and multifollicular ovaries — irregular cycles forever. After 3 months on this supplement I get a regular 28-day cycle, no side effects. It changed my life.\"",
+        "\"I have a lot of hormonal acne. I noticed a drop in acne and my menstruation became regular and far less painful.\"",
+        "\"I take it to help absorb sugars properly and, given my age, to prevent menopause — works well for me.\""
+      ]
+    },
+    {
+      "label": "Joint pain & physical symptoms relief",
+      "reason": "Smaller cluster reporting reduced joint stiffness, less muscle pain, better physical capacity — paired with the mood/sleep effects, customers describe a 'whole body' improvement.",
+      "pct": "7%",
+      "bullets": [
+        "Joint pain and stiffness reduced",
+        "Better physical exercise tolerance",
+        "Less daytime fatigue, more stamina",
+        "Reduced bloating and water retention (oedema)",
+        "Some report mild weight loss as a side benefit"
+      ],
+      "quotes": [
+        "\"I no longer have joint pain at all (except in the morning when I wake up), no more mood swings — a real positive effect after a few weeks.\"",
+        "\"I notice the exercise I used to do now has more effect — I have lost weight and volume.\"",
+        "\"I lose 500-600 grams a week consistently, sleep better, no stomach issues — really happy with the result.\""
+      ]
+    },
+    {
+      "label": "Repeat purchase & long-term loyalty signal",
+      "reason": "A strong repeat-purchase pattern across the positive set: customers on bottle 3, 5, 10, even multi-year subscription. Many recommend it to friends and family. Recently a 'product no longer available' message triggered open distress in one review.",
+      "pct": "7%",
+      "bullets": [
+        "Customers on bottle 3-5+ at time of review",
+        "Active Amazon subscribe-and-save users",
+        "Recommend it to friends, mothers and sisters",
+        "Stockpile orders when they expect interruption",
+        "Mention nutritionists or doctors who recommended it"
+      ],
+      "quotes": [
+        "\"I've been taking it for a long time, for me it's essential.\"",
+        "\"Recommended by my nutritionist — already on my fifth bottle.\"",
+        "\"I have been on this for a month and noticed a great improvement — looking forward to reordering, but today it's no longer available! Please Amazon hurry up, we need this product!\""
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim",
+      "finding": "'Vampate dramatically reduced' is by far the strongest emotional driver — ~28% of positives lead with hot-flush relief, often after 3+ failed competitors (Estromineral, Ymea, Manhaé, Promensil, Cimicifuga).",
+      "implication": "Lead the listing headline and main image with '90% fewer hot flushes in 4 weeks' framing rather than the generic '19-in-1' formula description. The flush-relief promise is what sells.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Hidden use-case",
+      "finding": "~8% of positives are PCOS / hormonal-acne / cycle-regulation users, not menopause sufferers. This mirrors the Inositol brand-wide finding and represents an entire second TAM the listing doesn't address.",
+      "implication": "Either split-list a 'cycle regulation' SKU at lower dose, or add a dedicated bullet acknowledging the off-label use to capture organic search traffic from women in their 30s.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "The QR-code WhatsApp service is mentioned positively in ~8% of reviews — but it's only a differentiator when it works for dosing questions, not for refunds. The asymmetry is itself a brand asset to protect.",
+      "implication": "Promote the WhatsApp dosing-support service to a top-3 bullet point and to the main image. Decouple it from the refund flow so refund failures don't poison the dosing-support praise.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Switcher win",
+      "finding": "A meaningful share of positives are women who explicitly switched FROM another menopause supplement and describe Menositol as 'finally working'. Named competitors (Ymea, Manhaé, Estromineral, Cimicifuga, Promensil) are the obvious targets for comparison-keyword ads.",
+      "implication": "Build a competitive-comparison block into the listing (Menositol vs Ymea, vs Estromineral) and sponsor those competitor ASINs. The switcher win is a documented behaviour pattern, not a hypothesis.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "buyersMotivation": [
+    { "label": "Stop / reduce hot flushes (vampate)", "reason": "The dominant trigger across IT/ES/FR/UK/DE — hot flushes are described as life-disrupting, work-disrupting, embarrassing.", "pct": "26%" },
+    { "label": "Avoid hormonal therapy (HRT contraindicated or feared)", "reason": "Cancer history, hypertension, age-related risk, or personal preference to stay 'natural' — HRT is not an option.", "pct": "16%" },
+    { "label": "Better sleep / stop night sweats", "reason": "Waking up drenched, broken sleep for weeks/months, drained during the day.", "pct": "15%" },
+    { "label": "Try an all-in-one alternative to multiple supplements", "reason": "Simplify a stack of inositol + iron + B-vitamins + adaptogens into a single capsule.", "pct": "12%" },
+    { "label": "Switching from a previously-tried supplement that failed", "reason": "Ymea, Estromineral, Manhaé, Cimicifuga, Promensil didn't deliver — looking for something stronger.", "pct": "11%" },
+    { "label": "Trust in 'natural' / vegan / hormone-free positioning", "reason": "Active rejection of synthetic hormones — the product's natural framing is critical.", "pct": "9%" },
+    { "label": "Mood / energy / cognitive improvement", "reason": "Brain fog, irritability, depression-like symptoms in peri/menopause — wants emotional baseline restored.", "pct": "8%" },
+    { "label": "Off-label use: PCOS, hormonal acne, cycle regulation", "reason": "Younger women buying for the myo+D-chiro inositol content, not menopause.", "pct": "3%" }
+  ],
+  "customerExpectations": [
+    { "label": "Hot flushes noticeably reduced within 2-4 weeks", "reason": "Most positive reviewers see effect by day 14-28; expectations stretch to 8 weeks max before they conclude 'doesn't work'.", "pct": "24%" },
+    { "label": "Sleep through the night without sweat-drenched waking", "reason": "Night-sweat relief is expected from the first 1-2 weeks, sleep-quality improvement by week 3-4.", "pct": "16%" },
+    { "label": "No side effects (gentle, well-tolerated)", "reason": "'Natural' positioning sets the bar — any GI/insomnia/mood adverse effect is treated as broken promise.", "pct": "15%" },
+    { "label": "Honest 60 capsules per bottle, sealed, intact", "reason": "Basic operational hygiene — count, seal, packaging integrity. Failures here generate 1-stars instantly.", "pct": "10%" },
+    { "label": "Working refund guarantee if no effect after empty bottle", "reason": "The listing's '100% refund' promise creates expectation — WhatsApp silence on refund triggers fraud accusations.", "pct": "9%" },
+    { "label": "Capsules easy to swallow, neutral taste", "reason": "2 capsules/day, multi-month treatment — large/odd-tasting capsules become a deal-breaker over time.", "pct": "9%" },
+    { "label": "Fair price for the formula complexity", "reason": "€25-€30/month accepted only when result is delivered — when no effect, the price is the loudest complaint.", "pct": "9%" },
+    { "label": "Mood, energy and 'feeling like myself again'", "reason": "Beyond physical symptoms — customers want emotional baseline restored, family relationships back to normal.", "pct": "8%" }
+  ],
+  "themeFilters": [
+    { "value": "", "label": "All themes" },
+    { "value": "no_effect", "label": "No effect" },
+    { "value": "gi_side_effects", "label": "GI side effects" },
+    { "value": "insomnia_nervousness", "label": "Insomnia / nervousness" },
+    { "value": "price_value", "label": "Price / value" },
+    { "value": "capsule_count_shortage", "label": "Capsule count short" },
+    { "value": "weight_gain_bloating", "label": "Weight gain / bloating" },
+    { "value": "mood_worsening", "label": "Mood worsening" },
+    { "value": "refund_qr_failure", "label": "Refund / QR failure" },
+    { "value": "capsule_size_packaging", "label": "Capsule size / packaging" },
+    { "value": "skin_hormonal", "label": "Skin / hormonal side effects" },
+    { "value": "hot_flushes_relief", "label": "Hot flushes relief" },
+    { "value": "night_sweats_sleep", "label": "Night sweats / sleep" },
+    { "value": "mood_energy_wellbeing", "label": "Mood / energy / wellbeing" },
+    { "value": "all_in_one_natural", "label": "All-in-one natural" },
+    { "value": "qr_whatsapp_support", "label": "QR / WhatsApp support" },
+    { "value": "pcos_cycle_acne", "label": "PCOS / cycle / acne" },
+    { "value": "joint_physical", "label": "Joint / physical relief" },
+    { "value": "repeat_purchase_loyalty", "label": "Repeat purchase loyalty" }
+  ],
+  "sentimentFilters": [
+    { "value": "", "label": "All sentiment" },
+    { "value": "pos", "label": "Positive" },
+    { "value": "neg", "label": "Negative" },
+    { "value": "neu", "label": "Neutral" }
+  ],
+  "marketingDeepDive": null
+}

@@ -1,0 +1,456 @@
+{
+  "id": "menositol-es",
+  "title": "Menositol ES — Review Analysis",
+  "subtitle": "TBD · Amazon ES marketplace · 252 reviews",
+  "asin": "TBD",
+  "marketplace": "ES",
+  "reviewsFile": "../../reviews/MENOSITOL-ES-Reviews.json",
+  "totalReviews": 252,
+  "posCount": 173,
+  "negCount": 51,
+  "neuCount": 28,
+  "posPct": "68.7",
+  "negPct": "20.2",
+  "neuPct": "11.1",
+  "cpSummary": "Menositol ES customers are predominantly <strong>Spanish women aged 45-55 in perimenopause or early menopause</strong>, plus a meaningful share of <strong>husbands/sons buying for wives or mothers</strong>. The trigger context is <strong>sofocos (hot flushes), sudores nocturnos (night sweats), insomnia and mood swings</strong> — often after failed attempts with isoflavones, pharmacy products (Femarelle, Climil, Cimicifuga) or HRT-contraindicated cases. The dominant motivation is finding a <strong>natural, hormone-free, non-pharmacy alternative</strong> with a complete multi-ingredient stack. Buyers expect noticeable improvement within 2-4 weeks; many become <strong>loyal repeat buyers and recommend it to friends and family</strong>. ES is the brand's home market — sentiment skews strongest positive of all 5 EU markets (68.7%). Heavy Spanish dominance: ~70% native ES content vs ~30% cross-pooled from IT/FR/DE/EN.",
+  "cpWho": {
+    "labels": ["Perimenopausal women 40-50", "Menopausal women 50-60", "Husbands buying for wife", "Daughters/sons buying for mother", "PCOS / hormone-acne users", "Recurring subscription buyers"],
+    "pos": [62, 58, 18, 14, 8, 22],
+    "neg": [14, 18, 4, 3, 2, 3]
+  },
+  "cpWhen": {
+    "labels": ["Daily hot flushes (sofocos)", "Night sweats + insomnia", "Mood swings + irritability", "After failing other brands", "Joint pain + fatigue", "Early perimenopause onset"],
+    "pos": [88, 54, 31, 28, 11, 24],
+    "neg": [22, 9, 6, 4, 5, 3]
+  },
+  "cpWhere": {
+    "labels": ["At home, daily routine", "With breakfast or dinner", "Travel / on-the-go", "Long-term cure (3+ months)"],
+    "pos": [102, 64, 8, 41],
+    "neg": [28, 11, 1, 7]
+  },
+  "cpWhat": {
+    "labels": ["Reduce hot flushes (sofocos)", "Better sleep + less night sweats", "Mood + energy improvement", "Natural alternative to pharmacy/HRT", "Weight + bloating control", "Complete 9-in-1 formula"],
+    "pos": [95, 48, 38, 29, 18, 26],
+    "neg": [26, 8, 7, 5, 9, 4]
+  },
+  "usageScenarios": [
+    { "label": "Daily hot-flush relief", "reason": "Primary use — reducing frequency and intensity of sofocos during the day.", "pct": "26%" },
+    { "label": "Night sweats + sleep recovery", "reason": "Taken at dinner to stop nocturnal wake-ups and sudores nocturnos.", "pct": "15%" },
+    { "label": "Mood stabilisation + energy", "reason": "Used against irritability, low mood and fatigue during perimenopause.", "pct": "12%" },
+    { "label": "Natural alternative for HRT-contraindicated women", "reason": "Chosen when hormonal therapy is not an option for medical reasons.", "pct": "9%" },
+    { "label": "After failed pharmacy products", "reason": "Switch from isoflavones, Femarelle, Cimicifuga, Climil after disappointing results.", "pct": "9%" },
+    { "label": "Husband/son gifting for wife or mother", "reason": "Bought by male family members for partners struggling with menopause.", "pct": "8%" },
+    { "label": "Early perimenopause onset (40-47)", "reason": "Younger women experiencing first symptoms try it as a 'natural starter'.", "pct": "7%" },
+    { "label": "Long-term continuous treatment", "reason": "Subscription buyers who stay on for 6-12+ months.", "pct": "7%" },
+    { "label": "Cycle regulation / hormonal acne", "reason": "Minority use it off-label for menstrual regulation and acne (PCOS-adjacent).", "pct": "4%" },
+    { "label": "Joint pain + bloating relief", "reason": "Secondary expected benefit alongside hot flush control.", "pct": "3%" }
+  ],
+  "csSummary": "Negatives concentrate on <strong>'no effect after one bottle' (sofocos unchanged), side effects (insomnia, stomach pain, constipation, weight gain), and capsule count discrepancies (59 not 60)</strong>. A loud secondary cluster complains about <strong>high price versus pharmacy alternatives and an alleged review-for-freebie scheme</strong> that distorts ratings. QR-code WhatsApp support is divisive — praised by most positives, called scripted/useless by several negatives.",
+  "negativeTopics": [
+    {
+      "label": "No effect on sofocos after 1-2 bottles",
+      "reason": "Most frequent negative — women report taking the full bottle (or two) with zero change in hot flushes or night sweats, often after the brand asked them to be patient for 1-3 months.",
+      "pct": "32%",
+      "bullets": [
+        "Repeated 'tomé el bote entero y nada' pattern — entire bottle finished with no improvement",
+        "Several users say sofocos actually intensified during use",
+        "Brand response via QR/WhatsApp is 'wait 1-3 months' which buyers find evasive",
+        "Cross-language pattern: ES, IT, FR all report no efficacy",
+        "Users compare unfavourably to previous brand they switched from"
+      ],
+      "quotes": [
+        "\"I started in April taking these pills and I still have my hot flushes, no change at all.\"",
+        "\"After 1 month of treatment, zero result — I still have hot flushes and night sweats.\"",
+        "\"Two months taking it and noticed nothing — I went to the pharmacy to buy something else.\""
+      ]
+    },
+    {
+      "label": "Side effects — insomnia, stomach pain, constipation",
+      "reason": "A consistent group reports the supplement actively worsened their condition: severe insomnia (likely from vitamin C / Ginseng), gastritis, constipation, acne breakouts, mood/anxiety spikes.",
+      "pct": "19%",
+      "bullets": [
+        "Insomnia is the single most reported side effect, including in 3-star 'works but keeps me awake' reviews",
+        "Stomach pain, gastritis-like burning, nausea reported across ES and IT",
+        "Constipation severe enough to force discontinuation after 4-5 days",
+        "Acne breakouts and worsened irritability mentioned in several Spanish 1-star reviews",
+        "One UK review reports rectal bleeding starting after 21 days — serious safety flag"
+      ],
+      "quotes": [
+        "\"It gives me insomnia — I wake up in the middle of the night and can't get back to sleep.\"",
+        "\"I had to stop taking it. It completely took away my appetite and sleep. Nervousness all day.\"",
+        "\"If you suffer from constipation it gets worse, and if you have blackheads it gives you acne.\""
+      ]
+    },
+    {
+      "label": "Capsule count short (59 not 60)",
+      "reason": "Recurring operational complaint from long-term Spanish subscribers — repeatedly receiving 58-59 capsules instead of the labelled 60, manufacturer unresponsive when contacted.",
+      "pct": "9%",
+      "bullets": [
+        "Multiple Spanish reviewers across 2024-2026 report 59 capsules per bottle",
+        "Pattern reported by subscription buyers across multiple deliveries — not a one-off",
+        "Customer service (lab email) did not resolve complaints",
+        "Even 5-star fans flag it as 'la única pega' (only complaint)",
+        "Erodes trust because it reads as deliberate short-count rather than error"
+      ],
+      "quotes": [
+        "\"I've been subscribed for almost 2 years and most bottles come with 59 capsules instead of 60 — funny, right?\"",
+        "\"I've received 59 or 58 capsules across several bottles. I emailed the lab and got no solution.\"",
+        "\"The only downside is that there are 59 capsules.\""
+      ]
+    },
+    {
+      "label": "Too expensive for what it delivers",
+      "reason": "Particularly Italian and French buyers feel €24-€40 for one month is high — especially after seeing no effect or when comparing to alternatives.",
+      "pct": "11%",
+      "bullets": [
+        "'It's like swallowing candy and it's not cheap' (IT)",
+        "Even satisfied users note they may drop it purely on price",
+        "FR/IT reviewers find better-priced alternatives (Cimicifuga, Stada, other brands)",
+        "Price feels especially unfair when 59-cap discrepancy is added",
+        "Loyalty is fragile — price + no-effect combo drives one-and-done purchases"
+      ],
+      "quotes": [
+        "\"It didn't blow me away and the price is high for the number of pills — I prefer other brands.\"",
+        "\"Too expensive — didn't help at all.\"",
+        "\"If I have to give it up, it will only be because of the very high price.\""
+      ]
+    },
+    {
+      "label": "Capsules too large / hard to swallow",
+      "reason": "Repeated complaint about capsule size, especially from Italian and Spanish buyers — described as 'gigantesche' and uncomfortable for daily intake.",
+      "pct": "7%",
+      "bullets": [
+        "Italian 1-star explicitly titled 'CAPSULE TROPPO GRANDI'",
+        "Several 3-4 star reviewers say 'capsules too big' as their main deduction",
+        "Issue compounded by 2-cap daily dose (some users halve to 1 cap)",
+        "Long-term users adapt but it's a friction point on first try",
+        "Especially deters women who already have pill-swallowing aversion"
+      ],
+      "quotes": [
+        "\"I don't know if the product works because I just bought it, but the capsules are truly huge — please make them smaller!\"",
+        "\"For my taste the capsules are too big.\"",
+        "\"The capsules are quite big, more than the famous yellow painkiller that starts with D.\""
+      ]
+    },
+    {
+      "label": "Review-for-freebie scheme suspected",
+      "reason": "Buyers publicly call out the practice of giving free bottles in exchange for positive reviews, undermining the rating credibility that brought them in.",
+      "pct": "5%",
+      "bullets": [
+        "Italian reviewer explicitly says brand gave coupons for positive reviews",
+        "Skeptical reviewers warn that the high positive count is artificial",
+        "Erodes the very social proof the brand depends on for new buyers",
+        "Risk for long-term review credibility on Amazon",
+        "Cross-references the same pattern observed in Inositol product line"
+      ],
+      "quotes": [
+        "\"I understood that the many positive reviews were probably due to the fact that in exchange for a positive review they give you a coupon for a free pack.\"",
+        "\"It is misleading advertising — money-back guarantee is a scam.\"",
+        "\"Pure marketing — I thought there was scientific basis but there isn't.\""
+      ]
+    },
+    {
+      "label": "QR-code / WhatsApp support is generic or unresponsive",
+      "reason": "While most positives praise the QR service, negative reviewers find it scripted, unable to handle complications, or completely silent after initial message.",
+      "pct": "6%",
+      "bullets": [
+        "Bot-style scripted answers — 'be patient 1-3 months' regardless of question",
+        "No reply for 2+ weeks when asking about money-back guarantee",
+        "QR code physically too small or not scannable on some bottles",
+        "Italian reviewers note the answers are computer-managed",
+        "Refund process described as inaccessible"
+      ],
+      "quotes": [
+        "\"I scanned the QR code on the bottle to ask for a refund but it only says you must follow 1-3 months treatment and be patient. I sent a WhatsApp message but no reply in 2 weeks.\"",
+        "\"The chat that comes with the QR really doesn't help — it tells you fatigue is normal and then leaves you with no answer.\"",
+        "\"On WhatsApp via QR, the answers are prepared and managed by a computer.\""
+      ]
+    },
+    {
+      "label": "Packaging / seal / freshness issues",
+      "reason": "Operational complaints: missing safety seal on white cap, broken capsules with loose powder, opened bottles delivered, peeling/worn packaging.",
+      "pct": "5%",
+      "bullets": [
+        "Bottles arriving with the white cap missing its tamper-evident seal",
+        "Broken capsules and loose powder inside the bottle",
+        "Returns required after receiving open/already-used bottles",
+        "Worn or peeling labels mentioned in IT reviews",
+        "Raises safety concerns about whether the product has been tampered with"
+      ],
+      "quotes": [
+        "\"The product was returned. Open bottles with capsules scattered. I won't buy again — knowing it can be tampered with scares me.\"",
+        "\"The bottle was full of powder inside, I assume some capsules broke.\"",
+        "\"I bought it again but the white cap arrived without the security seal.\""
+      ]
+    },
+    {
+      "label": "Ingredient transparency vs label",
+      "reason": "Some reviewers question why ingredient percentages on the bottle don't match the website (e.g. isoflavones missing), or feel formula composition isn't clearly disclosed.",
+      "pct": "6%",
+      "bullets": [
+        "IT reviewer: 'The ingredient percentages on the package don't match the website — and where are the isoflavones?'",
+        "UK: 'Print on packaging is tiny and so difficult to read — missed opportunity by the manufacturer'",
+        "Color discrepancy in urine reported, raising 'what's actually in this' concern",
+        "Some ingredients lower-dosed than competing pure-inositol products",
+        "Trust gap mirrors the Inositol product line's silent-reformulation pattern"
+      ],
+      "quotes": [
+        "\"Where are the isoflavones? The percentage on the package doesn't match the website.\"",
+        "\"The print on the packaging is tiny and so difficult to read — white print on light colours is a poor design choice.\"",
+        "\"It causes coloured and unpleasant-smelling urine — that doesn't reassure me as a supplement.\""
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Safety",
+      "finding": "Around 19% of negatives report side effects — insomnia, gastritis, constipation, acne flares, and one UK case of rectal bleeding. Pattern is consistent across languages and indicates real bioactivity, not placebo.",
+      "implication": "Add a clear warning about possible insomnia (recommend morning dosing), and surface the QR-code dosing protocol upfront. Consider a lower-dose 'starter' SKU for sensitive users.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Trust",
+      "finding": "The 59-capsule short-count is repeatedly flagged by long-time Spanish subscribers — including by 5-star fans as 'la única pega'. This is the brand's most visible operational complaint on its home market.",
+      "implication": "Fix the fill operation or over-fill to 62. This is the single highest-leverage cleanup: it converts loyal critics into pure promoters and removes a recurring 1-2 star generator.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Expectations gap",
+      "finding": "Nearly a third of negatives say 'no effect after one bottle'. Brand instructs 1-3 months, but the listing doesn't manage expectations clearly enough at the point of purchase.",
+      "implication": "Lead with 'Allow 4-12 weeks for full effect' in the first bullet, not buried in QR-only copy. Provide a 90-day money-back guarantee with an explicit, frictionless claim path.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Credibility risk",
+      "finding": "The review-for-freebie scheme is publicly called out in IT and ES — exactly as observed in the Inositol line. Critical reviewers warn others that high ratings are paid.",
+      "implication": "Stop or formalise the scheme. If kept, mandate 'incentivised review' disclosure to comply with Amazon TOS and protect long-term rating credibility.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Service",
+      "finding": "QR/WhatsApp support is the brand's biggest asset and biggest liability. Most positives praise it but a meaningful subset find the answers scripted and the refund path dead-ended.",
+      "implication": "Audit the WhatsApp script. Add a real human escalation path for refund requests and side-effect complaints — these are the highest-impact conversations.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "Effective hot-flush relief (sofocos)",
+      "reason": "The dominant positive theme — Spanish women repeatedly report that sofocos diminished or disappeared within days to weeks. Many describe it as the first product to work after failed previous brands.",
+      "pct": "34%",
+      "bullets": [
+        "First product to work after failing isoflavones, Cimicifuga and HRT-alternatives",
+        "Effect often noticed within 4-7 days, full benefit at 1-3 months",
+        "Reduction described as both frequency AND intensity",
+        "Several women now on subscription / 6-12+ months continuous use",
+        "Repeatedly named as 'the only one that has actually worked for me'"
+      ],
+      "quotes": [
+        "\"It's the second time I've bought it. I started getting hot flushes again so I bought it again — for me it has been very effective.\"",
+        "\"I had tried several alternatives to relieve hot flushes and night sweats, but this is the only one that has actually worked for me.\"",
+        "\"After almost a month I can say my hot flushes have completely disappeared — for me it worked 100%.\""
+      ]
+    },
+    {
+      "label": "Better sleep + less night sweats",
+      "reason": "Strong second cluster — women report sleeping through the night again after months of interrupted sleep from night sweats and waking episodes.",
+      "pct": "17%",
+      "bullets": [
+        "'Sleeping through the night again' is a frequent verbatim",
+        "Direct link to night-sweat reduction — fewer wake-ups, fewer covers-off episodes",
+        "Improved sleep cited as the single biggest quality-of-life gain",
+        "Some take it at dinner specifically for the sleep benefit",
+        "Improved morning energy follows from better sleep"
+      ],
+      "quotes": [
+        "\"Since the first night I took the pills I haven't woken up or thrown the covers off again — I can't live without them.\"",
+        "\"The night sweats have disappeared, I'm calmer, so I'll keep taking it.\"",
+        "\"It works really well, especially the nocturnal hot flushes have become less frequent than before.\""
+      ]
+    },
+    {
+      "label": "Mood + energy + general wellbeing",
+      "reason": "Beyond sofocos, women describe feeling more emotionally stable, less irritable, more energetic — addressing the 'softer' menopause symptoms that pharmacy alternatives miss.",
+      "pct": "13%",
+      "bullets": [
+        "Irritability and mood swings markedly reduced",
+        "Energy and motivation noticeably improved — 'more active, less tired'",
+        "Husbands report wives are calmer (anecdote heard from male buyers)",
+        "Mental clarity and concentration improvements mentioned",
+        "Helps with hormonal anxiety and low motivation"
+      ],
+      "quotes": [
+        "\"It helps a lot. I sleep better and I'm calmer — hot flushes, nocturnal anxiety and irritability have disappeared.\"",
+        "\"I'm more cheerful and have more energy to do things, more active — with the hormonal changes I felt very tired and sad.\"",
+        "\"My wife is in pre-menopause and says she feels better since starting this product.\""
+      ]
+    },
+    {
+      "label": "Complete natural 9-in-1 formula",
+      "reason": "Buyers value the comprehensive ingredient stack (inositol, red clover, isoflavones, magnesium, vitamins, ashwagandha, maca, ginseng) — one capsule instead of many, fully natural, vegan.",
+      "pct": "11%",
+      "bullets": [
+        "Replaces multiple individual supplements with one bottle",
+        "Natural / hormone-free angle highly valued by HRT-contraindicated women",
+        "Vegan formulation called out positively",
+        "Red clover and isoflavones specifically sought by ingredient-savvy buyers",
+        "Perceived as a thoughtful, well-balanced formula rather than a single-ingredient product"
+      ],
+      "quotes": [
+        "\"I was looking for red clover and something natural for premenopause problems — relative to cost it seems ideal.\"",
+        "\"Very complete in its composition — it replaces isoflavones and other complements I was taking.\"",
+        "\"Excellent product for getting through pre-menopause — natural and hormone-free.\""
+      ]
+    },
+    {
+      "label": "QR-code WhatsApp customer service",
+      "reason": "Praised across all markets as a real differentiator — instant access to dosing guidance and personalised advice via QR-code-launched WhatsApp chat.",
+      "pct": "9%",
+      "bullets": [
+        "Top-tier customer service is repeatedly named",
+        "QR-code activation is frictionless and feels modern",
+        "Personalised dosing advice (start with 1 cap for 4 days, then 2) appreciated",
+        "Reassures first-time users uncertain about how to take a 9-in-1 supplement",
+        "Fast WhatsApp response time praised by Spanish reviewers"
+      ],
+      "quotes": [
+        "\"Customer service is among the best I've seen — they explain everything you need to start and continue treatment, resolve any doubts instantly.\"",
+        "\"Through the QR code you access an exceptional customer service, especially for explanations on dosage and how to take it.\"",
+        "\"I liked the customer service I received through WhatsApp.\""
+      ]
+    },
+    {
+      "label": "Easy to swallow, no taste, comfortable dose",
+      "reason": "Despite some 'too big' complaints, the majority describe the capsules as easy to swallow, tasteless, and convenient (2/day with breakfast or dinner).",
+      "pct": "7%",
+      "bullets": [
+        "Tasteless and odorless capsules — no aftertaste",
+        "2/day dosing fits easily into routine (breakfast or dinner)",
+        "Bottle is travel-friendly — practical for vacations",
+        "Many reviewers downgrade to 1/cap day and still feel benefit",
+        "Vegan and natural composition reinforces the 'gentle' positioning"
+      ],
+      "quotes": [
+        "\"Easy to swallow, no taste — convenient, you just take two daily at breakfast or dinner.\"",
+        "\"The capsules are smooth without flavour or smell — I find them easy to take.\"",
+        "\"Two-a-day situation, capsules with neutral smell and taste.\""
+      ]
+    },
+    {
+      "label": "Natural alternative to HRT / pharmacy products",
+      "reason": "Women who cannot take hormonal therapy for medical reasons specifically choose this product as a safer, more affordable, plant-based substitute.",
+      "pct": "5%",
+      "bullets": [
+        "HRT-contraindicated buyers (breast cancer history, etc.) explicitly cite this",
+        "Cheaper than Femarelle / Climil / Cimicifuga of equivalent ingredient depth",
+        "'Without hormones' is a strong purchase trigger for older buyers",
+        "Family members (husbands, daughters) buy for women avoiding HRT",
+        "Perceived as a credible bridge between 'do nothing' and pharmacy intervention"
+      ],
+      "quotes": [
+        "\"I was looking for a natural alternative without hormones to ease early menopause symptoms — very satisfied to have found this product.\"",
+        "\"She is one of those women who can't take hormone replacement therapy — this product offers control of menopause through entirely natural elements.\"",
+        "\"I had taken products that destroyed my stomach. With this one I notice no side effect.\""
+      ]
+    },
+    {
+      "label": "Loyal repeat buyers + word of mouth",
+      "reason": "A high share of positives mention this is their 2nd, 3rd or 5th bottle, or that they have recommended it to friends, sisters, mothers — strong organic referral pattern in the home market.",
+      "pct": "4%",
+      "bullets": [
+        "'My second/third/fifth bottle' is a very common opener",
+        "Active recommendations to friends and family members",
+        "Subscription buyers locking in supply for 6-12+ months",
+        "Repurchase often after testing rival products and finding them inferior",
+        "Strong emotional language — 'I can't live without them', 'a great discovery'"
+      ],
+      "quotes": [
+        "\"I've been using it for more than a year and a half. It's a very complete supplement for menopause and perimenopause.\"",
+        "\"It's the third time I've bought it. It works very well for me.\"",
+        "\"I have recommended it to several friends. I've been taking them for 3 months now.\""
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Repeat purchase",
+      "finding": "Spain shows unusually strong loyalty: a large share of positive reviewers are on their 2nd-5th bottle or active subscription. The brand has real home-market repurchase momentum.",
+      "implication": "Build a formal loyalty programme — subscription discount, referral rewards, '3-month bundle' SKU. The home-market data already proves the cohort exists.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Positioning",
+      "finding": "'Sofocos relief' is the #1 expected and delivered outcome (~34% of positives), but 'better sleep / less night sweats' is a close second and emotionally more powerful — women describe it as life-changing.",
+      "implication": "Lead the listing with night-sweats + sleep as a co-lead claim, not just sofocos. 'Sleep through the night again' is a stronger emotional hook than 'hot flush relief'.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "QR-code WhatsApp customer service is the brand's most distinctive moat — praised in ~9% of positives across all 5 markets. No major competitor offers personalised dosing advice.",
+      "implication": "Promote the QR/WhatsApp dosing service to a top-3 listing bullet. Make it visible in main image. It is genuinely unique and softens the 'big capsule / 1-3 months patience' friction.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Cohort",
+      "finding": "Husbands and daughters buying for wives/mothers represent ~10% of reviews — a high share for an intimate health product. Male buyers tend to leave 4-5 star reviews based on visible mood/energy improvements.",
+      "implication": "Add 'gift for partner / mother' positioning angle. Family-purchase ad copy can extend reach beyond the woman herself and tap a high-conversion audience.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "buyersMotivation": [
+    { "label": "Reduce hot flushes (sofocos)", "reason": "Single biggest purchase trigger across all 252 reviews — explicitly named in titles, openings, and search terms.", "pct": "30%" },
+    { "label": "Stop night sweats + sleep better", "reason": "Closely paired with hot flushes — women want to sleep through the night again.", "pct": "16%" },
+    { "label": "Natural / hormone-free alternative", "reason": "Avoiding HRT or chemical pharmacy products is a strong purchase motivator, especially for HRT-contraindicated women.", "pct": "13%" },
+    { "label": "Comprehensive 9-in-1 formula", "reason": "Buyers actively prefer one capsule with red clover + isoflavones + adaptogens over multiple separate supplements.", "pct": "11%" },
+    { "label": "Disappointment with previous brand", "reason": "Switching from isoflavones, Cimicifuga, Femarelle, Climil after they failed or had side effects.", "pct": "10%" },
+    { "label": "Mood swings + irritability + low energy", "reason": "Secondary symptom cluster — women want emotional stability, not just thermal relief.", "pct": "8%" },
+    { "label": "Friend / family recommendation", "reason": "Strong word-of-mouth driver in Spain — daughters, sisters, neighbours, hairdresser-recommendations cited.", "pct": "7%" },
+    { "label": "Curiosity from social media / Vine programme", "reason": "Several reviewers discovered the product on Instagram, TikTok or through Amazon Vine, then purchased.", "pct": "5%" }
+  ],
+  "customerExpectations": [
+    { "label": "Noticeable relief within 2-4 weeks", "reason": "Most buyers expect to feel something tangible by the end of the first bottle, even though the brand says 1-3 months.", "pct": "23%" },
+    { "label": "Hot flushes reduced or eliminated", "reason": "The core expectation — must visibly cut frequency and intensity of sofocos.", "pct": "19%" },
+    { "label": "No side effects (gentle, natural, vegan)", "reason": "Buyers expect a hormone-free supplement to be well tolerated — any GI or mood side effect feels like a broken promise.", "pct": "14%" },
+    { "label": "Full 60 capsules per bottle", "reason": "Long-time subscribers expect the labelled count — 59 feels like deception, not a packaging error.", "pct": "9%" },
+    { "label": "Easy-to-swallow capsules", "reason": "Older buyers and pill-averse women expect small, tasteless capsules — large size is a real deterrent.", "pct": "9%" },
+    { "label": "Responsive personal customer service", "reason": "QR/WhatsApp must answer real questions and process refunds — buyers don't tolerate scripted bot replies.", "pct": "9%" },
+    { "label": "Fair price vs pharmacy alternatives", "reason": "€24-€40 must feel proportional — when efficacy fails, the price feels exploitative.", "pct": "9%" },
+    { "label": "Transparent ingredient list / matches label", "reason": "Ingredient-savvy buyers want dosages on the bottle to match website specs — discrepancies trigger trust loss.", "pct": "8%" }
+  ],
+  "themeFilters": [
+    { "value": "", "label": "All themes" },
+    { "value": "no_effect_sofocos", "label": "No effect on sofocos" },
+    { "value": "side_effects", "label": "Side effects" },
+    { "value": "capsule_count_short", "label": "Capsule count short" },
+    { "value": "price_too_high", "label": "Price too high" },
+    { "value": "capsules_too_large", "label": "Capsules too large" },
+    { "value": "review_freebie", "label": "Review-for-freebie scheme" },
+    { "value": "qr_support_poor", "label": "QR support poor" },
+    { "value": "packaging_seal", "label": "Packaging / seal" },
+    { "value": "ingredient_transparency", "label": "Ingredient transparency" },
+    { "value": "sofocos_relief", "label": "Sofocos relief" },
+    { "value": "sleep_night_sweats", "label": "Sleep / night sweats" },
+    { "value": "mood_energy", "label": "Mood / energy" },
+    { "value": "complete_9in1", "label": "Complete 9-in-1" },
+    { "value": "qr_support_praised", "label": "QR / WhatsApp support" },
+    { "value": "easy_to_swallow", "label": "Easy to swallow" },
+    { "value": "natural_hrt_alternative", "label": "Natural alternative to HRT" },
+    { "value": "repeat_buyer_loyalty", "label": "Repeat buyer loyalty" }
+  ],
+  "sentimentFilters": [
+    { "value": "", "label": "All sentiment" },
+    { "value": "pos", "label": "Positive" },
+    { "value": "neg", "label": "Negative" },
+    { "value": "neu", "label": "Neutral" }
+  ],
+  "marketingDeepDive": null
+}

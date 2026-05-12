@@ -55,6 +55,41 @@
       "group": "detailed",
       "template": "standalone",
       "file": "index.html"
+    },
+    {
+      "id": "menositol-uk",
+      "title": "Menositol UK",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "menositol-de",
+      "title": "Menositol DE",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "menositol-fr",
+      "title": "Menositol FR",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "menositol-es",
+      "title": "Menositol ES",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "menositol-it",
+      "title": "Menositol IT",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
     }
   ]
 }
