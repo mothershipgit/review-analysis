@@ -1,6 +1,6 @@
 # Reviews Analysis Tracker
 
-**Last updated:** 2026-05-12
+**Last updated:** 2026-05-13
 
 ---
 
@@ -8,16 +8,16 @@
 
 | Metric | Value |
 |--------|-------|
-| **In Progress** | 0 |
+| **In Progress** | 1 |
 | **Pending Decisions** | 0 |
-| **Backlog** | 6 |
-| **Recently Completed** | 8 |
+| **Backlog** | 5 |
+| **Recently Completed** | 9 |
 
 ---
 
 ## In Progress
 
--
+- [ ] **Run VOC analysis for 5 Ashwagandha dashboards (UK/DE/FR/ES/IT)** @2026-05-13 #reviews-analysis #→action — Scaffolding complete (this session): folders, HTML, stubs, config.json, CLAUDE.md row done. Reviews at `reviews/Ashwagandha-{MARKET}-Reviews.json`. Next: spawn 5 parallel sub-agents per Action 0/Action 2 of the review-analysis skill — each reads its market's reviews and writes the full dashboard.json.
 
 ---
 
@@ -30,7 +30,6 @@
 ## Backlog
 
 - [ ] **Contact Arush — request top-5 competitors per marketplace for Inositol, Menositol, Ashwagandha (UK/DE/FR/ES/IT)** @2026-05-15 #reviews-analysis #→action — Upstream blocker for MDD population on all 3 product families. Once Arush replies, append INOSITOL, MENOSITOL, ASHWAGANDHA blocks (header row + 5 market rows: ES/DE/IT/FR/UK each) to `data/DETOX + LAX TOP COMPETITORS.xlsx`. Unblocks 3 downstream MDD tasks.
-- [ ] **Create + populate 5 Ashwagandha VOC dashboards (UK/DE/FR/ES/IT)** @2026-05-13 #reviews-analysis #→action — Canonical scaffolding workflow (same as Inositol on 2026-05-11): create `dashboards/ashwagandha-{market}/` for 5 markets, clone canonical standalone HTML, stub `dashboard.json`, register in `config.json` (group `detailed`), add to CLAUDE.md Products table. Then run VOC analysis (Action 2 of `review-analysis` skill) per market. Blocked on: reviews JSON files + ASIN(s) from user.
 - [ ] **Populate Marketing Deep-Dive for 5 Ashwagandha dashboards** @2026-05-18 #reviews-analysis — Run after VOC complete (depends on @2026-05-13 task above). Blocked on: ASHWAGANDHA block (top-5 competitors per market) appended to `data/DETOX + LAX TOP COMPETITORS.xlsx`. Once xlsx updated, run Action 3 (SP-API + MDD synthesis) for all 5 markets.
 - [ ] **Populate Marketing Deep-Dive for 5 Inositol dashboards** @TBD #reviews-analysis — VOC done 2026-05-11. Blocked on: user to add INOSITOL block (top-5 competitors per market) to `data/DETOX + LAX TOP COMPETITORS.xlsx`. Once xlsx updated, run Action 3 (SP-API + MDD synthesis) for all 5 markets.
 - [ ] **Provide ASINs for 5 Inositol dashboards** @TBD #reviews-analysis — all 5 dashboard.json files have `asin: "TBD"`. User to supply real ASINs per market, then rename `INOSITOL-{MARKET}-Reviews.json` files to `{ASIN}-{MARKET}-Reviews.json` and update fetch URLs in HTML.
@@ -42,6 +41,7 @@
 
 | Date | Item |
 |------|------|
+| 2026-05-13 | **Scaffolded 5 Ashwagandha dashboards (UK/DE/FR/ES/IT)** — folders, cloned HTML templates with title/fetch URL swaps, stub JSONs, registered in `config.json`, CLAUDE.md table updated, tracker updated. SKILL.md gained new Action 0 (multi-market batch scaffold recipe) to make this reproducible. VOC pending. |
 | 2026-05-12 | **VOC analysis complete for all 5 Menositol dashboards (UK/DE/FR/ES/IT)** — 1,097 reviews total. Sentiment: UK 60/27/12, DE 57/32/11, FR 45/42/13, ES 69/20/11, IT 69/24/7. Universal findings: hot flush relief polarises sharply (#1 positive AND #1 negative theme in all 5 markets), 59/60 capsule count shortage (same operational defect as Inositol), review-for-freebie scheme called out publicly across 4 markets, FR is the outlier (most polarised market). |
 | 2026-05-12 | **Scaffolded 5 Menositol dashboards (UK/DE/FR/ES/IT)** — folders, cloned HTML templates with title/fetch URL swaps, stub JSONs, registered in `config.json`, CLAUDE.md table updated. |
 | 2026-05-12 | **Refactored review files into `reviews/` folder** — moved 8 existing `*-Reviews.json` files from project root to `reviews/`. Updated fetch URLs in all 13 HTMLs + reviewsFile in all 13 dashboard.json. Updated CLAUDE.md + skill SKILL.md docs. Cleaner structure for the 13-dashboard hub. |
@@ -66,13 +66,13 @@
 
 Source of truth: [CLAUDE.md](CLAUDE.md). Voice of Customer / VOC analysis dashboards per produkt.
 
-**Workflow for adding a new product-family across multiple markets** (canonical pattern, established for Inositol on 2026-05-11):
-1. User specifies product name + markets.
-2. Claude creates `dashboards/{product}-{market}/` for each, clones canonical `detox-de/index.html` with title + reviews fetch URL swapped, writes stub `dashboard.json`, registers in `config.json` and CLAUDE.md.
-3. Commit + push scaffolding. Sidebar entries appear in hub immediately (empty state).
-4. User drops reviews JSON files at project root (filename `{ASIN}-{MARKET}-Reviews.json`).
-5. Claude runs VOC analysis (Action 2 of `review-analysis` skill) → populates sentiment, themes, customer profile, quotes per market.
+**Workflow for adding a new product-family across multiple markets** (codified in skill `review-analysis` Action 0 — proven for Inositol 2026-05-11, Menositol 2026-05-12, Ashwagandha 2026-05-13):
+1. User specifies product name + says "all 5 markets" or "UK/DE/FR/ES/IT".
+2. Claude runs the Action 0 Python script: creates `dashboards/{product}-{market}/` × 5, clones canonical `detox-de/index.html` with title + reviews fetch URL swapped, writes stub `dashboard.json`, registers all 5 in `config.json`, updates CLAUDE.md Products table.
+3. Commit + push scaffolding. Sidebar entries appear in hub immediately (empty state). ~2 min total.
+4. Reviews JSON files live at `reviews/{Product}-{MARKET}-Reviews.json`.
+5. Claude runs VOC analysis (Action 2) → spawns 5 parallel sub-agents (one per market). ~3-5 min wall clock.
 6. User adds competitor block to `data/DETOX + LAX TOP COMPETITORS.xlsx`.
 7. Claude runs MDD population (Action 3) → SP-API lookups + claims matrix + whitespace analysis.
 
-Step 2-3 happen same day; steps 4-7 follow as data arrives.
+Steps 2-3 happen same day; steps 4-7 follow as data arrives. Total time for steps 2-5 with reviews already dropped: ~10 minutes.

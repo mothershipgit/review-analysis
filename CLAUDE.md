@@ -59,6 +59,13 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `menositol-fr` | Menositol FR | TBD | FR | 136 | 45% / 42% / 13% | ✅ | ⏸ |
 | `menositol-es` | Menositol ES | TBD | ES | 252 | 69% / 20% / 11% | ✅ | ⏸ |
 | `menositol-it` | Menositol IT | TBD | IT | 230 | 69% / 24% / 7% | ✅ | ⏸ |
+| `ashwagandha-uk` | Ashwagandha UK | TBD | UK | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
+| `ashwagandha-de` | Ashwagandha DE | TBD | DE | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
+| `ashwagandha-fr` | Ashwagandha FR | TBD | FR | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
+| `ashwagandha-es` | Ashwagandha ES | TBD | ES | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
+| `ashwagandha-it` | Ashwagandha IT | TBD | IT | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
+
+**Ashwagandha scaffolded (2026-05-13):** All 5 folders + HTML + stub JSON created, registered in `config.json`. Reviews dropped in `reviews/Ashwagandha-{MARKET}-Reviews.json`. VOC analysis pending — run review-analysis Action 2.
 
 **Menositol VOC complete (2026-05-12):** All 5 markets analyzed (1,097 reviews total). Sentiment: UK 60/27/12, DE 57/32/11, FR 45/42/13, ES 69/20/11, IT 69/24/7. ASINs still TBD — user to provide.
 

@@ -90,6 +90,41 @@
       "group": "detailed",
       "template": "standalone",
       "file": "index.html"
+    },
+    {
+      "id": "ashwagandha-uk",
+      "title": "Ashwagandha UK",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "ashwagandha-de",
+      "title": "Ashwagandha DE",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "ashwagandha-fr",
+      "title": "Ashwagandha FR",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "ashwagandha-es",
+      "title": "Ashwagandha ES",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "ashwagandha-it",
+      "title": "Ashwagandha IT",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
     }
   ]
 }

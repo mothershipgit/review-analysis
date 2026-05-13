@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ashwagandha ES — Review Analysis</title>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="../../js/auth.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f1f5f9; color: #1e293b; font-size: 13px; }
+
+.dashboard-header { background: #0f2942; color: #fff; padding: 18px 28px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.dashboard-header h2 { font-size: 1.35rem; font-weight: 600; color: #fff; margin: 0; }
+.dashboard-header .sub { font-size: .78rem; color: #cbd5e1; display: block; margin-top: 4px; }
+.dashboard-header .meta-pill { background: rgba(34,197,94,.18); color: #86efac; padding: 6px 12px; border-radius: 6px; font-size: .72rem; font-weight: 600; white-space: nowrap; }
+
+.dashboard-body { padding: 24px 32px; max-width: 1600px; margin: 0 auto; }
+
+.tabs { position: sticky; top: 0; z-index: 30; background: #f1f5f9; padding: 8px 0; margin-bottom: 18px; display: flex; gap: 4px; border-bottom: 1px solid #e2e8f0; }
+.tab { padding: 10px 18px; border: none; background: transparent; font-size: .85rem; font-weight: 500; color: #64748b; cursor: pointer; border-radius: 6px 6px 0 0; transition: all .15s; }
+.tab:hover { color: #1e293b; background: #e2e8f0; }
+.tab.active { color: #0f2942; background: #fff; font-weight: 600; box-shadow: 0 -2px 0 #2563eb inset; }
+
+.panel { display: none; }
+.panel.active { display: block; }
+
+.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
+.card h3 { font-size: .95rem; font-weight: 700; color: #0f2942; margin-bottom: 10px; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.kpi { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 18px; }
+.kpi-v { font-size: 1.7rem; font-weight: 700; color: #0f2942; line-height: 1.1; }
+.kpi-l { font-size: .72rem; color: #64748b; text-transform: uppercase; letter-spacing: .04em; font-weight: 600; margin-top: 4px; }
+
+.sec-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; margin-top: 4px; }
+.sec-title { font-size: 1.05rem; font-weight: 700; color: #0f172a; }
+.sec-summary { font-size: .85rem; color: #475569; line-height: 1.6; margin-bottom: 18px; }
+
+.empty-section { background: #fff; border: 1.5px dashed #cbd5e1; border-radius: 8px; padding: 32px 24px; text-align: center; color: #64748b; }
+.empty-section .empty-title { font-size: .95rem; font-weight: 600; color: #475569; margin-bottom: 6px; }
+.empty-section .empty-sub { font-size: .78rem; color: #94a3b8; line-height: 1.55; }
+.empty-section code { background: #f1f5f9; padding: 1px 6px; border-radius: 3px; font-size: .76rem; color: #1e40af; }
+
+.voc-anchor-nav { position: sticky; top: 41px; background: #f1f5f9; z-index: 20; display: flex; gap: 8px; padding: 12px 0; flex-wrap: wrap; border-bottom: 1px solid #e2e8f0; margin-bottom: 18px; }
+.voc-anchor-nav a { font-size: .76rem; padding: 6px 12px; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; color: #475569; text-decoration: none; font-weight: 500; transition: all .15s; cursor: pointer; }
+.voc-anchor-nav a:hover { background: #eff6ff; border-color: #93c5fd; color: #1e40af; }
+.voc-anchor-nav a.active { background: #0f2942; border-color: #0f2942; color: #fff; }
+
+.voc-sub-tabs { display: flex; gap: 0; border-bottom: 1.5px solid #e2e8f0; margin-bottom: 16px; }
+.voc-sub-tab { padding: 8px 16px; font-size: .82rem; color: #64748b; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1.5px; transition: all .15s; font-weight: 500; }
+.voc-sub-tab:hover { color: #1e293b; }
+.voc-sub-tab.active { color: #0f2942; border-bottom-color: #2563eb; font-weight: 600; }
+.voc-sub-panel { display: none; }
+.voc-sub-panel.active { display: block; }
+
+/* Customer Profile 4-chart grid */
+.cp-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.cp-chart-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; }
+.cp-chart-box h4 { font-size: .82rem; color: #0f172a; margin-bottom: 8px; }
+.cp-chart-wrap { height: 220px; position: relative; }
+.cp-legend { font-size: .72rem; color: #64748b; margin-top: 10px; text-align: right; }
+
+/* Usage Scenario / Buyers Motivation / Expectations table */
+.us-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
+.us-table th { background: #f8fafc; font-size: .68rem; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: .04em; padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.us-table td { padding: 12px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.us-table tr:last-child td { border-bottom: none; }
+.us-table .us-label { font-weight: 600; color: #0f172a; width: 22%; }
+.us-table .us-reason { color: #475569; line-height: 1.5; }
+.us-table .us-pct { width: 180px; text-align: right; white-space: nowrap; }
+.us-bar-wrap { display: inline-block; width: 110px; height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; vertical-align: middle; margin-right: 8px; }
+.us-bar { height: 100%; background: #2563eb; border-radius: 4px; }
+.us-pct > span { display: inline-block; min-width: 48px; text-align: right; vertical-align: middle; }
+
+/* Negative / Positive expandable rows */
+.cs-neg-zone { margin-bottom: 24px; }
+.cs-pos-zone {}
+.nf-row, .pf-row { cursor: pointer; transition: background .15s; }
+.nf-row:hover { background: #fef2f2; }
+.pf-row:hover { background: #f0fdf4; }
+.nf-row.open, .pf-row.open { background: #fef2f2; }
+.pf-row.open { background: #f0fdf4; }
+.nf-arrow, .pf-arrow { display: inline-block; width: 12px; transition: transform .15s; }
+.nf-row.open .nf-arrow, .pf-row.open .pf-arrow { transform: rotate(90deg); }
+.nf-detail, .pf-detail { display: none; }
+.nf-detail.open, .pf-detail.open { display: table-row; }
+.nf-body, .pf-body { padding: 14px 16px; background: #fafbfc; border-top: 1px dashed #e2e8f0; }
+.nf-body ul, .pf-body ul { margin-left: 20px; font-size: .78rem; color: #475569; line-height: 1.6; margin-bottom: 12px; }
+.nf-body li, .pf-body li { margin-bottom: 4px; }
+.nf-quotes p, .pf-quotes p { font-size: .76rem; color: #1e293b; font-style: italic; padding: 8px 12px; border-left: 3px solid #cbd5e1; margin-bottom: 6px; line-height: 1.55; }
+.nf-quotes p { border-left-color: #fca5a5; background: #fef2f2; }
+.pf-quotes p { border-left-color: #86efac; background: #f0fdf4; }
+
+/* Strategy insights table */
+.si-table { width: 100%; border-collapse: collapse; font-size: .78rem; }
+.si-table th { background: #f8fafc; font-size: .65rem; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: .04em; padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.si-table td { padding: 12px; border-bottom: 1px solid #f1f5f9; vertical-align: top; line-height: 1.55; color: #1e293b; }
+.si-table tr:last-child td { border-bottom: none; }
+.si-badge { display: inline-block; padding: 3px 9px; border-radius: 12px; font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+
+/* Review Browser */
+.rb-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
+.rb-filters select, .rb-filters input { font-size: .76rem; border: 1.5px solid #cbd5e1; border-radius: 5px; padding: 5px 8px; background: #fff; }
+.rb-filters input { width: 200px; }
+.rb-filters button { font-size: .73rem; border: 1.5px solid #cbd5e1; border-radius: 5px; padding: 5px 12px; background: #f8fafc; cursor: pointer; }
+.rb-filters button:hover { background: #fff; border-color: #94a3b8; }
+#rbResultCount { font-size: .72rem; color: #64748b; margin-bottom: 8px; }
+.rb-table-wrap { max-height: 600px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 6px; }
+.rb-table { width: 100%; border-collapse: collapse; font-size: .76rem; }
+.rb-table thead th { position: sticky; top: 0; background: #f8fafc; font-size: .65rem; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: .04em; padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; z-index: 1; }
+.rb-table td { padding: 10px 12px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.rb-sentiment { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.rb-sentiment-pos { background: #dcfce7; color: #166534; }
+.rb-sentiment-neg { background: #fee2e2; color: #991b1b; }
+.rb-sentiment-neu { background: #f1f5f9; color: #64748b; }
+.rb-title { font-weight: 600; color: #0f172a; margin-bottom: 4px; }
+.rb-meta { font-size: .68rem; color: #94a3b8; margin-bottom: 6px; }
+.rb-text { color: #1e293b; line-height: 1.5; white-space: pre-wrap; }
+.rb-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.rb-tag { font-size: .6rem; padding: 1px 6px; border-radius: 8px; background: #eff6ff; color: #1e40af; font-weight: 600; }
+
+#loadingOverlay { position: fixed; inset: 0; background: rgba(241,245,249,.95); display: flex; align-items: center; justify-content: center; z-index: 1000; flex-direction: column; gap: 16px; }
+.spinner { width: 36px; height: 36px; border: 3px solid #e2e8f0; border-top-color: #2563eb; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+body { display: block; min-height: auto; }
+
+/* ── Marketing Deep-Dive ── */
+.mdd-section { margin-bottom: 32px; }
+.mdd-sec-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; gap: 16px; flex-wrap: wrap; }
+.mdd-sec-title { font-size: 1.05rem; font-weight: 700; color: #0f172a; }
+.mdd-sec-sub { font-size: .72rem; color: #64748b; }
+
+.mdd-comp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.mdd-comp-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 8px; transition: box-shadow .15s, border-color .15s; cursor: pointer; }
+.mdd-comp-card:hover { box-shadow: 0 4px 12px rgba(15,42,66,.08); border-color: #cbd5e1; }
+.mdd-comp-card.user-product { border: 2px solid #16a34a; background: #f0fdf4; }
+.mdd-comp-card.user-product::before { content: "YOU"; position: absolute; background: #16a34a; color: #fff; font-size: .58rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; transform: translate(-2px, -2px); letter-spacing: .04em; }
+.mdd-comp-card { position: relative; }
+.mdd-comp-img { width: 100%; height: 140px; background: #f8fafc; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.mdd-comp-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.mdd-comp-brand { font-size: .7rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: .04em; }
+.mdd-comp-title { font-size: .74rem; color: #1e293b; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.mdd-comp-meta { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: .68rem; color: #64748b; margin-top: auto; }
+.mdd-comp-meta b { color: #0f172a; }
+.mdd-comp-themes { display: flex; flex-wrap: wrap; gap: 3px; }
+.mdd-theme-pill { font-size: .6rem; padding: 2px 6px; border-radius: 10px; background: #eff6ff; color: #1e40af; font-weight: 600; }
+.mdd-comp-highlight { font-size: .68rem; color: #475569; line-height: 1.45; padding: 6px 8px; background: #f8fafc; border-left: 2px solid #94a3b8; border-radius: 0 4px 4px 0; }
+
+.mdd-matrix-wrap { overflow-x: auto; border: 1px solid #e2e8f0; border-radius: 8px; }
+table.mdd-matrix { width: 100%; border-collapse: collapse; font-size: .72rem; }
+table.mdd-matrix th, table.mdd-matrix td { padding: 8px 6px; border-bottom: 1px solid #f1f5f9; text-align: center; white-space: nowrap; }
+table.mdd-matrix th { background: #f8fafc; font-weight: 600; color: #475569; font-size: .62rem; text-transform: uppercase; letter-spacing: .03em; position: sticky; top: 0; z-index: 1; }
+table.mdd-matrix th.mdd-row-h, table.mdd-matrix td.mdd-row-h { text-align: left; font-weight: 600; color: #0f172a; min-width: 160px; position: sticky; left: 0; background: #fff; z-index: 2; border-right: 1px solid #e2e8f0; }
+table.mdd-matrix th.mdd-row-h { background: #f8fafc; z-index: 3; }
+table.mdd-matrix tr.user-row td.mdd-row-h { background: #f0fdf4; color: #166534; }
+table.mdd-matrix tr.user-row td { background: #f0fdf4; }
+.mdd-cell-yes, .mdd-cell-no { display: inline-block; width: 16px; height: 16px; border-radius: 50%; vertical-align: middle; }
+.mdd-cell-yes { background: #16a34a; }
+.mdd-cell-no { background: #e5e7eb; }
+
+.mdd-bar-row { display: grid; grid-template-columns: 200px 1fr 90px; gap: 10px; align-items: center; padding: 6px 0; font-size: .74rem; }
+.mdd-bar-track { background: #f1f5f9; height: 14px; border-radius: 7px; overflow: hidden; }
+.mdd-bar-fill { height: 100%; background: linear-gradient(90deg, #3b82f6, #1e40af); border-radius: 7px; }
+.mdd-bar-row-label { font-weight: 600; color: #1e293b; }
+.mdd-bar-row-count { text-align: right; color: #475569; font-size: .72rem; }
+.mdd-brands { font-size: .65rem; color: #94a3b8; margin-left: 210px; margin-bottom: 4px; }
+
+table.mdd-gap { width: 100%; border-collapse: collapse; font-size: .76rem; background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+table.mdd-gap th, table.mdd-gap td { padding: 11px 12px; border-bottom: 1px solid #f1f5f9; text-align: left; vertical-align: top; }
+table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: .03em; }
+.mdd-sev { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.mdd-sev-HIGH   { background: #fee2e2; color: #991b1b; }
+.mdd-sev-MEDIUM { background: #fef3c7; color: #92400e; }
+.mdd-sev-LOW    { background: #dcfce7; color: #166534; }
+
+.mdd-ws-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.mdd-ws-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; }
+.mdd-ws-card h4 { margin: 0 0 6px; font-size: .85rem; color: #0f172a; line-height: 1.35; }
+.mdd-ws-rationale { font-size: .76rem; color: #475569; line-height: 1.5; }
+.mdd-ws-evidence { font-size: .68rem; color: #64748b; margin-top: 8px; padding-top: 8px; border-top: 1px dashed #e2e8f0; }
+
+.mdd-insight-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+.mdd-insight-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; }
+.mdd-insight-badge { display: inline-block; padding: 3px 10px; border-radius: 10px; font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; }
+.mdd-insight-card h4 { margin: 0 0 6px; font-size: .8rem; color: #0f172a; line-height: 1.4; }
+.mdd-insight-card p { margin: 6px 0 0; font-size: .73rem; color: #475569; line-height: 1.5; }
+
+#mdd-modal { display: none; position: fixed; inset: 0; background: rgba(15,42,66,.7); z-index: 1000; align-items: flex-start; justify-content: center; padding: 40px 20px; overflow-y: auto; }
+#mdd-modal.open { display: flex; }
+#mdd-modal .mdd-modal-body { background: #fff; max-width: 760px; width: 100%; border-radius: 10px; padding: 24px; max-height: calc(100vh - 80px); overflow-y: auto; }
+#mdd-modal .mdd-modal-close { float: right; cursor: pointer; font-size: 1.4rem; color: #64748b; line-height: 1; padding: 4px 8px; }
+#mdd-modal .mdd-modal-close:hover { color: #0f172a; }
+</style>
+</head>
+<body>
+
+<div id="loadingOverlay">
+  <div class="spinner"></div>
+  <div style="font-size:.82rem;color:#64748b">Loading review analysis…</div>
+</div>
+
+<div class="dashboard-header">
+  <div style="flex:1;min-width:0">
+    <h2 id="hdrTitle">Ashwagandha ES — Review Analysis</h2>
+    <span class="sub" id="hdrSub">Loading…</span>
+  </div>
+  <span class="meta-pill" id="hdrMeta">VOC analysis loaded</span>
+</div>
+
+<div class="dashboard-body">
+
+  <div class="tabs" id="tabBar">
+    <button class="tab active" data-tab="reviews">1 — Reviews VOC</button>
+    <button class="tab" data-tab="marketing-deep-dive">2 — Marketing Deep-Dive</button>
+  </div>
+
+  <!-- ═══════════════ Tab 1: Reviews VOC ═══════════════ -->
+  <div id="dt-reviews" class="panel active">
+
+    <div class="kpis" id="kpiRow"></div>
+
+    <div class="voc-sub-tabs">
+      <div class="voc-sub-tab active" data-panel="voc-ci">Customer Insights</div>
+      <div class="voc-sub-tab" data-panel="voc-ca">Review Browser</div>
+    </div>
+
+    <!-- Customer Insights -->
+    <div id="voc-ci" class="voc-sub-panel active">
+
+      <div class="voc-anchor-nav">
+        <a class="active" data-target="voc-sec-cp">Customer Profile</a>
+        <a data-target="voc-sec-us">Usage Scenario</a>
+        <a data-target="voc-sec-cs">Customer Sentiment</a>
+        <a data-target="voc-sec-bm">Buyers Motivation</a>
+        <a data-target="voc-sec-ce">Customer Expectations</a>
+      </div>
+
+      <div id="voc-sec-cp">
+        <div class="sec-header"><div class="sec-title">Customer Profile</div></div>
+        <div class="sec-summary" id="cpSummary"></div>
+        <div class="cp-charts">
+          <div class="cp-chart-box"><h4>Who</h4><div class="cp-chart-wrap"><canvas id="vocCpWho"></canvas></div></div>
+          <div class="cp-chart-box"><h4>When</h4><div class="cp-chart-wrap"><canvas id="vocCpWhen"></canvas></div></div>
+          <div class="cp-chart-box"><h4>Where</h4><div class="cp-chart-wrap"><canvas id="vocCpWhere"></canvas></div></div>
+          <div class="cp-chart-box"><h4>What</h4><div class="cp-chart-wrap"><canvas id="vocCpWhat"></canvas></div></div>
+        </div>
+        <div class="cp-legend"><span style="color:#16a34a">■</span> positive reviews · <span style="color:#dc2626">■</span> negative reviews</div>
+      </div>
+
+      <div id="voc-sec-us" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Usage Scenario</div></div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="us-table">
+            <thead><tr><th style="width:22%">Usage Scenario</th><th>Reason</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+            <tbody id="usageBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="voc-sec-cs" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Customer Sentiment</div></div>
+        <div class="sec-summary" id="csSummary"></div>
+
+        <div class="cs-neg-zone">
+          <div class="card" style="padding:0;overflow:hidden;border:1.5px solid #fecaca">
+            <table class="us-table">
+              <thead><tr style="background:#fef2f2"><th style="width:22%;border-left:3px solid #dc2626">Negative Feedback Topic</th><th>Reasons for Negative Feedback</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+              <tbody id="negBody"></tbody>
+            </table>
+          </div>
+          <div class="card" style="margin-top:14px;border:1.5px solid #fca5a5">
+            <div class="sec-header" style="margin-bottom:10px"><div class="sec-title">Negative Review Insights — Strategy</div></div>
+            <table class="si-table"><thead><tr><th style="width:130px">Analysis Type</th><th>Finding (from negative reviews)</th><th>Strategic Implication</th></tr></thead><tbody id="negInsights"></tbody></table>
+          </div>
+        </div>
+
+        <div class="cs-pos-zone">
+          <div class="card" style="padding:0;overflow:hidden;border:1.5px solid #bbf7d0">
+            <table class="us-table">
+              <thead><tr style="background:#f0fdf4"><th style="width:22%;border-left:3px solid #16a34a">Positive Feedback Topic</th><th>Reasons for Positive Feedback</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+              <tbody id="posBody"></tbody>
+            </table>
+          </div>
+          <div class="card" style="margin-top:14px">
+            <div class="sec-header" style="margin-bottom:10px"><div class="sec-title">Positive Review Insights — Strategy</div></div>
+            <table class="si-table"><thead><tr><th style="width:130px">Analysis Type</th><th>Finding (from positive reviews)</th><th>Strategic Implication</th></tr></thead><tbody id="posInsights"></tbody></table>
+          </div>
+        </div>
+      </div>
+
+      <div id="voc-sec-bm" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Buyers Motivation</div></div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="us-table">
+            <thead><tr><th style="width:22%">Buyers Motivation</th><th>Reason</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+            <tbody id="motivationBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="voc-sec-ce" style="margin-top:36px">
+        <div class="sec-header"><div class="sec-title">Customer Expectations</div></div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <table class="us-table">
+            <thead><tr><th style="width:22%">Unmet Need</th><th>Reason</th><th style="width:140px;text-align:right">Percentage</th></tr></thead>
+            <tbody id="expectationsBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Review Browser -->
+    <div id="voc-ca" class="voc-sub-panel">
+      <div class="card">
+        <h3>Review Browser <span style="font-size:.72rem;font-weight:400;color:#64748b;margin-left:8px">All <span id="rbTotal">…</span> reviews · originals preserved</span></h3>
+        <div class="rb-filters">
+          <select id="rbSentiment"></select>
+          <select id="rbTheme"></select>
+          <input id="rbSearch" placeholder="Search keyword (any language)…">
+          <button id="rbClear">Clear</button>
+        </div>
+        <div id="rbResultCount"></div>
+        <div class="rb-table-wrap">
+          <table class="rb-table">
+            <thead><tr><th style="width:90px">Sentiment</th><th>Review</th></tr></thead>
+            <tbody id="rbBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════ Tab 2: Marketing Deep-Dive ═══════════════ -->
+  <div id="dt-marketing-deep-dive" class="panel">
+    <div id="mdd-root"></div>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  // ── Tab + sub-tab + anchor wiring ──
+  document.querySelectorAll('#tabBar .tab').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var id = btn.dataset.tab;
+      document.querySelectorAll('#tabBar .tab').forEach(function(t) { t.classList.toggle('active', t.dataset.tab === id); });
+      document.querySelectorAll('.panel').forEach(function(p) { p.classList.toggle('active', p.id === 'dt-' + id); });
+    });
+  });
+  document.querySelectorAll('.voc-sub-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var pid = tab.dataset.panel;
+      document.querySelectorAll('.voc-sub-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelectorAll('.voc-sub-panel').forEach(function(p) { p.classList.remove('active'); });
+      tab.classList.add('active');
+      var p = document.getElementById(pid);
+      if (p) p.classList.add('active');
+      Object.values(Chart.instances || {}).forEach(function(c) { try { c.resize(); } catch(e) {} });
+    });
+  });
+  document.querySelectorAll('.voc-anchor-nav a').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var t = document.getElementById(a.dataset.target);
+      if (t) { var y = t.getBoundingClientRect().top + window.pageYOffset - 90; window.scrollTo({ top: y, behavior: 'smooth' }); }
+      document.querySelectorAll('.voc-anchor-nav a').forEach(function(x) { x.classList.remove('active'); });
+      a.classList.add('active');
+    });
+  });
+
+  // ── Helpers ──
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+  function bw(pctStr) { var v = parseFloat(pctStr); return (isNaN(v) ? 0 : v) + '%'; }
+
+  // ── Multilingual sentiment + theme classifier (rule-based, runs on each review) ──
+  var POS_KW = /\b(funciona|funziona|wirkt|marche|works|recomendable|recomiendo|recommande|sehr gut|very good|eficaz|efficace|efficiente|satisfecho|satisfait|soddisfatto|content[oa]?|top|super|excelente|excellent|eccellente|estupendo|perfecto|perfetto|parfait|gut|bien|bene|buono|buen[oa]|bueno|maravilloso|geniales?|genial|me encant|gefällt|recommendable|me ha funcionado|ottim[oa]|fantástic|fantastic)\b/i;
+  var NEG_KW = /\b(no funciona|non funziona|wirkt nicht|ne marche pas|doesn'?t work|no sirve|no vale|inutile|inútil|nutzlos|inefficace|ineffective|nessun (effetto|risultato|cambiamento)|nada|niente|rien|nothing|kein effekt|aucun effet|nul[la]?|delusione?|deluso|decepción|décev|enttäuscht|disappoint|estafa|arnaque|scam|engaño|engano|basura|pésim|pésimo|peor|peggio|terrible|horrible|malísim|malíssim|orribile)\b/i;
+
+  function classify(reviewText, title) {
+    var text = ((title || '') + ' ' + (reviewText || '')).toLowerCase();
+    var hasNeg = NEG_KW.test(text);
+    var hasPos = POS_KW.test(text);
+    var sentiment;
+    if (hasNeg && !hasPos) sentiment = 'neg';
+    else if (hasPos && !hasNeg) sentiment = 'pos';
+    else if (hasNeg && hasPos) sentiment = 'neu';
+    else sentiment = 'neu';
+
+    var tags = [];
+    // No effect
+    if (/\b(no (sirve|funciona|hace|noté|notado|ha funcionado)|sin (efecto|cambio|resultado)|nessun (effetto|risultato|cambiamento)|nessun beneficio|aucun effet|wirkt nicht|nichts (gemerkt|gespürt)|nothing|no.t work|inutil|nutzlos|inefficace|nada|rien|niente)\b/.test(text)) tags.push('no_effect');
+    // Side effects (cramps, diarrhoea, stomach pain)
+    if (/\b(diarrea|diarrhoe?a|diarrhée|durchfall|crampi|cramps|crampes|krämpfe|dolor (de )?(barriga|estómago|tripa|panza|pancia|ventre)|mal di pancia|mal di stomaco|mal au ventre|mal d'estomac|stomach pain|retortijones|nausea|náusea|náuseas|nauseas|vomito|vomit|vomi|sickness|cólicos|colichi)\b/.test(text)) tags.push('side_effects');
+    // Severe systemic reaction
+    if (/\b(mareo|mareos|dizzy|dizziness|vertige|vertigo|vertigine|panic|pánico|skin rash|rash|eruption|hautausschlag|fatigue|cansancio|estanchezza|debolezza|weakness|projectile|svenimenti)\b/.test(text)) tags.push('severe_reaction');
+    // Only laxative — not detox or diuretic
+    if (/\b(solo (laxante|lassativo|laxant)|only (a )?laxative|laxante (efecto|sol[oa])|nicht (entwässer|diuret)|no es diurétic|non.* diuretic|laxative effect|laxant unique|just a laxative)\b/.test(text)) tags.push('only_laxative');
+    // No weight loss
+    if (/\b(no (he )?(perd|baj|adelgaz)|no (ha|me ha) (servido|adelgazado)|kein gewicht|no weight loss|nessuna perdita|aucune perte de poids|no he bajado|same weight|igual de peso|sigo pesando|no he adelgazado|peso igual)\b/.test(text)) tags.push('no_weight_loss');
+    // Packaging / quantity defects
+    if (/\b(sello (roto|abierto)|seal (broken|open)|envase (abierto|roto)|tappo (svitato|aperto)|bouchon (ouvert|cassé)|empty|vide|vacío|metà (vuoto|piena)|half (empty|full)|missing|faltan|fehl|incompleto|broken|rota|opened|aperto|abierto|swivel|tirar.* basura)\b/.test(text)) tags.push('packaging');
+    // Review-for-freebie scheme
+    if (/\b(5 (estrellas|stars|étoiles|stelle|sterne)|gratis|free (bottle|bote)|regalo|sconto|descuento|whatsapp|qr.?code|reseña.*positiv|review.*positiv|incentiva|incentivos?|premio|paying for review)\b/.test(text)) tags.push('freebie_scheme');
+    // Bloating relief
+    if (/\b(deshinch|sgonfi|deballonné?e?|less (bloated|inflated|swollen)|bloating|hinchazón|hinchada|gonfiore|gonfia|deshinchado|panza plana|abdomen plat|menos hinchada|weniger (gebläht|aufgebläht))\b/.test(text)) tags.push('bloating_relief');
+    // Bowel regularity
+    if (/\b(transit|tránsito|intestinal|al baño|in bagno|toilettes?|stuhlgang|bowel|movement|regular|regolar|estreñimiento|stitichezza|constipation|verstopfung|cumple|funcionar|drenante)\b/.test(text)) tags.push('regularity');
+    // Diuretic
+    if (/\b(diuretic|diurétic|diurético|drenante|wasser|liquid|líquidos|liquidi|harn|orin|peeing|urinare|orinar|fluid|retención|retención de líquidos|ritenzione|rétention)\b/.test(text)) tags.push('diuretic');
+    // Weight loss
+    if (/\b(perd[ií] (peso|kilos|kg)|lose weight|weight loss|abnehmen|gewicht verloren|ho perso|j'ai perdu|kilos? (perdidos|perdus)|adelgaz|maigrir|dimagri|slimming)\b/.test(text)) tags.push('weight_loss');
+    // Works
+    if (/\b(funciona|funziona|wirkt|marche bien|works (well|great)|efficace|efficacious|eficaz|cumple)\b/.test(text)) tags.push('works');
+    // Easy to take
+    if (/\b(fácil de (tomar|tragar)|easy to (take|swallow)|leicht zu schlucken|facile à prendre|facile da (prendere|deglutire)|sin sabor|tasteless|kein (geschmack|aftertaste)|no taste|sans goût|senza sapore|sin (mal )?sabor)\b/.test(text)) tags.push('easy_take');
+    // Customer support
+    if (/\b(qr|whatsapp|servicio (de )?(cliente|atención)|customer service|kundenservice|servizio clienti|service client|asesor|atención al cliente|support|seguimiento|suivi)\b/.test(text)) tags.push('support');
+    // Fast results
+    if (/\b(primer día|primer dí|first day|first night|primera noche|prima notte|premier jour|première nuit|next morning|next day|al día siguiente|al giorno dopo|dès le lendemain|dal primo giorno|sin esperar|early result|enseguida|subito|sofort|immediately)\b/.test(text)) tags.push('fast_results');
+
+    return { sentiment: sentiment, tags: tags };
+  }
+
+  // ── Render Customer Profile stacked bar (positive vs negative) ──
+  function makeStackedBar(canvasId, data) {
+    var ctx = document.getElementById(canvasId);
+    if (!ctx || !data) return;
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: data.labels,
+        datasets: [
+          { label: 'Positive', data: data.pos, backgroundColor: '#16a34a', borderRadius: { topLeft: 3, topRight: 3 }, barPercentage: 0.7 },
+          { label: 'Negative', data: data.neg.map(function(v) { return -v; }), backgroundColor: '#dc2626', borderRadius: { bottomLeft: 3, bottomRight: 3 }, barPercentage: 0.7 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { display: false }, datalabels: { display: false },
+          tooltip: { callbacks: { label: function(ctx) { return ctx.dataset.label + ': ' + Math.abs(ctx.raw); } } }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { font: { size: 9.5 }, color: '#64748b', maxRotation: 38, minRotation: 0, autoSkip: false } },
+          y: { grid: { color: '#f1f5f9' }, ticks: { font: { size: 9.5 }, color: '#94a3b8', callback: function(v) { return Math.abs(v); } } }
+        }
+      }
+    });
+  }
+
+  // ── Render row helpers ──
+  function fillTable(tbodyId, rows, withBars) {
+    if (!rows || !rows.length) return;
+    var max = parseFloat(rows[0].pct);
+    var html = rows.map(function(r) {
+      var bar = withBars ? '<div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(r.pct) + '"></div></div>' : '';
+      return '<tr><td class="us-label">' + esc(r.label) + '</td><td class="us-reason">' + esc(r.reason) + '</td><td class="us-pct">' + bar + '<span>' + r.pct + '</span></td></tr>';
+    }).join('');
+    document.getElementById(tbodyId).innerHTML = html;
+  }
+
+  function fillExpandable(tbodyId, topics, kind) {
+    if (!topics || !topics.length) return;
+    var max = parseFloat(topics[0].pct);
+    var arrowClass = kind === 'neg' ? 'nf' : 'pf';
+    var barColor = kind === 'neg' ? '#fca5a5' : '#86efac';
+    var html = topics.map(function(t) {
+      var bullets = (t.bullets || []).map(function(b) { return '<li>' + esc(b) + '</li>'; }).join('');
+      var quotes = (t.quotes || []).map(function(q) { return '<p>' + esc(q) + '</p>'; }).join('');
+      var row = '<tr class="' + arrowClass + '-row"><td class="us-label"><span class="' + arrowClass + '-arrow">▶</span> ' + esc(t.label) + '</td>' +
+        '<td class="us-reason">' + esc(t.reason) + '</td>' +
+        '<td class="us-pct"><div class="us-bar-wrap"><div class="us-bar" style="width:' + bw(t.pct) + ';background:' + barColor + '"></div></div><span>' + t.pct + '</span></td></tr>';
+      var detail = '<tr class="' + arrowClass + '-detail"><td colspan="3"><div class="' + arrowClass + '-body"><ul>' + bullets + '</ul><div class="' + arrowClass + '-quotes">' + quotes + '</div></div></td></tr>';
+      return row + detail;
+    }).join('');
+    document.getElementById(tbodyId).innerHTML = html;
+  }
+
+  function fillInsights(tbodyId, insights) {
+    if (!insights || !insights.length) return;
+    document.getElementById(tbodyId).innerHTML = insights.map(function(i) {
+      return '<tr><td><span class="si-badge" style="background:' + i.badgeBg + ';color:' + i.badgeColor + '">' + esc(i.type) + '</span></td><td>' + esc(i.finding) + '</td><td>' + esc(i.implication) + '</td></tr>';
+    }).join('');
+  }
+
+  // ── Marketing Deep-Dive renderer ──
+  function renderMDD(M) {
+    var root = document.getElementById('mdd-root');
+    if (!root) return;
+    var fmt = function(n) { if (n == null || n === '') return '—'; if (typeof n === 'string') return n; return (M.currency || '€') + Number(n).toFixed(2); };
+    var h = '';
+
+    h += '<p class="sec-summary" style="margin-bottom:24px">' + M.intro + '</p>';
+
+    // Section 1: Competitor overview
+    h += '<div class="mdd-section">';
+    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">1. Competitor Overview — ' + M.totalCompetitors + ' top competitors on ' + esc(M.marketplace) + '</div><div class="mdd-sec-sub">Click a card for full claim profile · your product highlighted in green</div></div>';
+    h += '<div class="mdd-comp-grid">';
+    var allCards = [Object.assign({ isUser: true }, M.userProduct)].concat(M.competitors);
+    allCards.forEach(function(c, idx) {
+      var cls = c.isUser ? 'mdd-comp-card user-product' : 'mdd-comp-card';
+      h += '<div class="' + cls + '" data-idx="' + idx + '">';
+      h += '  <div class="mdd-comp-img">' + (c.image ? '<img src="' + esc(c.image) + '">' : '<span style="color:#cbd5e1;font-size:.7rem">no image</span>') + '</div>';
+      h += '  <div class="mdd-comp-brand">' + esc(c.brand || '—') + '</div>';
+      h += '  <div class="mdd-comp-title">' + esc(c.title || '') + '</div>';
+      h += '  <div class="mdd-comp-themes">';
+      (c.themes || []).slice(0, 6).forEach(function(t) {
+        h += '<span class="mdd-theme-pill">' + esc(t.replace(/_/g, ' ')) + '</span>';
+      });
+      h += '  </div>';
+      h += '  <div class="mdd-comp-meta">';
+      h += '    <span><b>' + fmt(c.price) + '</b></span>';
+      if (c.bsr) h += '    <span>BSR <b>#' + Number(c.bsr).toLocaleString() + '</b></span>';
+      if (c.nicheBsr) h += '    <span>Niche <b>#' + c.nicheBsr + '</b></span>';
+      h += '  </div>';
+      if (c.highlight) h += '  <div class="mdd-comp-highlight">' + esc(c.highlight) + '</div>';
+      h += '</div>';
+    });
+    h += '</div></div>';
+
+    // Section 2: Claims matrix
+    var cm = M.claimsMatrix;
+    h += '<div class="mdd-section">';
+    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">2. Claims Matrix</div><div class="mdd-sec-sub">Rows = brands · columns = claim themes · filled = theme appears in title/bullets</div></div>';
+    h += '<div class="mdd-matrix-wrap"><table class="mdd-matrix"><thead><tr><th class="mdd-row-h">Brand · ASIN</th>';
+    cm.themes.forEach(function(t) { h += '<th>' + esc(t.label) + '</th>'; });
+    h += '</tr></thead><tbody>';
+    cm.rows.forEach(function(r) {
+      var cls = r.isUser ? 'user-row' : '';
+      h += '<tr class="' + cls + '"><td class="mdd-row-h">' + esc(r.brand) + '<br><span style="font-weight:400;color:#94a3b8;font-size:.62rem">' + esc(r.asin) + '</span></td>';
+      r.cells.forEach(function(c) {
+        h += '<td>' + (c ? '<span class="mdd-cell-yes"></span>' : '<span class="mdd-cell-no"></span>') + '</td>';
+      });
+      h += '</tr>';
+    });
+    h += '</tbody></table></div>';
+
+    // Claims summary bars
+    h += '<div style="margin-top:24px"><div class="mdd-sec-sub" style="margin-bottom:8px;font-size:.78rem;font-weight:600;color:#475569">Claim frequency across the ' + M.totalCompetitors + ' competitors</div>';
+    M.claimsSummary.forEach(function(s) {
+      h += '<div class="mdd-bar-row">';
+      h += '  <div class="mdd-bar-row-label">' + esc(s.label) + '</div>';
+      h += '  <div class="mdd-bar-track"><div class="mdd-bar-fill" style="width:' + s.pct + '%"></div></div>';
+      h += '  <div class="mdd-bar-row-count"><b>' + s.count + '</b> · ' + s.pct + '%</div>';
+      h += '</div>';
+      h += '<div class="mdd-brands">Brands: ' + s.topBrands.map(esc).join(' · ') + '</div>';
+    });
+    h += '</div></div>';
+
+    // Section 3: VOC ↔ Claims Gap Analysis
+    h += '<div class="mdd-section">';
+    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">3. VOC ↔ Claims Gap Analysis</div><div class="mdd-sec-sub">Customer concerns from Tab 1 reviews × how many of the ' + M.totalCompetitors + ' competitors address them</div></div>';
+    h += '<table class="mdd-gap"><thead><tr>';
+    h += '<th style="width:22%">VOC Topic</th><th style="width:14%">Customer signal</th><th style="width:18%">Addressed by</th><th style="width:10%">Severity</th><th>Whitespace</th>';
+    h += '</tr></thead><tbody>';
+    M.vocGap.forEach(function(g) {
+      h += '<tr>';
+      h += '<td><b>' + esc(g.vocTopic) + '</b></td>';
+      h += '<td><b>' + esc(g.customerConcernPct) + '</b></td>';
+      h += '<td><b>' + g.addressedByCount + ' / ' + M.totalCompetitors + '</b><br><span style="font-size:.66rem;color:#64748b">' + g.addressedByBrands.map(esc).join(', ') + '</span></td>';
+      h += '<td><span class="mdd-sev mdd-sev-' + g.gapSeverity + '">' + g.gapSeverity + '</span></td>';
+      h += '<td>' + esc(g.whitespace) + '</td>';
+      h += '</tr>';
+    });
+    h += '</tbody></table></div>';
+
+    // Section 4: Whitespace
+    h += '<div class="mdd-section">';
+    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">4. Whitespace Opportunities</div><div class="mdd-sec-sub">High customer demand × low competitor coverage</div></div>';
+    h += '<div class="mdd-ws-grid">';
+    M.whitespaceOpportunities.forEach(function(w) {
+      h += '<div class="mdd-ws-card">';
+      h += '  <h4>' + esc(w.opportunity) + '</h4>';
+      h += '  <div class="mdd-ws-rationale">' + esc(w.rationale) + '</div>';
+      h += '  <div class="mdd-ws-evidence">' + esc(w.evidence) + '</div>';
+      h += '</div>';
+    });
+    h += '</div></div>';
+
+    // Saturation section
+    h += '<div class="mdd-section">';
+    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">Saturated Claims — diminishing returns</div><div class="mdd-sec-sub">Most-used claims where adding the same message no longer differentiates</div></div>';
+    h += '<div class="mdd-ws-grid">';
+    M.saturation.forEach(function(s) {
+      h += '<div class="mdd-ws-card">';
+      h += '  <h4>' + esc(s.label) + ' <span style="float:right;color:#dc2626;font-size:.78rem">' + s.saturationPct + '%</span></h4>';
+      h += '  <div class="mdd-ws-rationale">' + esc(s.advice) + '</div>';
+      h += '</div>';
+    });
+    h += '</div></div>';
+
+    // Section 5: Strategic recommendations
+    h += '<div class="mdd-section">';
+    h += '<div class="mdd-sec-header"><div class="mdd-sec-title">5. Strategic Recommendations</div><div class="mdd-sec-sub">Synthesis of VOC + competitor claims → actionable angles</div></div>';
+    h += '<div class="mdd-insight-grid">';
+    M.strategicRecommendations.forEach(function(r) {
+      h += '<div class="mdd-insight-card">';
+      h += '  <span class="mdd-insight-badge" style="background:' + esc(r.badgeBg) + ';color:' + esc(r.badgeColor) + '">' + esc(r.type) + '</span>';
+      h += '  <h4>' + esc(r.finding) + '</h4>';
+      h += '  <p><b>→</b> ' + esc(r.implication) + '</p>';
+      h += '</div>';
+    });
+    h += '</div></div>';
+
+    root.innerHTML = h;
+  }
+
+  // ── Main load ──
+  Promise.all([
+    fetch('dashboard.json').then(function(r) { return r.json(); }),
+    fetch('../../reviews/Ashwagandha-ES-Reviews.json').then(function(r) { return r.json(); })
+  ])
+  .then(function(results) {
+    var D = results[0];
+    var rawReviews = results[1];
+
+    document.getElementById('hdrTitle').textContent = D.title;
+    document.getElementById('hdrSub').textContent = D.subtitle;
+
+    // KPIs (no stars — sentiment-based)
+    var kpiHtml = '';
+    kpiHtml += '<div class="kpi"><div class="kpi-v">' + D.totalReviews.toLocaleString() + '</div><div class="kpi-l">Total Reviews</div></div>';
+    kpiHtml += '<div class="kpi"><div class="kpi-v" style="color:#16a34a">' + D.posPct + '%</div><div class="kpi-l">Positive (AI sentiment)</div></div>';
+    kpiHtml += '<div class="kpi"><div class="kpi-v" style="color:#dc2626">' + D.negPct + '%</div><div class="kpi-l">Negative (AI sentiment)</div></div>';
+    kpiHtml += '<div class="kpi"><div class="kpi-v" style="color:#64748b">' + D.neuPct + '%</div><div class="kpi-l">Neutral / Mixed</div></div>';
+    document.getElementById('kpiRow').innerHTML = kpiHtml;
+
+    // Customer Profile
+    document.getElementById('cpSummary').innerHTML = D.cpSummary;
+    Chart.register(ChartDataLabels);
+    makeStackedBar('vocCpWho', D.cpWho);
+    makeStackedBar('vocCpWhen', D.cpWhen);
+    makeStackedBar('vocCpWhere', D.cpWhere);
+    makeStackedBar('vocCpWhat', D.cpWhat);
+
+    // Tables
+    fillTable('usageBody', D.usageScenarios, true);
+    fillTable('motivationBody', D.buyersMotivation, true);
+    fillTable('expectationsBody', D.customerExpectations, true);
+
+    // Sentiment
+    document.getElementById('csSummary').innerHTML = D.csSummary;
+    fillExpandable('negBody', D.negativeTopics, 'neg');
+    fillExpandable('posBody', D.positiveTopics, 'pos');
+    fillInsights('negInsights', D.negativeInsights);
+    fillInsights('posInsights', D.positiveInsights);
+
+    // Wire expandable rows
+    document.querySelectorAll('.nf-row').forEach(function(row) {
+      row.addEventListener('click', function() {
+        var detail = row.nextElementSibling;
+        var open = row.classList.contains('open');
+        document.querySelectorAll('.nf-row.open').forEach(function(r) { r.classList.remove('open'); r.nextElementSibling.classList.remove('open'); });
+        if (!open) { row.classList.add('open'); detail.classList.add('open'); }
+      });
+    });
+    document.querySelectorAll('.pf-row').forEach(function(row) {
+      row.addEventListener('click', function() {
+        var detail = row.nextElementSibling;
+        var open = row.classList.contains('open');
+        document.querySelectorAll('.pf-row.open').forEach(function(r) { r.classList.remove('open'); r.nextElementSibling.classList.remove('open'); });
+        if (!open) { row.classList.add('open'); detail.classList.add('open'); }
+      });
+    });
+
+    // ── Review Browser ──
+    var classified = rawReviews.map(function(r) {
+      var c = classify(r.review, r.title);
+      return Object.assign({}, r, c);
+    });
+
+    document.getElementById('rbTotal').textContent = classified.length;
+    document.getElementById('rbSentiment').innerHTML = D.sentimentFilters.map(function(f) { return '<option value="' + f.value + '">' + f.label + '</option>'; }).join('');
+    document.getElementById('rbTheme').innerHTML = D.themeFilters.map(function(f) { return '<option value="' + f.value + '">' + f.label + '</option>'; }).join('');
+
+    function rbFilter() {
+      var sent = document.getElementById('rbSentiment').value;
+      var theme = document.getElementById('rbTheme').value;
+      var search = (document.getElementById('rbSearch').value || '').toLowerCase().trim();
+      var filtered = classified.filter(function(r) {
+        if (sent && r.sentiment !== sent) return false;
+        if (theme && r.tags.indexOf(theme) === -1) return false;
+        if (search && (r.review || '').toLowerCase().indexOf(search) === -1 && (r.title || '').toLowerCase().indexOf(search) === -1) return false;
+        return true;
+      });
+      document.getElementById('rbResultCount').textContent = 'Showing ' + filtered.length + ' of ' + classified.length + ' reviews';
+      var limit = Math.min(filtered.length, 250);
+      var html = '';
+      for (var i = 0; i < limit; i++) {
+        var r = filtered[i];
+        var sentClass = 'rb-sentiment-' + r.sentiment;
+        var sentLabel = r.sentiment === 'pos' ? 'Positive' : r.sentiment === 'neg' ? 'Negative' : 'Neutral';
+        var tagsHtml = (r.tags || []).map(function(t) { return '<span class="rb-tag">' + t.replace(/_/g, ' ') + '</span>'; }).join('');
+        html += '<tr><td><span class="rb-sentiment ' + sentClass + '">' + sentLabel + '</span></td>' +
+          '<td><div class="rb-title">' + esc(r.title || '(no title)') + '</div>' +
+          '<div class="rb-meta">' + esc(r.date || '') + ' · ' + esc(r.author || 'anonymous') + '</div>' +
+          '<div class="rb-text">' + esc(r.review || '') + '</div>' +
+          (tagsHtml ? '<div class="rb-tags">' + tagsHtml + '</div>' : '') + '</td></tr>';
+      }
+      if (filtered.length > limit) html += '<tr><td colspan="2" style="text-align:center;color:#64748b;font-size:.7rem;padding:14px">Showing first 250 of ' + filtered.length + '. Filter to narrow.</td></tr>';
+      document.getElementById('rbBody').innerHTML = html;
+    }
+
+    document.getElementById('rbSentiment').addEventListener('change', rbFilter);
+    document.getElementById('rbTheme').addEventListener('change', rbFilter);
+    document.getElementById('rbSearch').addEventListener('input', rbFilter);
+    document.getElementById('rbClear').addEventListener('click', function() {
+      document.getElementById('rbSentiment').value = '';
+      document.getElementById('rbTheme').value = '';
+      document.getElementById('rbSearch').value = '';
+      rbFilter();
+    });
+    rbFilter();
+
+    // ── Marketing Deep-Dive ──
+    if (D.marketingDeepDive) renderMDD(D.marketingDeepDive);
+
+    document.getElementById('loadingOverlay').style.display = 'none';
+  })
+  .catch(function(err) {
+    document.getElementById('loadingOverlay').innerHTML = '<div style="color:#dc2626;font-size:.85rem;text-align:center;padding:24px"><b>Failed to load review data.</b><br><br>' + esc(err.message) + '</div>';
+    console.error(err);
+  });
+
+})();
+</script>
+</body>
+</html>
