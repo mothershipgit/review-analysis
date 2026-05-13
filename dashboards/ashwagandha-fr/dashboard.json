@@ -1,50 +1,659 @@
 {
   "id": "ashwagandha-fr",
   "title": "Ashwagandha FR — Review Analysis",
-  "subtitle": "Awaiting VOC analysis — reviews available at reviews/Ashwagandha-FR-Reviews.json",
+  "subtitle": "TBD · Amazon FR marketplace · 179 reviews",
   "asin": "TBD",
   "marketplace": "FR",
   "reviewsFile": "../../reviews/Ashwagandha-FR-Reviews.json",
-  "totalReviews": 0,
-  "posCount": 0,
-  "negCount": 0,
-  "neuCount": 0,
-  "posPct": "—",
-  "negPct": "—",
-  "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Run the review-analysis VOC refresh — source reviews JSON already at <code>reviews/Ashwagandha-FR-Reviews.json</code>.",
+  "totalReviews": 179,
+  "posCount": 111,
+  "negCount": 47,
+  "neuCount": 21,
+  "posPct": "62.0",
+  "negPct": "26.3",
+  "neuPct": "11.7",
+  "cpSummary": "Customer profile based on <strong>179 reviews scraped from amazon.fr's product page</strong>. The brand (QSTA / CNC, Spanish-led) means Amazon EU's cross-marketplace pooling brings in heavy Spanish, German, Italian and English content alongside French — <strong>only ~6% of reviews are native French</strong> (81 ES / 48 DE / 20 IT / 19 UK / 11 FR). The dominant buyer is an <strong>adult aged 30–55 dealing with chronic stress, anxiety, and sleep disturbance</strong>, taking 1 capsule <strong>at night before bed</strong>, primarily seeking <strong>better sleep, lower cortisol and calmer mood</strong>. Positive reviewers consistently report deeper sleep + reduced anxiety within 2–3 weeks; negatives split between 'no effect after a full bottle' and a smaller but vocal cluster of <strong>side effects — dizziness, headaches, thyroid concerns, hormonal disruption</strong>.",
   "cpWho": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Chronic stress / anxiety sufferers",
+      "Sleep-deprived adults",
+      "Pre/peri-menopausal women",
+      "Men — performance / testosterone / training",
+      "Carers buying for family member",
+      "Burnout / overwork sufferers"
+    ],
+    "pos": [
+      34,
+      42,
+      14,
+      12,
+      6,
+      8
+    ],
+    "neg": [
+      11,
+      8,
+      6,
+      9,
+      2,
+      4
+    ]
   },
   "cpWhen": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Evening — before bed",
+      "Morning — daytime energy",
+      "Both morning + evening",
+      "Post-illness / post-cancer recovery",
+      "During exam / high-pressure period",
+      "Replacing prescription (anxiolytic / antidepressant)"
+    ],
+    "pos": [
+      62,
+      14,
+      10,
+      6,
+      5,
+      8
+    ],
+    "neg": [
+      16,
+      8,
+      4,
+      2,
+      3,
+      3
+    ]
   },
   "cpWhere": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Home — daily routine",
+      "Work / high-stress job",
+      "Training / gym context",
+      "Travel / shift work",
+      "Care setting (older relative)"
+    ],
+    "pos": [
+      78,
+      18,
+      12,
+      6,
+      6
+    ],
+    "neg": [
+      28,
+      10,
+      4,
+      3,
+      2
+    ]
   },
   "cpWhat": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Better sleep / falling asleep",
+      "Lower stress / calmer mood",
+      "Cortisol reduction",
+      "More energy / less fatigue",
+      "Concentration / mental clarity",
+      "Testosterone / vitality / libido"
+    ],
+    "pos": [
+      58,
+      48,
+      18,
+      22,
+      18,
+      8
+    ],
+    "neg": [
+      14,
+      16,
+      6,
+      6,
+      4,
+      7
+    ]
   },
-  "usageScenarios": [],
-  "csSummary": "Pending — awaiting VOC analysis.",
-  "negativeTopics": [],
-  "negativeInsights": [],
-  "positiveTopics": [],
-  "positiveInsights": [],
-  "buyersMotivation": [],
-  "customerExpectations": [],
+  "usageScenarios": [
+    {
+      "label": "Sleep aid — falling and staying asleep",
+      "reason": "the single most-cited use case — chronic insomniacs and broken-sleep sufferers take 1 capsule in the evening before bed, often replacing benzodiazepines or melatonin.",
+      "pct": "27.4%"
+    },
+    {
+      "label": "Stress and anxiety management",
+      "reason": "daily users describe a calmer baseline, less reactive, easier to handle workplace pressure or family demands — typically reported after 2–3 weeks.",
+      "pct": "22.1%"
+    },
+    {
+      "label": "Cortisol regulation / HPA-axis support",
+      "reason": "informed buyers (often pairing with sport / training) take it specifically to reduce measured cortisol values, sometimes after blood tests.",
+      "pct": "11.8%"
+    },
+    {
+      "label": "Energy / fatigue / 'no more siesta'",
+      "reason": "secondary effect: users who came for sleep report better daytime energy and no afternoon crash.",
+      "pct": "10.5%"
+    },
+    {
+      "label": "Pre/peri-menopausal balance",
+      "reason": "women aged 40–55 use it for hot flushes, mood swings, sleep disturbance and reduced anxiety during peri-menopause.",
+      "pct": "7.9%"
+    },
+    {
+      "label": "Concentration / cognitive (study / work)",
+      "reason": "users with high cognitive demands (exam prep, knowledge work) use the nootropic angle — fewer distractions, longer focus.",
+      "pct": "7.2%"
+    },
+    {
+      "label": "Substitute for prescription anxiolytics / antidepressants",
+      "reason": "users tapering off diazepam, antidepressants or sleeping pills explicitly switch to ashwagandha to avoid pharmaceutical side effects.",
+      "pct": "5.8%"
+    },
+    {
+      "label": "Sports / male performance (testosterone, recovery)",
+      "reason": "men in training stack it with other supplements for cortisol reduction, anabolic profile and recovery.",
+      "pct": "4.3%"
+    },
+    {
+      "label": "Post-illness / post-cancer recovery from chronic stress",
+      "reason": "smaller but meaningful segment: cancer survivors, post-burnout, post-bereavement use it to recover nervous-system balance.",
+      "pct": "3.0%"
+    }
+  ],
+  "csSummary": "Sentiment is solidly positive (62%) but with a vocal critical tail. Positive reviewers report tangible sleep + anxiety gains within 1–3 weeks and frequently repurchase. Negatives split into two camps: 'no effect after a full bottle' (~28% of negative reviews) and 'side effects forced me to stop' (~32% of negative reviews — headaches, dizziness, vertigo, severe abdominal pain, thyroid/hormonal disruption, mood worsening). The side-effect rate is unusually high for an adaptogen and is the strategic flashpoint — driven in part by the KSM-66 + Sensoril combination which doubles withanolide load vs single-extract competitors.",
+  "negativeTopics": [
+    {
+      "label": "Severe side effects (headaches, dizziness, vertigo)",
+      "reason": "users report headaches, balance issues and vertigo strong enough to make work or driving unsafe — typically appear within 3–10 days and only stop when the product is discontinued.",
+      "pct": "23.4%",
+      "bullets": [
+        "Headaches and dizziness are the two most-named adverse reactions",
+        "Several users describe being unable to drive or work",
+        "Symptoms typically resolve within 2–3 days of stopping"
+      ],
+      "quotes": [
+        "\"Watch out — not innocuous. My body cannot tolerate it: dizziness, vertigo. Three days after stopping — nothing more.\"",
+        "\"Unfortunately did not tolerate it well. I suffered from headaches and dizziness.\"",
+        "\"Ashwagandha with a good combination of other elements. But causes headaches. You should consult a doctor first. Pure Ashwagandha gives an even worse effect — vertigo the next day. Plant to consume with caution.\""
+      ]
+    },
+    {
+      "label": "No effect — bottle finished, nothing changed",
+      "reason": "users complete the recommended 1–2 month course and report zero observable change in sleep, stress or mood. Often paired with feeling money was wasted.",
+      "pct": "21.3%",
+      "bullets": [
+        "Particularly painful for users who took it daily for 60+ days",
+        "Many tried both morning and evening dosing — neither worked",
+        "Some describe it as 'placebo effect at best, no more'"
+      ],
+      "quotes": [
+        "\"3 months of treatment — not a gram of [result].\"",
+        "\"I could not detect any change at all!!\"",
+        "\"After two weeks of daily intake I cannot detect any difference. Whether I took the capsules morning or evening.\"",
+        "\"It was of little use to me — placebo effect, nothing more. And expensive.\""
+      ]
+    },
+    {
+      "label": "Severe GI side effects (cramps, stomach pain)",
+      "reason": "users report sharp side pain, abdominal cramps, digestive disturbance — sometimes severe enough to interfere with work or breathing.",
+      "pct": "12.8%",
+      "bullets": [
+        "Sharp side pain reported in multiple Spanish reviews",
+        "Some users got cramps from the very first capsule",
+        "Symptoms typically force users to abandon the product within 2–3 doses"
+      ],
+      "quotes": [
+        "\"The first day I took it in the morning and at work I nearly fell to the floor — strong pain in my side that left me breathless. Then two nights: mild pain the first, strong pain the second with malaise lasting into the next day.\"",
+        "\"Works well for stress, but I had to stop after 10 days because of dizziness — a dangerous side effect for any activity.\"",
+        "\"It mixes withanolides from Sensoril with KSM-66 — Sensoril is good for stress and sleep but creates GI problems.\""
+      ]
+    },
+    {
+      "label": "Thyroid / hormonal concerns",
+      "reason": "informed buyers (often with diagnosed thyroid issues — Hashimoto's, hypothyroidism) warn that ashwagandha can disrupt thyroid function. Several only learned this after starting.",
+      "pct": "10.6%",
+      "bullets": [
+        "Strong cross-market warnings: 'do NOT take if you have thyroid issues'",
+        "Listing reportedly doesn't carry this warning prominently",
+        "Several women report unexpected hormonal symptoms after weeks of use"
+      ],
+      "quotes": [
+        "\"CAREFUL! The product description is missing important information: people with any thyroid problem (there are many!) should consult their endocrinologist before starting. KSM-66 / ashwagandha can have a bad impact on your thyroid.\"",
+        "\"It's a good product but careful! If you suffer from thyroid don't take it, never, don't do it.\"",
+        "\"Mood worsened, hormonal changes I didn't expect. Stopped after 3 weeks.\""
+      ]
+    },
+    {
+      "label": "Mood worsening / mental side effects",
+      "reason": "subset of users report the product 'messed with my head' — increased anxiety, agitation, intrusive thoughts or low mood, opposite of intended effect.",
+      "pct": "8.5%",
+      "bullets": [
+        "Paradoxical reaction — adaptogen worsened rather than calmed",
+        "Some report increased irritability or panic",
+        "Often paired with sleep getting WORSE on the product"
+      ],
+      "quotes": [
+        "\"Didn't get on with it — messed my head up.\"",
+        "\"I bought it to reduce anxiety. It had good reviews and I chose this product but really I haven't noticed anything — in my case it didn't work.\"",
+        "\"Mood got worse. Stopped after two weeks.\""
+      ]
+    },
+    {
+      "label": "Misleading dosage / KSM-66 content concerns",
+      "reason": "informed (technical) buyers point out the formula contains only ~150mg KSM-66 per capsule — well below the 300–600mg used in clinical studies. The '15-20% withanolides' claim is achieved by adding cheaper Sensoril, not by upping KSM-66.",
+      "pct": "8.5%",
+      "bullets": [
+        "Clinical studies for testosterone/energy use 300–600mg KSM-66 per day",
+        "This product provides ~150mg KSM-66 + Sensoril blend",
+        "Higher price than competitors offering 600mg pure KSM-66"
+      ],
+      "quotes": [
+        "\"This product contains only 150mg of KSM-66 — well below the 300–600mg doses used in clinical studies. The '15% withanolides' is achieved by mixing Sensoril (10%) with KSM-66 (5%). This is misleading marketing — Sensoril is good for stress/sleep but is NOT effective for testosterone or physical performance.\"",
+        "\"This supplement is more expensive than products offering 300–600mg pure KSM-66 — not justified given the low KSM-66 content.\"",
+        "\"The back of the packaging — which shows real composition — doesn't appear in promotional photos. Hard for consumers to make informed decisions.\""
+      ]
+    },
+    {
+      "label": "Packaging / fill defects",
+      "reason": "bottles arriving partially empty, broken seals, fewer capsules than labelled (54 vs 60), worn-out tins, illegible labels.",
+      "pct": "7.4%",
+      "bullets": [
+        "Half-empty bottles reported repeatedly",
+        "Capsule count discrepancy: 54 instead of advertised 60",
+        "Labels often illegible or stickered over",
+        "Tin / container shows wear / scuff marks on delivery"
+      ],
+      "quotes": [
+        "\"First I was surprised the bottle was only half full. Then I counted: 54 capsules instead of the stated 60. Product was original-sealed.\"",
+        "\"Article with poor packaging — the tin shows wear marks. No information about manufacturing country.\"",
+        "\"Label of poor quality with many white scuff marks.\""
+      ]
+    },
+    {
+      "label": "Price too high for what it delivers",
+      "reason": "at €20–25 per bottle, customers expect noticeable effect — when no effect or only mild effect appears, the price feels excessive vs cheaper pure-KSM-66 alternatives.",
+      "pct": "4.3%",
+      "bullets": [
+        "€24–25 considered upper-mid market",
+        "Compared unfavourably to higher-dose KSM-66-only competitors",
+        "Particularly painful when paired with 'no effect'"
+      ],
+      "quotes": [
+        "\"Quite expensive — and not particularly generously portioned. You compare a bit further before buying at €25.\"",
+        "\"Disappointing — very little to almost no effect compared to other products with the same active ingredient.\"",
+        "\"Compared to other ashwagandha supplements I've used before, the price is high.\""
+      ]
+    },
+    {
+      "label": "Lack of transparency (manufacturer / origin)",
+      "reason": "informed buyers complain the label hides the manufacturer's address, country of origin, real per-ingredient dosing — only visible by peeling back the multilingual sticker.",
+      "pct": "3.2%",
+      "bullets": [
+        "Manufacturer address only visible after peeling sticker",
+        "Country of manufacture not clearly stated on the front label",
+        "Fillers (magnesium salts) hidden under the sticker"
+      ],
+      "quotes": [
+        "\"No information about the manufacturer, only small print that it's distributed by a Spanish company. But also produced there?\"",
+        "\"Label has many fillers (magnesium salts) that you only see by peeling it back. No further info on the manufacturer.\"",
+        "\"Difficult to see origin and details. Customer service phone reads like spam. Very strange.\""
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Safety risk",
+      "finding": "Adverse-reaction reports include vertigo, severe headaches, sharp side pain and thyroid-disruption warnings — well above typical adaptogen complaint rate (~23% of negative reviews report dizziness/headaches alone).",
+      "implication": "Add a visible 'Do not take if you have thyroid conditions / are on medication — consult doctor first' warning to the front label and A+ content. Currently buried or absent. Reduces medical complaints and 1-star generators.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Formulation transparency",
+      "finding": "Informed buyers correctly identify that KSM-66 content is only ~150mg/capsule (below the 300–600mg clinical dose) and that the headline '15-20% withanolides' is achieved by adding Sensoril — not by increasing KSM-66.",
+      "implication": "Either restate the KSM-66 dose prominently (and defend the blend rationale: KSM-66 for daytime stress + Sensoril for sleep — a deliberate dual-action design) OR raise the KSM-66 dose. Current ambiguity is costing the technical-buyer segment.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Mis-positioning",
+      "finding": "~21% of negative reviewers say 'no effect' after a full bottle — many of them expected immediate effect within days, when ashwagandha typically requires 2–4 weeks.",
+      "implication": "Set realistic timing expectations up-front: 'Visible effect typically from week 3 — full benefit at week 6–8.' Converts impatient 1★ into satisfied 4★ once they complete the course.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Operational",
+      "finding": "Capsule shortfall (54/60), half-empty bottles, worn tins and illegible stickered labels appear across multiple markets — same brand-wide fill / QC issue seen in Inositol and Menositol.",
+      "implication": "Audit fulfilment fill-line + over-fill to 62 capsules. Reprint labels with manufacturer address visible front-of-pack. Cheap operational fix, expensive reputational damage.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Mental side effects",
+      "finding": "Small but qualitatively severe cluster (~9% of negatives) report mood worsening, agitation or 'messed with my head' — paradoxical reaction in a calming supplement.",
+      "implication": "Add 'discontinue if mood worsens or unusual symptoms appear' to insert + WhatsApp support script. Train support team to recognise and refund these cases immediately — they generate the most damaging public reviews.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "Deeper, longer sleep / faster falling asleep",
+      "reason": "the single biggest positive — users report falling asleep faster, fewer night awakenings, more restorative sleep. Effect typically described within 1–3 weeks.",
+      "pct": "31.2%",
+      "bullets": [
+        "Most repeatedly-named positive across all 5 markets",
+        "Replaces benzodiazepines or melatonin for several users",
+        "Some users describe going from 2–3h broken sleep to 6–7h",
+        "Effect often visible after just a few nights"
+      ],
+      "quotes": [
+        "\"From sleeping 2–3 hours a night to 7 is bliss.\"",
+        "\"I'm taking it from agitated sleep — by the second pill I slept much better. For me it's been excellent.\"",
+        "\"Replaced the diazepam my doctor prescribed me. Sleep is calm and relaxing.\"",
+        "\"Very effective — best product I've tried for sleep and relaxation. Does not cause daytime drowsiness.\""
+      ]
+    },
+    {
+      "label": "Reduced stress / calmer mood",
+      "reason": "users report a calmer baseline state, less reactive to daily stressors, more even-tempered — distinct from sleep effect, more about daytime emotional regulation.",
+      "pct": "21.5%",
+      "bullets": [
+        "Especially valued by high-pressure professionals and parents",
+        "Several users replaced antidepressants",
+        "Effect usually after 2–3 weeks of daily use",
+        "Often paired with 'more patience' / 'less irritable' notes"
+      ],
+      "quotes": [
+        "\"I was taking antidepressants and started taking this brand of ashwagandha — I no longer need the antidepressants.\"",
+        "\"After several weeks of daily use I notice I'm calmer in stressful situations — not a dramatic change but I feel more balanced in everyday life.\"",
+        "\"I'm not as stressed, it helps with sleep and my concentration has really improved.\""
+      ]
+    },
+    {
+      "label": "Lower cortisol (objectively measured)",
+      "reason": "informed buyers — often men in training or women with adrenal fatigue — report measured cortisol drops after 2 months, sometimes via blood tests or wearable trackers.",
+      "pct": "11.8%",
+      "bullets": [
+        "Strong differentiator vs generic 'stress relief'",
+        "Particularly compelling because of objective measurement",
+        "Drives subscription-style repeat purchase among informed buyers",
+        "Pairs with the KSM-66 reputation in sports nutrition community"
+      ],
+      "quotes": [
+        "\"I'm using this product since August — after the second pack I noticed a remarkable drop in my cortisol values. Highly recommend.\"",
+        "\"Excellent supplement, super useful for lowering cortisol and all its derived effects — stress, nervousness, tension etc.\"",
+        "\"It works wonderfully — I've also seen my cortisol drop significantly.\""
+      ]
+    },
+    {
+      "label": "More daytime energy / less fatigue",
+      "reason": "secondary benefit: users who came for sleep report better daytime energy, no afternoon slump, no need for siesta.",
+      "pct": "10.2%",
+      "bullets": [
+        "Often described as 'less foggy in the morning'",
+        "Several users specifically note 'no daytime drowsiness'",
+        "Reduces caffeine dependence for some users",
+        "Pairs naturally with the sleep-quality improvement"
+      ],
+      "quotes": [
+        "\"I don't need a siesta anymore when before I always needed one.\"",
+        "\"Really works — I'm more chilled out and have more energy, less brain fog than usual. I'll be buying more!\"",
+        "\"More energy, less inflammation, very happy.\""
+      ]
+    },
+    {
+      "label": "KSM-66 + Sensoril combination quality",
+      "reason": "informed buyers explicitly praise the dual-extract formulation — KSM-66 for daytime/cortisol + Sensoril for night/sleep — and the high 15-20% withanolide concentration.",
+      "pct": "8.9%",
+      "bullets": [
+        "Differentiator vs single-extract competitors",
+        "Praised especially by repeat-purchasers and supplement-savvy buyers",
+        "High withanolide % (15-20%) is genuinely above category average",
+        "Magnesium + Zinc + B6 additions seen as bonus by some"
+      ],
+      "quotes": [
+        "\"One of the few to contain the two effective fractions of active ingredient: Sensoril and KSM-66. One is more specific for reducing anxiety and improving sleep, the other for reducing cortisol — double benefit. Excellent titration.\"",
+        "\"The combination of KSM-66 and Sensoril is rare and very high quality. Both varieties contain different withanolides — the 15-20% concentration is excellent.\"",
+        "\"Only product I could find on Amazon with such a high Sensoril content. Top.\""
+      ]
+    },
+    {
+      "label": "Better concentration / mental clarity",
+      "reason": "nootropic effect — easier to focus, less distraction, longer attention span on cognitive tasks. Reported by knowledge workers and exam-prep users.",
+      "pct": "7.5%",
+      "bullets": [
+        "Especially valued by users with high cognitive demands",
+        "Effect described as 'subtle but consistent'",
+        "Pairs with stress reduction — calmer mind, sharper focus"
+      ],
+      "quotes": [
+        "\"My concentration has really improved.\"",
+        "\"I've noticed I'm less distracted and more focused. I'm able to study from 22h to 3am without sleepiness blocking me.\"",
+        "\"As a nootropic I've noticed it has helped me concentrate a little more.\""
+      ]
+    },
+    {
+      "label": "Easy to take / good capsule format",
+      "reason": "small neutral-tasting capsules, 1-per-day dosing, no aftertaste — practical adherence factor that supports daily use.",
+      "pct": "5.4%",
+      "bullets": [
+        "Single capsule per day = simple compliance",
+        "Vegan capsules with no animal gelatine",
+        "Neutral smell / taste, easy to swallow",
+        "60 capsules = 2-month supply"
+      ],
+      "quotes": [
+        "\"Capsules are easy to swallow, neutral in taste — no stomach problems even though I'm very sensitive.\"",
+        "\"In capsule form intake is much easier since the taste of the powder is not particularly pleasant.\"",
+        "\"One capsule a day — easy compliance, vegan format.\""
+      ]
+    },
+    {
+      "label": "Strong repeat-purchase / long-term use",
+      "reason": "many users on 6+ months of continuous use, multiple bottles purchased — demonstrates real perceived benefit and product lock-in.",
+      "pct": "3.5%",
+      "bullets": [
+        "Users explicitly mention 'second / third bottle'",
+        "Some on 10+ months of continuous daily use",
+        "Often paired with 'when I stop I notice the difference'",
+        "Strong signal for Subscribe & Save potential"
+      ],
+      "quotes": [
+        "\"Already 10 months that I take this product, always the same. Started during peri-menopause — now I sleep much better and have no anxiety.\"",
+        "\"I'm convinced. Bought the capsules for the second time — when they run out I notice my sleep worsening.\"",
+        "\"I've been using it for a year and it helps a lot.\""
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim",
+      "finding": "Sleep quality + stress/anxiety reduction together account for ~53% of all positive comments — bigger than any other claim. Cortisol-reduction is the unique technical differentiator (~12%).",
+      "implication": "Lead the listing with 'Deeper sleep + calmer mood — measurably lower cortisol'. Currently the headline emphasises 'KSM-66 + Sensoril 15-20% withanolides' — too technical for most buyers. Keep the technical content as supporting evidence in A+.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "The KSM-66 + Sensoril dual-extract is a genuine and rare differentiator — most competitors use one or the other. Informed buyers praise this explicitly.",
+      "implication": "Articulate the dual-action design clearly: 'KSM-66 by day for cortisol + Sensoril at night for sleep — the only Amazon product combining both.' This pre-empts the 'only 150mg KSM-66' criticism by reframing it as deliberate.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Repeat-purchase signal",
+      "finding": "Multiple reviewers on 6–12+ months of continuous use; 'when I stop I notice the worsening' is a recurring phrase.",
+      "implication": "Launch Subscribe & Save with first-month discount. The chronic-stress segment is the long-tail revenue driver — they replace daily medication and stay.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Cross-market consistency",
+      "finding": "Sleep + cortisol reduction is the #1 driver across all 5 cross-pooled markets (FR/ES/DE/IT/UK) — no market-specific outliers in positive themes.",
+      "implication": "Single global listing copy will work — no need to localise the lead claim per marketplace. Saves translation budget. Ship one master positioning.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "buyersMotivation": [
+    {
+      "label": "Better sleep / treat insomnia",
+      "reason": "primary purchase trigger — chronic insomniacs, broken-sleep sufferers, parents of poor sleepers buy explicitly for sleep.",
+      "pct": "30.8%"
+    },
+    {
+      "label": "Reduce stress / anxiety",
+      "reason": "general life stress, work pressure, anxiety symptoms — second-largest driver after sleep.",
+      "pct": "23.6%"
+    },
+    {
+      "label": "Lower cortisol (informed buyer)",
+      "reason": "supplement-savvy buyers, often men in training or women with measured high cortisol — buy for the specific endocrine effect.",
+      "pct": "11.4%"
+    },
+    {
+      "label": "Replace prescription medication",
+      "reason": "users tapering off benzodiazepines, antidepressants, sleeping pills — explicitly seeking a natural alternative.",
+      "pct": "10.2%"
+    },
+    {
+      "label": "Boost energy / fight fatigue",
+      "reason": "burnout, post-illness recovery, chronic tiredness — looking for adaptogenic energy.",
+      "pct": "8.7%"
+    },
+    {
+      "label": "Mental focus / cognitive performance",
+      "reason": "students, knowledge workers, exam preparation — looking for the nootropic angle.",
+      "pct": "7.1%"
+    },
+    {
+      "label": "Pre/peri-menopausal support",
+      "reason": "women 40–55 seeking help with hormonal sleep disturbance, mood swings, hot flushes.",
+      "pct": "5.4%"
+    },
+    {
+      "label": "Sport / male performance (testosterone)",
+      "reason": "men training for performance, looking for cortisol reduction + testosterone support.",
+      "pct": "2.8%"
+    }
+  ],
+  "customerExpectations": [
+    {
+      "label": "Visible effect within first week",
+      "reason": "buyers often expect rapid noticeable change — but ashwagandha typically takes 2–4 weeks. The expectation mismatch generates 'no effect' reviews before the product has had a chance to work.",
+      "pct": "26.3%"
+    },
+    {
+      "label": "No adverse reactions (headaches, dizziness, GI)",
+      "reason": "expected gentle adaptogen — surprised by headaches, vertigo, sharp side pain in a minority of users.",
+      "pct": "19.7%"
+    },
+    {
+      "label": "Clear thyroid / medical contraindications",
+      "reason": "users with thyroid conditions repeatedly say the listing should explicitly warn against use — and the warning isn't visible.",
+      "pct": "13.4%"
+    },
+    {
+      "label": "Transparent dosage (KSM-66 vs Sensoril breakdown)",
+      "reason": "informed buyers want to know exactly how much KSM-66 vs Sensoril per capsule — current marketing emphasises the 15-20% withanolide blend, hides the split.",
+      "pct": "11.2%"
+    },
+    {
+      "label": "Real cortisol / sleep improvement (not placebo)",
+      "reason": "users want objective improvement, not vague feel-good — many bought based on cortisol-reduction marketing and were disappointed when only sleep improved.",
+      "pct": "9.8%"
+    },
+    {
+      "label": "Proper labelling and manufacturer information",
+      "reason": "users want clearly readable labels with country of origin, manufacturer address, full ingredient list — not hidden under multilingual stickers.",
+      "pct": "8.4%"
+    },
+    {
+      "label": "Full bottle, intact seal, correct capsule count",
+      "reason": "repeated reports of 54/60 capsules, half-empty bottles, worn tins — basic packaging integrity expectations not always met.",
+      "pct": "6.7%"
+    },
+    {
+      "label": "Honest dose comparison vs cheaper competitors",
+      "reason": "buyers want to know why this product is €24+ when alternatives offer 600mg pure KSM-66 for less — the dual-extract rationale isn't communicated.",
+      "pct": "4.5%"
+    }
+  ],
   "themeFilters": [
     {
       "value": "",
       "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect"
+    },
+    {
+      "value": "side_effects_systemic",
+      "label": "Side effects — headache / dizziness / vertigo"
+    },
+    {
+      "value": "side_effects_gi",
+      "label": "Side effects — GI / cramps"
+    },
+    {
+      "value": "thyroid_hormonal",
+      "label": "Thyroid / hormonal warning"
+    },
+    {
+      "value": "mood_worse",
+      "label": "Mood worsening / mental side effects"
+    },
+    {
+      "value": "dosage_concern",
+      "label": "Dosage / KSM-66 content concern"
+    },
+    {
+      "value": "packaging",
+      "label": "Packaging / fill defects"
+    },
+    {
+      "value": "price",
+      "label": "Price too high"
+    },
+    {
+      "value": "transparency",
+      "label": "Transparency / origin"
+    },
+    {
+      "value": "sleep_better",
+      "label": "Better sleep"
+    },
+    {
+      "value": "stress_lower",
+      "label": "Lower stress / calmer mood"
+    },
+    {
+      "value": "cortisol",
+      "label": "Cortisol reduction (measured)"
+    },
+    {
+      "value": "energy",
+      "label": "More energy / less fatigue"
+    },
+    {
+      "value": "ksm_sensoril",
+      "label": "KSM-66 + Sensoril combination"
+    },
+    {
+      "value": "concentration",
+      "label": "Concentration / mental clarity"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to take"
+    },
+    {
+      "value": "repeat_purchase",
+      "label": "Repeat purchase / long-term use"
     }
   ],
   "sentimentFilters": [
@@ -62,7 +671,7 @@
     },
     {
       "value": "neu",
-      "label": "Neutral"
+      "label": "Neutral / mixed"
     }
   ]
 }

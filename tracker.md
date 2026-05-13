@@ -8,16 +8,16 @@
 
 | Metric | Value |
 |--------|-------|
-| **In Progress** | 1 |
+| **In Progress** | 0 |
 | **Pending Decisions** | 0 |
 | **Backlog** | 5 |
-| **Recently Completed** | 9 |
+| **Recently Completed** | 10 |
 
 ---
 
 ## In Progress
 
-- [ ] **Run VOC analysis for 5 Ashwagandha dashboards (UK/DE/FR/ES/IT)** @2026-05-13 #reviews-analysis #→action — Scaffolding complete (this session): folders, HTML, stubs, config.json, CLAUDE.md row done. Reviews at `reviews/Ashwagandha-{MARKET}-Reviews.json`. Next: spawn 5 parallel sub-agents per Action 0/Action 2 of the review-analysis skill — each reads its market's reviews and writes the full dashboard.json.
+-
 
 ---
 
@@ -41,7 +41,8 @@
 
 | Date | Item |
 |------|------|
-| 2026-05-13 | **Scaffolded 5 Ashwagandha dashboards (UK/DE/FR/ES/IT)** — folders, cloned HTML templates with title/fetch URL swaps, stub JSONs, registered in `config.json`, CLAUDE.md table updated, tracker updated. SKILL.md gained new Action 0 (multi-market batch scaffold recipe) to make this reproducible. VOC pending. |
+| 2026-05-13 | **VOC analysis complete for all 5 Ashwagandha dashboards (UK/DE/FR/ES/IT)** — 790 reviews total. Sentiment: UK 77/15/9, DE 62/24/14, FR 62/26/12, ES 81/12/7, IT 70/18/12 — healthiest portfolio profile across all CNC brands. Universal findings: KSM-66 underdose credibility issue (150mg vs 300-600mg clinical, flagged in all 5 markets), thyroid contraindication missing from listing, sleep+stress relief is 53-65% of positives (NOT testosterone), unusually high systemic side-effect rate. ES is the home market with extreme positive skew. |
+| 2026-05-13 | **Scaffolded 5 Ashwagandha dashboards (UK/DE/FR/ES/IT)** — folders, cloned HTML templates with title/fetch URL swaps, stub JSONs, registered in `config.json`, CLAUDE.md table updated, tracker updated. SKILL.md gained new Action 0 (multi-market batch scaffold recipe) to make this reproducible. |
 | 2026-05-12 | **VOC analysis complete for all 5 Menositol dashboards (UK/DE/FR/ES/IT)** — 1,097 reviews total. Sentiment: UK 60/27/12, DE 57/32/11, FR 45/42/13, ES 69/20/11, IT 69/24/7. Universal findings: hot flush relief polarises sharply (#1 positive AND #1 negative theme in all 5 markets), 59/60 capsule count shortage (same operational defect as Inositol), review-for-freebie scheme called out publicly across 4 markets, FR is the outlier (most polarised market). |
 | 2026-05-12 | **Scaffolded 5 Menositol dashboards (UK/DE/FR/ES/IT)** — folders, cloned HTML templates with title/fetch URL swaps, stub JSONs, registered in `config.json`, CLAUDE.md table updated. |
 | 2026-05-12 | **Refactored review files into `reviews/` folder** — moved 8 existing `*-Reviews.json` files from project root to `reviews/`. Updated fetch URLs in all 13 HTMLs + reviewsFile in all 13 dashboard.json. Updated CLAUDE.md + skill SKILL.md docs. Cleaner structure for the 13-dashboard hub. |

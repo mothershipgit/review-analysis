@@ -59,13 +59,15 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `menositol-fr` | Menositol FR | TBD | FR | 136 | 45% / 42% / 13% | ✅ | ⏸ |
 | `menositol-es` | Menositol ES | TBD | ES | 252 | 69% / 20% / 11% | ✅ | ⏸ |
 | `menositol-it` | Menositol IT | TBD | IT | 230 | 69% / 24% / 7% | ✅ | ⏸ |
-| `ashwagandha-uk` | Ashwagandha UK | TBD | UK | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
-| `ashwagandha-de` | Ashwagandha DE | TBD | DE | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
-| `ashwagandha-fr` | Ashwagandha FR | TBD | FR | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
-| `ashwagandha-es` | Ashwagandha ES | TBD | ES | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
-| `ashwagandha-it` | Ashwagandha IT | TBD | IT | — | — | ⏸ Scaffolded 2026-05-13 | ⏸ |
+| `ashwagandha-uk` | Ashwagandha UK | TBD | UK | 115 | 77% / 15% / 9% | ✅ | ⏸ |
+| `ashwagandha-de` | Ashwagandha DE | TBD | DE | 186 | 62% / 24% / 14% | ✅ | ⏸ |
+| `ashwagandha-fr` | Ashwagandha FR | TBD | FR | 179 | 62% / 26% / 12% | ✅ | ⏸ |
+| `ashwagandha-es` | Ashwagandha ES | TBD | ES | 187 | 81% / 12% / 7% | ✅ | ⏸ |
+| `ashwagandha-it` | Ashwagandha IT | TBD | IT | 123 | 70% / 18% / 12% | ✅ | ⏸ |
 
-**Ashwagandha scaffolded (2026-05-13):** All 5 folders + HTML + stub JSON created, registered in `config.json`. Reviews dropped in `reviews/Ashwagandha-{MARKET}-Reviews.json`. VOC analysis pending — run review-analysis Action 2.
+**Ashwagandha VOC complete (2026-05-13):** All 5 markets analyzed (790 reviews total). Sentiment: UK 77/15/9, DE 62/24/14, FR 62/26/12, ES 81/12/7, IT 70/18/12 — the healthiest portfolio profile across all CNC dashboards. ASINs still TBD.
+
+**Ashwagandha language profile:** Same Spanish-led multilingual cross-pool as Inositol/Menositol. Native-language share: UK 35%, DE 30%, FR only 6% (!), ES home market ~40% (cross-pool still ~60%), IT only 15%. Even more multilingual than the other product families — Spanish dominates every file.
 
 **Menositol VOC complete (2026-05-12):** All 5 markets analyzed (1,097 reviews total). Sentiment: UK 60/27/12, DE 57/32/11, FR 45/42/13, ES 69/20/11, IT 69/24/7. ASINs still TBD — user to provide.
 
@@ -208,6 +210,11 @@ The user will append new product-family blocks (separator + header + 5 market ro
 21. **Menositol — FR is the outlier market (45 pos / 42 neg — closest split).** The other 4 markets are 57-69% positive. FR is more polarised, more sensitive to price, and the only market where "no effect" almost equals "real effect" in volume. Treat FR copy / pricing differently — likely needs a comparison vs Ménophytea + Sérélys built into the listing.
 22. **Menositol — wrong-time-of-day dosing is fixable copy-only insight.** ~9-10% of negatives report insomnia because they take it in the evening. Vitamin C + ginseng + ashwagandha are stimulating. Single label change ('morning and lunch — avoid evening dosing') defuses these reviews and converts them into "good for daytime energy" praise.
 23. **Menositol — silhouette/weight-loss messaging contradicts the data.** Several reviewers report weight gain on the product. The listing should reposition silhouette as "menopausal bloating relief" rather than weight loss — sets achievable expectations and removes a recurring 1-star generator.
+24. **Ashwagandha — KSM-66 underdose is a brand-wide credibility issue (flagged in all 5 markets independently).** Informed buyers dissect the formula: 150 mg KSM-66 is sub-clinical (studies use 300-600 mg), and the "15% withanolides" headline is inflated by the cheaper Sensoril blend. Sophisticated 1-star teardowns will deter educated buyers indefinitely. Either raise the dose or honestly reposition as "Sensoril-led + KSM-66 blend for stress/sleep" (drop testosterone claims).
+25. **Ashwagandha — sleep + stress relief = 53-65% of positives across all 5 markets, but onset is 4-8 weeks not 2-3 weeks.** Dominant outcome story is sleep depth + cortisol reduction, NOT testosterone or libido. Several reviewers update an initial neutral review to glowing after bottle 2. Set expectations explicitly + push Subscribe & Save to auto-ship bottle 2 at week 7 to catch the drop-out cohort.
+26. **Ashwagandha — thyroid / Hashimoto contraindication missing from listing.** ~9-22% of negatives across markets call this out (FR/ES/DE especially). Users voluntarily warn other buyers — legal exposure + recurring 1-star generator. Cheap copy fix: add a front-of-pack "consult doctor if on medication / thyroid condition" disclaimer.
+27. **Ashwagandha — unusually high systemic side-effect rate for an adaptogen.** Headaches, dizziness, vertigo, sharp side pain, mood worsening reported across all 5 markets (13-22% of negatives). Higher than typical for KSM-66 alone — possibly Sensoril-related at the listed daily dose. Investigate.
+28. **Ashwagandha — ES is the home market and shows extreme positive skew (81/12/7).** Highest positive % of any of the 15 EU dashboards. FR is the polarised outlier (62/26/12) with the harshest side-effect coverage. UK is positively skewed but smallest dataset (only 115 reviews) — interpret cautiously.
 
 ## Workflow patterns
 
