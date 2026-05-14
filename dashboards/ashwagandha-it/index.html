@@ -623,7 +623,7 @@ table.mdd-gap th { background: #f8fafc; font-size: .64rem; font-weight: 600; col
     var D = results[0];
     var rawReviews = results[1];
 
-    document.getElementById('hdrTitle').innerHTML = (D.title || '') + (D.asin ? ' <span style="font-size:.7rem;color:#94a3b8;font-weight:500;margin-left:10px;letter-spacing:.04em;text-transform:uppercase">ASIN ' + D.asin + '</span>' : '');
+    document.getElementById('hdrTitle').textContent = D.title;
     document.getElementById('hdrSub').textContent = D.subtitle;
 
     // KPIs (no stars — sentiment-based)
