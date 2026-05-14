@@ -8,6 +8,34 @@
       "file": "index.html"
     },
     {
+      "id": "detox-uk",
+      "title": "Detox UK",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "detox-fr",
+      "title": "Detox FR",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "detox-es",
+      "title": "Detox ES",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "detox-it",
+      "title": "Detox IT",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
       "id": "lax-de",
       "title": "Lax DE",
       "group": "detailed",

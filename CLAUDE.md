@@ -47,6 +47,10 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | ID | Title | ASIN | Market | Reviews | Pos / Neg / Neu | VOC | MDD |
 |----|-------|------|--------|---------|-----------------|-----|-----|
 | `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (5 competitors, curated) |
+| `detox-uk` | Detox UK | B0B6GHYP1V | UK | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
+| `detox-fr` | Detox FR | B0B6GHYP1V | FR | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
+| `detox-es` | Detox ES | B0B6GHYP1V | ES | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
+| `detox-it` | Detox IT | B0B6GHYP1V | IT | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
 | `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-uk` | Lax UK | B0BM1WPXC5 | UK | 345 | 57% / 31% / 12% | ✅ | ⏸ |

@@ -10,8 +10,8 @@
 |--------|-------|
 | **In Progress** | 0 |
 | **Pending Decisions** | 0 |
-| **Backlog** | 5 |
-| **Recently Completed** | 11 |
+| **Backlog** | 7 |
+| **Recently Completed** | 12 |
 
 ---
 
@@ -30,6 +30,8 @@
 ## Backlog
 
 - [ ] **Populate Marketing Deep-Dive for 3 new Lax dashboards (UK/ES/IT)** @2026-05-15 #reviews-analysis #→action — VOC done 2026-05-14. Ready to run: LAX block in `data/DETOX + LAX TOP COMPETITORS.xlsx` already has competitor ASINs for UK/ES/IT. Spawn SP-API lookups + MDD synthesis for all 3 markets.
+- [ ] **Run VOC analysis for 4 new Detox dashboards (UK/FR/ES/IT)** @2026-05-14 #reviews-analysis #→action — Scaffolded 2026-05-14 (this session): folders, HTML, stubs registered in `config.json`. Awaiting reviews JSONs from user at `reviews/B0B6GHYP1V-{UK,FR,ES,IT}-Reviews.json`. Once dropped, spawn 4 parallel `voc-analyzer` agents (product type: `detox`) — completes the Detox product family across all 5 EU markets.
+- [ ] **Populate Marketing Deep-Dive for 4 new Detox dashboards (UK/FR/ES/IT)** @TBD #reviews-analysis — Run after VOC complete. DETOX block in `data/DETOX + LAX TOP COMPETITORS.xlsx` already has competitor ASINs for UK/FR/ES/IT (verified earlier when populating Detox DE).
 - [ ] **Contact Arush — request top-5 competitors per marketplace for Inositol, Menositol, Ashwagandha (UK/DE/FR/ES/IT)** @2026-05-15 #reviews-analysis #→action — Upstream blocker for MDD population on all 3 product families. Once Arush replies, append INOSITOL, MENOSITOL, ASHWAGANDHA blocks (header row + 5 market rows: ES/DE/IT/FR/UK each) to `data/DETOX + LAX TOP COMPETITORS.xlsx`. Unblocks 3 downstream MDD tasks.
 - [ ] **Populate Marketing Deep-Dive for 5 Ashwagandha dashboards** @2026-05-18 #reviews-analysis — Run after VOC complete (depends on @2026-05-13 task above). Blocked on: ASHWAGANDHA block (top-5 competitors per market) appended to `data/DETOX + LAX TOP COMPETITORS.xlsx`. Once xlsx updated, run Action 3 (SP-API + MDD synthesis) for all 5 markets.
 - [ ] **Populate Marketing Deep-Dive for 5 Inositol dashboards** @TBD #reviews-analysis — VOC done 2026-05-11. Blocked on: user to add INOSITOL block (top-5 competitors per market) to `data/DETOX + LAX TOP COMPETITORS.xlsx`. Once xlsx updated, run Action 3 (SP-API + MDD synthesis) for all 5 markets.
@@ -42,6 +44,7 @@
 
 | Date | Item |
 |------|------|
+| 2026-05-14 | **Scaffolded 4 new Detox dashboards (UK/FR/ES/IT)** — completing the Detox product family across all 5 EU markets (Detox DE already complete with VOC + MDD). Same Action 0 pattern: folders, cloned HTML, stub JSONs, registered in `config.json` right after `detox-de`. Fetch URLs target `reviews/B0B6GHYP1V-{MARKET}-Reviews.json` (same ASIN as DE). Awaiting reviews JSONs from user. |
 | 2026-05-14 | **VOC analysis complete for 3 new Lax dashboards (UK/ES/IT)** — 1,002 reviews total. Sentiment: UK 57/31/12, ES 58/33/8, IT 58/35/7 — noticeably more positive than DE/FR (~47/44/10 each) because UK/ES/IT have larger native-language tails. ES home-market reviews are 79% positive vs cross-pool's 38%. UK reveals diverticulitis/IBS/GP-practice-nurse use case + UK-specific competitive set (Senokot/Dulcolax/Boots Own). IT shows uniquely high QR/WhatsApp praise + vegano-resonance. Lax product family now complete across all 5 EU markets. |
 | 2026-05-14 | **Scaffolded 3 new Lax dashboards (UK/ES/IT)** — completing the Lax product family across 5 EU markets (Lax DE/FR already complete with MDD). Folders, cloned HTML, stub JSONs, registered in `config.json` between `lax-fr` and `inositol-uk`. Fetch URLs target `reviews/B0BM1WPXC5-{MARKET}-Reviews.json` (same ASIN as DE/FR). |
 | 2026-05-13 | **VOC analysis complete for all 5 Ashwagandha dashboards (UK/DE/FR/ES/IT)** — 790 reviews total. Sentiment: UK 77/15/9, DE 62/24/14, FR 62/26/12, ES 81/12/7, IT 70/18/12 — healthiest portfolio profile across all CNC brands. Universal findings: KSM-66 underdose credibility issue (150mg vs 300-600mg clinical, flagged in all 5 markets), thyroid contraindication missing from listing, sleep+stress relief is 53-65% of positives (NOT testosterone), unusually high systemic side-effect rate. ES is the home market with extreme positive skew. |
