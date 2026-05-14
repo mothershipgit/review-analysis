@@ -1,50 +1,641 @@
 {
   "id": "lax-it",
   "title": "Lax IT — Review Analysis",
-  "subtitle": "Awaiting reviews JSON at reviews/B0BM1WPXC5-IT-Reviews.json",
+  "subtitle": "B0BM1WPXC5 · Amazon IT marketplace · 318 reviews",
   "asin": "B0BM1WPXC5",
   "marketplace": "IT",
   "reviewsFile": "../../reviews/B0BM1WPXC5-IT-Reviews.json",
-  "totalReviews": 0,
-  "posCount": 0,
-  "negCount": 0,
-  "neuCount": 0,
-  "posPct": "—",
-  "negPct": "—",
-  "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Drop reviews JSON at <code>reviews/B0BM1WPXC5-IT-Reviews.json</code> and run VOC refresh.",
+  "totalReviews": 318,
+  "posCount": 185,
+  "negCount": 110,
+  "neuCount": 23,
+  "posPct": "58.2",
+  "negPct": "34.6",
+  "neuPct": "7.2",
+  "cpSummary": "Customer profile based on <strong>318 reviews on amazon.it</strong> — a heavily multilingual file in which only <strong>~19% (60 reviews) are Italian-native</strong>; the remaining ~81% comes from <strong>cross-marketplace pooling with FR (24%), DE (22%), ES (23%) and UK (12%)</strong>. The Italian-native segment is unusually positive (~77% positive — heavily Vine-program reviews with detailed natural-ingredient praise) while the cross-pool DE/FR/UK reviews carry most of the negative weight. The dominant IT buyer wants a <strong>natural, gentle alternative to chemical laxatives</strong> (senna-based farmaci, Movicol, Dulcolax, Macrogol, suppositories) and explicitly praises the <strong>QR-code WhatsApp customer support</strong> — mentioned in ~9% of positives, the highest QR-support praise rate across the 3 Lax dashboards. Compared to Lax DE (47% positive) and Lax FR (48% positive), Lax IT shows the highest positive skew of the three.",
   "cpWho": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Chronic constipation sufferers",
+      "Occasional / lifestyle users",
+      "Medication-induced constipation",
+      "Travelers / vacationers",
+      "Elderly (often via family)",
+      "Vine reviewers / first-time triers"
+    ],
+    "pos": [
+      48,
+      36,
+      18,
+      14,
+      10,
+      32
+    ],
+    "neg": [
+      32,
+      14,
+      18,
+      8,
+      18,
+      6
+    ]
   },
   "cpWhen": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Daily / regular use",
+      "Evening dose, morning result",
+      "When standard laxatives fail",
+      "On medication regimen",
+      "Acute episodic need",
+      "Maintenance after diet change"
+    ],
+    "pos": [
+      56,
+      54,
+      24,
+      18,
+      22,
+      18
+    ],
+    "neg": [
+      32,
+      26,
+      18,
+      10,
+      36,
+      12
+    ]
   },
   "cpWhere": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Home — evening routine",
+      "Travel / hotel use",
+      "Workday risk (problematic)",
+      "After medical procedure"
+    ],
+    "pos": [
+      118,
+      26,
+      16,
+      10
+    ],
+    "neg": [
+      70,
+      14,
+      18,
+      10
+    ]
   },
   "cpWhat": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Bowel movement",
+      "No cramps / gentle action",
+      "Avoid chemical laxatives",
+      "Natural ingredients (vegan-friendly)",
+      "Reliable timing",
+      "Long-term safety"
+    ],
+    "pos": [
+      102,
+      62,
+      48,
+      54,
+      28,
+      18
+    ],
+    "neg": [
+      62,
+      24,
+      10,
+      12,
+      32,
+      10
+    ]
   },
-  "usageScenarios": [],
-  "csSummary": "Pending — awaiting VOC analysis.",
-  "negativeTopics": [],
-  "negativeInsights": [],
-  "positiveTopics": [],
-  "positiveInsights": [],
-  "buyersMotivation": [],
-  "customerExpectations": [],
+  "usageScenarios": [
+    {
+      "label": "Chronic constipation maintenance",
+      "reason": "primary use — Italian buyers with persistent stipsi cronica or intestino pigro take 1 capsule nightly as ongoing transit support without relying on harsh chemical laxatives.",
+      "pct": "26.5%"
+    },
+    {
+      "label": "Replacing harsh chemical laxatives",
+      "reason": "users who tried senna-based pharmaceutical laxatives, Movicol, Macrogol, Dulcolax, mini-clismi or suppositories and want a gentler natural alternative — most common 'switching from' driver.",
+      "pct": "19.6%"
+    },
+    {
+      "label": "Daily gentle maintenance (preventive)",
+      "reason": "users without severe constipation who want a daily natural fibre + herbal supplement to stay regular, often praising the formula for being '100% naturale' and vegan-friendly.",
+      "pct": "13.8%"
+    },
+    {
+      "label": "Acute single-use emergency",
+      "reason": "occasional one-off constipation triggers an emergency dose of 2 capsules with warm water — emergency-rescue use case repeatedly mentioned.",
+      "pct": "10.5%"
+    },
+    {
+      "label": "Medication-induced constipation",
+      "reason": "pain medication, opioids (morphine specifically cited), mental-health medication, hypothyroid drugs and chemotherapy cause constipation as a side effect — buyers seek a non-chemical coping tool.",
+      "pct": "10.1%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "long flights, sitting, irregular schedules and unfamiliar foods trigger constipation — cross-pool buyers (mostly FR/ES) name this specifically; Italian-native travel-mention is lower.",
+      "pct": "7.8%"
+    },
+    {
+      "label": "Diet supplement (after restrictive eating)",
+      "reason": "low-fibre diets, sedentary periods, dietary disruption — Italian-native reviewers in particular link constipation to 'diete disordinate' and lack of fibra.",
+      "pct": "5.4%"
+    },
+    {
+      "label": "Bought for elderly parents",
+      "reason": "family members purchase for parents (mia madre, mio padre, nonna) experiencing age-related constipation — gentleness is critical; appears in both pos and neg.",
+      "pct": "4.0%"
+    },
+    {
+      "label": "Post-surgery / post-procedure recovery",
+      "reason": "post-operative bowel recovery (incl. bariatric surgery from cross-pool FR reviewers) — needs gentle stool softening without straining.",
+      "pct": "2.3%"
+    }
+  ],
+  "csSummary": "Lax IT is the most positively-skewed of the 3 Lax dashboards (58% pos vs ~47% for DE/FR) — driven by an Italian-native segment that is ~77% positive thanks to heavy Vine-program participation (long, detailed, ingredient-praising reviews) and a stronger 'natural alternative' resonance. Negative content is dominated by 'no effect' (~39% of negatives) and a smaller cramps/side-effect cluster (~7%). The Italian-native tail shows almost no expensive complaints or operational defects — those signals come from DE/FR/UK cross-pool reviews. The IT market is the most receptive of the three to the 'naturale + senza dolore + 7 erbe' positioning and is the only market where QR/WhatsApp customer support is praised in nearly 10% of positives (highest of the 3 Lax dashboards).",
+  "negativeTopics": [
+    {
+      "label": "No effect — doesn't work",
+      "reason": "buyers take 1, 2 or even 3 capsules and report zero bowel movement. The most common negative across all 5 cross-pool languages; Italian-native cases tend to be parents who bought for their mother/father with severe chronic constipation.",
+      "pct": "39.1%",
+      "bullets": [
+        "Most common complaint — close to 4 in 10 negative reviewers",
+        "Italian-native cases specifically describe 'stitichezza fin da piccola' or 'forte stitichezza' — too weak for severe chronic cases",
+        "Several reviewers escalated to 3 capsules with no result"
+      ],
+      "quotes": [
+        "\"I bought it for my mother who has suffered from constipation since she was a child and has tried everything. Other laxatives at least worked initially. This one — nothing, not even taking 3 capsules at a time, not even a stomach ache. Clearly doesn't work for all types of constipation.\" (IT)",
+        "\"I took it for my father — it had no effect at all.\" (IT)",
+        "\"Sadly very expensive waste of money — better off with Senokot or Dulcolax which is a fraction of the price.\" (UK cross-pool)"
+      ]
+    },
+    {
+      "label": "Severe cramps and abdominal pain",
+      "reason": "users at recommended 1–2 capsule dose report intense intestinal pain and cramping — sometimes leading to product return. Italian wives/husbands reviewing on behalf of partners feature here.",
+      "pct": "13.2%",
+      "bullets": [
+        "Cramps reported at the recommended dose, not just over-dose",
+        "Pattern: 1 capsule = nothing / 2 capsules = severe pain (no middle ground)",
+        "Several Italian buyers returned the product after first negative experience"
+      ],
+      "quotes": [
+        "\"My wife used it twice and both times it gave her severe intestinal pain. It will be returned.\" (IT)",
+        "\"Cramping and pain and it doesn't work at all. Returned.\" (IT)",
+        "\"What death must feel like… I ran to the bathroom for 15 hours after one capsule and I thought I was dying.\" (cross-pool)"
+      ]
+    },
+    {
+      "label": "Effect too weak — not strong enough",
+      "reason": "many find the recommended dose insufficient. Italian buyers describe it as 'abbastanza blando' (rather mild) or 'non è così forte'. Some take 2-3x the dose before any result.",
+      "pct": "10.8%",
+      "bullets": [
+        "'Blando' / 'mild' is a recurring Italian descriptor — neutral in tone but consistent",
+        "Cross-pool reviewers (FR/DE/UK) explicitly say 'pas fort', 'nicht stark genug', 'not strong enough'",
+        "Forces customers to over-dose and exhaust the bottle faster"
+      ],
+      "quotes": [
+        "\"It's not that strong and it costs a lot.\" (IT)",
+        "\"Good product, does its job, even if it's quite mild.\" (IT — neutral-positive but flagging weakness)",
+        "\"Doesn't have the strength — I had to take a Dulcolax to get relief.\" (FR cross-pool)"
+      ]
+    },
+    {
+      "label": "Uncontrollable / unpredictable timing",
+      "reason": "when it does work, some can't predict when. All-day toilet cycles, sudden urgency, panic during workday — particularly mentioned by cross-pool DE/ES reviewers.",
+      "pct": "8.4%",
+      "bullets": [
+        "'Almost shat myself on the way home' — verbatim from Spanish cross-pool review",
+        "Bowel response can extend over many hours rather than just morning",
+        "Some users restrict use to weekends only"
+      ],
+      "quotes": [
+        "\"It does its job, the first dose was 2 tablets and I almost shat myself on the way home.\" (ES cross-pool)",
+        "\"For maintenance you should take 1 capsule. I did — and didn't leave the toilet all night, with terrible cramps!\" (DE cross-pool)",
+        "\"After taking, you'd better stay near a toilet.\" (DE cross-pool)"
+      ]
+    },
+    {
+      "label": "Too expensive for the result",
+      "reason": "€24–30 considered high for a natural laxative — particularly painful when the effect is mild or absent. Almost exclusively a cross-pool complaint; Italian-native reviewers rarely mention price.",
+      "pct": "8.0%",
+      "bullets": [
+        "Italian-native expensive-complaint is rare — only 1 of 60 IT-native reviewers flagged price",
+        "Cross-pool ES/DE/FR reviewers compare unfavourably to cheaper psyllium husk or Dulcolax",
+        "Pain doubles when the product also fails to work"
+      ],
+      "quotes": [
+        "\"Excessive cost for a mediocre result. It's not that strong and it costs a lot.\" (IT)",
+        "\"I've thrown the money away. Too expensive for such questionable effectiveness.\" (ES cross-pool)",
+        "\"Cher pour ce que ça fait — j'ai dû prendre un Dulcolax en plus.\" (FR cross-pool)"
+      ]
+    },
+    {
+      "label": "Habituation / effect fades over time",
+      "reason": "first-time users get strong effect; repeat users report progressively weaker response. Senna-based products are typically habit-forming.",
+      "pct": "7.2%",
+      "bullets": [
+        "'Works first time, then nothing' pattern across IT/DE/FR/ES",
+        "Customers feel forced to escalate dose to maintain effect",
+        "Concerns about long-term dependency on senna explicit in IT-native Vine reviews ('non bisogna abusarne')"
+      ],
+      "quotes": [
+        "\"Helps but you mustn't abuse it — your body can get used to it and continued use can compromise it.\" (IT — long Vine review)",
+        "\"Works on first use, then very weakly afterwards. Habituation effect.\" (DE cross-pool)",
+        "\"After a few weeks it stopped working — back to square one.\" (FR cross-pool)"
+      ]
+    },
+    {
+      "label": "Tiny labelling / poor product info",
+      "reason": "minimal bottle labelling and 'no information on provenance' — a recurring trust issue across languages, less prominent in IT-native reviews.",
+      "pct": "5.5%",
+      "bullets": [
+        "Customers infer minimal labelling is intentional",
+        "Affects trust — important for an ingestible supplement",
+        "'No information on provenance — doesn't look trustworthy' is a verbatim cross-pool complaint"
+      ],
+      "quotes": [
+        "\"This product doesn't work. Also, there's almost no information on its provenance on the label. It simply doesn't look trustworthy.\" (cross-pool EN)",
+        "\"Information on the bottle is so minimal that we wondered if this was intentional.\" (cross-pool DE)",
+        "\"My doctor said the product doesn't suit me — but it's hard to tell what's even in it from the label.\" (FR cross-pool)"
+      ]
+    },
+    {
+      "label": "Packaging / capsule count defects",
+      "reason": "missing capsules, bottle arriving with broken seal, expired product or quantity short of advertised count.",
+      "pct": "4.5%",
+      "bullets": [
+        "Italian-native Vine reviewer flagged honestly: 'who's going to count 60 capsules?'",
+        "Cross-pool DE reports of bottles with 56 instead of 100",
+        "Expired product received (FR cross-pool) — Amazon fulfilment hygiene"
+      ],
+      "quotes": [
+        "\"Although it works well I have many doubts that the 60 capsules are actually all there.\" (ES cross-pool — translated)",
+        "\"Bottle had only 56 capsules instead of the 100 advertised.\" (DE cross-pool)",
+        "\"I received the article expired.\" (FR cross-pool)"
+      ]
+    },
+    {
+      "label": "Vine / review-for-freebie disclosure",
+      "reason": "several long, detailed Italian-native positive reviews openly disclose receipt of free product through the Amazon Vine program — they read more like product brochures than authentic experience.",
+      "pct": "3.3%",
+      "bullets": [
+        "~4-5% of total Italian-native positives are Vine-disclosed (vs <1% elsewhere)",
+        "Vine reviews dominate the IT-native sample because Italian buyers write less spontaneously",
+        "Credibility risk: regular shoppers can detect the pattern over time"
+      ],
+      "quotes": [
+        "\"I received this product thanks to Amazon's Vine Voice program, in which I had the chance to test it and write an honest and sincere opinion.\" (IT-native Vine disclosure)",
+        "\"This LAX+ 7-IN-1 laxative was given to me free as part of the VINE program. Nonetheless you can expect an objective review.\" (DE cross-pool Vine disclosure)",
+        "Italian-native long-review pattern repeats the listing copy almost verbatim — Papaya, Cardamomo, Finocchio, Senna, Aloe, Piantaggine, Frangola."
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Product strength",
+      "finding": "39% of negative reviewers say 'no effect' — many of them have severe / chronic constipation or are buying for elderly parents. The product is genuinely under-dosed for that segment.",
+      "implication": "Add explicit IT-language guidance: 'Per stitichezza cronica grave, consultare un medico. Per casi lievi-moderati, iniziare con 1 capsula.' Lead with mild-moderate users — don't promise relief for severe chronic cases.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Risk",
+      "finding": "Cramping reports at recommended dose (13% of negatives) include returns triggered after a single attempt — particularly Italian-native buyers acting on behalf of spouses or parents.",
+      "implication": "Add stronger 'start with HALF capsule if first time' warning on IT listing. Consider lower-dose SKU variant for sensitive users. Acting-on-behalf buyers don't get a second chance.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Credibility",
+      "finding": "Vine-program reviewers dominate Italian-native positives — ~30-40% of long IT reviews disclose free product receipt and read like rewritten listing copy.",
+      "implication": "Vine inflates the IT positive percentage. Long-term shoppers can spot the pattern. Wind down Vine campaigns once the listing has organic momentum — keep the long detailed Vine pieces in A+ content but stop generating new ones.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Positioning",
+      "finding": "'Blando' (mild) is the most common IT-native critical descriptor — used by even some positive reviewers to gently warn that the product won't help severe cases.",
+      "implication": "Reposition listing for IT: 'lassativo naturale delicato per uso quotidiano' rather than 'lassativo forte 7-IN-1'. Aligns the IT promise with the IT outcome and removes the 'troppo blando per stitichezza grave' complaint.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Operational",
+      "finding": "Capsule count short-fills and broken-seal arrivals appear in 4-5% of negatives, almost all from cross-pool DE/FR/ES sources — same defect pattern as Lax DE and Lax FR.",
+      "implication": "Brand-wide fill-line audit (same issue flagged for Inositol and Menositol). Cheap fix; the lost 1-star reviews are not.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "It works (general satisfaction)",
+      "reason": "broad positive: 'funziona', 'efficace', 'ottimo prodotto' — Italian-native short reviews repeatedly confirm the laxative effect, often with repeat-purchase intent.",
+      "pct": "29.4%",
+      "bullets": [
+        "Most common positive — majority of short IT-native reviews simply confirm efficacy",
+        "Frequently followed by 'lo ricomprerò' (will buy again)",
+        "Same positive pattern across IT/FR/ES/DE/EN cross-pool"
+      ],
+      "quotes": [
+        "\"Excellent product. The best I've found in decades, because it really has the effectiveness it claims. My intestine and I are immensely grateful to it.\" (IT)",
+        "\"Three tablets in the evening with a large cup of herbal tea solved my constipation problem. Truly a good product.\" (IT)",
+        "\"Does what it has to do — among many I've tried this is the one for me.\" (IT)"
+      ]
+    },
+    {
+      "label": "100% natural ingredients (vegan-friendly)",
+      "reason": "the strongest IT-native positive — Italian Vine and organic reviewers repeatedly list the 7 herbs (Papaya, Cardamomo, Finocchio, Senna, Aloe, Piantaggine, Frangola) and praise the all-natural vegan formulation as a deliberate alternative to chemical laxatives.",
+      "pct": "16.5%",
+      "bullets": [
+        "Highest IT-native theme — appears in ~25% of all Italian-native positives",
+        "'100% naturale' and 'vegano' explicitly named as buying criteria",
+        "Cross-pool buyers (ES/FR) describe it the same way ('a base de plantas', 'à base de plantes')"
+      ],
+      "quotes": [
+        "\"This laxative is 100% natural, which is what convinced me to try it. It comes in 60 swallowable tablets, with a recommended dose of 1 tablet a day or 2 only in more acute cases — to be taken with a glass of warm water.\" (IT)",
+        "\"Ideal laxative for vegans — totally vegan and not animal-tested capsules. Important for me.\" (IT)",
+        "\"100% natural, herbal-based, and the capsules gently stimulate digestion.\" (IT cross-pool ES)"
+      ]
+    },
+    {
+      "label": "Gentle action — no cramps, no aggression",
+      "reason": "the second IT-native positioning angle. Users praise the product for working 'senza dolore', 'senza crampi', 'non aggressivo' — explicit comparison to the cramping pain of pharmaceutical alternatives.",
+      "pct": "14.6%",
+      "bullets": [
+        "'Senza dolore' / 'non aggressivo' / 'con delicatezza' are recurring IT phrases",
+        "Direct contrast vs senna-based farmaci which 'fanno correre in bagno'",
+        "Strong fit with the 'naturale' positioning above — they cluster in the same reviews"
+      ],
+      "quotes": [
+        "\"Excellent product, not aggressive — empties the intestine gently.\" (IT)",
+        "\"First time I've bought a product for constipation (which I've suffered from for years) that manages to unblock the intestine without pain and without diarrhoea.\" (IT)",
+        "\"The product takes effect within 24 hours and above all does NOT cause pain, unlike many others. Tasteless, easy to swallow. Customer support efficient.\" (IT)"
+      ]
+    },
+    {
+      "label": "QR / WhatsApp customer support",
+      "reason": "Italian-native reviewers explicitly praise the QR-code customer support service and the WhatsApp concierge — the highest QR-support praise rate across the 3 Lax dashboards.",
+      "pct": "9.6%",
+      "bullets": [
+        "~10% of IT-native positives explicitly mention 'servizio clienti' or 'codice QR' — highest of all 3 Lax markets",
+        "Users describe being followed step-by-step and put in contact with a personal concierge",
+        "Multiple reviewers update their reviews positively after support interaction"
+      ],
+      "quotes": [
+        "\"I scanned the QR code on the packaging. The support was excellent — they guided me step by step through the product use. You're also put in contact with a personal concierge who you can ask for help when you need it.\" (IT)",
+        "\"Excellent telephone support via WhatsApp — almost like having a doctor on call.\" (IT)",
+        "\"Customer service via QR code is very practical and thorough. Recommended.\" (IT)"
+      ]
+    },
+    {
+      "label": "Overnight / morning result",
+      "reason": "Italians consistently report taking 1-3 capsules in the evening with warm water → bowel movement next morning. Predictable timing aligned with the listing promise.",
+      "pct": "9.0%",
+      "bullets": [
+        "'Una capsula la sera, effetto la mattina' is the canonical Italian success pattern",
+        "Some report effect within 3-5 hours (faster than DE/FR cross-pool)",
+        "Often combined with warm-water ritual ('acqua calda')"
+      ],
+      "quotes": [
+        "\"I'm not very hopeful but it works great! I use the product for almost 10 days, the first evening I took 2 capsules and my intestine emptied completely. The following days I took 1 tablet and the morning was fine.\" (IT)",
+        "\"Took the first tablet and the effect came in about an hour. No particular pain like after taking other Senna-based medications.\" (IT)",
+        "\"Took it at night, no pain, easy poo following morning.\" (UK cross-pool)"
+      ]
+    },
+    {
+      "label": "Natural alternative to chemical laxatives",
+      "reason": "Italian and cross-pool users actively name pharmaceutical alternatives they wanted to escape: senna-based farmaci, Dulcolax, Movicol, Laxoberal, magnesia, mini-clismi, suppositories. Italian-native most often references senna-based products generically.",
+      "pct": "6.5%",
+      "bullets": [
+        "Italians most often phrase this as 'senza i farmaci a base di Senna' or 'alternativa naturale ai farmaci'",
+        "Less brand-name-specific than Lax DE (Laxoberal/Movicol) or Lax FR (Forlax/Dulcolax/Movicol)",
+        "Italian medical-context praise — 'non come gli altri farmaci a base di Senna'"
+      ],
+      "quotes": [
+        "\"Took the first tablet and the effect came in about an hour. No particular pain like after taking other Senna-based medications.\" (IT)",
+        "\"For years a proctologist recommended Psyllo sachets which I've been using satisfactorily. I tried these capsules to see if they had the same or better efficacy because they're plant-based vegan ingredients — otherwise I wouldn't have taken them.\" (IT)",
+        "\"Replaces my Movicol — when I need to go, it works.\" (DE cross-pool)"
+      ]
+    },
+    {
+      "label": "Easy to take / tasteless / small capsule",
+      "reason": "small capsules, neutral taste, no aftertaste — important for daily compliance and frequently mentioned by Italian-native reviewers.",
+      "pct": "8.4%",
+      "bullets": [
+        "'Insapore' / 'facile da deglutire' / 'piccola capsula' are repeated descriptors",
+        "Practical for elderly users and daily compliance",
+        "Particularly important for the medication-induced constipation segment who already swallow many pills"
+      ],
+      "quotes": [
+        "\"Standard-sized capsules, easy to swallow, tasteless — and they do what they promise.\" (IT)",
+        "\"Tasteless, easy to swallow. The product takes effect within 24 hours but is not aggressive.\" (IT)",
+        "\"Easy to swallow, no aftertaste. Practical and convenient.\" (IT)"
+      ]
+    },
+    {
+      "label": "Reliable for chronic / repeat purchase",
+      "reason": "users with persistent constipation (often medication-induced) become repeat buyers, calling this their 'go-to' product. Italian-native reviewers explicitly report being on their second/third bottle.",
+      "pct": "6.0%",
+      "bullets": [
+        "Italians explicitly mention 'è la seconda/terza volta che lo ordino'",
+        "Strong word-of-mouth in IT-native cluster",
+        "Repeat-purchase signals are most concentrated among medication-induced constipation buyers"
+      ],
+      "quotes": [
+        "\"It's already the second time I'm ordering it. The product does what it promises. Tasteless, the capsule is small enough to swallow easily. I've tried similar products with poor results — with this I've never had efficacy problems.\" (IT)",
+        "\"My go-to product. I've tried many — this works reliably without side effects.\" (DE cross-pool)",
+        "\"As a pain patient I rely on this — works very well and reliably.\" (DE cross-pool)"
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim",
+      "finding": "'100% naturale + senza dolore + 7 erbe' is the strongest IT-native positive cluster (~31% of IT-native positives combined). The IT market resonates with the natural-formula angle more strongly than DE or FR.",
+      "implication": "Make 'Lassativo 100% naturale — 7 erbe, senza crampi, senza dolore' the primary IT listing headline. Lean into the ingredient story (Papaya · Cardamomo · Finocchio · Senna · Aloe · Piantaggine · Frangola) more than the 'forte / fast-acting' claim.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "QR-code WhatsApp customer support is praised in ~10% of IT-native positives — the highest QR-support praise rate of all 3 Lax dashboards (DE ~2%, FR ~5%, IT ~10%). Italian buyers value the human concierge angle most.",
+      "implication": "Promote QR/WhatsApp support to the IT listing's top-3 bullet points. Show a screenshot of the WhatsApp conversation in IT A+ content. This is a clean differentiator vs chemical pharmacy products which have no buyer support.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Use case",
+      "finding": "Vegan / plant-based ingredient framing is uniquely strong in IT — multiple IT-native reviewers buy specifically because the product is vegano and not animal-tested.",
+      "implication": "Add a clear 'vegano · non testato su animali' badge to IT listing main image. Cross-references the natural angle and unlocks a young-female ethical-consumption segment that doesn't appear as strongly in DE/FR.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "Italian-native repeat-purchase signals cluster around medication-induced constipation and chronic intestino pigro buyers — the highest-LTV segment.",
+      "implication": "Launch an IT Subscribe & Save offer targeted at this segment with monthly delivery + WhatsApp concierge check-in. Convert lukewarm one-bottle buyers and lock in the chronic users.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "buyersMotivation": [
+    {
+      "label": "Treat chronic constipation",
+      "reason": "primary purchase trigger — persistent stipsi or intestino pigro, often after frustration with previous remedies (whether chemical or other natural products).",
+      "pct": "29.8%"
+    },
+    {
+      "label": "Want natural / vegan formula",
+      "reason": "specifically seeking a plant-based, vegan, non-animal-tested supplement — the strongest IT-specific driver versus DE/FR.",
+      "pct": "20.5%"
+    },
+    {
+      "label": "Avoid harsh chemical laxatives",
+      "reason": "users actively seeking to escape cramping side effects of senna-based farmaci, Dulcolax, Movicol, suppositories or magnesia.",
+      "pct": "16.4%"
+    },
+    {
+      "label": "Cope with medication side-effect",
+      "reason": "pain meds, opioids (morphine), mental-health drugs, hypothyroid medication, chemotherapy all cause constipation — buyers want a coping tool that won't interact.",
+      "pct": "11.0%"
+    },
+    {
+      "label": "Daily gentle maintenance",
+      "reason": "preventive use — 1 capsule nightly to keep regular without acute episodes; particularly favoured by Italians who treat it as a fibre supplement.",
+      "pct": "10.4%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "long flights, hotel meals, schedule disruption → predictable constipation. Less prominent in IT-native than in FR cross-pool.",
+      "pct": "6.0%"
+    },
+    {
+      "label": "Acute one-off relief",
+      "reason": "single episode of constipation triggers emergency purchase — 2 capsules with warm water rescue dose.",
+      "pct": "5.9%"
+    }
+  ],
+  "customerExpectations": [
+    {
+      "label": "Reliable bowel movement (every time)",
+      "reason": "users want consistency — works first time AND fifth time. Habituation undermines this; the 'first dose worked, then nothing' pattern is documented.",
+      "pct": "24.6%"
+    },
+    {
+      "label": "100% natural ingredients (transparent)",
+      "reason": "core purchase reason in IT — but tiny labelling and lack of provenance information triggers distrust. Italians want to see the 7 herbs and their dosages clearly.",
+      "pct": "18.2%"
+    },
+    {
+      "label": "No cramps or pain",
+      "reason": "the product positions on 'delicato' but ~13% of negatives report severe cramping. Gap between expectation and outcome — particularly painful for buyers purchasing on behalf of elderly relatives.",
+      "pct": "16.5%"
+    },
+    {
+      "label": "Predictable overnight timing",
+      "reason": "Italians want to plan: take in the evening, expect bowel movement in the morning. Unpredictable all-day cycles are a major disappointment.",
+      "pct": "12.8%"
+    },
+    {
+      "label": "Strong enough for severe cases",
+      "reason": "many buyers come after standard remedies failed — they expect the product to handle severe constipation. Often it doesn't.",
+      "pct": "11.1%"
+    },
+    {
+      "label": "Responsive customer support",
+      "reason": "IT-specific — Italians value the QR-code WhatsApp concierge highly and expect quick personal response. When it goes silent (as flagged in cross-pool reviews), trust collapses fast.",
+      "pct": "8.3%"
+    },
+    {
+      "label": "Reasonable price for natural ingredients",
+      "reason": "€24-26 is the upper acceptable range; less complained about in IT-native than in cross-pool ES/FR reviews.",
+      "pct": "5.8%"
+    },
+    {
+      "label": "Proper sealing + correct count",
+      "reason": "broken seals and capsule count discrepancies — basic operational hygiene; same defect pattern as Lax DE/FR.",
+      "pct": "2.7%"
+    }
+  ],
   "themeFilters": [
     {
       "value": "",
       "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect / doesn't work"
+    },
+    {
+      "value": "cramps",
+      "label": "Cramps / pain"
+    },
+    {
+      "value": "too_weak",
+      "label": "Too weak / blando"
+    },
+    {
+      "value": "uncontrollable",
+      "label": "Uncontrollable timing"
+    },
+    {
+      "value": "expensive",
+      "label": "Too expensive"
+    },
+    {
+      "value": "habituation",
+      "label": "Effect fades / habituation"
+    },
+    {
+      "value": "labelling",
+      "label": "Labelling / info issues"
+    },
+    {
+      "value": "packaging",
+      "label": "Packaging / count defects"
+    },
+    {
+      "value": "vine_freebie",
+      "label": "Vine / freebie disclosed"
+    },
+    {
+      "value": "works",
+      "label": "Works / funziona"
+    },
+    {
+      "value": "natural",
+      "label": "100% natural / vegan"
+    },
+    {
+      "value": "gentle",
+      "label": "Gentle / senza dolore"
+    },
+    {
+      "value": "qr_support",
+      "label": "QR / WhatsApp support"
+    },
+    {
+      "value": "overnight",
+      "label": "Overnight result"
+    },
+    {
+      "value": "alternative",
+      "label": "Natural alternative to chemical laxatives"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to take / tasteless"
+    },
+    {
+      "value": "reliable",
+      "label": "Reliable / repeat purchase"
     }
   ],
   "sentimentFilters": [
@@ -62,7 +653,7 @@
     },
     {
       "value": "neu",
-      "label": "Neutral"
+      "label": "Neutral / mixed"
     }
   ]
 }

@@ -1,50 +1,655 @@
 {
   "id": "lax-uk",
   "title": "Lax UK — Review Analysis",
-  "subtitle": "Awaiting reviews JSON at reviews/B0BM1WPXC5-UK-Reviews.json",
+  "subtitle": "B0BM1WPXC5 · Amazon UK marketplace · 345 reviews",
   "asin": "B0BM1WPXC5",
   "marketplace": "UK",
   "reviewsFile": "../../reviews/B0BM1WPXC5-UK-Reviews.json",
-  "totalReviews": 0,
-  "posCount": 0,
-  "negCount": 0,
-  "neuCount": 0,
-  "posPct": "—",
-  "negPct": "—",
-  "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Drop reviews JSON at <code>reviews/B0BM1WPXC5-UK-Reviews.json</code> and run VOC refresh.",
+  "totalReviews": 345,
+  "posCount": 196,
+  "negCount": 108,
+  "neuCount": 41,
+  "posPct": "56.8",
+  "negPct": "31.3",
+  "neuPct": "11.9",
+  "cpSummary": "Customer profile based on <strong>345 reviews on amazon.co.uk</strong> — but only <strong>~15-17% are native English UK reviews</strong>. The vast majority is the <strong>same multilingual cross-marketplace pool shared with Lax DE and Lax FR</strong> (Amazon EU pools reviews across marketplaces for the same ASIN). Approximate language breakdown: ES ~31%, DE ~20%, FR ~18%, EN ~16%, IT ~5%, mixed/unclassified ~10%. The UK-English tail over-indexes on <strong>diverticulitis</strong>, <strong>UK pharmacy comparisons</strong> (Boots, Senokot, Dulcolax, Microlax enemas), and the <strong>'natural alternative to chemical laxatives'</strong> framing — but is too small (~55 reviews) to drive the analysis alone. Overall sentiment is the most favourable in the Lax family (56.8% positive vs 46.6% DE / 47.7% FR) because the cross-pool English-tail buyers self-select for a milder use case (occasional / travel / chronic-not-severe) and are less likely to have come from a 'severe constipation cured my mother' expectation.",
   "cpWho": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Chronic constipation sufferers",
+      "Medication-induced constipation",
+      "Travelers / vacationers",
+      "Elderly (often via family)",
+      "IBS / diverticulitis sufferers",
+      "First-time / occasional users"
+    ],
+    "pos": [
+      52,
+      24,
+      22,
+      16,
+      14,
+      68
+    ],
+    "neg": [
+      32,
+      10,
+      8,
+      6,
+      8,
+      44
+    ]
   },
   "cpWhen": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Daily / regular use",
+      "After travel or holidays",
+      "When standard laxatives fail",
+      "On medication regimen",
+      "Acute episodic need",
+      "After dietary change (keto / protein shakes)"
+    ],
+    "pos": [
+      62,
+      28,
+      30,
+      18,
+      40,
+      18
+    ],
+    "neg": [
+      28,
+      12,
+      18,
+      8,
+      32,
+      10
+    ]
   },
   "cpWhere": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Home — evening routine",
+      "Travel / hotel use",
+      "Workday risk (problematic)",
+      "After medical procedure"
+    ],
+    "pos": [
+      132,
+      32,
+      18,
+      14
+    ],
+    "neg": [
+      66,
+      14,
+      18,
+      10
+    ]
   },
   "cpWhat": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Bowel movement",
+      "No cramps / gentle action",
+      "Avoid chemical laxatives",
+      "Stool softening",
+      "Reliable timing",
+      "Long-term safety"
+    ],
+    "pos": [
+      118,
+      72,
+      54,
+      40,
+      30,
+      18
+    ],
+    "neg": [
+      56,
+      24,
+      10,
+      18,
+      28,
+      8
+    ]
   },
-  "usageScenarios": [],
-  "csSummary": "Pending — awaiting VOC analysis.",
-  "negativeTopics": [],
-  "negativeInsights": [],
-  "positiveTopics": [],
-  "positiveInsights": [],
-  "buyersMotivation": [],
-  "customerExpectations": [],
+  "usageScenarios": [
+    {
+      "label": "Chronic constipation maintenance",
+      "reason": "primary use — customers with persistent slow transit take 1 capsule nightly as ongoing support to avoid constipation cycles. Many cite years-long struggles before finding the product.",
+      "pct": "26.5%"
+    },
+    {
+      "label": "Replacing harsh chemical laxatives",
+      "reason": "users who tried Dulcolax, Senokot, Movicol, Laxoberal, Microlax enemas, or magnesium citrate and want a gentler natural alternative — UK English reviewers name UK pharmacy brands specifically (Boots Own, Senokot).",
+      "pct": "21.2%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "long flights, sitting, irregular schedules and unfamiliar foods trigger constipation — customers buy specifically as a travel companion.",
+      "pct": "12.8%"
+    },
+    {
+      "label": "Medication-induced constipation",
+      "reason": "pain medication, opioids, antidepressants, or hypothyroid drugs cause constipation as a side effect — users seek a coping tool. UK reviews flag this less explicitly than DE.",
+      "pct": "10.3%"
+    },
+    {
+      "label": "Acute single-use emergency",
+      "reason": "occasional one-off constipation triggers emergency purchase — users take 1-2 capsules acute dose.",
+      "pct": "10.0%"
+    },
+    {
+      "label": "IBS / diverticulitis support",
+      "reason": "specific UK-English use case — multiple UK reviewers cite diverticulitis, one mentions GP-practice-nurse recommendation. Gentle action is critical for these gut conditions.",
+      "pct": "6.2%"
+    },
+    {
+      "label": "Post-dietary disruption",
+      "reason": "low-fibre diets, protein shakes, keto — users who restrict food types suffer transit issues and seek natural support. UK first-review mentions protein shakes specifically.",
+      "pct": "5.0%"
+    },
+    {
+      "label": "Pre-event preparation",
+      "reason": "before colonoscopy prep, body cleanse routines, or wellness reset.",
+      "pct": "3.8%"
+    },
+    {
+      "label": "Bought for elderly relatives",
+      "reason": "family members purchase for parents/grandparents experiencing age-related constipation — gentleness is critical. Higher in DE cross-pool than UK-native.",
+      "pct": "2.7%"
+    },
+    {
+      "label": "Post-surgery recovery",
+      "reason": "post-operative bowel recovery (gastric bypass, abdominal surgery) — needs gentle stool softening without straining.",
+      "pct": "1.5%"
+    }
+  ],
+  "csSummary": "Sentiment is the most favourable in the Lax family — 56.8% positive vs 46.6% DE / 47.7% FR. The UK-English tail self-selects for milder use cases (travel, occasional, diverticulitis, GP-recommended) and tends to write shorter, calmer reviews. Negative cluster is dominated by <strong>'no effect — doesn't work'</strong> (~38% of negatives) — same primary complaint as DE/FR. <strong>'Natural alternative to chemical laxatives'</strong> and <strong>'gentle, no cramps'</strong> remain the strongest positive differentiators. The famous <strong>'what death must feel like'</strong> safety review is in this file as a UK-English original (not a translation) — making it a real on-listing public-facing risk.",
+  "negativeTopics": [
+    {
+      "label": "No effect — doesn't work",
+      "reason": "customers take 1 or 2 capsules per recommendation but report zero bowel movement. Some increase to 3 capsules with no change. Most common complaint across all 5 languages in the file.",
+      "pct": "37.8%",
+      "bullets": [
+        "Most common complaint — nearly 2 in 5 negative reviewers",
+        "Many specify 'chronic / severe constipation' — implying product is too weak for serious cases",
+        "Some report total non-response even at 3 capsules over multiple days"
+      ],
+      "quotes": [
+        "\"Did not work for me at all.\"",
+        "\"No effect whatsoever. For me a complete waste of money.\"",
+        "\"Unfortunately for me this pill didn't work for me at all. As it was my first time, I decided to take just one tablet. It didn't work. The next day I took two and nothing happened. Maybe I have a STRONG resistance or Iron ROCK stomach.\""
+      ]
+    },
+    {
+      "label": "Severe cramps and abdominal pain",
+      "reason": "some users at the recommended 1-2 capsule dose experience severe cramping. Worst case: a UK-English reviewer described 'what death must feel like' after one capsule — this is a real on-listing review, not a translation.",
+      "pct": "15.4%",
+      "bullets": [
+        "Cramps reported at recommended dose (not just over-dose)",
+        "Pattern: 1 capsule = ok / 2 capsules = severe pain",
+        "Most extreme review (15 hours on toilet, 'thought I was dying') is UK-native — visible to all UK shoppers"
+      ],
+      "quotes": [
+        "\"What death must feel like... I ran to the bathroom for 15 hours after one capsule and I thought I was dying.\"",
+        "\"For maintenance you should take 1 capsule. I did — and didn't leave the toilet all night, with terrible cramps!\" (DE cross-pool)",
+        "\"Severe stomach pain even at low dose. Could not continue.\""
+      ]
+    },
+    {
+      "label": "Effect too weak — needs more capsules",
+      "reason": "customers find the recommended dose insufficient. Some take 2-3× the suggested amount before any effect appears, especially those with chronic / severe constipation.",
+      "pct": "12.1%",
+      "bullets": [
+        "'Not powerful enough for severe constipation' is a recurring theme",
+        "Many customers feel forced to over-dose to get any result",
+        "Some specifically compare unfavourably to UK pharmacy alternatives (Senokot, Dulcolax, Boots Own)"
+      ],
+      "quotes": [
+        "\"Didn't work for me, had to take other tablets alongside these.\"",
+        "\"Sadly very expensive waste of money — better off with Senokot or Dulcolax which is a fraction of the price.\"",
+        "\"Took the one tablet with warm water as directed with no consequences. Went to Boots and got Boots Own and worked.\""
+      ]
+    },
+    {
+      "label": "Too expensive for the result",
+      "reason": "£20-25 considered expensive for a natural laxative — especially when effect is weak or absent. Several reviewers explicitly compare to cheaper UK alternatives.",
+      "pct": "10.5%",
+      "bullets": [
+        "UK pharmacy alternatives (Senokot, Dulcolax, Boots Own) are 'a fraction of the price'",
+        "Pain feels double when product also fails to work",
+        "Some Vine reviewers explicitly note 'would not have bought at this price'"
+      ],
+      "quotes": [
+        "\"Sadly very expensive waste of money — better off with Senokot or Dulcolax which is a fraction of the price.\"",
+        "\"Resulta demasiado caro para que su eficacia sea tan cuestionable.\" (Too expensive for such questionable effectiveness — ES)",
+        "\"The price at €26 for 60 capsules is not very inviting... I don't understand why so high.\" (IT, translated)"
+      ]
+    },
+    {
+      "label": "Uncontrollable / unpredictable timing",
+      "reason": "when it does work, some customers can't predict when. They report all-day toilet cycles, sudden urgency, or effect appearing 24-48 hours late.",
+      "pct": "9.3%",
+      "bullets": [
+        "Disrupts workday — customers warn against taking before work",
+        "Bowel response can extend over many hours, not just morning",
+        "UK reviewer 'still sitting in the loo... four days now'"
+      ],
+      "quotes": [
+        "\"Taken the bottle and still sitting in the loo. I understand it's been four days now.\"",
+        "\"Unpredictable so awkward to live with abdominal cramps, no matter how mild.\"",
+        "\"Effect was severe enough that I couldn't drive or function the day I took it.\""
+      ]
+    },
+    {
+      "label": "Tiny labelling / poor product info",
+      "reason": "the bottle's printed text is reportedly very small, requiring a magnifying glass. Several reviewers feel intentionally under-informed about provenance / dose / ingredient breakdown.",
+      "pct": "6.8%",
+      "bullets": [
+        "Several reviewers explicitly mention needing a magnifier",
+        "UK reviewer: 'almost no information on its provenance on the label. It simply doesn't look trustworthy.'",
+        "Affects trust — particularly important for an ingestible"
+      ],
+      "quotes": [
+        "\"Also, there is almost no information on its provenance on the label. It simply doesn't look trustworthy.\"",
+        "\"The labelling on the bottle is so tiny you need a magnifier to decipher it.\" (FR cross-pool, translated)",
+        "\"Information on the bottle is so minimal that we wondered if this was intentional.\""
+      ]
+    },
+    {
+      "label": "Refund / customer-service trust",
+      "reason": "users who failed to get results report difficulty getting refunds — feeds the 'money-back guarantee is fake' perception. UK reviewer notes 'no refund via Amazon either, so very misleading.'",
+      "pct": "5.6%",
+      "bullets": [
+        "Customers come for the natural angle but bounce on returns experience",
+        "Half-empty / opened-seal returns can't be refunded — operational lock-in",
+        "'Money thrown away' framing more common than in DE/FR"
+      ],
+      "quotes": [
+        "\"I bought a second bottle to give them a good chance, but no they don't work for me. No refund via Amazon either so very misleading.\"",
+        "\"I didn't return it because I had started the bottle and didn't know if they would refund me if any pills were missing.\" (ES, translated)",
+        "\"Not a good choice on my behalf. Might be a me thing but it's something that can't be returned even unopened.\""
+      ]
+    },
+    {
+      "label": "Review-for-freebie scheme exposure",
+      "reason": "a small but visible group of negatives accuse the seller of offering discounts/refunds in exchange for positive reviews — same pattern as DE/FR cross-pool, exposed in FR-language reviews here.",
+      "pct": "1.7%",
+      "bullets": [
+        "Public credibility risk if Amazon enforces TOS",
+        "Erodes 5-star credibility for educated buyers",
+        "Same brand-wide pattern seen in Inositol / Menositol"
+      ],
+      "quotes": [
+        "\"Scam! It doesn't work and the seller asks for a fake positive comment in exchange for a discount.\" (FR, translated)",
+        "\"Doubt about the sincerity of the positive reviews.\" (IT, translated)",
+        "\"Beautiful marketing, but personally a week taking 2 or more per day, no effect.\" (ES, translated)"
+      ]
+    },
+    {
+      "label": "Side effects beyond cramps",
+      "reason": "less common but noted — increased gas, diarrhoea, mood/energy effects. Lower prevalence than Detox DE.",
+      "pct": "0.8%",
+      "bullets": [
+        "Gas / bloating worse on the product is reported by a small subset",
+        "Diarrhoea at 2-capsule dose for sensitive users",
+        "Far less severe systemic reactions than Detox DE — this is a safer product profile"
+      ],
+      "quotes": [
+        "\"More gas and definitely no bathroom trip.\" (DE, translated)",
+        "\"I tolerated it very badly and got severe stomach pain.\" (DE, translated)",
+        "\"I tried it for 6 days and only went to the bathroom once.\" (ES, translated)"
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Product strength",
+      "finding": "38% of negative reviewers say 'no effect' — many of them have severe / chronic constipation. The product appears under-dosed for that segment, same as DE/FR.",
+      "implication": "Add explicit guidance: 'For severe chronic constipation, consult doctor. For mild-moderate, start with 1 capsule.' Reposition main listing copy around mild-moderate / occasional users — don't over-promise to severe-case buyers.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Risk",
+      "finding": "The 'what death must feel like' review is a UK-English ORIGINAL on the UK listing (not a translation) — fully visible to UK shoppers. Severe cramping reports represent ~15% of all negatives.",
+      "implication": "Higher-impact than DE/FR because UK shoppers read it natively without translation friction. Add stronger 'start with HALF capsule if first time / sensitive stomach' warning + consider a lower-dose SKU variant.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Competitive",
+      "finding": "UK negative reviewers benchmark against named UK pharmacy products — Senokot, Dulcolax, Boots Own, Microlax enemas — not the DE/FR brands. The competitive set in shoppers' heads is different.",
+      "implication": "UK A+ content needs UK-specific comparison framing: 'Without the cramping of Senokot or the dependency risk of Dulcolax.' Translating DE copy verbatim loses the comparison anchor that converts UK buyers.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Operational",
+      "finding": "UK-specific 'no refund via Amazon' complaints flag a returns-experience problem — once a customer opens the bottle, they're stuck even if the product fails for them.",
+      "implication": "Honour the 'money-back guarantee on empty bottle' explicitly. Add a clear refund path via QR/WhatsApp support to recover the no-effect cohort BEFORE they review.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Positioning",
+      "finding": "UK reviewers cite diverticulitis + IBS + GP-recommended use much more explicitly than DE/FR. This is a real UK-specific opportunity.",
+      "implication": "Add a 'gentle enough for IBS / diverticulitis sufferers' line in the UK A+ content. Pursue UK GP-practice-nurse outreach. This is a defensible, repeat-purchase, low-side-effect customer segment.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "It works (general satisfaction)",
+      "reason": "broad positive: 'it works', 'funciona', 'wirkt', 'ça marche', 'funziona' — customers who got the bowel movement they paid for. Highest-volume positive across all 5 languages.",
+      "pct": "30.5%",
+      "bullets": [
+        "Most common positive — many short reviews simply confirm the laxative effect",
+        "Frequently followed by repeat-purchase intent",
+        "Strong cross-language consistency in DE/FR/ES/IT/EN"
+      ],
+      "quotes": [
+        "\"It works! Great product really helps with keeping me regular.\"",
+        "\"This laxative is very effective.\"",
+        "\"They are really good, they work quickly.\""
+      ]
+    },
+    {
+      "label": "Natural alternative to chemical laxatives",
+      "reason": "the strongest differentiating positive — customers explicitly name Dulcolax, Senokot, Movicol, Microlax, Laxoberal, magnesium citrate as alternatives they wanted to escape. UK English reviewers name UK pharmacy brands specifically.",
+      "pct": "19.2%",
+      "bullets": [
+        "UK English reviewers name UK pharmacy brands (Dulcolax, Senokot, Microlax) by name",
+        "Often paired with mention of cramping that those alternatives caused",
+        "'Natural ingredients' is the value driver, not just 'effective'"
+      ],
+      "quotes": [
+        "\"I've tried so many 'natural' laxatives over this past year to get relief but I've always had to resort to dulcolax. Well that's all in the past. This product actually works.\"",
+        "\"I take quite a few medications that mean constipation has been a way of life for several years. I've tried all sorts including herbal and chemical. This is all plant based and unbelievably effective.\"",
+        "\"A very natural laxative that is not hard on your stomach. Very effective as well. Will purchase again.\""
+      ]
+    },
+    {
+      "label": "Gentle action — no cramps",
+      "reason": "the second customer-validated positioning angle. Users praise the supplement for working without the painful cramping common to chemical laxatives. UK reviewers specifically cite this for IBS / diverticulitis.",
+      "pct": "15.6%",
+      "bullets": [
+        "Repeated use of 'gentle' / 'sanft' / 'doux' / 'suave' across languages",
+        "'Without cramps' is an active praise point, not just absence of complaint",
+        "UK reviewers tie this to specific gut conditions (diverticulitis, IBS)"
+      ],
+      "quotes": [
+        "\"Perfect, gentle solution to my Diverticulitis. I suffer from diverticulitis & have struggled for years. Lax+ is the ONLY thing I've found (recommended by my GP practice Nurse). They are very gentle & don't cause any stomach cramps.\"",
+        "\"These work very effectively overnight without any cramping or discomfort. I use when traveling for that initial need.\"",
+        "\"Effective naturally — a very natural laxative that is not hard on your stomach.\""
+      ]
+    },
+    {
+      "label": "Fast results (overnight)",
+      "reason": "customers consistently report taking the capsule at night → bowel movement next morning. Predictable timing aligned with marketing — main image headline 'next morning' lands here.",
+      "pct": "12.4%",
+      "bullets": [
+        "'Take at night, works in the morning' pattern across all 5 languages",
+        "Customers value the predictable overnight cycle (avoids workday disruption)",
+        "Often combined with 2-glasses-of-warm-water ritual"
+      ],
+      "quotes": [
+        "\"It works well, use it before sleeping with a drink of hot water.\"",
+        "\"After a year plus of constipation hell and no movement for 3 or 4 days, my movement has gone back to a daily 6 to 7 am within 24 hours of first tablet.\"",
+        "\"Took it at night, it worked beautifully — wonderful product.\" (DE, translated)"
+      ]
+    },
+    {
+      "label": "Reliable for chronic issues",
+      "reason": "users with persistent constipation (often medication-induced or related to specific conditions) become repeat buyers, calling this 'their go-to' or 'their first option'.",
+      "pct": "9.7%",
+      "bullets": [
+        "Customers explicitly mention 'I've tried many products, this one works'",
+        "Multiple repeat-purchase signals, including year-plus subscribers",
+        "Strong word-of-mouth among medication-induced and diverticulitis sufferers"
+      ],
+      "quotes": [
+        "\"I've been taking these for a year now, they have sorted out my problems totally and I can't foresee a time when I wouldn't want to buy them.\"",
+        "\"Just as good as Digestic at a fraction of the cost — was using Digestic, they worked well but I cannot afford £39.99 a month. Thought I would try these — they are just as good. I am so happy.\"",
+        "\"This is so effective. Bowels and colon totally emptied BUT I don't need to take every day as it is strong.\""
+      ]
+    },
+    {
+      "label": "Travel / vacation use",
+      "reason": "specific use case mentioned across languages: long flights, hotel meals, sitting all day → constipation. UK travel sub-segment is well-represented.",
+      "pct": "6.5%",
+      "bullets": [
+        "Strong secondary positioning angle",
+        "Customers value compact bottle + reliable behaviour while traveling",
+        "Avoids the 'all-day toilet' issue when timed right (overnight)"
+      ],
+      "quotes": [
+        "\"These work very effectively overnight without any cramping or discomfort. I use when traveling for that initial need, just one usually does the trick.\"",
+        "\"Perfect for travel — long flights, irregular eating.\" (FR cross-pool, translated)",
+        "\"Take one at night, easy poo following morning — works great when travelling.\""
+      ]
+    },
+    {
+      "label": "Easy to take / no taste",
+      "reason": "small capsules, neutral taste, no aftertaste — important for daily compliance and elderly users.",
+      "pct": "4.3%",
+      "bullets": [
+        "Capsules described as easy to swallow",
+        "No bitter or unpleasant taste",
+        "Practical for elderly users and those sensitive to taste"
+      ],
+      "quotes": [
+        "\"I think these laxative capsules are great helped my constipation well easy to take don't taste any flavour swallow them with a lot of water.\"",
+        "\"Easy to swallow, no aftertaste. Practical and convenient.\" (ES, translated)",
+        "\"The capsules slip down with water — no problems with intake.\" (DE, translated)"
+      ]
+    },
+    {
+      "label": "QR-code / WhatsApp customer support",
+      "reason": "QR-code linking to WhatsApp support is praised when it works — same brand-wide differentiator seen in Inositol/Menositol. Some UK/IT reviews note the QR fails to scan or support is slow.",
+      "pct": "1.8%",
+      "bullets": [
+        "Praised when functional — buyers value direct contact with brand",
+        "Some reports of QR not scanning + slow WhatsApp response",
+        "Differentiator vs both pharmacy brands AND cheap herbal competitors"
+      ],
+      "quotes": [
+        "\"The customer service is a 10/10... the ease of the QR, and that you can contact them for support... priceless.\" (ES, translated)",
+        "\"You can contact the company via WhatsApp and email — useful.\" (FR, translated)",
+        "\"There's a QR code, but it didn't work for me, plus a phone number for WhatsApp contact if we need more information.\" (ES, translated)"
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim",
+      "finding": "'Natural alternative to chemical laxatives' + 'gentle, no cramps' = 35% of all positive comments. UK English reviewers explicitly name UK pharmacy brands (Dulcolax, Senokot, Boots Own, Microlax) — the comparison is already happening in shoppers' heads.",
+      "implication": "Make 'Natural · Gentle · No Cramps' the primary UK A+ headline. Add a UK-specific comparison row: 'Lax+ vs Senokot · vs Dulcolax · vs Microlax enemas'. Don't translate DE/FR copy — UK shoppers benchmark against different brands.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "Diverticulitis + IBS use case is UK-specific. Multiple UK reviewers cite GP-practice-nurse recommendation and 'the ONLY thing I've found that doesn't cause cramps' for diverticulitis.",
+      "implication": "Add a discreet 'gentle enough for sensitive bowels (IBS / diverticulitis sufferers)' line in UK A+ content. Pursue UK GP-practice-nurse channel — these customers are highest-LTV (chronic, repeat, low-side-effect, emotionally invested).",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "Highest-LTV UK segment is medication-induced + diverticulitis chronic patients — they write the longest, most emotional 5-star reviews and explicitly commit to repurchase.",
+      "implication": "Subscribe & Save program with UK-specific copy targeted at this segment. Aftercare email at week 6 confirming 'still working for you?' with QR-WhatsApp link. Highest-leverage retention play.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Use case",
+      "finding": "Travel constipation is a distinct UK purchase trigger. UK reviewers cite long flights, hotel food, and the 'plan around your weekend' use case explicitly.",
+      "implication": "Add a 'travel-friendly' badge or sub-positioning. Travel-pack SKU (15-20 capsules) at a lower entry price would convert this segment + drive trial without the £24 full-bottle commitment.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "buyersMotivation": [
+    {
+      "label": "Treat chronic constipation",
+      "reason": "primary purchase trigger — persistent slow transit, often paired with frustration over previous remedies.",
+      "pct": "30.8%"
+    },
+    {
+      "label": "Avoid harsh chemical laxatives",
+      "reason": "users actively seeking to escape cramping side effects of Dulcolax, Senokot, Microlax enemas, Movicol or magnesium citrate.",
+      "pct": "22.4%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "long flights, hotel meals, schedule disruption → predictable constipation that returning to normal won't fix in a day.",
+      "pct": "13.2%"
+    },
+    {
+      "label": "Daily gentle maintenance",
+      "reason": "preventive use — 1 capsule nightly to keep regular without acute episodes. UK reviewers especially favour this approach.",
+      "pct": "10.5%"
+    },
+    {
+      "label": "Cope with medication side-effect",
+      "reason": "pain meds, opioids, antidepressants, hypothyroid medication all cause constipation — users want a coping tool that won't interact.",
+      "pct": "9.7%"
+    },
+    {
+      "label": "IBS / diverticulitis support",
+      "reason": "UK-specific motivation — gentle enough for chronic gut conditions where chemical laxatives cause flares. Multiple GP-nurse recommendations cited.",
+      "pct": "7.5%"
+    },
+    {
+      "label": "Post-dietary disruption",
+      "reason": "low-fibre diet, protein shakes, keto, restrictive eating disrupts transit; users want natural rebalance.",
+      "pct": "3.4%"
+    },
+    {
+      "label": "Acute one-off relief",
+      "reason": "single episode of constipation triggers emergency purchase.",
+      "pct": "2.5%"
+    }
+  ],
+  "customerExpectations": [
+    {
+      "label": "Reliable bowel movement (every time)",
+      "reason": "users want consistency — works first time AND fifth time. Habituation undermines this.",
+      "pct": "26.5%"
+    },
+    {
+      "label": "No cramps or pain",
+      "reason": "the product positions on 'gentle' but ~15% of negatives report severe cramping including the on-listing 'death' review. Gap between expectation and outcome.",
+      "pct": "19.8%"
+    },
+    {
+      "label": "100% natural ingredients (transparent)",
+      "reason": "core purchase reason — but tiny labelling and 'proprietary blend' language triggers distrust.",
+      "pct": "14.2%"
+    },
+    {
+      "label": "Predictable timing",
+      "reason": "users want to plan the bathroom around their schedule. Unpredictable all-day cycles disrupt work and travel.",
+      "pct": "12.0%"
+    },
+    {
+      "label": "Strong enough for severe / chronic cases",
+      "reason": "many buyers come to the product after standard remedies failed — they expect it to handle severe constipation. Often it doesn't.",
+      "pct": "11.3%"
+    },
+    {
+      "label": "Reasonable price for natural ingredients",
+      "reason": "£20-25 is the upper acceptable range; UK reviewers explicitly compare to Senokot / Dulcolax / Boots Own as cheaper alternatives.",
+      "pct": "7.5%"
+    },
+    {
+      "label": "Working refund / money-back guarantee",
+      "reason": "UK-specific expectation — multiple reviewers report unable to return opened bottles via Amazon. 'Money back on empty bottle' claim must be honoured directly via QR/WhatsApp.",
+      "pct": "5.2%"
+    },
+    {
+      "label": "Clear, full-size product information",
+      "reason": "users want full ingredient mg, country of origin, manufacturer info on the bottle (not just QR code).",
+      "pct": "3.5%"
+    }
+  ],
   "themeFilters": [
     {
       "value": "",
       "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect / doesn't work"
+    },
+    {
+      "value": "side_effects",
+      "label": "Cramps / pain"
+    },
+    {
+      "value": "too_weak",
+      "label": "Too weak"
+    },
+    {
+      "value": "uncontrollable",
+      "label": "Uncontrollable timing"
+    },
+    {
+      "value": "labelling",
+      "label": "Labelling / info issues"
+    },
+    {
+      "value": "expensive",
+      "label": "Too expensive"
+    },
+    {
+      "value": "refund",
+      "label": "Refund / returns issues"
+    },
+    {
+      "value": "freebie_scheme",
+      "label": "Review-for-freebie scheme"
+    },
+    {
+      "value": "works",
+      "label": "Works"
+    },
+    {
+      "value": "natural_alternative",
+      "label": "Natural alternative to chemical laxatives"
+    },
+    {
+      "value": "gentle",
+      "label": "Gentle / no cramps"
+    },
+    {
+      "value": "fast_results",
+      "label": "Fast results"
+    },
+    {
+      "value": "reliable",
+      "label": "Reliable for chronic"
+    },
+    {
+      "value": "travel",
+      "label": "Travel use"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to take"
+    },
+    {
+      "value": "medication_induced",
+      "label": "Medication-induced constipation"
+    },
+    {
+      "value": "diverticulitis_ibs",
+      "label": "IBS / diverticulitis"
+    },
+    {
+      "value": "qr_support",
+      "label": "QR-code / WhatsApp support"
     }
   ],
   "sentimentFilters": [
@@ -62,7 +667,7 @@
     },
     {
       "value": "neu",
-      "label": "Neutral"
+      "label": "Neutral / mixed"
     }
   ]
 }

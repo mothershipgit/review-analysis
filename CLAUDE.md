@@ -49,9 +49,9 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (5 competitors, curated) |
 | `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ✅ (5 competitors) |
-| `lax-uk` | Lax UK | B0BM1WPXC5 | UK | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
-| `lax-es` | Lax ES | B0BM1WPXC5 | ES | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
-| `lax-it` | Lax IT | B0BM1WPXC5 | IT | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
+| `lax-uk` | Lax UK | B0BM1WPXC5 | UK | 345 | 57% / 31% / 12% | ✅ | ⏸ |
+| `lax-es` | Lax ES | B0BM1WPXC5 | ES | 339 | 58% / 33% / 8% | ✅ | ⏸ |
+| `lax-it` | Lax IT | B0BM1WPXC5 | IT | 318 | 58% / 35% / 7% | ✅ | ⏸ |
 | `inositol-uk` | Inositol Caps UK | TBD | UK | 363 | 63% / 26% / 11% | ✅ | ⏸ |
 | `inositol-de` | Inositol Caps DE | TBD | DE | 367 | 60% / 30% / 10% | ✅ | ⏸ |
 | `inositol-fr` | Inositol Caps FR | TBD | FR | 341 | 52% / 37% / 10% | ✅ | ⏸ |
@@ -67,6 +67,10 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `ashwagandha-fr` | Ashwagandha FR | TBD | FR | 179 | 62% / 26% / 12% | ✅ | ⏸ |
 | `ashwagandha-es` | Ashwagandha ES | TBD | ES | 187 | 81% / 12% / 7% | ✅ | ⏸ |
 | `ashwagandha-it` | Ashwagandha IT | TBD | IT | 123 | 70% / 18% / 12% | ✅ | ⏸ |
+
+**Lax 5-market VOC complete (2026-05-14):** All 5 markets now analyzed (DE/FR populated 2026-05-06, UK/ES/IT this session). Total 1,675 reviews. Sentiment: DE 47/44/10, FR 48/43/10, UK 57/31/12, ES 58/33/8, IT 58/35/7. UK/ES/IT are noticeably more positive than DE/FR — driven by larger native-language tails (DE/FR are mostly cross-pool). MDD already done for DE/FR; UK/ES/IT MDD pending (xlsx already has LAX block for all 5 markets — ready to run Action 3).
+
+**Lax cross-pool structure:** The same shared multilingual pool (~263 byte-identical reviews from cross-marketplace pooling) appears in ALL 5 Lax files. Per-market native-language tail is: DE ~63 native German, FR ~64 native French, UK ~55 native English (16%), ES ~170 native Spanish (50%, home market), IT ~60 native Italian (19%). Market-specific findings come from analyzing the native-language tail of each file.
 
 **Ashwagandha VOC complete (2026-05-13):** All 5 markets analyzed (790 reviews total). Sentiment: UK 77/15/9, DE 62/24/14, FR 62/26/12, ES 81/12/7, IT 70/18/12 — the healthiest portfolio profile across all CNC dashboards. ASINs still TBD.
 
@@ -218,6 +222,12 @@ The user will append new product-family blocks (separator + header + 5 market ro
 26. **Ashwagandha — thyroid / Hashimoto contraindication missing from listing.** ~9-22% of negatives across markets call this out (FR/ES/DE especially). Users voluntarily warn other buyers — legal exposure + recurring 1-star generator. Cheap copy fix: add a front-of-pack "consult doctor if on medication / thyroid condition" disclaimer.
 27. **Ashwagandha — unusually high systemic side-effect rate for an adaptogen.** Headaches, dizziness, vertigo, sharp side pain, mood worsening reported across all 5 markets (13-22% of negatives). Higher than typical for KSM-66 alone — possibly Sensoril-related at the listed daily dose. Investigate.
 28. **Ashwagandha — ES is the home market and shows extreme positive skew (81/12/7).** Highest positive % of any of the 15 EU dashboards. FR is the polarised outlier (62/26/12) with the harshest side-effect coverage. UK is positively skewed but smallest dataset (only 115 reviews) — interpret cautiously.
+29. **Lax ES — sharp home-market vs cross-pool split.** Spain-localised reviews are **79% positive** while the cross-pool component in the same file sits at **38% positive**. Brand has real equity with native Spanish buyers (QSTA/Nutra CNC name recognition, repeat purchase, WhatsApp support praised by ~10% of positives). The same product struggles when cross-marketplace pooled into DE/FR/IT/EN buyers. ES-specific copy/positioning should NOT be ported wholesale.
+30. **Lax UK — "what death must feel like" 1-star review is UK-English ORIGINAL** on this listing (16% of file is native English). Higher conversion risk than DE/FR where the same review reads as translated. UK competitive set anchors against Senokot, Dulcolax, Boots Own, Microlax — different from DE (Laxoberal/Movicol) and FR (Microlax/Forlax). Don't translate DE/FR A+ copy for UK.
+31. **Lax UK — diverticulitis + IBS + GP-practice-nurse recommendation is a UK-specific use case** (~6-8% of UK-native reviews). Highest-LTV repeat segment, defensible whitespace not visible in DE/FR analysis. Consider UK-specific A+ section.
+32. **Lax IT — QR/WhatsApp concierge support is praised by ~10% of IT-native positives** — highest of any Lax market (DE ~2%, FR ~5%). Italians value this angle most. Promote to top-3 bullet on IT listing.
+33. **Lax IT — "100% naturale + vegano" resonates uniquely strongly in IT.** Italian buyers explicitly cite vegan/plant-based as a buying criterion (not at this volume in DE/FR). Add a clear "vegano" badge to main image. Also: "blando" (mild/weak) is a UNIQUE IT critical descriptor — reposition IT copy as "delicato per uso quotidiano" not "lassativo forte".
+34. **Lax IT — Vine-program inflation is a credibility risk.** Long, listing-mirroring positive reviews disclosing free product receipt distort the IT positive rate. Wind down new Vine campaigns for this listing.
 
 ## Workflow patterns
 

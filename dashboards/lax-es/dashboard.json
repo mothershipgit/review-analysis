@@ -1,50 +1,646 @@
 {
   "id": "lax-es",
   "title": "Lax ES — Review Analysis",
-  "subtitle": "Awaiting reviews JSON at reviews/B0BM1WPXC5-ES-Reviews.json",
+  "subtitle": "B0BM1WPXC5 · Amazon ES marketplace · 339 reviews",
   "asin": "B0BM1WPXC5",
   "marketplace": "ES",
   "reviewsFile": "../../reviews/B0BM1WPXC5-ES-Reviews.json",
-  "totalReviews": 0,
-  "posCount": 0,
-  "negCount": 0,
-  "neuCount": 0,
-  "posPct": "—",
-  "negPct": "—",
-  "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Drop reviews JSON at <code>reviews/B0BM1WPXC5-ES-Reviews.json</code> and run VOC refresh.",
+  "totalReviews": 339,
+  "posCount": 198,
+  "negCount": 113,
+  "neuCount": 28,
+  "posPct": "58.4",
+  "negPct": "33.3",
+  "neuPct": "8.3",
+  "cpSummary": "Customer profile based on <strong>339 reviews on amazon.es</strong> — composed of <strong>170 Spain-localised reviews (50%)</strong> plus a <strong>169-review multilingual cross-marketplace pool</strong> (216 of these are shared byte-for-byte with the Lax DE / Lax FR files, originally written across DE/FR/IT/EN). ES is the <strong>home market for CNC / QSTA Labs</strong> — Spain-localised reviews are <strong>79% positive</strong> vs only <strong>38% positive</strong> in the cross-pool, lifting the headline rate to <strong>58.4% positive</strong> (the most favourable Lax dashboard so far vs 47% DE / 48% FR). Spanish home-market buyers are repeat purchasers seeking a <strong>natural alternative to chemical laxatives</strong> like Dulcolax, Microlax and Plantago — many name brand-loyalty to QSTA / Nutra CNC and reference the QR + WhatsApp support service as a real differentiator.",
   "cpWho": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Chronic constipation sufferers",
+      "Repeat brand-loyal buyers (QSTA / Nutra CNC)",
+      "Travelers / vacationers",
+      "Elderly (often bought by adult children)",
+      "Diet / keto / low-fibre eaters",
+      "First-time laxative users"
+    ],
+    "pos": [
+      62,
+      48,
+      14,
+      18,
+      22,
+      34
+    ],
+    "neg": [
+      44,
+      6,
+      10,
+      8,
+      8,
+      37
+    ]
   },
   "cpWhen": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Daily preventive maintenance",
+      "Acute / on-demand rescue",
+      "After dietary disruption (keto, holidays, diet)",
+      "When chemical laxatives feel too harsh",
+      "On chronic medication regimen",
+      "After post-partum / post-surgery"
+    ],
+    "pos": [
+      72,
+      52,
+      28,
+      24,
+      14,
+      8
+    ],
+    "neg": [
+      40,
+      24,
+      14,
+      12,
+      18,
+      5
+    ]
   },
   "cpWhere": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Home — morning ritual (with warm water)",
+      "Home — evening dose (overnight effect)",
+      "Travel / vacation use",
+      "After medical procedure or post-partum"
+    ],
+    "pos": [
+      88,
+      72,
+      26,
+      12
+    ],
+    "neg": [
+      50,
+      46,
+      10,
+      7
+    ]
   },
   "cpWhat": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Reliable bowel movement",
+      "No cramps / suave / gentle action",
+      "Natural — avoid chemical laxatives",
+      "Stool softening",
+      "Predictable timing",
+      "Long-term safe daily use"
+    ],
+    "pos": [
+      118,
+      74,
+      62,
+      36,
+      28,
+      22
+    ],
+    "neg": [
+      82,
+      14,
+      8,
+      18,
+      28,
+      6
+    ]
   },
-  "usageScenarios": [],
-  "csSummary": "Pending — awaiting VOC analysis.",
-  "negativeTopics": [],
-  "negativeInsights": [],
-  "positiveTopics": [],
-  "positiveInsights": [],
-  "buyersMotivation": [],
-  "customerExpectations": [],
+  "usageScenarios": [
+    {
+      "label": "Daily preventive maintenance",
+      "reason": "Spanish home-market buyers especially take 1 capsule nightly (or mornings with warm water) as ongoing support — the dominant ES use pattern.",
+      "pct": "26.5%"
+    },
+    {
+      "label": "Replacing chemical laxatives (Dulcolax, Microlax, Plantago)",
+      "reason": "users explicitly name Dulcolax, Microlax suppositories, Plantago husks, Movicol — they want to escape chemical alternatives.",
+      "pct": "18.3%"
+    },
+    {
+      "label": "Acute / on-demand rescue dose",
+      "reason": "occasional 2-capsule dose for episodic constipation — particularly common ES use case where buyers keep a bottle in the medicine cabinet.",
+      "pct": "14.7%"
+    },
+    {
+      "label": "Chronic / severe constipation",
+      "reason": "buyers with persistent slow transit who have tried many products and seek a 7-herb natural option as their go-to.",
+      "pct": "12.4%"
+    },
+    {
+      "label": "Diet / keto / low-fibre disruption",
+      "reason": "ES dieters and keto practitioners over-index here — restrictive eating triggers constipation and they want a natural rebalance.",
+      "pct": "8.5%"
+    },
+    {
+      "label": "Travel / holiday constipation",
+      "reason": "long flights, hotel meals, irregular schedules — users take it during and after travel.",
+      "pct": "7.0%"
+    },
+    {
+      "label": "Medication-induced constipation",
+      "reason": "pain medication, opioids, antidepressants and other chronic medications cause constipation — users seek a coping tool.",
+      "pct": "5.5%"
+    },
+    {
+      "label": "Bought for elderly relatives",
+      "reason": "adult Spanish children buy for parents / grandparents experiencing age-related constipation — gentleness is critical.",
+      "pct": "3.8%"
+    },
+    {
+      "label": "Post-partum / post-surgery recovery",
+      "reason": "new mothers and post-operative bowel recovery — soft stool without straining.",
+      "pct": "3.3%"
+    }
+  ],
+  "csSummary": "Lax ES is the strongest-performing Lax dashboard — 58.4% positive vs 47% DE / 48% FR. The headline number hides a sharp split: Spain-localised reviews are 79% positive while the cross-pool DE/FR/IT/EN reviews sit at only 38% positive. This means the brand performs very well with native Spanish buyers (loyal repeat customers, brand recognition for QSTA / Nutra CNC, active use of QR + WhatsApp support) while the same product struggles with cross-marketplace customers. Negative reviews are dominated by 'no effect / doesn't work' (~39% of negatives — same #1 complaint as DE/FR). Positive reviews praise 'natural alternative to chemical laxatives', 'gentle without cramps', '7-herb natural formula', and small-easy-to-swallow capsules.",
+  "negativeTopics": [
+    {
+      "label": "No effect — doesn't work",
+      "reason": "customers take 1, 2 or even 3 capsules per directions but report zero bowel movement. The single dominant complaint — same as Lax DE and FR.",
+      "pct": "38.9%",
+      "bullets": [
+        "Most common complaint — close to 4 in 10 negative reviewers",
+        "Many specify 'I have chronic / severe constipation' — product perceived too weak for serious cases",
+        "Several report total non-response even at 3 capsules"
+      ],
+      "quotes": [
+        "\"NO FUNCIONA — I have chronic constipation, I took 2 capsules for 3 days, no effect, just more gas, definitely no bathroom trip.\"",
+        "\"I have taken up to 3 at night, it did nothing. I had to switch to another product. Useless for me.\"",
+        "\"I took it for 6 days, only went to the bathroom once. Honestly disappointing — it's not cheap.\""
+      ]
+    },
+    {
+      "label": "Too expensive for the result",
+      "reason": "€20–28 considered expensive in Spain — particularly painful when the product doesn't work. ES buyers more price-sensitive than DE/FR.",
+      "pct": "13.3%",
+      "bullets": [
+        "Price-quality complaint cited in titles ('Calidad precio: Caro')",
+        "Several long-time buyers say price has risen since they started buying",
+        "Buyers compare unfavourably to cheaper supplement alternatives like Vitalspring"
+      ],
+      "quotes": [
+        "\"Calidad-precio: Caro. Too expensive — I cannot recommend.\"",
+        "\"I had to throw the money away — bottle finished, no effect. It is too expensive for such questionable effectiveness.\"",
+        "\"Even though it works, the price is a bit abusive.\""
+      ]
+    },
+    {
+      "label": "Too weak / needs more capsules",
+      "reason": "users find the recommended 1-capsule dose insufficient. Some take 2–3× before any effect. Habituation also reported.",
+      "pct": "10.6%",
+      "bullets": [
+        "'1 capsule does nothing, need to escalate to 2 or 3' is a recurring pattern",
+        "Works first use then weak afterwards — habituation pattern reported",
+        "Many feel forced to over-dose to get any result"
+      ],
+      "quotes": [
+        "\"With one you don't regulate, with two you go the first time but then it doesn't work anymore.\"",
+        "\"Other supplements with senna have worked well for me but I haven't noticed a notable effect with this one.\"",
+        "\"It works if you take several. One per day is not enough.\""
+      ]
+    },
+    {
+      "label": "Severe cramps and abdominal pain",
+      "reason": "some users at the recommended dose report severe cramping, gastritis, and stomach pain — worst case: 'what death must feel like' / '15 hours on the toilet'.",
+      "pct": "8.0%",
+      "bullets": [
+        "Cramps reported at recommended 1-capsule dose (not over-dosing)",
+        "One review reports the product caused gastritis",
+        "A family of three all stopped due to severe stomach pain"
+      ],
+      "quotes": [
+        "\"What death must feel like — I ran to the bathroom for 15 hours after one capsule and thought I was dying.\"",
+        "\"Effective, but it gave me gastritis. I'll throw it out.\"",
+        "\"With just one pill it causes incredible stomach pain. It happened to three people in my family. We all had to stop taking it.\""
+      ]
+    },
+    {
+      "label": "Uncontrollable / unpredictable timing",
+      "reason": "when it does work, customers can't predict when. Reports of all-night toilet cycles or sudden urgency during the day.",
+      "pct": "8.0%",
+      "bullets": [
+        "For maintenance dose users sometimes don't leave the toilet all night",
+        "Bowel response can extend over many hours",
+        "Several users now only take on weekends"
+      ],
+      "quotes": [
+        "\"For maintenance you should take 1 capsule. I did — and didn't leave the toilet all night, with terrible cramps!\"",
+        "\"Very weak in effect, timing not controllable.\"",
+        "\"After taking, you'd better stay near a toilet — recommended, but plan accordingly.\""
+      ]
+    },
+    {
+      "label": "Packaging / quantity defects",
+      "reason": "missing capsules, broken seals, bottle arriving open, expired product. Same operational issue as DE / FR.",
+      "pct": "7.1%",
+      "bullets": [
+        "One ES reviewer: 'who is going to count the capsules?' — doubts the 60 count",
+        "Another: bottle arrived already open",
+        "One report of expired product on arrival"
+      ],
+      "quotes": [
+        "\"Who is going to count the capsules? Even though it works, I have many doubts that there are really 60 capsules.\"",
+        "\"It arrived already opened. I will not trust opening it.\"",
+        "\"Expired product — I received an expired item.\""
+      ]
+    },
+    {
+      "label": "Effect fades over time (habituation)",
+      "reason": "first-time users report strong effect, repeat users report progressively weaker response — body adapts.",
+      "pct": "6.2%",
+      "bullets": [
+        "'Worked first time then nothing' notable pattern",
+        "Customers feel forced to escalate dose",
+        "Concerns about long-term dependency on senna-based blend"
+      ],
+      "quotes": [
+        "\"With one you don't regulate, with two you go the first time but then it doesn't work anymore.\"",
+        "\"First use was effective. Subsequent uses, almost nothing.\"",
+        "\"Works once, after that the body adapts quickly.\""
+      ]
+    },
+    {
+      "label": "Misleading product description / expectations",
+      "reason": "customers feel the listing oversells — '7-IN-1', '100% effective natural', 'fast-acting' don't match a weak or absent result. Spanish buyers cite '100% guarantee' marketing.",
+      "pct": "4.4%",
+      "bullets": [
+        "'Nice explanation and marketing but doesn't deliver' recurring framing",
+        "Several explicitly say they doubt the formula veracity",
+        "Spanish buyers reference satisfaction-guarantee claim as not honoured"
+      ],
+      "quotes": [
+        "\"Nice explanation and marketing, but personally — one week taking 2 or more per day, they don't fulfil what's described.\"",
+        "\"Personally it has no effect... I doubt the formula they describe is truthful.\"",
+        "\"Satisfaction-or-refund... we'll see if that's even true.\""
+      ]
+    },
+    {
+      "label": "Tiny labelling / info accessed only via QR",
+      "reason": "core dosing and ingredient info is reportedly only available via the QR code. Customers without a smartphone or without internet feel under-informed.",
+      "pct": "3.5%",
+      "bullets": [
+        "'You have to read the QR to see the directions' — appears in multiple reviews",
+        "Several customers explicitly call this out as inconvenient",
+        "Some find it intentional to hide info"
+      ],
+      "quotes": [
+        "\"To read the instructions you have to access the QR.\"",
+        "\"In this case you have to read the QR to see the directions — would prefer them printed on the box.\"",
+        "\"Almost no information on its provenance on the label.\""
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Product strength",
+      "finding": "39% of negative reviewers say 'no effect' — a stubborn ceiling on the product across all 3 Lax markets (ES / DE / FR). In ES this segment includes many self-described severe-constipation buyers.",
+      "implication": "Add explicit dosing guidance in Spanish copy: 'For severe chronic constipation, start with 2 capsules + warm water + consult doctor.' Lead positioning at mild-moderate users — don't over-promise to severe cases.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Pricing",
+      "finding": "13% of ES negatives cite price as the failure — meaningfully higher than DE (4%) and FR (4%). Spain is more price-sensitive on natural laxatives than DE/FR.",
+      "implication": "Test a smaller-bottle (30-capsule) entry SKU at lower price point on ES. Also strengthen Subscribe & Save discount visibility on the Spanish listing.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Risk",
+      "finding": "Severe cramping reports at recommended dose (8% of ES negatives) include the same 'what death must feel like' review that surfaced in DE/FR. Cross-pool risk visible to ES shoppers too.",
+      "implication": "Add stronger 'start with half a capsule if first time / if sensitive' warning. Consider a lower-dose SKU variant for sensitive users.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Communication",
+      "finding": "Instructions reportedly only accessible via QR code (3.5% of negatives) — fine for digital natives, frustrating for older or rural buyers. ES home market skews older for laxative purchase.",
+      "implication": "Print full dosing + ingredient mg breakdown on the box itself. Keep QR for value-add (WhatsApp support) but stop hiding essential dosing behind it.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Operational",
+      "finding": "Same capsule-count / broken-seal complaints seen in DE/FR also appear in ES (7% of negatives). Brand-wide fulfilment QC issue at QSTA's contract manufacturer.",
+      "implication": "Audit fulfilment line. Implement weight check + capsule count verification per bottle. Cheap fix; lost reviews are not.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "It works (general satisfaction)",
+      "reason": "broad positive: 'funciona', 'es efectivo', 'cumple su función', 'works' — customers who got the bowel movement they paid for. The dominant positive in Spanish home-market reviews.",
+      "pct": "31.3%",
+      "bullets": [
+        "Most common positive — many short Spanish reviews simply confirm the laxative effect",
+        "Frequently followed by 'lo volveré a comprar' (will buy again)",
+        "ES home market shows highest repeat-purchase signal of all 3 Lax dashboards"
+      ],
+      "quotes": [
+        "\"Funciona! Excellent product — I have chronic constipation, take 1 capsule a night, works wonderfully and I'll definitely buy again.\"",
+        "\"My case is severe chronic constipation. I can go 2 weeks without evacuating. These pills work like a marvel — I now alternate them with another product so I don't get used to them.\"",
+        "\"From the day I started taking it, no more constipation problems. I am happy.\""
+      ]
+    },
+    {
+      "label": "Natural alternative to chemical laxatives",
+      "reason": "the strongest differentiating positive — ES customers explicitly name Dulcolax, Microlax suppositories, Plantago husks, Movicol, Digestic as products they're switching away from.",
+      "pct": "16.7%",
+      "bullets": [
+        "ES reviewers name specific Spanish-market chemical alternatives (Dulcolax, Microlax, Plantago)",
+        "Strong preference for ingredient transparency — 7 named herbs (papaya, sena, aloe vera, arraclán, cárdamo, hinojo, llantén)",
+        "Many compare favourably to brand-name Digestic which costs more"
+      ],
+      "quotes": [
+        "\"I had been buying Digestic for over a year but the price is now unacceptable. I looked for another natural alternative and from day one this has worked. Five stars because the result is what matters.\"",
+        "\"100% natural and very effective. I had tried various pills, natural and otherwise, that promised much and didn't deliver. These do — perfectly.\"",
+        "\"Natural ingredients — I prefer them to chemical alternatives. The capsules gently stimulate digestion.\""
+      ]
+    },
+    {
+      "label": "Gentle action — no cramps (suave, sin retortijones)",
+      "reason": "the second customer-validated positioning angle. ES buyers repeatedly use 'suave', 'sin retortijones', 'sin dolor', 'sin molestias' — gentleness is a top-named virtue.",
+      "pct": "13.6%",
+      "bullets": [
+        "'Suave' / 'sin retortijones' / 'no dolor de barriga' appear constantly in ES titles",
+        "Without-cramps positioning is an active praise point, not just absence of complaint",
+        "Strong fit with the 'natural alternative' positioning above"
+      ],
+      "quotes": [
+        "\"Effective laxative without cramps, gas, or the need for a toilet nearby — unlike many others. It regulates your transit naturally.\"",
+        "\"Without giving you cramps in your belly! A great help.\"",
+        "\"Works without being aggressive — gently regulates intestinal movement.\""
+      ]
+    },
+    {
+      "label": "Easy to swallow / no taste",
+      "reason": "ES buyers consistently praise the small-to-medium capsule size and neutral taste. Important for daily compliance and for elderly buyers.",
+      "pct": "10.6%",
+      "bullets": [
+        "'Cápsulas pequeñas, fáciles de tragar' frequently repeated",
+        "'Sin sabor' (no taste / no aftertaste) praised — important for daily ritual",
+        "Practical for elderly users and those sensitive to taste"
+      ],
+      "quotes": [
+        "\"Tasteless, easy to swallow, capsules are small. Good quality-price.\"",
+        "\"Comfortable format, easy to swallow, no taste — practical and convenient.\"",
+        "\"Small-to-medium capsules but they go down well with water.\""
+      ]
+    },
+    {
+      "label": "Customer service / QR + WhatsApp support",
+      "reason": "ES home-market reviewers explicitly praise the QR-code → WhatsApp support service as a real differentiator. They love being able to ask dosing questions and get personalised guidance.",
+      "pct": "9.6%",
+      "bullets": [
+        "The QR-coded support is genuinely praised by ES buyers (unlike in DE/FR where it's neutral)",
+        "Spanish buyers value 'atención personalizada' and 'explicaciones claras'",
+        "'Servicio al cliente excelente' phrasing recurs across many ES 5-star reviews"
+      ],
+      "quotes": [
+        "\"The service they give you is 10 out of 10 — the ease of the QR, and being able to contact them when you need information... it is priceless.\"",
+        "\"Excellent customer service who guide you on everything and how to take it, plus explain how to use it.\"",
+        "\"I take it as recommended by the personalised assistant from the QR — I have lazy colon, and honestly it has given me excellent results.\""
+      ]
+    },
+    {
+      "label": "7-herb natural formula (multi-ingredient)",
+      "reason": "ES buyers actively recite the 7 herbs (papaya, aloe vera, arraclán, cárdamo, hinojo, sena, llantén) and treat the multi-ingredient blend as the value proposition.",
+      "pct": "7.6%",
+      "bullets": [
+        "Detailed ingredient knowledge is unusual — ES customers learn and quote the 7 herbs",
+        "Papaya + aloe vera are particularly cited as familiar / trusted ingredients",
+        "Multi-mechanism action perceived as gentler than single-ingredient chemical laxatives"
+      ],
+      "quotes": [
+        "\"Papaya (for bloating, constipation, gas), cardamom (for constipation control), fennel (relaxes intestinal muscles), senna, aloe vera, arraclán, plantago — a complete natural blend.\"",
+        "\"100% natural laxative based on 7 dry extracts — combination relieves both occasional and chronic constipation without abdominal pain.\"",
+        "\"I like that they're natural, no unnecessary additives or chemicals.\""
+      ]
+    },
+    {
+      "label": "Reliable for chronic / long-term issues",
+      "reason": "ES buyers with chronic constipation become long-term repeat purchasers — often the strongest emotional 5-star reviews. Multi-bottle purchase patterns common.",
+      "pct": "6.6%",
+      "bullets": [
+        "Strong repeat-purchase signal in ES specifically",
+        "Many ES reviewers mention 'second / third / fourth bottle'",
+        "Some report 2+ years of subscription use"
+      ],
+      "quotes": [
+        "\"I have tried many products — this is the one that works reliably without side effects. My go-to.\"",
+        "\"After 3 years and hundreds of euros on alternatives, finally normal bathroom function. Life-changing.\"",
+        "\"Second purchase — I take 1 capsule at night, sometimes 2 if needed. Of all the brands I've tried, this is the one that works best.\""
+      ]
+    },
+    {
+      "label": "Fast / overnight results",
+      "reason": "many ES customers take the capsule at night → bowel movement next morning. Predictable cycle when timed correctly.",
+      "pct": "3.5%",
+      "bullets": [
+        "Take-at-night-effect-by-morning pattern frequently described",
+        "Customers value the predictable overnight cycle (avoids workday disruption)",
+        "Often combined with warm-water ritual"
+      ],
+      "quotes": [
+        "\"First day taking it — I took two at night and went to the bathroom in the morning super well, no belly pain. I recommend it.\"",
+        "\"Took it at night, no pain, easy bowel movement the following morning.\"",
+        "\"Effective and naturally — a very natural laxative that is not hard on your stomach.\""
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim",
+      "finding": "'Natural alternative to chemical laxatives' + 'gentle, sin retortijones' = 30% of ES positives. Same #1 positive theme as DE / FR — but in ES it's backed by named-competitor knowledge (Dulcolax, Microlax, Plantago, Digestic).",
+      "implication": "On the ES listing make 'Alternativa natural — sin retortijones, sin químicos' the main image headline. Demote '7-IN-1' and 'efecto rápido fuerte' (which trigger the same over-promise complaints as in DE/FR).",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "The QR + WhatsApp support service is genuinely praised by 10% of ES positive reviewers as a buying reason — far more than in DE/FR where it's invisible. Spanish-language customer service is the brand's real moat in the home market.",
+      "implication": "Make 'Atención personalizada por WhatsApp' a top-3 bullet on the ES listing — and consider featuring named pharmacists / consultants from the support team in A+ content. This is the most differentiated lever on ES.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "ES is the strongest repeat-purchase market — Spanish home-market reviewers explicitly mention being on their 2nd / 3rd / 4th bottle, and the QSTA / Nutra CNC brand has name recognition in Spain. Cross-pool buyers (DE/FR/IT/EN) show no comparable loyalty.",
+      "implication": "Lean into Subscribe & Save on the ES listing — high LTV potential. Create a Spanish-language loyalty program (LAX+ Club) with bundles, a free WhatsApp dosing consultation, and exclusive early access to new products like Inositol / Menositol.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Use case",
+      "finding": "Diet / keto / low-fibre disruption is a notably bigger purchase trigger in ES (~9% of usage) than in DE (2%) or FR. Spanish diet culture (Mediterranean / restrictive plans) creates a distinct buyer segment.",
+      "implication": "Add a 'diet-friendly companion' badge or sub-positioning targeting keto / low-fibre eaters. Could integrate with diet-focused influencer partnerships in Spain.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "buyersMotivation": [
+    {
+      "label": "Treat chronic constipation",
+      "reason": "primary purchase trigger — persistent slow transit, often paired with frustration over previous remedies.",
+      "pct": "28.3%"
+    },
+    {
+      "label": "Avoid chemical laxatives (Dulcolax, Microlax, Plantago)",
+      "reason": "ES buyers explicitly name Spanish-market chemical alternatives they want to escape — Dulcolax, Microlax, Plantago husks, Movicol.",
+      "pct": "20.6%"
+    },
+    {
+      "label": "Daily gentle maintenance",
+      "reason": "preventive use — 1 capsule daily to stay regular without acute episodes. ES home-market over-indexes here.",
+      "pct": "16.4%"
+    },
+    {
+      "label": "Acute one-off relief",
+      "reason": "single episode of constipation triggers emergency purchase — 2-capsule rescue dose.",
+      "pct": "10.8%"
+    },
+    {
+      "label": "Diet / keto / low-fibre disruption",
+      "reason": "Spanish dieters and keto practitioners — restrictive eating disrupts transit, users want natural rebalance.",
+      "pct": "8.5%"
+    },
+    {
+      "label": "Brand loyalty / repurchase",
+      "reason": "QSTA / Nutra CNC buyers come back to LAX+ specifically — strong repeat-purchase motivation visible only in ES.",
+      "pct": "7.1%"
+    },
+    {
+      "label": "Travel / vacation constipation",
+      "reason": "long flights, hotel meals, schedule disruption → predictable constipation.",
+      "pct": "5.3%"
+    },
+    {
+      "label": "Cope with medication side-effect",
+      "reason": "pain meds, opioids, antidepressants cause constipation — users want a coping tool that won't interact.",
+      "pct": "3.0%"
+    }
+  ],
+  "customerExpectations": [
+    {
+      "label": "Reliable bowel movement every time",
+      "reason": "users want consistency — works first time AND fifth time. Habituation undermines this.",
+      "pct": "27.3%"
+    },
+    {
+      "label": "100% natural — no chemicals, transparent ingredients",
+      "reason": "core ES purchase reason. Spanish buyers actively read the 7-herb list and praise ingredient transparency.",
+      "pct": "18.6%"
+    },
+    {
+      "label": "No cramps / suave / no abdominal pain",
+      "reason": "the product positions on 'suave' but ~8% of ES negatives report severe cramping. Gap between expectation and outcome.",
+      "pct": "15.7%"
+    },
+    {
+      "label": "Reasonable price for daily-use natural product",
+      "reason": "€20–28 is the upper acceptable range in ES. Price-quality complaints are 3× more frequent than in DE / FR.",
+      "pct": "12.4%"
+    },
+    {
+      "label": "Personalised support / WhatsApp guidance",
+      "reason": "ES buyers actively expect QR-coded WhatsApp dosing support to be available — it's now a baseline brand promise on the Spanish listing.",
+      "pct": "9.8%"
+    },
+    {
+      "label": "Easy-to-swallow capsules, no taste",
+      "reason": "ES buyers explicitly check for swallowability and neutral taste — daily use requires it.",
+      "pct": "7.6%"
+    },
+    {
+      "label": "Predictable timing",
+      "reason": "users want to plan the bathroom around their schedule. Unpredictable cycles disrupt work.",
+      "pct": "5.6%"
+    },
+    {
+      "label": "Proper sealing + correct count + dosing on box",
+      "reason": "broken seals, expired product, and instructions hidden behind a QR repeatedly flagged.",
+      "pct": "3.0%"
+    }
+  ],
   "themeFilters": [
     {
       "value": "",
       "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect / doesn't work"
+    },
+    {
+      "value": "side_effects",
+      "label": "Cramps / pain"
+    },
+    {
+      "value": "too_weak",
+      "label": "Too weak"
+    },
+    {
+      "value": "uncontrollable",
+      "label": "Uncontrollable timing"
+    },
+    {
+      "value": "expensive",
+      "label": "Too expensive"
+    },
+    {
+      "value": "habituation",
+      "label": "Effect fades"
+    },
+    {
+      "value": "packaging",
+      "label": "Packaging defects"
+    },
+    {
+      "value": "labelling",
+      "label": "Labelling / QR only"
+    },
+    {
+      "value": "works",
+      "label": "Works"
+    },
+    {
+      "value": "natural_alternative",
+      "label": "Natural alternative to chemical laxatives"
+    },
+    {
+      "value": "gentle",
+      "label": "Gentle / no cramps (suave)"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to swallow / no taste"
+    },
+    {
+      "value": "qr_whatsapp",
+      "label": "QR / WhatsApp support"
+    },
+    {
+      "value": "seven_herbs",
+      "label": "7-herb natural formula"
+    },
+    {
+      "value": "reliable",
+      "label": "Reliable for chronic"
+    },
+    {
+      "value": "fast_results",
+      "label": "Fast / overnight results"
+    },
+    {
+      "value": "diet_keto",
+      "label": "Diet / keto disruption"
     }
   ],
   "sentimentFilters": [
@@ -62,7 +658,7 @@
     },
     {
       "value": "neu",
-      "label": "Neutral"
+      "label": "Neutral / mixed"
     }
   ]
 }
