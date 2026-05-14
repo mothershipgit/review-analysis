@@ -49,6 +49,9 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (5 competitors, curated) |
 | `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ✅ (5 competitors) |
+| `lax-uk` | Lax UK | B0BM1WPXC5 | UK | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
+| `lax-es` | Lax ES | B0BM1WPXC5 | ES | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
+| `lax-it` | Lax IT | B0BM1WPXC5 | IT | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
 | `inositol-uk` | Inositol Caps UK | TBD | UK | 363 | 63% / 26% / 11% | ✅ | ⏸ |
 | `inositol-de` | Inositol Caps DE | TBD | DE | 367 | 60% / 30% / 10% | ✅ | ⏸ |
 | `inositol-fr` | Inositol Caps FR | TBD | FR | 341 | 52% / 37% / 10% | ✅ | ⏸ |

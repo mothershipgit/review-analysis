@@ -22,6 +22,27 @@
       "file": "index.html"
     },
     {
+      "id": "lax-uk",
+      "title": "Lax UK",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "lax-es",
+      "title": "Lax ES",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
+      "id": "lax-it",
+      "title": "Lax IT",
+      "group": "detailed",
+      "template": "standalone",
+      "file": "index.html"
+    },
+    {
       "id": "inositol-uk",
       "title": "Inositol Caps UK",
       "group": "detailed",
