@@ -114,6 +114,81 @@ body {
   flex-shrink: 0;
 }
 
+/* Status dots (per-market + per-group) */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: background .2s ease;
+}
+.status-pending { background: #cbd5e1; }
+.status-green   { background: #16a34a; }
+.status-orange  { background: #f97316; }
+
+/* Product accordion (sidebar) */
+.sidebar-acc {
+  margin-bottom: 4px;
+}
+.sidebar-acc-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  text-align: left;
+  transition: background .15s ease;
+}
+.sidebar-acc-header:hover {
+  background: #f8fafc;
+}
+.sidebar-acc-label {
+  flex: 1;
+}
+.sidebar-acc-count {
+  font-size: .62rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 1px 7px;
+  border-radius: 9px;
+  font-weight: 600;
+}
+.acc-chevron {
+  width: 14px;
+  height: 14px;
+  color: #94a3b8;
+  transition: transform .2s ease;
+  flex-shrink: 0;
+}
+.sidebar-acc.open .acc-chevron {
+  transform: rotate(180deg);
+  color: #2563eb;
+}
+.sidebar-acc.open .sidebar-acc-header {
+  background: #f8fafc;
+  color: #0f2942;
+}
+.sidebar-acc-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .25s ease;
+}
+.sidebar-acc.open .sidebar-acc-content {
+  max-height: 600px;
+  padding: 4px 0 8px;
+}
+.sidebar-item-nested {
+  padding-left: 30px;
+  font-size: .78rem;
+}
+
 .sidebar-item .arrow {
   margin-left: auto;
   width: 16px;

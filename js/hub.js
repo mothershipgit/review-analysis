@@ -19,6 +19,7 @@
         config = data;
         renderSidebar();
         handleRoute();
+        fetchAllStatuses().then(applyStatuses);
         if (isAdmin) {
           document.getElementById('sidebarFooter').style.display = 'block';
         }
@@ -30,52 +31,178 @@
   }
 
   // ── Sidebar ──
+  //
+  // Detailed dashboards are grouped into accordion sections by product name
+  // (parsed from the dashboard id prefix). One accordion is open at a time.
+  // Per-market status dot is green if both VOC + MDD present, orange otherwise.
+  // Group header dot is green only if every market in the group is green.
+
+  var PRODUCT_RULES = [
+    { match: /^detox-(.+)$/,        product: 'Detox',          priority: 1 },
+    { match: /^lax-(.+)$/,          product: 'Lax',            priority: 2 },
+    { match: /^inositol-(.+)$/,     product: 'Inositol Caps',  priority: 3 },
+    { match: /^menositol-(.+)$/,    product: 'Menositol',      priority: 4 },
+    { match: /^ashwagandha-(.+)$/,  product: 'Ashwagandha',    priority: 5 }
+  ];
+  var MARKET_ORDER = { UK: 1, DE: 2, FR: 3, ES: 4, IT: 5, US: 6, EU: 7 };
+
+  function parseProduct(id) {
+    for (var i = 0; i < PRODUCT_RULES.length; i++) {
+      var m = id.match(PRODUCT_RULES[i].match);
+      if (m) return { product: PRODUCT_RULES[i].product, market: m[1].toUpperCase(), priority: PRODUCT_RULES[i].priority };
+    }
+    return { product: id, market: '', priority: 99 };
+  }
+
+  function productSlug(p) { return p.toLowerCase().replace(/\s+/g, '-'); }
+
   function renderSidebar() {
     var nav = document.getElementById('sidebarNav');
     var topline = config.dashboards.filter(function(d) { return d.group === 'topline'; });
     var detailed = config.dashboards.filter(function(d) { return d.group === 'detailed'; });
+
+    // Group detailed dashboards by parsed product
+    var byProduct = {};
+    detailed.forEach(function(d) {
+      var info = parseProduct(d.id);
+      if (!byProduct[info.product]) {
+        byProduct[info.product] = { product: info.product, priority: info.priority, items: [] };
+      }
+      byProduct[info.product].items.push({ entry: d, market: info.market });
+    });
+    var groups = Object.keys(byProduct).map(function(k) { return byProduct[k]; });
+    groups.sort(function(a, b) { return a.priority - b.priority; });
+    groups.forEach(function(g) {
+      g.items.sort(function(a, b) {
+        return (MARKET_ORDER[a.market] || 99) - (MARKET_ORDER[b.market] || 99);
+      });
+    });
+
     var html = '';
 
     if (topline.length > 0) {
       html += '<div class="sidebar-group">';
       html += '<div class="sidebar-group-title">Top Line</div>';
-      topline.forEach(function(d) {
-        html += sidebarButton(d);
-      });
+      topline.forEach(function(d) { html += sidebarFlatButton(d); });
       html += '</div>';
     }
 
-    if (detailed.length > 0) {
+    if (groups.length > 0) {
       html += '<div class="sidebar-group">';
       html += '<div class="sidebar-group-title">Detailed</div>';
-      detailed.forEach(function(d) {
-        html += sidebarButton(d);
-      });
+      groups.forEach(function(g) { html += renderAccordion(g); });
       html += '</div>';
     }
 
     nav.innerHTML = html;
 
-    // Attach click handlers
+    // Wire click handlers
     nav.querySelectorAll('.sidebar-item').forEach(function(btn) {
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
         window.location.hash = btn.dataset.id;
+      });
+    });
+    nav.querySelectorAll('.sidebar-acc-header').forEach(function(header) {
+      header.addEventListener('click', function() {
+        toggleAccordion(header.closest('.sidebar-acc'));
       });
     });
   }
 
-  function sidebarButton(d) {
-    var dotColor = d.group === 'topline' ? '#2563eb' : '#16a34a';
+  function sidebarFlatButton(d) {
     return '<button class="sidebar-item" data-id="' + d.id + '">' +
-      '<span class="sidebar-item-dot" style="background:' + dotColor + '"></span>' +
+      '<span class="sidebar-item-dot" style="background:#2563eb"></span>' +
       '<span class="sidebar-item-label">' + d.title + '</span>' +
       '<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>' +
       '</button>';
   }
 
+  function renderAccordion(g) {
+    var slug = productSlug(g.product);
+    var h = '<div class="sidebar-acc" data-product="' + slug + '">';
+    h += '<button class="sidebar-acc-header" type="button">';
+    h += '<span class="status-dot status-pending" data-group-dot="' + slug + '"></span>';
+    h += '<span class="sidebar-acc-label">' + g.product + '</span>';
+    h += '<span class="sidebar-acc-count">' + g.items.length + '</span>';
+    h += '<svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+    h += '</button>';
+    h += '<div class="sidebar-acc-content">';
+    g.items.forEach(function(item) {
+      h += '<button class="sidebar-item sidebar-item-nested" data-id="' + item.entry.id + '">';
+      h += '<span class="status-dot status-pending" data-id="' + item.entry.id + '"></span>';
+      h += '<span class="sidebar-item-label">' + item.market + '</span>';
+      h += '<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>';
+      h += '</button>';
+    });
+    h += '</div></div>';
+    return h;
+  }
+
+  function toggleAccordion(acc) {
+    var wasOpen = acc.classList.contains('open');
+    document.querySelectorAll('.sidebar-acc').forEach(function(a) { a.classList.remove('open'); });
+    if (!wasOpen) acc.classList.add('open');
+  }
+
+  function openAccordionFor(id) {
+    var btn = document.querySelector('.sidebar-item[data-id="' + id + '"]');
+    if (!btn) return;
+    var acc = btn.closest('.sidebar-acc');
+    if (!acc) return;
+    document.querySelectorAll('.sidebar-acc').forEach(function(a) { a.classList.remove('open'); });
+    acc.classList.add('open');
+  }
+
   function updateActiveState(id) {
     document.querySelectorAll('.sidebar-item').forEach(function(btn) {
       btn.classList.toggle('active', btn.dataset.id === id);
+    });
+    openAccordionFor(id);
+  }
+
+  // ── Status dots ──
+  // Fetch every dashboard.json once, classify VOC + MDD completeness, paint dots.
+
+  function fetchAllStatuses() {
+    return Promise.all(config.dashboards.map(function(d) {
+      return fetch('dashboards/' + d.id + '/dashboard.json')
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .catch(function() { return null; })
+        .then(function(data) {
+          var hasVoc = !!(data && data.totalReviews && data.totalReviews > 0 && data.negativeTopics && data.negativeTopics.length > 0);
+          var mdd = data && data.marketingDeepDive;
+          var hasMdd = !!(mdd && mdd.competitors && mdd.competitors.length > 0);
+          return { id: d.id, voc: hasVoc, mdd: hasMdd };
+        });
+    }));
+  }
+
+  function applyStatuses(statuses) {
+    var byId = {};
+    statuses.forEach(function(s) { byId[s.id] = s; });
+
+    // Per-market dots
+    document.querySelectorAll('.status-dot[data-id]').forEach(function(dot) {
+      var s = byId[dot.dataset.id];
+      dot.classList.remove('status-pending', 'status-green', 'status-orange');
+      if (!s) { dot.classList.add('status-pending'); return; }
+      dot.classList.add((s.voc && s.mdd) ? 'status-green' : 'status-orange');
+      dot.title = 'VOC: ' + (s.voc ? '✓' : '–') + '   MDD: ' + (s.mdd ? '✓' : '–');
+    });
+
+    // Group header dot — green only if every market in the group is green
+    document.querySelectorAll('.sidebar-acc').forEach(function(acc) {
+      var marketDots = acc.querySelectorAll('.status-dot[data-id]');
+      var allGreen = marketDots.length > 0;
+      marketDots.forEach(function(d) {
+        if (!d.classList.contains('status-green')) allGreen = false;
+      });
+      var groupDot = acc.querySelector('.status-dot[data-group-dot]');
+      if (!groupDot) return;
+      groupDot.classList.remove('status-pending', 'status-green', 'status-orange');
+      groupDot.classList.add(allGreen ? 'status-green' : 'status-orange');
+      groupDot.title = allGreen ? 'All markets complete (VOC + MDD)' : 'Some markets missing VOC or MDD';
     });
   }
 
