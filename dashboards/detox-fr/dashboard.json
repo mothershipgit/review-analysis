@@ -1,68 +1,544 @@
 {
   "id": "detox-fr",
   "title": "Detox FR — Review Analysis",
-  "subtitle": "Awaiting reviews JSON at reviews/B0B6GHYP1V-FR-Reviews.json",
+  "subtitle": "B0B6GHYP1V · Amazon FR marketplace · 197 reviews · Multilingual analysis",
   "asin": "B0B6GHYP1V",
   "marketplace": "FR",
   "reviewsFile": "../../reviews/B0B6GHYP1V-FR-Reviews.json",
-  "totalReviews": 0,
-  "posCount": 0,
-  "negCount": 0,
-  "neuCount": 0,
-  "posPct": "—",
-  "negPct": "—",
-  "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Drop reviews JSON at <code>reviews/B0B6GHYP1V-FR-Reviews.json</code> and run VOC refresh.",
+  "totalReviews": 197,
+  "posCount": 130,
+  "negCount": 50,
+  "neuCount": 17,
+  "posPct": "66.0",
+  "negPct": "25.4",
+  "neuPct": "8.6",
+  "cpSummary": "Customer profile based on <strong>197 reviews scraped from amazon.fr's product page</strong>. The Spanish-led CNC / QSTA brand triggers heavy cross-marketplace pooling — the file is <strong>~52% native French, ~38% Italian cross-pool, ~8% UK / UAE English, ~3% German</strong>. The most common buyer is a <strong>French woman aged 30–55</strong> seeking <strong>bloating relief, regular transit, or post-holiday/pre-summer cleanse</strong>, taking the supplement <strong>at home in the evening before bed</strong>. Compared with the Detox DE dashboard (same ASIN, 42/48/10 sentiment), <strong>FR runs sharply more positive (66/25/9)</strong> — driven by enthusiastic native-French reviews praising the QR/WhatsApp concierge and tangible bloating + transit effects. Negative reviewers split between 'no effect at all' and severe GI/systemic side effects.",
   "cpWho": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Women — bloating / silhouette",
+      "Chronic constipation / slow transit",
+      "Post-holiday / seasonal cleanse",
+      "Health-conscious dieters",
+      "Older buyers (parent / 60+)",
+      "Men"
+    ],
+    "pos": [42, 28, 24, 22, 8, 6],
+    "neg": [16, 12, 6, 8, 4, 4]
   },
   "cpWhen": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Daily evening routine",
+      "Post-holiday / seasonal reset",
+      "Pre-summer / pre-event slimming",
+      "First-time detox trial",
+      "After medication-caused constipation",
+      "Repeat / 2nd-3rd cure"
+    ],
+    "pos": [40, 26, 16, 18, 10, 20],
+    "neg": [18, 8, 6, 14, 2, 2]
   },
   "cpWhere": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Home — evening before bed",
+      "Paired with diet + exercise",
+      "Travel / work day (problematic)",
+      "Post-medical / chronic condition"
+    ],
+    "pos": [82, 28, 6, 14],
+    "neg": [32, 8, 6, 4]
   },
   "cpWhat": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Bloating relief / flat belly",
+      "Bowel regularity",
+      "Diuretic / fluid loss",
+      "Weight loss",
+      "Liver / colon detox",
+      "More energy / better sleep"
+    ],
+    "pos": [48, 38, 28, 22, 24, 16],
+    "neg": [18, 14, 10, 22, 6, 2]
   },
-  "usageScenarios": [],
-  "csSummary": "Pending — awaiting VOC analysis.",
-  "negativeTopics": [],
-  "negativeInsights": [],
-  "positiveTopics": [],
-  "positiveInsights": [],
-  "buyersMotivation": [],
-  "customerExpectations": [],
-  "themeFilters": [
+  "usageScenarios": [
     {
-      "value": "",
-      "label": "All themes"
+      "label": "Bloating relief / flat-belly cure",
+      "reason": "primary use case — customers describe feeling 'gonflé' / 'ballonné' and want a visibly flatter abdomen.",
+      "pct": "22.3%"
+    },
+    {
+      "label": "Bowel regularity / treating constipation",
+      "reason": "users with sluggish transit, IBS, or medication-induced constipation seek a gentle daily nudge — strongest repeat-purchase driver.",
+      "pct": "18.7%"
+    },
+    {
+      "label": "Post-holiday / seasonal cleanse",
+      "reason": "purchases spike after summer, year-end festivities, or 'periods of excess' — users frame it as a reset between seasons.",
+      "pct": "14.5%"
+    },
+    {
+      "label": "Pre-summer / pre-event slimming",
+      "reason": "short-term cosmetic goal: deflate before swimsuit season, wedding, or holiday photos.",
+      "pct": "12.0%"
+    },
+    {
+      "label": "Weight-loss aid (with diet)",
+      "reason": "customers explicitly pair the supplement with calorie restriction, fasting, or exercise — expect it to amplify diet results.",
+      "pct": "10.6%"
+    },
+    {
+      "label": "Fluid retention (legs, ankles, abdomen)",
+      "reason": "diuretic positioning attracts users with swelling, heavy legs, or pre-menstrual puffiness.",
+      "pct": "8.5%"
+    },
+    {
+      "label": "Liver / colon detox",
+      "reason": "buyers attracted by the 'foie, intestin, colon' claim — see it as deeper than a laxative.",
+      "pct": "6.8%"
+    },
+    {
+      "label": "Better sleep / digestion at night",
+      "reason": "many users report a deeper sleep effect when taking 30 min before bed — secondary benefit cited as a reason to continue.",
+      "pct": "4.7%"
+    },
+    {
+      "label": "Replacing harsh chemical laxatives",
+      "reason": "customers tired of Microlax, Forlax, or daily senna look for a 'natural' alternative.",
+      "pct": "1.9%"
     }
   ],
-  "sentimentFilters": [
+  "csSummary": "Sentiment is <strong>strongly positive (66%)</strong> — a dramatic reversal from the Detox DE file (42/48/10). The native-French reviews are unusually enthusiastic about the QR-code WhatsApp concierge and tangible bloating/transit effects. The 25% negative band is real and concentrated on two issues: 'aucun effet' (no effect at all) and severe GI side effects (cramps + diarrhoea on dose 1-2). A smaller but high-severity cluster reports systemic reactions — vertigo, headaches, skin rash, medication interaction.",
+  "negativeTopics": [
     {
-      "value": "",
-      "label": "All sentiment"
+      "label": "No effect at all",
+      "reason": "customers complete the 15-day intensive + 30-day maintenance cycle and report zero observable change in transit, bloating, or weight. Cuts across French and Italian cross-pool reviews equally.",
+      "pct": "30.0%",
+      "bullets": [
+        "Most-cited single complaint — about 1 in 3 negative reviewers",
+        "Customers say they followed instructions exactly and felt 'nothing'",
+        "Often paired with comments about wasted money / scam suspicion"
+      ],
+      "quotes": [
+        "\"Useless. No effect. I regret my purchase.\"",
+        "\"Completely useless product, I tried for 45 days following the instructions but nothing changed — I'm bloated as before and the constipation hasn't improved.\"",
+        "\"After 25 days taking the product I can say it gave no benefit, especially no help with fluid retention and swollen legs. Useless.\""
+      ]
     },
     {
-      "value": "pos",
-      "label": "Positive"
+      "label": "Severe stomach side effects (cramps, diarrhoea)",
+      "reason": "violent diarrhoea, cramping, abdominal pain from the very first 1-2 doses — many customers quit immediately, some describe being unable to leave home or work.",
+      "pct": "24.0%",
+      "bullets": [
+        "Diarrhoea described as continuous, 5-6× per day, sometimes lasting weeks",
+        "Cramps severe enough to require medication or medical care in some cases",
+        "Several customers explicitly say 'do not take if you have to work the next day'"
+      ],
+      "quotes": [
+        "\"Product that made me sick — cramps, abdominal pain and diarrhoea.\"",
+        "\"After two days of taking it: continuous diarrhoea 5-6 times a day and severe abdominal pain. I do not recommend this product.\"",
+        "\"I'm doubled over in pain this morning — your best friend is the toilet. Impossible to take this when you have to work the next day.\""
+      ]
     },
     {
-      "value": "neg",
-      "label": "Negative"
+      "label": "Only a laxative — not a detox or diuretic",
+      "reason": "customers feel mis-sold. Expected fluid drainage, slimming, or 'detox' effects; got only a bowel-movement effect.",
+      "pct": "12.0%",
+      "bullets": [
+        "Customers explicitly distinguish 'going to the toilet more' from 'detox' or 'diuretic'",
+        "Italian cross-pool reviews call out 'nessun effetto drenante / snellente' specifically",
+        "Some warn future buyers: 'these are just laxatives'"
+      ],
+      "quotes": [
+        "\"No diuretic and slimming effect after 2 weeks of use — honestly I wouldn't buy it again by mistake.\"",
+        "\"Basically these are laxatives — not what was promised.\"",
+        "\"I was looking for a draining product, instead the only effect I had for a week was an unpleasant laxative effect.\""
+      ]
     },
     {
-      "value": "neu",
-      "label": "Neutral"
+      "label": "Severe systemic adverse reactions",
+      "reason": "beyond GI: vertigo, dizziness, headaches, skin rash, projectile vomiting, medication interaction. Several customers report being unable to drive or having to restart medical treatment.",
+      "pct": "10.0%",
+      "bullets": [
+        "Higher-stakes than typical supplement complaints — a real safety flag",
+        "Symptoms include vertigo, headaches, skin rash, projectile vomiting, anxiety",
+        "One reviewer reports the activated charcoal cancelled their medication — had to restart treatment from scratch"
+      ],
+      "quotes": [
+        "\"I do not recommend this product, it seems dangerous to me — I had headaches and dizziness ever since I stopped, and constant drowsiness. Beware.\"",
+        "\"Started a skin rash all over my body for several days — only stopped when I stopped taking the pills.\"",
+        "\"Took two nights × 2 tablets — horrible tummy pain, projectile sickness at the same time, constant diarrhoea. Cannot eat or drink water without being sick.\""
+      ]
+    },
+    {
+      "label": "No weight loss",
+      "reason": "many buyers came expecting scale movement (often paired with diet + exercise) and report zero kg lost. Particularly painful for menopausal or post-pregnancy buyers.",
+      "pct": "8.0%",
+      "bullets": [
+        "Even with strict diet + exercise + personal trainer, customers report no weight reduction",
+        "Some accept 'this isn't a slimmer' but feel mis-sold by listing imagery",
+        "Strong cross-pool theme — Italian reviewers especially flag 'nessuna perdita di peso'"
+      ],
+      "quotes": [
+        "\"I'm doing a personalised diet + intense physical activity, followed by a personal trainer and dietician. I was looking for something to help but honestly I notice nothing.\"",
+        "\"With diet and constancy, this product is of little use.\"",
+        "\"After a month — nothing. Disappointing.\""
+      ]
+    },
+    {
+      "label": "Packaging / quantity defects",
+      "reason": "broken seals, half-empty bottles on arrival, mismatched ingredient dosages vs label, missing capsules. Triggers immediate refund requests and 'arnaque' (scam) accusations.",
+      "pct": "7.0%",
+      "bullets": [
+        "Multiple reports of bottles arriving partially empty",
+        "One reviewer claims ingredient dosages are half the labelled amount (200mg → 100mg)",
+        "Country-of-manufacture claim disputed: labelled 'fabrication française', actually Made in EU"
+      ],
+      "quotes": [
+        "\"The bottle was open and almost empty.\"",
+        "\"This product is normally listed as French manufacture. That's false. Made in EU. Plus the ingredients are dosed twice less than described — 200mg aloe vera, 200mg fennel and 200mg charcoal listed, but on the bottle it's 100mg of each. SCAM. I'm requesting a refund.\"",
+        "\"Disappointed — bottle half full and packaging arrived open.\""
+      ]
+    },
+    {
+      "label": "Insomnia / wrong time of day",
+      "reason": "smaller cohort report disrupted sleep — needing to urinate multiple times overnight, or feeling restless after the evening dose.",
+      "pct": "4.0%",
+      "bullets": [
+        "Diuretic action interferes with sleep — multiple bathroom trips at night",
+        "Some report stomach pain interfering with sleep",
+        "Possible label fix: clarify dosing window"
+      ],
+      "quotes": [
+        "\"I sleep very badly because of stomach pain.\"",
+        "\"Sometimes I have to get up several times during the night to go to the toilet — but not always.\"",
+        "\"I take the tablets regularly but haven't really noticed a change. Sometimes I have to go more at night.\""
+      ]
+    },
+    {
+      "label": "Review-for-freebie / customer service pressure",
+      "reason": "smaller cohort flag the WhatsApp concierge as overly pushy for early reviews, or report a non-response when they complained. Less prominent in FR than DE but still present.",
+      "pct": "3.0%",
+      "bullets": [
+        "Customers report WhatsApp / QR-code outreach pressing for 5-star reviews early",
+        "Some report support team going silent when complaining",
+        "Italian reviews especially mention free-bottle offers tied to ratings"
+      ],
+      "quotes": [
+        "\"Customer service is kind at first and tempts you with gifts etc — I took the capsules as instructed but they kept opening in my stomach, releasing a terrible taste. The service replied: 'thanks' — wow.\"",
+        "\"No information on the ingredients, no responsiveness from the lab despite my email. I will not buy this product again.\"",
+        "\"Suspicious that all positive reviews exist — a bit of ethics please.\""
+      ]
+    },
+    {
+      "label": "Price not justified by results",
+      "reason": "€20-22 per bottle considered expensive when paired with no effect or operational issues.",
+      "pct": "2.0%",
+      "bullets": [
+        "Customers compare ingredient mix to cheaper individual supplements",
+        "Particularly painful when no effect is felt — feels like double loss",
+        "Bottle price compared to single-month effective use is questioned"
+      ],
+      "quotes": [
+        "\"Price somewhat high — that's my only regret.\"",
+        "\"Expensive for what it delivers.\"",
+        "\"Not worth it for the result I got.\""
+      ]
     }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Risk",
+      "finding": "Adverse-reaction reports include vertigo, headaches, skin rash, projectile vomiting and one explicit medication-interaction case (activated charcoal cancelled prescription drugs).",
+      "implication": "Add a visible 'do not take within 2 hours of any medication — activated charcoal absorbs drugs' warning on the listing and packaging. This is a clinical risk, not a marketing issue.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Mis-positioning",
+      "finding": "30% of negatives say 'no effect' — but many came specifically for weight loss or diuretic drainage, not bowel regularity / bloating relief.",
+      "implication": "Reposition the FR listing AWAY from slimming/diuretic claims. Lead on 'soulagement des ballonnements + transit régulier' — the actual repeat-claim positives in 5-star French reviews.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Operational",
+      "finding": "Packaging defects (broken seal, half-empty, ingredient-dosage mismatch labelled vs actual, 'fabriqué en France' challenged as false) appear across multiple years.",
+      "implication": "Audit sealing and ingredient labelling immediately. One detailed scam-accusation review is more damaging than 20 short 5-stars are helpful.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Communication",
+      "finding": "French customers feel 'detox' = slimming + diuretic. Product actually delivers laxative + bloating relief. Gap = scam suspicion.",
+      "implication": "Re-write A+ content: lead with 'régularité intestinale + ventre dégonflé', soft-pedal 'slimming' to a tertiary mention with realistic caveats.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Trust",
+      "finding": "Smaller but consistent cohort (~3%) accuses the brand of incentivising reviews via the WhatsApp / QR-code concierge.",
+      "implication": "Audit the concierge script. Phase out any time-pressured ask for early reviews. The concierge is genuinely valuable — don't poison it.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "It works (general satisfaction)",
+      "reason": "broad-stroke positive: 'efficace', 'fonctionne', 'funziona', 'works' — customers feel the product delivered. Dominant theme across French and Italian reviews.",
+      "pct": "26.0%",
+      "bullets": [
+        "Most common positive — many short 5-star reviews just say 'efficace' / 'top'",
+        "Frequently paired with repeat-purchase intent ('j'en suis à ma 2eme cure')",
+        "Strong cross-language consistency (FR/IT/EN all use the same satisfaction shorthand)"
+      ],
+      "quotes": [
+        "\"Very good product, very effective. Recommended.\"",
+        "\"It's the second time I've bought this product and this time I stocked up — it's a super product.\"",
+        "\"Top — I see and feel the difference.\""
+      ]
+    },
+    {
+      "label": "Bloating relief / flatter stomach",
+      "reason": "most repeatedly-named tangible benefit — 'ventre dégonflé', 'pancia sgonfia'. Customers feel less inflated within days, often visible to themselves.",
+      "pct": "20.0%",
+      "bullets": [
+        "Effect typically reported within 3-7 days",
+        "Customers describe abdomen visibly less swollen, lighter feeling",
+        "Bigger effect for users with chronic abdominal bloating"
+      ],
+      "quotes": [
+        "\"After 2 days of trial you feel a slight improvement at the level of the belly which is slightly less bloated.\"",
+        "\"I feel lighter, less bloated.\"",
+        "\"No more abdominal heaviness — release from the very first dose.\""
+      ]
+    },
+    {
+      "label": "Improved bowel regularity",
+      "reason": "constipation sufferers — including users on chronic medications, IBS sufferers, and post-keto-diet customers — report consistent next-day bowel movements without harsh laxative experience.",
+      "pct": "17.0%",
+      "bullets": [
+        "Strongly valued by customers on chronic medications and restricted diets (keto)",
+        "Customers compare favourably to OTC laxatives like Microlax / Forlax",
+        "Many adjust to 1 capsule (vs recommended 2) for gentler effect — works at lower dose"
+      ],
+      "quotes": [
+        "\"I've been doing keto for almost a year — my intestine was practically blocked without herbal teas or medication. Thanks to this supplement, in less than a week I started seeing results and a month later my regularity is back.\"",
+        "\"Take it at night — by morning, on the throne. Does the job.\"",
+        "\"Perfect — no more transit problems since I take it.\""
+      ]
+    },
+    {
+      "label": "Customer service + QR-code concierge",
+      "reason": "post-purchase support via WhatsApp / QR code is consistently praised as responsive — strongest praise driver in native-French reviews (~10-12% mention it explicitly).",
+      "pct": "11.0%",
+      "bullets": [
+        "QR code on packaging directs to detailed instructions + interactive support",
+        "Personalised follow-up via WhatsApp valued especially by first-time detox users",
+        "Some critical reviewers still praise the support team — a defensible differentiator"
+      ],
+      "quotes": [
+        "\"Excellent customer service. The QR code takes you to interactive product usage — best support I've seen on Amazon.\"",
+        "\"I'll give 4 stars just for the follow-up — received today and already positively surprised by the support and explanations. Scan the QR code and everything is explained in detail.\"",
+        "\"Personalised concierge service is very performant — they re-explain how and when to take the supplement and stay available at any time.\""
+      ]
+    },
+    {
+      "label": "Diuretic / fluid loss effect",
+      "reason": "users with leg swelling, water retention, or general puffiness report increased urination and visible reduction in fluid retention — sometimes from day 1.",
+      "pct": "8.0%",
+      "bullets": [
+        "Visible especially in mornings — customers report needing to urinate more",
+        "Particularly valued by women retaining water in legs/ankles in summer",
+        "Some users specifically endorse 'as a diuretic' even when not for weight loss"
+      ],
+      "quotes": [
+        "\"Excellent diuretic — I urinate more in the morning and my weight stays in check.\"",
+        "\"Lighter legs — one week into the cure I can feel the legs are less heavy.\"",
+        "\"Finally serious diuretics — I noticed the effects immediately, I'll definitely buy again.\""
+      ]
+    },
+    {
+      "label": "Weight loss (combined with diet)",
+      "reason": "users who pair the product with diet + exercise report 2-6 kg loss over 2-4 weeks — typically credit diet as the main driver but feel the product 'amplifies' results.",
+      "pct": "7.0%",
+      "bullets": [
+        "Always paired with diet + exercise — never claimed as standalone weight-loss",
+        "Reported losses range from 0.5 kg/week to ~3 kg in 2 weeks",
+        "Customers emphasize 'with healthy eating' caveat — sets honest expectations"
+      ],
+      "quotes": [
+        "\"Lost 3.4 kg in 14 days with strict diet and a few cheat meals. I lost my bloating (it took about 10 days), I lost water retention. I rediscovered a normal transit without daily laxatives.\"",
+        "\"I've lost 3 kg easily and been to the toilet every day without changing anything else — and slept more deeply.\"",
+        "\"With the strict diet I'm doing, this is a real help — works alongside good eating.\""
+      ]
+    },
+    {
+      "label": "Better sleep / deeper rest",
+      "reason": "secondary but surprising benefit — many users report deeper sleep when taking the capsule 30 min before bed. Mentioned even by reviewers neutral on the digestive effects.",
+      "pct": "6.0%",
+      "bullets": [
+        "Cited as an unexpected positive — was not a purchase driver",
+        "Possibly tied to digestive comfort at night (less reflux, less bloating)",
+        "Strong differentiator vs daytime probiotics + laxatives"
+      ],
+      "quotes": [
+        "\"I sleep better and feel a 'deflation' — nothing extraordinary, no miracles, but a pleasant improvement.\"",
+        "\"Better sleep despite the summer heatwave.\"",
+        "\"Nights are no longer spent digesting — I sleep more peacefully and at ease.\""
+      ]
+    },
+    {
+      "label": "Easy to take / vegan / quality formulation",
+      "reason": "small capsules, neutral taste, vegan-friendly, French/Italian-language clear instructions — practical adherence factors that support cycle completion.",
+      "pct": "5.0%",
+      "bullets": [
+        "Capsules described as small, tasteless, easy to swallow with water",
+        "Vegan composition explicitly cited as a buying criterion (especially in IT cross-pool)",
+        "Good quality/price ratio repeatedly mentioned"
+      ],
+      "quotes": [
+        "\"Tasteless, comfortable, easy to take. Capsules are normal-sized, no aftertaste.\"",
+        "\"I bought this for an overnight detox — no particular smell, easy to take, and a top quality/price ratio, especially vegan.\"",
+        "\"Quality capsules — ideal for a cure. Good size and easy to swallow.\""
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim",
+      "finding": "Bloating relief + bowel regularity together account for 37% of all positive comments — bigger than any single weight-loss or detox claim.",
+      "implication": "Make 'soulagement des ballonnements + transit régulier' the primary main image headline. Demote weight-loss imagery to a tertiary mention. This is the same lead claim recommendation as Detox DE — and the FR positive data is even stronger evidence.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "QR-code WhatsApp concierge is the #2 most-cited positive in native-French reviews (11% of positives) — way above DE (~4%). French buyers value this support more than German ones.",
+      "implication": "Promote 'Suivi personnalisé inclus via WhatsApp' to top-3 listing bullet on FR. Add a thumbnail showing the QR-code path on the main image carousel.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "Highest satisfaction is among customers with chronic constipation, IBS, restrictive-diet sufferers (keto), or older parents — not first-time short-term cosmetic users.",
+      "implication": "Subscribe & Save program. Repeat purchase among chronic-issue segments (now showing as 2nd-3rd cure in reviews) will be the sustainable revenue driver. Promote autoship in French listing.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Cross-market signal",
+      "finding": "FR runs +24 points more positive than DE on the same ASIN (66% vs 42%) — driven by enthusiastic native-French reviews praising the concierge and tangible benefits.",
+      "implication": "Don't translate DE A+ copy for FR. The FR market responds to a different emotional register (service, ritual, gentleness) — write FR-native copy.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "buyersMotivation": [
+    {
+      "label": "Reduce bloating / flatten abdomen",
+      "reason": "primary purchase trigger — feeling 'gonflé' or 'ballonné' is the most common expressed driver, more so than weight loss.",
+      "pct": "26.0%"
+    },
+    {
+      "label": "Lose weight",
+      "reason": "customers explicitly buy expecting scale movement, often after holidays, post-pregnancy, or pre-summer.",
+      "pct": "22.0%"
+    },
+    {
+      "label": "Improve digestion / regularity",
+      "reason": "chronic constipation, IBS, sluggish transit, post-medication or post-keto-diet effects.",
+      "pct": "19.0%"
+    },
+    {
+      "label": "General detox / cleanse",
+      "reason": "broad 'reset the body' goal — often seasonal, especially in autumn or post-festive periods.",
+      "pct": "14.0%"
+    },
+    {
+      "label": "Reduce fluid retention / heavy legs",
+      "reason": "diuretic positioning attracts users with leg/ankle swelling, summer water retention.",
+      "pct": "9.0%"
+    },
+    {
+      "label": "Find natural alternative to harsh laxatives",
+      "reason": "users tired of Microlax / Forlax / daily senna seek a gentler plant-based option.",
+      "pct": "5.0%"
+    },
+    {
+      "label": "Better sleep / overall well-being",
+      "reason": "secondary motivation — users want vitality lift, deeper sleep, less digestive heaviness.",
+      "pct": "3.5%"
+    },
+    {
+      "label": "Liver / colon-specific cleanse",
+      "reason": "buyers attracted by the 'foie, intestin, colon' claim — frame it as organ-specific support.",
+      "pct": "1.5%"
+    }
+  ],
+  "customerExpectations": [
+    {
+      "label": "Real scale-moving weight loss",
+      "reason": "the largest expectation gap — customers expect ≥ 2-3 kg loss from the supplement alone; reality requires diet + exercise and is modest.",
+      "pct": "24.0%"
+    },
+    {
+      "label": "Visible bloating relief within days",
+      "reason": "expected effect within the first week. Mostly delivered for positive reviewers; not met for negative ones.",
+      "pct": "18.0%"
+    },
+    {
+      "label": "Diuretic effect (not just laxative)",
+      "reason": "marketed as draining fluids — for many customers only the bowel-movement effect appears.",
+      "pct": "14.0%"
+    },
+    {
+      "label": "No diarrhoea or cramps",
+      "reason": "expected gentle, predictable action. Got: violent diarrhoea, severe cramps, projectile vomiting in worst cases.",
+      "pct": "13.0%"
+    },
+    {
+      "label": "Clear medication-interaction warnings",
+      "reason": "activated charcoal is known to absorb medications — but the FR listing does not flag this clearly. One reviewer had to restart medical treatment.",
+      "pct": "9.0%"
+    },
+    {
+      "label": "Accurate label (ingredients, origin, fill)",
+      "reason": "one detailed review accuses dosage mismatch + false 'fabriqué en France' claim. Half-empty bottles repeatedly reported.",
+      "pct": "8.0%"
+    },
+    {
+      "label": "Predictable timing (controllable next morning)",
+      "reason": "users want to plan workdays — but some report uncontrollable urgency from morning until midday after the first dose.",
+      "pct": "8.0%"
+    },
+    {
+      "label": "Honest concierge (not pushy for reviews)",
+      "reason": "support team praised by most, but a minority reports aggressive 'leave 5-star review' pressure or silence when complaining.",
+      "pct": "6.0%"
+    }
+  ],
+  "themeFilters": [
+    {"value": "", "label": "All themes"},
+    {"value": "no_effect", "label": "No effect"},
+    {"value": "side_effects", "label": "Side effects (cramps, diarrhoea)"},
+    {"value": "severe_reaction", "label": "Severe systemic reaction"},
+    {"value": "only_laxative", "label": "Only laxative — not detox"},
+    {"value": "no_weight_loss", "label": "No weight loss"},
+    {"value": "packaging", "label": "Packaging defects"},
+    {"value": "freebie_scheme", "label": "Review-for-freebie scheme"},
+    {"value": "works", "label": "Works (general)"},
+    {"value": "bloating_relief", "label": "Bloating relief"},
+    {"value": "regularity", "label": "Bowel regularity"},
+    {"value": "diuretic", "label": "Diuretic effect"},
+    {"value": "weight_loss", "label": "Weight loss (with diet)"},
+    {"value": "easy_take", "label": "Easy to take"},
+    {"value": "support", "label": "Customer service / QR support"},
+    {"value": "fast_results", "label": "Fast results"}
+  ],
+  "sentimentFilters": [
+    {"value": "", "label": "All sentiment"},
+    {"value": "pos", "label": "Positive"},
+    {"value": "neg", "label": "Negative"},
+    {"value": "neu", "label": "Neutral / mixed"}
   ]
 }

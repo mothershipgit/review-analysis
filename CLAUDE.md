@@ -47,10 +47,10 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | ID | Title | ASIN | Market | Reviews | Pos / Neg / Neu | VOC | MDD |
 |----|-------|------|--------|---------|-----------------|-----|-----|
 | `detox-de` | Detox DE | B0B6GHYP1V | DE | 304 | 42% / 48% / 10% | ✅ | ✅ (5 competitors, curated) |
-| `detox-uk` | Detox UK | B0B6GHYP1V | UK | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
-| `detox-fr` | Detox FR | B0B6GHYP1V | FR | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
-| `detox-es` | Detox ES | B0B6GHYP1V | ES | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
-| `detox-it` | Detox IT | B0B6GHYP1V | IT | — | — | ⏸ Scaffolded 2026-05-14 | ⏸ |
+| `detox-uk` | Detox UK | B0B6GHYP1V | UK | 71 | 42% / 47% / 11% | ✅ (small dataset) | ⏸ |
+| `detox-fr` | Detox FR | B0B6GHYP1V | FR | 197 | 66% / 25% / 9% | ✅ | ⏸ |
+| `detox-es` | Detox ES | B0B6GHYP1V | ES | 0 | n/a | ⛔ No data — ASIN not listed on amazon.es | ⛔ |
+| `detox-it` | Detox IT | B0B6GHYP1V | IT | 210 | 56% / 24% / 20% | ✅ | ⏸ |
 | `lax-de` | Lax DE | B0BM1WPXC5 | DE | 326 | 47% / 44% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-fr` | Lax FR | B0BM1WPXC5 | FR | 327 | 48% / 43% / 10% | ✅ | ✅ (5 competitors) |
 | `lax-uk` | Lax UK | B0BM1WPXC5 | UK | 345 | 57% / 31% / 12% | ✅ | ⏸ |
@@ -71,6 +71,10 @@ The standalone runs a multilingual sentiment + theme classifier in JS at load ti
 | `ashwagandha-fr` | Ashwagandha FR | TBD | FR | 179 | 62% / 26% / 12% | ✅ | ⏸ |
 | `ashwagandha-es` | Ashwagandha ES | TBD | ES | 187 | 81% / 12% / 7% | ✅ | ⏸ |
 | `ashwagandha-it` | Ashwagandha IT | TBD | IT | 123 | 70% / 18% / 12% | ✅ | ⏸ |
+
+**Detox 5-market VOC complete (2026-05-14):** 4 of 5 markets analyzed (DE done 2026-05-06, UK/FR/IT this session, **ES has 0 reviews — ASIN not listed on amazon.es**). Total 782 reviews across the 4 active markets. Sentiment: DE 42/48/10, UK 42/47/11, FR 66/25/9, IT 56/24/20. FR + IT show a +14-24 point positive swing vs DE — driven by larger native-language tails (FR ~52% native French, IT ~75% native Italian) where QR/WhatsApp concierge is heavily praised. UK is small dataset (71 reviews, only 14% UK-native English).
+
+**Detox cross-market insights:** (1) DE positioning mismatch (came for weight loss, got bloating relief) doesn't apply in IT where Italians come for "drenante + depurativo" — exactly the product. Don't translate DE copy for IT. (2) QR/WhatsApp concierge service is **the strongest brand differentiator in FR + IT** (11% and 26% of positives respectively) — promote to top-3 bullet. (3) Activated charcoal × medication interaction surfaced in FR (clinical risk) — needs warning label. (4) UK-specific medication-induced-constipation use case mirrors Lax UK pattern (defensible whitespace).
 
 **Lax 5-market VOC complete (2026-05-14):** All 5 markets now analyzed (DE/FR populated 2026-05-06, UK/ES/IT this session). Total 1,675 reviews. Sentiment: DE 47/44/10, FR 48/43/10, UK 57/31/12, ES 58/33/8, IT 58/35/7. UK/ES/IT are noticeably more positive than DE/FR — driven by larger native-language tails (DE/FR are mostly cross-pool). MDD already done for DE/FR; UK/ES/IT MDD pending (xlsx already has LAX block for all 5 markets — ready to run Action 3).
 
@@ -232,6 +236,11 @@ The user will append new product-family blocks (separator + header + 5 market ro
 32. **Lax IT — QR/WhatsApp concierge support is praised by ~10% of IT-native positives** — highest of any Lax market (DE ~2%, FR ~5%). Italians value this angle most. Promote to top-3 bullet on IT listing.
 33. **Lax IT — "100% naturale + vegano" resonates uniquely strongly in IT.** Italian buyers explicitly cite vegan/plant-based as a buying criterion (not at this volume in DE/FR). Add a clear "vegano" badge to main image. Also: "blando" (mild/weak) is a UNIQUE IT critical descriptor — reposition IT copy as "delicato per uso quotidiano" not "lassativo forte".
 34. **Lax IT — Vine-program inflation is a credibility risk.** Long, listing-mirroring positive reviews disclosing free product receipt distort the IT positive rate. Wind down new Vine campaigns for this listing.
+35. **Detox FR + IT sentiment is dramatically better than DE on the same ASIN** (FR 66/25/9 vs DE 42/48/10, IT 56/24/20). Driver: larger native-language tails where buyers come for "drenante + depurativo" (the actual product benefit) rather than weight loss (the DE mis-positioning). FR + IT listings deliver against expectations; DE doesn't. **Do not translate DE copy** for FR/IT.
+36. **Detox IT — QR/WhatsApp service praise = 26% of positives, highest of any market across all products.** Italians value the "consult a personal medical advisor via WhatsApp" angle more than any other audience (FR 11%, DE ~4%, others similar or lower). Promote to top-3 bullet on IT listing.
+37. **Detox FR — activated charcoal × prescription medication interaction is a clinical risk** flagged in reviews (one reviewer had to restart prescription treatment after the charcoal absorbed her medication). Needs front-of-pack warning: "do not take within 2 hours of prescription medication."
+38. **Detox UK — "medication-induced constipation + emotional impact" is the dominant UK-native use case.** Echoes Lax UK's GP/IBS/diverticulitis pattern. Build a UK-specific A+ section anchored on this — emotional outcome ("getting really depressed with the constant bloating") is the standout testimonial driver.
+39. **Detox ES is a void** — the ASIN is not listed on amazon.es and returned 0 reviews. The Spanish home market is missing from the Detox portfolio while it is the strongest market for Lax, Inositol, Menositol, and Ashwagandha. Investigate whether to list Detox on amazon.es (untapped home market opportunity) or whether ES customers buy it via cross-marketplace already.
 
 ## Workflow patterns
 

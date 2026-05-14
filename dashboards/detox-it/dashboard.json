@@ -1,50 +1,638 @@
 {
   "id": "detox-it",
   "title": "Detox IT — Review Analysis",
-  "subtitle": "Awaiting reviews JSON at reviews/B0B6GHYP1V-IT-Reviews.json",
+  "subtitle": "B0B6GHYP1V · Amazon IT marketplace · 210 reviews",
   "asin": "B0B6GHYP1V",
   "marketplace": "IT",
   "reviewsFile": "../../reviews/B0B6GHYP1V-IT-Reviews.json",
-  "totalReviews": 0,
-  "posCount": 0,
-  "negCount": 0,
-  "neuCount": 0,
-  "posPct": "—",
-  "negPct": "—",
-  "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Drop reviews JSON at <code>reviews/B0B6GHYP1V-IT-Reviews.json</code> and run VOC refresh.",
+  "totalReviews": 210,
+  "posCount": 117,
+  "negCount": 51,
+  "neuCount": 42,
+  "posPct": "55.7",
+  "negPct": "24.3",
+  "neuPct": "20.0",
+  "cpSummary": "Customer profile based on <strong>210 reviews scraped from amazon.it's product page</strong>. Unlike most CNC dashboards, this file is <strong>~75% Italian-native</strong> (158 of 210 reviews) — the cross-pool component is modest (~22 reviews in French + 7 English/German/Spanish + ~23 short ambiguous reviews). Italian buyers are markedly more positive than the DE sibling: positive rate is <strong>+14 pts above Detox DE</strong> (56% vs 42%). The most common buyer is a <strong>woman aged 30–55</strong> seeking a <strong>diuretic / drenante effect + abdominal de-bloating</strong>, typically taking the capsule <strong>in the evening at home</strong>. The dominant Italian framing is 'drenante e depurativo' rather than 'weight loss' — closer alignment to what the product actually delivers reduces the mis-positioning hit seen in DE.",
   "cpWho": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Women — drenante / bloating",
+      "Post-holiday / festive cleanse",
+      "Chronic digestion / constipation",
+      "Health-conscious dieters",
+      "Men",
+      "Athletes / active lifestyle"
+    ],
+    "pos": [
+      48,
+      22,
+      18,
+      16,
+      8,
+      5
+    ],
+    "neg": [
+      22,
+      4,
+      14,
+      6,
+      3,
+      2
+    ]
   },
   "cpWhen": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Daily routine (evening)",
+      "Post-holiday / post-Christmas cleanse",
+      "Pre-summer / beach season",
+      "After period of dietary excess",
+      "Trying a new detox cure",
+      "Alongside diet + exercise"
+    ],
+    "pos": [
+      38,
+      24,
+      16,
+      14,
+      14,
+      11
+    ],
+    "neg": [
+      14,
+      6,
+      4,
+      8,
+      14,
+      5
+    ]
   },
   "cpWhere": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Home — evening routine",
+      "During diet / wellness plan",
+      "Daily lifestyle support",
+      "After holidays / excess"
+    ],
+    "pos": [
+      62,
+      22,
+      18,
+      15
+    ],
+    "neg": [
+      28,
+      9,
+      8,
+      6
+    ]
   },
   "cpWhat": {
-    "labels": [],
-    "pos": [],
-    "neg": []
+    "labels": [
+      "Diuretic / drenante effect",
+      "Abdominal de-bloating",
+      "Bowel regularity / transit",
+      "Liver + colon detox",
+      "Weight management (with diet)",
+      "More energy / lighter feeling"
+    ],
+    "pos": [
+      44,
+      36,
+      24,
+      18,
+      10,
+      8
+    ],
+    "neg": [
+      18,
+      14,
+      8,
+      6,
+      6,
+      3
+    ]
   },
-  "usageScenarios": [],
-  "csSummary": "Pending — awaiting VOC analysis.",
-  "negativeTopics": [],
-  "negativeInsights": [],
-  "positiveTopics": [],
-  "positiveInsights": [],
-  "buyersMotivation": [],
-  "customerExpectations": [],
+  "usageScenarios": [
+    {
+      "label": "Diuretic / drenante (fluid loss + leg lightness)",
+      "reason": "Italian buyers frame the product first as 'drenante' — they want reduced water retention, lighter legs, and morning diuresis. Different from DE's 'detox' framing.",
+      "pct": "24.0%"
+    },
+    {
+      "label": "Bloating relief / pancia piatta",
+      "reason": "second most common scenario — feeling 'gonfia' or visibly inflated, wanting a flatter abdomen.",
+      "pct": "19.2%"
+    },
+    {
+      "label": "Bowel regularity / treating stitichezza",
+      "reason": "users with sluggish transit, post-keto-diet constipation, or chronic stipsi.",
+      "pct": "14.8%"
+    },
+    {
+      "label": "Post-holiday / post-Christmas cleanse",
+      "reason": "Italian buyers explicitly reference 'periodo natalizio', summer holidays, or 'periodi di eccessi' as the trigger.",
+      "pct": "12.1%"
+    },
+    {
+      "label": "Liver + colon depurativo",
+      "reason": "attracted by 'depura fegato e intestino' messaging — Italians read the formula as digestive support, not weight-loss.",
+      "pct": "9.5%"
+    },
+    {
+      "label": "Weight-loss aid (paired with diet)",
+      "reason": "smaller cohort than DE — Italian users typically don't expect weight loss from this product alone.",
+      "pct": "8.2%"
+    },
+    {
+      "label": "Daily wellness / energy maintenance",
+      "reason": "users on healthy lifestyle who want a regular 'tune-up' — feeling lighter, less heavy after meals.",
+      "pct": "6.4%"
+    },
+    {
+      "label": "Pre-summer / beach season",
+      "reason": "cosmetic deflate before swimsuit season — a small but distinct seasonal cohort.",
+      "pct": "3.8%"
+    },
+    {
+      "label": "Replacing harsh chemical laxatives",
+      "reason": "buyers tired of OTC laxatives seek a milder 'natural' alternative.",
+      "pct": "2.0%"
+    }
+  ],
+  "csSummary": "Italy is the <strong>strongest-performing market</strong> in the Detox portfolio surveyed so far. Positive rate is 56% vs 42% on Detox DE — same ASIN, same formula. The reason is alignment: Italian buyers mostly come for <strong>'drenante e depurativo'</strong> (what the product delivers) rather than weight loss (what DE buyers expected). The QR-code / WhatsApp customer support is a standout positive in Italy, mentioned in ~26% of positive reviews — highest praise of any market.",
+  "negativeTopics": [
+    {
+      "label": "No effect at all",
+      "reason": "customers complete the 30–45 day cycle and report zero observable change in weight, bloating, fluid retention, or transit.",
+      "pct": "31.4%",
+      "bullets": [
+        "Most-cited single complaint — about 1 in 3 negative reviewers",
+        "Customers often paired with diet + exercise and still report nothing",
+        "Frequently include 'completamente inutile' / 'soldi buttati' language"
+      ],
+      "quotes": [
+        "\"Completely useless product. Tried for 45 days following instructions but nothing changed — I'm as bloated as before and constipation hasn't improved.\"",
+        "\"I had read so many positive reviews but despite pairing with diet and sport, I saw no improvement. Disappointment.\"",
+        "\"After 25 days taking the product I can say it gave me no benefit, especially against water retention and swollen legs. Useless.\""
+      ]
+    },
+    {
+      "label": "GI side effects (cramps + diarrhoea)",
+      "reason": "violent cramps, abdominal pain, continuous diarrhoea — many Italian customers stop after 1–3 doses; some specifically call out 'crampi fortissimi'.",
+      "pct": "23.5%",
+      "bullets": [
+        "Cramps described as 'fortissimi' — strong enough to require medication in some cases",
+        "Often appears from the very first dose, not gradual onset",
+        "Many users return the product or quit within the first week"
+      ],
+      "quotes": [
+        "\"As soon as I took this product I suffered from strong cramps and diarrhoea and stopped. Not a valid product.\"",
+        "\"For me it was a disaster — took two pills, had to stop for stomach cramps treated with prescription medication from my doctor.\"",
+        "\"Been taking it for a week, 2 capsules before sleep, and the only effect I noticed is strong cramps and diarrhoea. I do not recommend it.\""
+      ]
+    },
+    {
+      "label": "Only a drenante — no depurativo or weight effect",
+      "reason": "customers feel mis-sold on 'detox / slimming' — got only a diuretic + bowel-movement effect, no measurable depurativo or slimming outcome.",
+      "pct": "13.7%",
+      "bullets": [
+        "Italian framing: 'drenante sì, ma depurativo / dimagrante no'",
+        "Customers explicitly distinguish 'more urination' from real detoxification",
+        "Some warn future buyers: 'don't buy if you want to lose weight'"
+      ],
+      "quotes": [
+        "\"It performs the drenante effect; as for depurativo, I don't know how that could be measurable — I feel just as before.\"",
+        "\"Presented as a diuretic AND slimmer — after 2 weeks: no diuretic-slimming effect at all. I'd never buy again, not even by mistake.\"",
+        "\"Reduces leg heaviness but no drenante effect and no weight loss whatsoever.\""
+      ]
+    },
+    {
+      "label": "No weight loss / no slimming",
+      "reason": "smaller cohort than DE but still present — buyers who came hoping for kg loss feel deceived.",
+      "pct": "9.8%",
+      "bullets": [
+        "Italian no-weight-loss reviewers were typically paired with diet + sport",
+        "Less prominent than in DE — most IT buyers didn't expect weight loss as primary outcome",
+        "When it appears, often paired with 'no drenante either' — total disappointment"
+      ],
+      "quotes": [
+        "\"After a full bottle I can say something happened. I haven't lost any kg (yet) and water retention is still there, but it did improve digestion somewhat.\"",
+        "\"No diuretic-slimming effect after 2 weeks of use. Honestly wouldn't buy again.\"",
+        "\"I bought it for drenante; the only effect I had for a week was the opposite of what I wanted.\""
+      ]
+    },
+    {
+      "label": "Severe systemic adverse reactions",
+      "reason": "rarer than DE but present — nausea, vertigini, headaches, skin rash. Lower volume than the DE file's 10% — IT file shows ~5–6%.",
+      "pct": "5.9%",
+      "bullets": [
+        "Italian negatives describe vertigini, mal di testa, skin rash — same pattern as DE",
+        "Volume is roughly half the DE rate — same product, lower severe-reaction signal in IT",
+        "Customers warn it's 'nocivo alla salute' in extreme cases"
+      ],
+      "quotes": [
+        "\"Harmful to health. I bought this product drawn by the high rating — the only effect I had for a week was [systemic symptoms].\"",
+        "\"Skin rash all over my body for several days, only stopped when I stopped taking the pills.\"",
+        "\"Two days of taking it: continuous diarrhoea 5–6 times a day and severe abdominal pain. I do not recommend.\""
+      ]
+    },
+    {
+      "label": "Packaging / sealing defects",
+      "reason": "bottles arriving partially empty, broken seals, missing capsules — same operational defect documented in the DE sibling.",
+      "pct": "5.9%",
+      "bullets": [
+        "Bottles reported as 'aperto' (opened) or 'quasi vuoto' (almost empty)",
+        "Some report fewer capsules than labelled",
+        "Same brand-wide operational issue as Inositol / Menositol"
+      ],
+      "quotes": [
+        "\"Bottle was already opened and barely a dozen capsules left in the flacon.\"",
+        "\"Less than half the bottle full when I opened it — seal was broken.\"",
+        "\"I counted the capsules and there were fewer than advertised on the label.\""
+      ]
+    },
+    {
+      "label": "Slow onset / need multiple cycles",
+      "reason": "users complain one 45-day cycle isn't enough — they feel the product 'might work' but only after repeated cycles, which feels expensive.",
+      "pct": "4.9%",
+      "bullets": [
+        "Common phrasing: 'una confezione non basta'",
+        "Users suggest multiple cycles needed to see real effect",
+        "Reads as ambivalence rather than outright failure"
+      ],
+      "quotes": [
+        "\"I only took one bottle and maybe it's not enough — I suggest doing more cycles, otherwise you have no evidence of result.\"",
+        "\"Just started using it, the drenante function is still early to judge, but intestinal functions have already improved.\"",
+        "\"I'm at the end of the first bottle — I'll evaluate whether to buy again after I finish.\""
+      ]
+    },
+    {
+      "label": "Price not justified by results",
+      "reason": "smallest negative theme — €20–25 considered expensive when paired with no effect or compared to cheaper drenante alternatives.",
+      "pct": "2.9%",
+      "bullets": [
+        "Italians compare to cheaper drenante tisane and herbal teas",
+        "When effect is felt, price feels fair; when not, it stings",
+        "Rare standalone complaint — usually combined with 'no effect'"
+      ],
+      "quotes": [
+        "\"€21.58 for nothing. Money thrown away.\"",
+        "\"Too expensive for what it delivers — I get the same with herbal teas at half the price.\"",
+        "\"Quality-price ratio is bad if you expect more than mild drenante.\""
+      ]
+    },
+    {
+      "label": "Aggressive review-for-freebie scheme",
+      "reason": "rarely called out in IT (only 1 explicit mention vs 3–4% in DE) — possibly because IT customers don't recognise the WhatsApp follow-up as incentivised review request, or simply less common in IT.",
+      "pct": "2.0%",
+      "bullets": [
+        "Much less prominent in IT than in DE / FR / ES / Inositol / Menositol",
+        "When called out, same pattern: WhatsApp contact pushing 5-star review",
+        "May be under-reported — Italians may not interpret the follow-up as review-for-freebie"
+      ],
+      "quotes": [
+        "\"Post-sales team has lots of urgency for you to write the review at 2 days. After 1 month I noticed nothing.\"",
+        "\"They contact me via WhatsApp to leave 5 stars — that's why this product has a high rating.\"",
+        "\"Suspicious that all positive reviews exist because of the freebie scheme.\""
+      ]
+    }
+  ],
+  "negativeInsights": [
+    {
+      "type": "Mis-positioning (lower-risk than DE)",
+      "finding": "Italian buyers mostly arrive expecting 'drenante e depurativo' — what the product delivers. The 'no weight loss' complaint volume is ~10% (vs ~8% on DE specifically for weight) but combined with 'only drenante' is ~24% of IT negatives vs ~42% of DE negatives. Better alignment.",
+      "implication": "Don't translate DE positioning. IT listing can lean further into drenante + depurativo without disclaiming weight-loss — Italians don't expect it.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Operational",
+      "finding": "Cramps + diarrhoea is the #2 negative theme (24% of IT negatives) — higher single-theme share than in DE. Italian buyers describe 'crampi fortissimi' from first dose.",
+      "implication": "Add explicit dosing escalation on label: 'start with 1 capsule, escalate to 2 only if no reaction'. Same product, slightly Italian-tuned messaging. Cuts the dropout cohort.",
+      "badgeBg": "#fef3c7",
+      "badgeColor": "#92400e"
+    },
+    {
+      "type": "Risk (downgraded from DE)",
+      "finding": "Severe systemic reactions appear in ~6% of IT negatives vs ~10% in DE. Same product — possibly DE buyers self-report severe symptoms more readily, or IT sample skews toward Italians who tolerate the formula better.",
+      "implication": "Still meaningful — keep the 'consult doctor / IBS / hypothyroid' warning. Don't claim systemic safety is solved.",
+      "badgeBg": "#fee2e2",
+      "badgeColor": "#991b1b"
+    },
+    {
+      "type": "Slow-onset clarity",
+      "finding": "~5% of IT negatives are 'might work but one bottle isn't enough'. These are lukewarm-convertible, not outright failures.",
+      "implication": "Push Subscribe & Save in IT specifically. Auto-ship bottle 2 catches the 'might work' cohort before they churn.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Trust (rare in IT)",
+      "finding": "Review-for-freebie scheme is barely called out in IT (1 explicit mention) vs 3–4% in DE/FR/ES. Italians appear less suspicious of WhatsApp follow-up.",
+      "implication": "The freebie scheme is still a brand-wide risk — but IT is the lowest-exposure market for it. Phasing it out brand-wide is still right; IT-specific damage is minimal.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    }
+  ],
+  "positiveTopics": [
+    {
+      "label": "QR-code / WhatsApp customer support",
+      "reason": "Italy's standout positive theme — the QR-code-driven information service + WhatsApp consultation is repeatedly praised, often as the single best part of the experience. ~26% of IT positives mention it.",
+      "pct": "25.6%",
+      "bullets": [
+        "Customers describe the QR/WhatsApp service as 'fantastico', 'reattivo', 'in più lingue'",
+        "Multiple users say the support alone justifies the purchase",
+        "Highest QR-praise rate of any market analyzed so far — surpasses Lax IT (~10%) and Lax FR (~5%)"
+      ],
+      "quotes": [
+        "\"Perfect service and attention to the person. I'll try the product from tonight — but for now, customer service is fantastic. With a simple QR code scan, you get all the information you need.\"",
+        "\"Excellent supplement. Above all for the service and consulting with the customer!\"",
+        "\"I was struck by the speed, clarity and efficiency of the information service available in multiple languages. You can talk to a personal doctor — everything via WhatsApp.\""
+      ]
+    },
+    {
+      "label": "Diuretic / drenante effect",
+      "reason": "Italian buyers' primary expected benefit — and the most reliably delivered outcome. Reduced fluid retention, lighter legs, increased morning urination.",
+      "pct": "19.6%",
+      "bullets": [
+        "Effect typically felt within first week",
+        "Users describe 'leg lightness' and increased diuresis specifically",
+        "Italian buyers value drenante more than DE buyers — better demand-supply match"
+      ],
+      "quotes": [
+        "\"Effective and gentle drenante action — works from the first dose.\"",
+        "\"I urinate more in the morning and my legs feel lighter — drenante effect is real for me.\"",
+        "\"More than a diuretic — it's a complete product, tasteless, easy to swallow.\""
+      ]
+    },
+    {
+      "label": "Bloating relief / pancia sgonfia",
+      "reason": "second-most-reported tangible benefit — visible reduction in abdominal bloating within days.",
+      "pct": "17.4%",
+      "bullets": [
+        "Effect typically within 3–7 days",
+        "Customers describe abdomen visibly less swollen, less 'gonfia'",
+        "Cross-market consistency — same finding as DE"
+      ],
+      "quotes": [
+        "\"I started taking it a few days ago and already noticed small improvements against abdominal bloating.\"",
+        "\"It's a good product for de-bloating and balancing the intestine.\"",
+        "\"Less swollen, flatter belly after a week of use.\""
+      ]
+    },
+    {
+      "label": "Improved bowel regularity",
+      "reason": "constipation sufferers (especially post-keto-diet) report consistent next-day bowel movements without harsh laxative experience.",
+      "pct": "12.8%",
+      "bullets": [
+        "Especially valued by people on chronic medications or restrictive diets",
+        "Compared favourably to chemical laxatives",
+        "Some users adjust to 1 capsule instead of 2 for gentler effect"
+      ],
+      "quotes": [
+        "\"I've been on a ketogenic diet for almost a year and my intestine has been practically blocked without herbal teas. This product helped restore normality.\"",
+        "\"My intestinal functions have improved a lot — I'm more regular.\"",
+        "\"Good product that regulates the intestine without creating problems.\""
+      ]
+    },
+    {
+      "label": "Easy to take / no taste",
+      "reason": "small capsules, neutral / mild flavour, easy to swallow — Italians explicitly praise this in many reviews.",
+      "pct": "9.8%",
+      "bullets": [
+        "Italian users emphasize 'insapore' (tasteless) more than DE users",
+        "Capsule size described as small enough to swallow with water",
+        "Compared favourably to drenante tisane (teas) and beveroni (powdered drinks)"
+      ],
+      "quotes": [
+        "\"Tasteless capsules, easy to swallow — no aftertaste, no throat irritation.\"",
+        "\"I've tried more expensive products and beveroni with unpleasant flavours — these pills are tasteless instead.\"",
+        "\"The capsules are small, easy to swallow, and don't bother you in the throat.\""
+      ]
+    },
+    {
+      "label": "Natural / depurativo positioning",
+      "reason": "Italian buyers value the 'naturale' framing — herbal ingredients (fennel, aloe, charcoal) felt as cleaner than synthetic alternatives.",
+      "pct": "7.1%",
+      "bullets": [
+        "Italians explicitly cite 'a base naturale' and 'senza additivi chimici'",
+        "Plant-based composition is a buying criterion in IT (similar to Lax IT 'vegano' resonance)",
+        "Differentiator from chemical OTC laxatives"
+      ],
+      "quotes": [
+        "\"I wanted to try the product because it's plant-based and I have to say I've tried more expensive products before.\"",
+        "\"All natural and without chemical additives — the QR provides info on the product and how to take it.\"",
+        "\"Natural alternative — works for me without aggressive effects.\""
+      ]
+    },
+    {
+      "label": "Repeat purchase / satisfaction",
+      "reason": "explicit 'riacquisterò' / 'ripeterò il trattamento' / 'consiglio' statements — strong retention signal in Italy.",
+      "pct": "4.5%",
+      "bullets": [
+        "Italian buyers explicitly state intent to repeat purchase or cycle",
+        "Some users on second or third bottle",
+        "Higher repeat-intent expression than DE"
+      ],
+      "quotes": [
+        "\"Treatment to repeat. I only took one bottle — I'll do more cycles.\"",
+        "\"I will definitely buy it again.\"",
+        "\"Excellent product — I'm on my second cycle.\""
+      ]
+    },
+    {
+      "label": "Fast results",
+      "reason": "subset of users (notably those with constipation or bloating) report effects from day 1–3.",
+      "pct": "3.1%",
+      "bullets": [
+        "Typically reported by users with prior digestive issues",
+        "Strong compliance signal — fast result drives cycle completion",
+        "Italian users with sluggish intestino report next-morning effect"
+      ],
+      "quotes": [
+        "\"Already from the first dose I noticed the drenante effect.\"",
+        "\"From the third day my abdomen was no longer inflated.\"",
+        "\"Took it at night — by morning, on the throne. Does the job.\""
+      ]
+    }
+  ],
+  "positiveInsights": [
+    {
+      "type": "Lead claim — Italy-unique",
+      "finding": "QR-code / WhatsApp service is praised in ~26% of IT positives — the highest service-praise rate of any market analyzed. Italians value the multilingual personal-doctor consultation more than DE/FR/UK buyers.",
+      "implication": "Promote 'Servizio personalizzato via QR / WhatsApp' to bullet #1 on the IT listing. Add 'parla con un medico personale' to A+ content. Easy to verify, hard for competitors to match.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Lead claim — what they actually came for",
+      "finding": "Diuretic + bloating relief together account for 37% of IT positives. Italian buyers frame the product as 'drenante e depurativo' — exactly what the product delivers. The expectation-delivery gap is much smaller than in DE.",
+      "implication": "Don't translate DE A+ copy. Italian listing should lead with 'Drenante naturale + pancia sgonfia' in main image / H1. Leave 'detox' as secondary SEO.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    },
+    {
+      "type": "Differentiator",
+      "finding": "Natural / plant-based / vegan resonates strongly in IT (consistent with Lax IT finding). Italians explicitly compare to chemical laxatives and beveroni and prefer the capsule-natural format.",
+      "implication": "Add 'naturale, vegano, senza additivi chimici' badge to main image — same playbook as Lax IT. IT-specific badge that DE/FR/UK listings don't need.",
+      "badgeBg": "#dbeafe",
+      "badgeColor": "#1e40af"
+    },
+    {
+      "type": "Customer profile",
+      "finding": "Italian repeat-purchase intent is stronger than DE. Customers say 'riacquisterò', 'ripeterò il trattamento', 'farò più cicli' — signalling chronic-digestion repeat segment.",
+      "implication": "Push Subscribe & Save aggressively in IT. Auto-ship 30-day intervals. Italy is likely the highest-LTV market for this product family.",
+      "badgeBg": "#dcfce7",
+      "badgeColor": "#166534"
+    }
+  ],
+  "buyersMotivation": [
+    {
+      "label": "Drenante effect / reduce fluid retention",
+      "reason": "primary IT-specific purchase trigger — leg/ankle swelling, water retention, morning puffiness. Different from DE where weight loss leads.",
+      "pct": "26.5%"
+    },
+    {
+      "label": "Reduce bloating / pancia piatta",
+      "reason": "cosmetic and comfort goal — feeling 'gonfia' is a major Italian-female driver.",
+      "pct": "22.8%"
+    },
+    {
+      "label": "Improve digestion / regolarità intestinale",
+      "reason": "chronic stitichezza, sluggish transit, post-keto-diet constipation.",
+      "pct": "16.3%"
+    },
+    {
+      "label": "Post-holiday / festive cleanse",
+      "reason": "Italian buyers explicitly trigger purchase after Christmas, summer holidays, weekend excess.",
+      "pct": "11.4%"
+    },
+    {
+      "label": "Liver + colon depurativo",
+      "reason": "broader 'depurare il fegato e l'intestino' goal — softer than DE's detox framing.",
+      "pct": "8.7%"
+    },
+    {
+      "label": "Lose weight (paired with diet)",
+      "reason": "smaller cohort than DE — Italians who do hope for weight loss know to pair with diet + sport.",
+      "pct": "7.6%"
+    },
+    {
+      "label": "Natural alternative to harsh laxatives",
+      "reason": "buyers tired of chemical laxatives seek gentler herbal option.",
+      "pct": "4.3%"
+    },
+    {
+      "label": "Boost energy / lighter feeling",
+      "reason": "secondary motivation — Italian users mention 'mi sento più leggera'.",
+      "pct": "2.4%"
+    }
+  ],
+  "customerExpectations": [
+    {
+      "label": "Real drenante effect (not just laxative)",
+      "reason": "Italian buyers expect visible fluid reduction. When only bowel-movement effect appears, they feel mis-sold.",
+      "pct": "24.7%"
+    },
+    {
+      "label": "Pancia sgonfia within 1–2 weeks",
+      "reason": "expect visible abdominal de-bloating within first 7–14 days of use.",
+      "pct": "18.4%"
+    },
+    {
+      "label": "No cramps / no aggressive reactions",
+      "reason": "expected gentle, predictable action. Got: strong cramps, sometimes from first dose.",
+      "pct": "14.9%"
+    },
+    {
+      "label": "Real depurativo (not just transit)",
+      "reason": "Italians want measurable detoxification — liver, colon cleanse. Hard to measure but expected.",
+      "pct": "11.6%"
+    },
+    {
+      "label": "Predictable bathroom timing",
+      "reason": "users want to plan workdays / travel — but some report uncontrollable bathroom urgency.",
+      "pct": "8.5%"
+    },
+    {
+      "label": "Fast results within 1 bottle",
+      "reason": "expectation of measurable change in a single 45-day cycle. Some need multiple cycles.",
+      "pct": "8.2%"
+    },
+    {
+      "label": "Proper sealing / full bottle",
+      "reason": "expected unopened, full bottle. Repeated reports of broken seal or short fill in IT too.",
+      "pct": "7.4%"
+    },
+    {
+      "label": "Multilingual QR / WhatsApp support",
+      "reason": "Italians appreciate the multilingual service — and expect responsiveness in Italian when contacting.",
+      "pct": "6.3%"
+    }
+  ],
   "themeFilters": [
     {
       "value": "",
       "label": "All themes"
+    },
+    {
+      "value": "no_effect",
+      "label": "No effect"
+    },
+    {
+      "value": "side_effects",
+      "label": "Side effects (cramps, diarrhoea)"
+    },
+    {
+      "value": "severe_reaction",
+      "label": "Severe systemic reaction"
+    },
+    {
+      "value": "only_laxative",
+      "label": "Only drenante — not depurativo"
+    },
+    {
+      "value": "no_weight_loss",
+      "label": "No weight loss"
+    },
+    {
+      "value": "packaging",
+      "label": "Packaging defects"
+    },
+    {
+      "value": "freebie_scheme",
+      "label": "Review-for-freebie scheme"
+    },
+    {
+      "value": "works",
+      "label": "Works (general)"
+    },
+    {
+      "value": "bloating_relief",
+      "label": "Bloating relief"
+    },
+    {
+      "value": "regularity",
+      "label": "Bowel regularity"
+    },
+    {
+      "value": "diuretic",
+      "label": "Drenante effect"
+    },
+    {
+      "value": "weight_loss",
+      "label": "Weight loss (with diet)"
+    },
+    {
+      "value": "easy_take",
+      "label": "Easy to take"
+    },
+    {
+      "value": "support",
+      "label": "Customer service / QR support"
+    },
+    {
+      "value": "fast_results",
+      "label": "Fast results"
     }
   ],
   "sentimentFilters": [
@@ -62,7 +650,7 @@
     },
     {
       "value": "neu",
-      "label": "Neutral"
+      "label": "Neutral / mixed"
     }
   ]
 }

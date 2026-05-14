@@ -1,7 +1,7 @@
 {
   "id": "detox-es",
   "title": "Detox ES — Review Analysis",
-  "subtitle": "Awaiting reviews JSON at reviews/B0B6GHYP1V-ES-Reviews.json",
+  "subtitle": "No reviews available on amazon.es for this ASIN",
   "asin": "B0B6GHYP1V",
   "marketplace": "ES",
   "reviewsFile": "../../reviews/B0B6GHYP1V-ES-Reviews.json",
@@ -12,7 +12,7 @@
   "posPct": "—",
   "negPct": "—",
   "neuPct": "—",
-  "cpSummary": "<strong>Pending.</strong> Drop reviews JSON at <code>reviews/B0B6GHYP1V-ES-Reviews.json</code> and run VOC refresh.",
+  "cpSummary": "<strong>No data.</strong> This ASIN (B0B6GHYP1V) is not listed on amazon.es — the source export returned 0 reviews. No VOC analysis possible for this market. Dashboard kept for completeness so the sidebar shows the full 5-market matrix.",
   "cpWho": {
     "labels": [],
     "pos": [],
